@@ -1,16 +1,18 @@
 var webpack = require("webpack");
-var commonsPlugin = new webpack.optimize.CommonsChunkPlugin('common.js');
+//var commonsPlugin = new webpack.optimize.CommonsChunkPlugin('common.js');
 //var HtmlwebpackPlugin = require('html-webpack-plugin');
 //var labeledModulesPlugin=new webpack.dependencies.LabeledModulesPlugin();
 var path = require("path");
+var glob=require('glob');
 var uglifyJsPlugin = webpack.optimize.UglifyJsPlugin;
 var ROOT_PATH = path.resolve(__dirname);
 var ADMIN_PUBLIC = path.resolve(ROOT_PATH, 'public/Admin');
 var BLOG_PUBLIC = path.resolve(ROOT_PATH, 'public/Blog');
 module.exports = {
     entry: {
-        test: ADMIN_PUBLIC+"/js/test.js",
-        test2: BLOG_PUBLIC+"/js/test.js"
+        test: glob.sync(ADMIN_PUBLIC+"/js/*.js"),
+        test2: BLOG_PUBLIC+"/js/test.js",
+        vendor: ['jquery','react','react-dom'] //第三方库
     },
     output: {
         publicPath:"/blog/Admin/Web_Static/assets/build/js/", //若图片大小超过限制,则这条语句自动生成新的图片并加载
@@ -38,23 +40,29 @@ module.exports = {
     },
     resolve:{
         root:ROOT_PATH,
-        //alias:{
-        //    jquery:"../plugins/jquery-1.11.3.min"
-        //},
         extensions: ['', '.js', '.json']
     },
     plugins: [
-        commonsPlugin,
         new uglifyJsPlugin({
             compress: {
                 warnings: false
             }
-        })
+        }),
+        new webpack.ProvidePlugin({
+            $: 'jquery',
+            React:'react',
+            ReactDOM:'react-dom'
+        }),//这个可以使jquery变成全局变量，妮不用在自己文件require('jquery')了
+        new webpack.optimize.CommonsChunkPlugin('vendor', 'vendor.bundle.js')
     ],
     devServer: {
         historyApiFallback: true,
-            hot: true,
-            inline: true,
-            progress: true
+        hot: true,
+        inline: true,
+        progress: true,
+        publicPath:'http://localhost:8080',
+        proxy: {
+            "*": "http://localhost:3000"
+        }
     },
 };
