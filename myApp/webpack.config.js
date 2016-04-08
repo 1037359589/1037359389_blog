@@ -14,8 +14,9 @@ module.exports = {
         test2: BLOG_PUBLIC+"/js/test.js",
         vendor: ['jquery','react','react-dom'] //第三方库
     },
+    target: 'node',
     output: {
-        publicPath:"/blog/Admin/Web_Static/assets/build/js/", //若图片大小超过限制,则这条语句自动生成新的图片并加载
+        publicPath:"/myApp/public", //若图片大小超过限制,则这条语句自动生成新的图片并加载
         path: path.join(__dirname, "public/build"),
         filename: "[name].bundle.js",
         chunkFilename: "[id].chunk.js"
@@ -53,7 +54,11 @@ module.exports = {
             React:'react',
             ReactDOM:'react-dom'
         }),//这个可以使jquery变成全局变量，妮不用在自己文件require('jquery')了
-        new webpack.optimize.CommonsChunkPlugin('vendor', 'vendor.bundle.js')
+        new webpack.optimize.CommonsChunkPlugin('vendor', 'vendor.bundle.js'),
+        //new webpack.DefinePlugin({
+        //    'process.env.NODE_ENV': '"development"'
+        //}),
+        //new webpack.HotModuleReplacementPlugin()
     ],
     devServer: {
         historyApiFallback: true,

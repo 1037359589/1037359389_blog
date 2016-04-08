@@ -6,7 +6,7 @@ var App=React.createClass({
     render:function(){
         return (
             <div>
-                App
+                我的AppApp么么么大啊实打实的
             </div>
         )
     }
@@ -24,5 +24,5 @@ ReactDOM.render(
     <Container/>,
     document.getElementById("main")
 );
-$("#main").text("你好啊 !!!");
+//$("#main").text("你好啊 !!!");
 console.log(1);
