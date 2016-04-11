@@ -1,12 +1,14 @@
 var express = require('express');
 var router = express.Router();
+var path=__dirname;
+console.log(path);
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
-  res.render('Admin/index', { title: 'Express' });
+  res.render('Admin/index', { title: 'Express'});
 });
 router.get("/header",function(req,res,next){
-  res.render('Admin/inc/header_tpl', { title: 'Express' });
+  res.render('Admin/inc/header_tpl', { title: 'Express'});
 });
 
 module.exports = router;

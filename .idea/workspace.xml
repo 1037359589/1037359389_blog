@@ -2,744 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="709d0a99-2ac1-4caf-91e3-05cba85d869c" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/fonts/bootstrap/glyphicons-halflings-regular.eot" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/fonts/bootstrap/glyphicons-halflings-regular.ttf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/fonts/bootstrap/glyphicons-halflings-regular.woff" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/fonts/bootstrap/glyphicons-halflings-regular.woff2" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/global/fonts/FontAwesome.otf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/global/fonts/Simple-Line-Icons.eot" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/global/fonts/Simple-Line-Icons.ttf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/global/fonts/Simple-Line-Icons.woff" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/global/fonts/fontawesome-webfont.eot" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/global/fonts/fontawesome-webfont.ttf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/global/fonts/fontawesome-webfont.woff" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/global/fonts/fontawesome-webfont.woff2" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/images/Sorting icons.psd" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/images/back_disabled.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/images/back_enabled.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/images/back_enabled_hover.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/images/bg-input-focus.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/images/bg-input.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/images/favicon.ico" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/images/forward_disabled.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/images/forward_enabled.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/images/forward_enabled_hover.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/images/sort_asc.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/images/sort_asc_disabled.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/images/sort_both.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/images/sort_desc.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/images/sort_desc_disabled.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/images/sprite.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/images/sprite_original.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/img/accordion-plusminus.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/img/ajax-loading.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/img/ajax-modal-loading.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/img/arrow-down.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/img/avatar.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/img/avatar1.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/img/avatar10.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/img/avatar11.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/img/avatar1_small.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/img/avatar2.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/img/avatar3.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/img/avatar3_small.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/img/avatar4.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/img/avatar5.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/img/avatar6.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/img/avatar7.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/img/avatar8.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/img/avatar9.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/img/datatable-row-openclose.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/img/flags/ad.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/img/flags/ae.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/img/flags/af.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/img/flags/ag.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/img/flags/ai.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/img/flags/al.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/img/flags/am.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/img/flags/an.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/img/flags/ao.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/img/flags/ar.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/img/flags/as.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/img/flags/at.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/img/flags/au.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/img/flags/aw.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/img/flags/ax.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/img/flags/az.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/img/flags/ba.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/img/flags/bb.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/img/flags/bd.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/img/flags/be.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/img/flags/bf.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/img/flags/bg.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/img/flags/bh.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/img/flags/bi.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/img/flags/bj.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/img/flags/bm.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/img/flags/bn.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/img/flags/bo.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/img/flags/br.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/img/flags/bs.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/img/flags/bt.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/img/flags/bv.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/img/flags/bw.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/img/flags/by.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/img/flags/bz.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/img/flags/ca.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/img/flags/catalonia.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/img/flags/cc.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/img/flags/cd.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/img/flags/cf.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/img/flags/cg.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/img/flags/ch.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/img/flags/ci.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/img/flags/ck.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/img/flags/cl.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/img/flags/cm.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/img/flags/cn.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/img/flags/co.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/img/flags/cr.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/img/flags/cs.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/img/flags/cu.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/img/flags/cv.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/img/flags/cx.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/img/flags/cy.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/img/flags/cz.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/img/flags/de.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/img/flags/dj.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/img/flags/dk.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/img/flags/dm.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/img/flags/do.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/img/flags/dz.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/img/flags/ec.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/img/flags/ee.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/img/flags/eg.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/img/flags/eh.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/img/flags/england.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/img/flags/er.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/img/flags/es.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/img/flags/et.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/img/flags/europeanunion.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/img/flags/fam.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/img/flags/fi.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/img/flags/fj.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/img/flags/fk.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/img/flags/fm.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/img/flags/fo.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/img/flags/fr.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/img/flags/ga.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/img/flags/gb.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/img/flags/gd.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/img/flags/ge.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/img/flags/gf.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/img/flags/gh.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/img/flags/gi.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/img/flags/gl.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/img/flags/gm.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/img/flags/gn.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/img/flags/gp.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/img/flags/gq.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/img/flags/gr.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/img/flags/gs.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/img/flags/gt.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/img/flags/gu.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/img/flags/gw.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/img/flags/gy.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/img/flags/hk.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/img/flags/hm.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/img/flags/hn.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/img/flags/hr.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/img/flags/ht.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/img/flags/hu.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/img/flags/id.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/img/flags/ie.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/img/flags/il.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/img/flags/in.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/img/flags/io.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/img/flags/iq.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/img/flags/ir.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/img/flags/is.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/img/flags/it.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/img/flags/jm.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/img/flags/jo.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/img/flags/jp.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/img/flags/ke.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/img/flags/kg.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/img/flags/kh.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/img/flags/ki.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/img/flags/km.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/img/flags/kn.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/img/flags/kp.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/img/flags/kr.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/img/flags/kw.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/img/flags/ky.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/img/flags/kz.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/img/flags/la.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/img/flags/lb.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/img/flags/lc.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/img/flags/li.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/img/flags/lk.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/img/flags/lr.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/img/flags/ls.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/img/flags/lt.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/img/flags/lu.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/img/flags/lv.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/img/flags/ly.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/img/flags/ma.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/img/flags/mc.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/img/flags/md.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/img/flags/me.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/img/flags/mg.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/img/flags/mh.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/img/flags/mk.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/img/flags/ml.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/img/flags/mm.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/img/flags/mn.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/img/flags/mo.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/img/flags/mp.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/img/flags/mq.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/img/flags/mr.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/img/flags/ms.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/img/flags/mt.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/img/flags/mu.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/img/flags/mv.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/img/flags/mw.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/img/flags/mx.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/img/flags/my.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/img/flags/mz.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/img/flags/na.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/img/flags/nc.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/img/flags/ne.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/img/flags/nf.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/img/flags/ng.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/img/flags/ni.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/img/flags/nl.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/img/flags/no.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/img/flags/np.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/img/flags/nr.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/img/flags/nu.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/img/flags/nz.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/img/flags/om.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/img/flags/pa.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/img/flags/pe.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/img/flags/pf.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/img/flags/pg.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/img/flags/ph.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/img/flags/pk.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/img/flags/pl.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/img/flags/pm.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/img/flags/pn.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/img/flags/pr.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/img/flags/ps.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/img/flags/pt.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/img/flags/pw.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/img/flags/py.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/img/flags/qa.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/img/flags/re.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/img/flags/ro.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/img/flags/rs.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/img/flags/ru.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/img/flags/rw.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/img/flags/sa.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/img/flags/sb.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/img/flags/sc.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/img/flags/scotland.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/img/flags/sd.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/img/flags/se.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/img/flags/sg.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/img/flags/sh.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/img/flags/si.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/img/flags/sj.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/img/flags/sk.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/img/flags/sl.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/img/flags/sm.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/img/flags/sn.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/img/flags/so.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/img/flags/sr.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/img/flags/st.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/img/flags/sv.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/img/flags/sy.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/img/flags/sz.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/img/flags/tc.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/img/flags/td.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/img/flags/tf.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/img/flags/tg.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/img/flags/th.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/img/flags/tj.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/img/flags/tk.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/img/flags/tl.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/img/flags/tm.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/img/flags/tn.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/img/flags/to.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/img/flags/tr.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/img/flags/tt.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/img/flags/tv.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/img/flags/tw.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/img/flags/tz.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/img/flags/ua.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/img/flags/ug.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/img/flags/um.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/img/flags/us.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/img/flags/uy.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/img/flags/uz.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/img/flags/va.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/img/flags/vc.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/img/flags/ve.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/img/flags/vg.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/img/flags/vi.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/img/flags/vn.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/img/flags/vu.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/img/flags/wales.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/img/flags/wf.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/img/flags/ws.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/img/flags/ye.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/img/flags/yt.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/img/flags/za.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/img/flags/zm.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/img/flags/zw.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/img/hor-menu-red-arrow.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/img/icon-color-close.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/img/icon-color.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/img/icon-img-down.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/img/icon-img-up.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/img/inbox-nav-arrow-blue.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/img/input-spinner.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/img/loading-spinner-blue.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/img/loading-spinner-default.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/img/loading-spinner-grey.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/img/loading.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/img/logo-big-white.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/img/logo-big.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/img/logo-default.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/img/logo.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/img/menu-toggler.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/img/overlay-icon.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/img/photo1.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/img/photo2.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/img/portfolio/1200x900/01.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/img/portfolio/1200x900/02.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/img/portfolio/1200x900/03.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/img/portfolio/1200x900/04.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/img/portfolio/1200x900/05.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/img/portfolio/1200x900/06.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/img/portfolio/1200x900/07.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/img/portfolio/1200x900/08.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/img/portfolio/1200x900/09.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/img/portfolio/1200x900/1.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/img/portfolio/1200x900/10.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/img/portfolio/1200x900/11.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/img/portfolio/1200x900/12.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/img/portfolio/1200x900/13.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/img/portfolio/1200x900/14.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/img/portfolio/1200x900/15.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/img/portfolio/1200x900/16.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/img/portfolio/1200x900/17.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/img/portfolio/1200x900/18.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/img/portfolio/1200x900/19.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/img/portfolio/1200x900/2.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/img/portfolio/1200x900/20.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/img/portfolio/1200x900/21.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/img/portfolio/1200x900/22.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/img/portfolio/1200x900/23.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/img/portfolio/1200x900/24.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/img/portfolio/1200x900/25.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/img/portfolio/1200x900/26.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/img/portfolio/1200x900/27.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/img/portfolio/1200x900/28.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/img/portfolio/1200x900/29.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/img/portfolio/1200x900/3.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/img/portfolio/1200x900/30.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/img/portfolio/1200x900/31.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/img/portfolio/1200x900/32.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/img/portfolio/1200x900/33.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/img/portfolio/1200x900/34.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/img/portfolio/1200x900/35.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/img/portfolio/1200x900/36.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/img/portfolio/1200x900/37.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/img/portfolio/1200x900/38.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/img/portfolio/1200x900/39.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/img/portfolio/1200x900/4.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/img/portfolio/1200x900/40.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/img/portfolio/1200x900/41.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/img/portfolio/1200x900/42.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/img/portfolio/1200x900/43.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/img/portfolio/1200x900/44.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/img/portfolio/1200x900/45.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/img/portfolio/1200x900/46.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/img/portfolio/1200x900/47.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/img/portfolio/1200x900/48.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/img/portfolio/1200x900/49.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/img/portfolio/1200x900/5.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/img/portfolio/1200x900/50.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/img/portfolio/1200x900/51.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/img/portfolio/1200x900/52.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/img/portfolio/1200x900/53.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/img/portfolio/1200x900/54.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/img/portfolio/1200x900/55.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/img/portfolio/1200x900/56.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/img/portfolio/1200x900/57.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/img/portfolio/1200x900/58.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/img/portfolio/1200x900/59.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/img/portfolio/1200x900/6.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/img/portfolio/1200x900/60.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/img/portfolio/1200x900/61.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/img/portfolio/1200x900/62.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/img/portfolio/1200x900/63.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/img/portfolio/1200x900/64.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/img/portfolio/1200x900/65.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/img/portfolio/1200x900/66.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/img/portfolio/1200x900/67.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/img/portfolio/1200x900/68.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/img/portfolio/1200x900/69.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/img/portfolio/1200x900/7.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/img/portfolio/1200x900/70.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/img/portfolio/1200x900/71.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/img/portfolio/1200x900/72.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/img/portfolio/1200x900/73.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/img/portfolio/1200x900/74.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/img/portfolio/1200x900/75.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/img/portfolio/1200x900/76.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/img/portfolio/1200x900/77.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/img/portfolio/1200x900/78.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/img/portfolio/1200x900/79.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/img/portfolio/1200x900/8.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/img/portfolio/1200x900/80.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/img/portfolio/1200x900/81.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/img/portfolio/1200x900/82.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/img/portfolio/1200x900/83.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/img/portfolio/1200x900/84.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/img/portfolio/1200x900/85.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/img/portfolio/1200x900/86.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/img/portfolio/1200x900/87.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/img/portfolio/1200x900/88.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/img/portfolio/1200x900/89.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/img/portfolio/1200x900/9.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/img/portfolio/1200x900/90.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/img/portfolio/1200x900/91.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/img/portfolio/1200x900/92.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/img/portfolio/1200x900/93.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/img/portfolio/1200x900/94.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/img/portfolio/1200x900/95.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/img/portfolio/1200x900/96.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/img/portfolio/1200x900/97.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/img/portfolio/1200x900/98.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/img/portfolio/1200x900/99.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/img/portfolio/400x300/1.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/img/portfolio/400x300/2.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/img/portfolio/400x300/3.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/img/portfolio/600x600/01.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/img/portfolio/600x600/010.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/img/portfolio/600x600/011.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/img/portfolio/600x600/012.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/img/portfolio/600x600/013.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/img/portfolio/600x600/014.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/img/portfolio/600x600/015.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/img/portfolio/600x600/016.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/img/portfolio/600x600/017.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/img/portfolio/600x600/02.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/img/portfolio/600x600/03.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/img/portfolio/600x600/04.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/img/portfolio/600x600/05.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/img/portfolio/600x600/06.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/img/portfolio/600x600/07.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/img/portfolio/600x600/08-long.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/img/portfolio/600x600/08.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/img/portfolio/600x600/09.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/img/portfolio/600x600/1.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/img/portfolio/600x600/10.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/img/portfolio/600x600/100.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/img/portfolio/600x600/101.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/img/portfolio/600x600/102.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/img/portfolio/600x600/103.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/img/portfolio/600x600/11.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/img/portfolio/600x600/12.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/img/portfolio/600x600/13.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/img/portfolio/600x600/14.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/img/portfolio/600x600/15.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/img/portfolio/600x600/16.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/img/portfolio/600x600/17.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/img/portfolio/600x600/18.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/img/portfolio/600x600/19.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/img/portfolio/600x600/2.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/img/portfolio/600x600/20.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/img/portfolio/600x600/21.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/img/portfolio/600x600/22.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/img/portfolio/600x600/23.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/img/portfolio/600x600/24.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/img/portfolio/600x600/25.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/img/portfolio/600x600/26.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/img/portfolio/600x600/27.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/img/portfolio/600x600/28.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/img/portfolio/600x600/29.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/img/portfolio/600x600/3.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/img/portfolio/600x600/30.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/img/portfolio/600x600/31.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/img/portfolio/600x600/32.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/img/portfolio/600x600/33.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/img/portfolio/600x600/34.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/img/portfolio/600x600/35.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/img/portfolio/600x600/36.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/img/portfolio/600x600/37.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/img/portfolio/600x600/38.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/img/portfolio/600x600/39.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/img/portfolio/600x600/4.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/img/portfolio/600x600/40.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/img/portfolio/600x600/41.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/img/portfolio/600x600/42.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/img/portfolio/600x600/43.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/img/portfolio/600x600/44.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/img/portfolio/600x600/45.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/img/portfolio/600x600/46.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/img/portfolio/600x600/47.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/img/portfolio/600x600/48.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/img/portfolio/600x600/49.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/img/portfolio/600x600/5.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/img/portfolio/600x600/50.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/img/portfolio/600x600/51.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/img/portfolio/600x600/52.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/img/portfolio/600x600/53.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/img/portfolio/600x600/54.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/img/portfolio/600x600/55.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/img/portfolio/600x600/56.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/img/portfolio/600x600/57.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/img/portfolio/600x600/58.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/img/portfolio/600x600/59.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/img/portfolio/600x600/6.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/img/portfolio/600x600/60.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/img/portfolio/600x600/61.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/img/portfolio/600x600/62.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/img/portfolio/600x600/63.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/img/portfolio/600x600/64.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/img/portfolio/600x600/65.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/img/portfolio/600x600/66.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/img/portfolio/600x600/67.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/img/portfolio/600x600/68.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/img/portfolio/600x600/69.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/img/portfolio/600x600/7.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/img/portfolio/600x600/70.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/img/portfolio/600x600/71.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/img/portfolio/600x600/72.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/img/portfolio/600x600/73.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/img/portfolio/600x600/74.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/img/portfolio/600x600/75.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/img/portfolio/600x600/76.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/img/portfolio/600x600/77.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/img/portfolio/600x600/78.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/img/portfolio/600x600/79.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/img/portfolio/600x600/8.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/img/portfolio/600x600/80.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/img/portfolio/600x600/81.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/img/portfolio/600x600/82.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/img/portfolio/600x600/83.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/img/portfolio/600x600/84.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/img/portfolio/600x600/85.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/img/portfolio/600x600/86.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/img/portfolio/600x600/87.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/img/portfolio/600x600/88.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/img/portfolio/600x600/89.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/img/portfolio/600x600/9.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/img/portfolio/600x600/90.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/img/portfolio/600x600/91.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/img/portfolio/600x600/92.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/img/portfolio/600x600/93.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/img/portfolio/600x600/94.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/img/portfolio/600x600/95.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/img/portfolio/600x600/96.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/img/portfolio/600x600/97.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/img/portfolio/600x600/98.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/img/portfolio/600x600/99.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/img/portlet-collapse-icon-white.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/img/portlet-collapse-icon.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/img/portlet-config-icon-white.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/img/portlet-config-icon.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/img/portlet-expand-icon-white.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/img/portlet-expand-icon.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/img/portlet-reload-icon-white.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/img/portlet-reload-icon.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/img/portlet-remove-icon-white.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/img/portlet-remove-icon.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/img/remove-icon-small.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/img/search_icon_light.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/img/sidebar-menu-arrow-reverse.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/img/sidebar-menu-arrow-right.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/img/sidebar-menu-arrow.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/img/sidebar-toggler-inverse.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/img/sidebar-toggler.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/img/sidebar_arrow_icon_light.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/img/sidebar_arrow_icon_light_rtl.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/img/sidebar_inline_toggler_icon_blue.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/img/sidebar_inline_toggler_icon_darkblue.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/img/sidebar_inline_toggler_icon_default.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/img/sidebar_inline_toggler_icon_grey.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/img/sidebar_inline_toggler_icon_light.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/img/sidebar_inline_toggler_icon_light2.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/img/sidebar_toggler_icon_blue.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/img/sidebar_toggler_icon_darkblue.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/img/sidebar_toggler_icon_default.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/img/sidebar_toggler_icon_grey.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/img/sidebar_toggler_icon_light.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/img/sidebar_toggler_icon_light2.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/img/social/Thumbs.db" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/img/social/aboutme.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/img/social/amazon.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/img/social/behance.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/img/social/blogger.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/img/social/deviantart.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/img/social/dribbble.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/img/social/dropbox.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/img/social/evernote.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/img/social/facebook.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/img/social/flickr.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/img/social/forrst.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/img/social/foursquare.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/img/social/github.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/img/social/googleplus.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/img/social/gravatar.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/img/social/instagram.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/img/social/jolicloud.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/img/social/klout.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/img/social/last-fm.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/img/social/linkedin.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/img/social/myspace.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/img/social/picasa.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/img/social/pintrest.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/img/social/quora.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/img/social/reddit.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/img/social/rss.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/img/social/skype.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/img/social/spotify.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/img/social/stumbleupon.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/img/social/tumblr.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/img/social/twitter.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/img/social/vimeo.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/img/social/vk.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/img/social/wordpress.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/img/social/xing.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/img/social/yahoo.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/img/social/youtube.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/img/syncfusion-icons-white.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/img/syncfusion-icons.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/img/global/accordion-plusminus.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/img/global/ajax-loading.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/img/global/ajax-modal-loading.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/img/global/arrow-down.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/img/global/avatar.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/img/global/avatar1.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/img/global/avatar10.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/img/global/avatar11.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/img/global/avatar1_small.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/img/global/avatar2.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/img/global/avatar3.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/img/global/avatar3_small.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/img/global/avatar4.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/img/global/avatar5.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/img/global/avatar6.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/img/global/avatar7.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/img/global/avatar8.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/img/global/avatar9.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/img/global/datatable-row-openclose.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/img/global/hor-menu-red-arrow.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/img/global/icon-color-close.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/img/global/icon-color.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/img/global/icon-img-down.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/img/global/icon-img-up.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/img/global/inbox-nav-arrow-blue.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/img/global/input-spinner.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/img/global/loading-spinner-blue.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/img/global/loading-spinner-default.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/img/global/loading-spinner-grey.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/img/global/loading.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/img/global/logo-big-white.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/img/global/logo-big.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/img/global/logo-default.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/img/global/logo.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/img/global/menu-toggler.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/img/global/op.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/img/global/overlay-icon.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/img/global/photo1.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/img/global/photo2.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/img/global/portlet-collapse-icon-white.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/img/global/portlet-collapse-icon.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/img/global/portlet-config-icon-white.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/img/global/portlet-config-icon.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/img/global/portlet-expand-icon-white.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/img/global/portlet-expand-icon.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/img/global/portlet-reload-icon-white.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/img/global/portlet-reload-icon.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/img/global/portlet-remove-icon-white.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/img/global/portlet-remove-icon.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/img/global/remove-icon-small.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/img/global/search_icon_light.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/img/global/sidebar-menu-arrow-reverse.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/img/global/sidebar-menu-arrow-right.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/img/global/sidebar-menu-arrow.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/img/global/sidebar-toggler-inverse.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/img/global/sidebar-toggler.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/img/global/sidebar_arrow_icon_light.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/img/global/sidebar_arrow_icon_light_rtl.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/img/global/sidebar_inline_toggler_icon_blue.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/img/global/sidebar_inline_toggler_icon_darkblue.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/img/global/sidebar_inline_toggler_icon_default.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/img/global/sidebar_inline_toggler_icon_grey.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/img/global/sidebar_inline_toggler_icon_light.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/img/global/sidebar_inline_toggler_icon_light2.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/img/global/sidebar_toggler_icon_blue.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/img/global/sidebar_toggler_icon_darkblue.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/img/global/sidebar_toggler_icon_default.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/img/global/sidebar_toggler_icon_grey.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/img/global/sidebar_toggler_icon_light.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/img/global/sidebar_toggler_icon_light2.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/img/global/syncfusion-icons-white.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/img/global/syncfusion-icons.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/fonts/bootstrap/glyphicons-halflings-regular.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/global/blue.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/global/bootstrap-switch.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/global/bootstrap.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/global/components.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/global/custom.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/global/font-awesome.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/global/fonts/Simple-Line-Icons.dev.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/global/fonts/Simple-Line-Icons.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/global/fonts/fontawesome-webfont.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/global/fullcalendar.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/global/layout.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/global/plugins.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/global/simple-line-icons.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/global/uniform.default.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/global/uniform.default.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/css/img/flags/readme.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/js/global/all.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/js/global/app.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/js/global/bootstrap-hover-dropdown.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/js/global/bootstrap-switch.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/js/global/bootstrap.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/js/global/calendar.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/js/global/demo.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/js/global/excanvas.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/js/global/fullcalendar.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/js/global/jquery-ui.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/js/global/jquery.blockui.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/js/global/jquery.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/js/global/jquery.slimscroll.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/js/global/jquery.uniform.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/js/global/js.cookie.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/js/global/layout.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/js/global/moment.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/js/global/quick-sidebar.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/js/global/respond.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/Admin/js/style/style.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/public/build/inc.bundle.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myApp/views/Admin/inc/header_tpl.html" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/public/Blog/css/style.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/public/build/app.bundle.js" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/myApp/public/Admin/js/test.js" afterPath="$PROJECT_DIR$/myApp/public/Admin/js/test/test.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/myApp/public/Admin/js/test2.js" afterPath="$PROJECT_DIR$/myApp/public/Admin/js/test/test2.js" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/public/Admin/js/global/fullcalendar.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/public/build/inc.bundle.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/public/build/test.bundle.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/public/build/test2.bundle.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/myApp/public/build/vendor.bundle.js" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/myApp/public/Admin/js/style/style.js" afterPath="$PROJECT_DIR$/myApp/public/Admin/js/style/style.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/myApp/public/Admin/js/test/test.js" afterPath="$PROJECT_DIR$/myApp/public/Admin/js/test/test.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/myApp/public/Blog/js/test.js" afterPath="$PROJECT_DIR$/myApp/public/Blog/js/test.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/myApp/public/build/test.bundle.js" afterPath="$PROJECT_DIR$/myApp/public/build/test.bundle.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/myApp/public/build/test2.bundle.js" afterPath="$PROJECT_DIR$/myApp/public/build/test2.bundle.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/myApp/public/build/vendor.bundle.js" afterPath="$PROJECT_DIR$/myApp/public/build/vendor.bundle.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/myApp/routes/index.js" afterPath="$PROJECT_DIR$/myApp/routes/index.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/myApp/views/Admin/inc/header_tpl.html" afterPath="$PROJECT_DIR$/myApp/views/Admin/inc/header_tpl.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/myApp/views/Admin/index.html" afterPath="$PROJECT_DIR$/myApp/views/Admin/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/myApp/webpack.config.js" afterPath="$PROJECT_DIR$/myApp/webpack.config.js" />
     </list>
     <ignored path="blog_3.iws" />
@@ -764,11 +38,72 @@
       <file leaf-file-name="header_tpl.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/myApp/views/Admin/inc/header_tpl.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-5.923077">
-              <caret line="2110" column="22" selection-start-line="2110" selection-start-column="22" selection-end-line="2110" selection-end-column="22" />
+            <state vertical-scroll-proportion="-17.0">
+              <caret line="436" column="52" selection-start-line="436" selection-start-column="52" selection-end-line="436" selection-end-column="52" />
               <folding>
-                <element signature="n#style#0;n#div#2;n#div#0;n#div#0;n#div#1;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#div#0;n#div#0;n#!!top" expanded="false" />
+                <element signature="n#style#0;n#ul#0;n#li#1;n#ul#0;n#li#0;n#ul#0;n#div#0;n#div#2;n#div#0;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#ul#0;n#li#1;n#ul#0;n#li#1;n#ul#0;n#div#0;n#div#2;n#div#0;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#ul#0;n#li#1;n#ul#0;n#li#2;n#ul#0;n#div#0;n#div#2;n#div#0;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#span#0;n#span#1;n#a#0;n#li#0;n#ul#0;n#li#1;n#ul#0;n#li#2;n#ul#0;n#div#0;n#div#2;n#div#0;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#span#0;n#span#1;n#a#0;n#li#1;n#ul#0;n#li#1;n#ul#0;n#li#2;n#ul#0;n#div#0;n#div#2;n#div#0;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#span#0;n#span#1;n#a#0;n#li#2;n#ul#0;n#li#1;n#ul#0;n#li#2;n#ul#0;n#div#0;n#div#2;n#div#0;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#span#0;n#span#1;n#a#0;n#li#3;n#ul#0;n#li#1;n#ul#0;n#li#2;n#ul#0;n#div#0;n#div#2;n#div#0;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#span#0;n#span#1;n#a#0;n#li#4;n#ul#0;n#li#1;n#ul#0;n#li#2;n#ul#0;n#div#0;n#div#2;n#div#0;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#span#0;n#span#1;n#a#0;n#li#5;n#ul#0;n#li#1;n#ul#0;n#li#2;n#ul#0;n#div#0;n#div#2;n#div#0;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#span#0;n#span#1;n#a#0;n#li#6;n#ul#0;n#li#1;n#ul#0;n#li#2;n#ul#0;n#div#0;n#div#2;n#div#0;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#2;n#div#0;n#div#0;n#div#1;n#div#2;n#!!top" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="footer_script.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/myApp/views/Admin/inc/footer_script.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-1.9615384">
+              <caret line="3" column="12" selection-start-line="3" selection-start-column="12" selection-end-line="3" selection-end-column="12" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="header_meta.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/myApp/views/Admin/inc/header_meta.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-1.3076923">
+              <caret line="2" column="47" selection-start-line="2" selection-start-column="47" selection-end-line="2" selection-end-column="47" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="a.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/myApp/views/Admin/inc/a.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-0.65384614">
+              <caret line="1" column="20" selection-start-line="1" selection-start-column="20" selection-end-line="1" selection-end-column="20" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="footer_tpl.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/myApp/views/Admin/inc/footer_tpl.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-21.615385">
+              <caret line="577" column="0" selection-start-line="577" selection-start-column="0" selection-end-line="577" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="test.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/myApp/public/Admin/js/test/test.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="16" column="17" selection-start-line="16" selection-start-column="17" selection-end-line="16" selection-end-column="17" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -777,72 +112,28 @@
         <entry file="file://$PROJECT_DIR$/myApp/webpack.config.js">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="13" column="41" selection-start-line="13" selection-start-column="41" selection-end-line="13" selection-end-column="41" />
+              <caret line="42" column="13" selection-start-line="42" selection-start-column="13" selection-end-line="42" selection-end-column="13" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="test.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/myApp/public/Blog/js/test.js">
+      <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/myApp/routes/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+            <state vertical-scroll-proportion="-1.2592592">
+              <caret line="2" column="19" selection-start-line="2" selection-start-column="19" selection-end-line="2" selection-end-column="19" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="test2.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/myApp/public/Admin/js/test/test2.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="3" column="17" selection-start-line="3" selection-start-column="17" selection-end-line="3" selection-end-column="17" />
-              <folding>
-                <element signature="e#0#36#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="app.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/myApp/app.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="39" column="28" selection-start-line="39" selection-start-column="28" selection-end-line="39" selection-end-column="28" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="test.js" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/myApp/public/Admin/js/test/test.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.6732673">
-              <caret line="28" column="16" selection-start-line="28" selection-start-column="16" selection-end-line="28" selection-end-column="16" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/myApp/views/Admin/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-6.5384617">
-              <caret line="10" column="25" selection-start-line="10" selection-start-column="25" selection-end-line="10" selection-end-column="25" />
+            <state vertical-scroll-proportion="0.59911895">
+              <caret line="24" column="0" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="style.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/myApp/public/Admin/js/style/style.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
-              <folding>
-                <element signature="e#0#37#0" expanded="false" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -852,8 +143,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="HTML File" />
         <option value="JavaScript File" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -867,19 +158,25 @@
         <option value="$PROJECT_DIR$/myApp/views/index.html" />
         <option value="$PROJECT_DIR$/myApp/public/Admin/css/style.css" />
         <option value="$PROJECT_DIR$/myApp/public/Admin/js/test2.js" />
-        <option value="$PROJECT_DIR$/myApp/views/Admin/index.html" />
         <option value="$PROJECT_DIR$/myApp/package.json" />
-        <option value="$PROJECT_DIR$/myApp/routes/index.js" />
         <option value="$PROJECT_DIR$/myApp/public/Admin/css/global/font-awesome.min.css" />
         <option value="$PROJECT_DIR$/myApp/public/Admin/js/global/all.js" />
         <option value="$PROJECT_DIR$/myApp/public/Admin/js/global/style.js" />
         <option value="$PROJECT_DIR$/myApp/public/Admin/css/global/plugins.min.css" />
-        <option value="$PROJECT_DIR$/myApp/views/Admin/inc/header_tpl.html" />
-        <option value="$PROJECT_DIR$/myApp/public/Admin/js/style/style.js" />
-        <option value="$PROJECT_DIR$/myApp/public/Admin/js/test/test.js" />
         <option value="$PROJECT_DIR$/myApp/public/Admin/js/test.js" />
-        <option value="$PROJECT_DIR$/myApp/webpack.config.js" />
         <option value="$PROJECT_DIR$/myApp/app.js" />
+        <option value="$PROJECT_DIR$/myApp/public/Blog/js/test.js" />
+        <option value="$PROJECT_DIR$/myApp/public/Admin/js/test/test.js" />
+        <option value="$PROJECT_DIR$/myApp/public/Admin/js/style/style.js" />
+        <option value="$PROJECT_DIR$/myApp/webpack.config.js" />
+        <option value="$PROJECT_DIR$/myApp/routes/index.js" />
+        <option value="$PROJECT_DIR$/myApp/views/Admin/inc/a.html" />
+        <option value="$PROJECT_DIR$/myApp/views/Admin/inc/footer_html.html" />
+        <option value="$PROJECT_DIR$/myApp/views/Admin/inc/html_meta.html" />
+        <option value="$PROJECT_DIR$/myApp/views/Admin/inc/header_tpl.html" />
+        <option value="$PROJECT_DIR$/myApp/views/Admin/inc/footer_tpl.html" />
+        <option value="$PROJECT_DIR$/myApp/views/Admin/inc/footer_script.html" />
+        <option value="$PROJECT_DIR$/myApp/views/Admin/index.html" />
       </list>
     </option>
   </component>
@@ -919,8 +216,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -1007,15 +302,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Admin" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="inc" />
+              <option name="myItemId" value="routes" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -1034,54 +321,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="public" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="blog_3" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="blog_3" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="myApp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="public" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Blog" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="js" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="blog_3" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="blog_3" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="myApp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="public" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Blog" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -1130,10 +369,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="Admin" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="img" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -1165,6 +400,8 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -1179,19 +416,19 @@
     <property name="settings.editor.splitter.proportion" value="0.2" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/myApp/public/Blog/js" />
-      <recent name="$PROJECT_DIR$/myApp/public/Admin/js/test" />
-      <recent name="$PROJECT_DIR$/myApp/public/Admin/img/global" />
-      <recent name="$PROJECT_DIR$/myApp/public/Admin/js/style" />
-      <recent name="$PROJECT_DIR$/myApp/public" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/myApp/public/Admin/css/img" />
       <recent name="$PROJECT_DIR$/myApp/public/Admin/css/images" />
       <recent name="$PROJECT_DIR$/myApp/public/Admin/css" />
       <recent name="$PROJECT_DIR$/myApp/public/Admin/css/global" />
       <recent name="$PROJECT_DIR$/myApp/assets" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/myApp/public/Admin/js/global" />
+      <recent name="$PROJECT_DIR$/myApp/public/Admin/js" />
+      <recent name="$PROJECT_DIR$/myApp/public/Blog/js" />
+      <recent name="$PROJECT_DIR$/myApp/public/Admin/js/test" />
+      <recent name="$PROJECT_DIR$/myApp/public/Admin/img/global" />
     </key>
   </component>
   <component name="RunManager">
@@ -1258,7 +495,6 @@
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.215" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3292517" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32971507" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -1270,6 +506,7 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3292517" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
@@ -1307,24 +544,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/myApp/public/Admin/js/test/test2.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="3" column="17" selection-start-line="3" selection-start-column="17" selection-end-line="3" selection-end-column="17" />
-          <folding>
-            <element signature="e#0#36#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/myApp/views/Admin/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="5" column="24" selection-start-line="5" selection-start-column="24" selection-end-line="5" selection-end-column="24" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/myApp/app.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1345,7 +564,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="1" column="16" selection-start-line="1" selection-start-column="16" selection-end-line="1" selection-end-column="16" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1427,7 +645,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="1" column="16" selection-start-line="1" selection-start-column="16" selection-end-line="1" selection-end-column="16" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1453,26 +670,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/myApp/public/build/test2.bundle.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/myApp/routes/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-4.4074073">
-          <caret line="7" column="44" selection-start-line="7" selection-start-column="44" selection-end-line="7" selection-end-column="44" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/myApp/public/Admin/css/global/fonts/fontawesome-webfont.svg">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.3606789">
           <caret line="15" column="45" selection-start-line="15" selection-start-column="45" selection-end-line="15" selection-end-column="45" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1480,7 +681,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1488,7 +688,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.32452276">
           <caret line="3" column="1074" selection-start-line="3" selection-start-column="1074" selection-end-line="3" selection-end-column="1074" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1504,7 +703,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.772043">
           <caret line="0" column="5359" selection-start-line="0" selection-start-column="5359" selection-end-line="0" selection-end-column="5359" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1512,33 +710,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/myApp/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.16446403">
-          <caret line="11" column="20" selection-start-line="11" selection-start-column="20" selection-end-line="11" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/myApp/public/build/test.bundle.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="41" selection-start-line="0" selection-start-column="41" selection-end-line="0" selection-end-column="41" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/myApp/public/Admin/js/global/moment.min.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-5.6364923">
-          <caret line="5" column="1621" selection-start-line="5" selection-start-column="1621" selection-end-line="5" selection-end-column="1621" />
-          <folding>
-            <element signature="n#!!doc" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1546,7 +717,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1554,7 +724,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="104.34615">
           <caret line="2" column="9660" selection-start-line="2" selection-start-column="9660" selection-end-line="2" selection-end-column="9660" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1612,6 +781,39 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.2246696">
           <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/myApp/public/Blog/js/test.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="3" column="19" selection-start-line="3" selection-start-column="19" selection-end-line="3" selection-end-column="19" />
+          <folding>
+            <element signature="e#0#37#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/myApp/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.17180617">
+          <caret line="11" column="20" selection-start-line="11" selection-start-column="20" selection-end-line="11" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/myApp/public/Admin/js/global/moment.min.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.60113156">
+          <caret line="5" column="4559" selection-start-line="5" selection-start-column="4559" selection-end-line="5" selection-end-column="4559" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/myApp/public/Admin/js/global/jquery.min.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -1619,50 +821,32 @@
     <entry file="file://$PROJECT_DIR$/myApp/public/Admin/js/style/style.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+          <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
           <folding>
             <element signature="e#0#37#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/myApp/views/Admin/inc/header_tpl.html">
+    <entry file="file://$PROJECT_DIR$/myApp/routes/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-5.923077">
-          <caret line="2110" column="22" selection-start-line="2110" selection-start-column="22" selection-end-line="2110" selection-end-column="22" />
-          <folding>
-            <element signature="n#style#0;n#div#2;n#div#0;n#div#0;n#div#1;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/myApp/views/Admin/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-6.5384617">
-          <caret line="10" column="25" selection-start-line="10" selection-start-column="25" selection-end-line="10" selection-end-column="25" />
+        <state vertical-scroll-proportion="-1.2592592">
+          <caret line="2" column="19" selection-start-line="2" selection-start-column="19" selection-end-line="2" selection-end-column="19" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/myApp/webpack.config.js">
+    <entry file="file://$PROJECT_DIR$/myApp/app.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="13" column="41" selection-start-line="13" selection-start-column="41" selection-end-line="13" selection-end-column="41" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/myApp/public/Blog/js/test.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.3125884">
+          <caret line="20" column="23" selection-start-line="20" selection-start-column="23" selection-end-line="20" selection-end-column="23" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/myApp/public/Admin/js/test/test2.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
+        <state vertical-scroll-proportion="0.024045262">
           <caret line="3" column="17" selection-start-line="3" selection-start-column="17" selection-end-line="3" selection-end-column="17" />
           <folding>
             <element signature="e#0#36#0" expanded="false" />
@@ -1670,18 +854,79 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/myApp/app.js">
+    <entry file="file://$PROJECT_DIR$/myApp/webpack.config.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="39" column="28" selection-start-line="39" selection-start-column="28" selection-end-line="39" selection-end-column="28" />
+          <caret line="42" column="13" selection-start-line="42" selection-start-column="13" selection-end-line="42" selection-end-column="13" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/myApp/public/Admin/js/test/test.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6732673">
-          <caret line="28" column="16" selection-start-line="28" selection-start-column="16" selection-end-line="28" selection-end-column="16" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="16" column="17" selection-start-line="16" selection-start-column="17" selection-end-line="16" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/myApp/views/Admin/inc/header_tpl.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-17.0">
+          <caret line="436" column="52" selection-start-line="436" selection-start-column="52" selection-end-line="436" selection-end-column="52" />
+          <folding>
+            <element signature="n#div#0;n#div#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#ul#0;n#li#1;n#ul#0;n#li#0;n#ul#0;n#div#0;n#div#2;n#div#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#ul#0;n#li#1;n#ul#0;n#li#1;n#ul#0;n#div#0;n#div#2;n#div#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#ul#0;n#li#1;n#ul#0;n#li#2;n#ul#0;n#div#0;n#div#2;n#div#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#0;n#span#1;n#a#0;n#li#0;n#ul#0;n#li#1;n#ul#0;n#li#2;n#ul#0;n#div#0;n#div#2;n#div#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#0;n#span#1;n#a#0;n#li#1;n#ul#0;n#li#1;n#ul#0;n#li#2;n#ul#0;n#div#0;n#div#2;n#div#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#0;n#span#1;n#a#0;n#li#2;n#ul#0;n#li#1;n#ul#0;n#li#2;n#ul#0;n#div#0;n#div#2;n#div#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#0;n#span#1;n#a#0;n#li#3;n#ul#0;n#li#1;n#ul#0;n#li#2;n#ul#0;n#div#0;n#div#2;n#div#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#0;n#span#1;n#a#0;n#li#4;n#ul#0;n#li#1;n#ul#0;n#li#2;n#ul#0;n#div#0;n#div#2;n#div#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#0;n#span#1;n#a#0;n#li#5;n#ul#0;n#li#1;n#ul#0;n#li#2;n#ul#0;n#div#0;n#div#2;n#div#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#0;n#span#1;n#a#0;n#li#6;n#ul#0;n#li#1;n#ul#0;n#li#2;n#ul#0;n#div#0;n#div#2;n#div#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#2;n#div#0;n#div#0;n#div#1;n#div#2;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/myApp/views/Admin/inc/footer_tpl.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-21.615385">
+          <caret line="577" column="0" selection-start-line="577" selection-start-column="0" selection-end-line="577" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/myApp/views/Admin/inc/footer_script.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-1.9615384">
+          <caret line="3" column="12" selection-start-line="3" selection-start-column="12" selection-end-line="3" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/myApp/views/Admin/inc/a.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.65384614">
+          <caret line="1" column="20" selection-start-line="1" selection-start-column="20" selection-end-line="1" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/myApp/views/Admin/inc/header_meta.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-1.3076923">
+          <caret line="2" column="47" selection-start-line="2" selection-start-column="47" selection-end-line="2" selection-end-column="47" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/myApp/views/Admin/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.59911895">
+          <caret line="24" column="0" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
           <folding />
         </state>
       </provider>

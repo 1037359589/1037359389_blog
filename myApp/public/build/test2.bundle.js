@@ -1,1 +1,1 @@
-exports.ids=[1],exports.modules=[function(s,t){"use strict"}];
+webpackJsonp([2],[function(o,c){"use strict";cosolr.log(123123)}]);

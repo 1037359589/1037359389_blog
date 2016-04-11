@@ -26,4 +26,3 @@ ReactDOM.render(
 );
 //$("#main").text("你好啊 !!!");
 console.log(1);
-exports.css=css;

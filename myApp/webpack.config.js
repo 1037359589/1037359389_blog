@@ -10,11 +10,12 @@ var ADMIN_PUBLIC = path.resolve(ROOT_PATH, 'public/Admin');
 var BLOG_PUBLIC = path.resolve(ROOT_PATH, 'public/Blog');
 module.exports = {
     entry: {
-        test: glob.sync(ADMIN_PUBLIC+"/js/test/*.js"),
+        //test: glob.sync(ADMIN_PUBLIC+"/js/test/*.js"),
+        inc: glob.sync(ADMIN_PUBLIC+"/js/style/*.js"),
+        global: glob.sync(ADMIN_PUBLIC+"/js/global/*.js"),
         test2: BLOG_PUBLIC+"/js/test.js",
-        vendor: ['jquery','react','react-dom'] //第三方库
+        vendor: ['react','react-dom'] //第三方库
     },
-    target: 'node',
     output: {
         publicPath:"/myApp/public", //若图片大小超过限制,则这条语句自动生成新的图片并加载
         path: path.join(__dirname, "public/build"),
@@ -50,7 +51,6 @@ module.exports = {
             }
         }),
         new webpack.ProvidePlugin({
-            $: 'jquery',
             React:'react',
             ReactDOM:'react-dom'
         }),//这个可以使jquery变成全局变量，妮不用在自己文件require('jquery')了
