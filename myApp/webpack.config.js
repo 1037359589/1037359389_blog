@@ -10,7 +10,7 @@ var ADMIN_PUBLIC = path.resolve(ROOT_PATH, 'public/Admin');
 var BLOG_PUBLIC = path.resolve(ROOT_PATH, 'public/Blog');
 module.exports = {
     entry: {
-        test: glob.sync(ADMIN_PUBLIC+"/js/*.js"),
+        test: glob.sync(ADMIN_PUBLIC+"/js/test/*.js"),
         test2: BLOG_PUBLIC+"/js/test.js",
         vendor: ['jquery','react','react-dom'] //第三方库
     },
@@ -27,7 +27,7 @@ module.exports = {
                 test:/\.css$/,loader:'style-loader!css-loader'
             },
             {
-                test:/\.(png|jpe?g|gif)$/,loader:"url-loader?limit=40000000&name=[name].[ext]&mimetype=image/jpg",
+                test:/\.(png|jpe?g|gif)$/,loader:"url-loader?limit=40000000&name=[name].[ext]",
                 include:ADMIN_PUBLIC+"/css/"
             },
             {

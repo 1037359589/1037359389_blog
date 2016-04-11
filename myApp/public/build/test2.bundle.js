@@ -1,1 +1,1 @@
-webpackJsonp([1],[function(o,c){"use strict";console.log(2)}]);
+exports.ids=[1],exports.modules=[function(s,t){"use strict"}];
