@@ -6,8 +6,9 @@ var logger = require('morgan');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 
-var routes = require('./routes/index');
-var users = require('./routes/users');
+
+var admin = require('./routes/admin');
+var blog = require('./routes/blog');
 
 var app = express();
 
@@ -22,11 +23,13 @@ app.use(logger('dev'));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cookieParser());
-app.use(express.static(path.join(__dirname, 'public')));
-app.use("/build",express.static('build'));
+app.use("/admin",express.static(path.join(__dirname, 'public/Admin')));
+app.use("/blog",express.static(path.join(__dirname, 'public/Blog')));
+app.use("/admin/build",express.static(path.join(__dirname, 'public/build')));
+app.use("/blog/build",express.static(path.join(__dirname, 'public/build')));
 
-app.use('/', routes);
-app.use('/users', users);
+app.use('/admin', admin);
+app.use('/blog', blog);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

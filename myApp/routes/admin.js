@@ -7,8 +7,13 @@ console.log(path);
 router.get('/', function(req, res, next) {
   res.render('Admin/index', { title: 'Express'});
 });
-router.get("/header",function(req,res,next){
-  res.render('Admin/inc/header_tpl', { title: 'Express'});
+router.get('/user',function(req,res,next){
+  res.render('Admin/login', { title: 'asdasdas'});
 });
+
+router.get("/header",function(req,res,next){
+  res.render('Admin/index', { title: 'Express'});
+});
+
 
 module.exports = router;
