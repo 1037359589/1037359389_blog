@@ -11,8 +11,9 @@ var BLOG_PUBLIC = path.resolve(ROOT_PATH, 'public/Blog');
 module.exports = {
     entry: {
         //test: glob.sync(ADMIN_PUBLIC+"/js/test/*.js"),
-        inc: glob.sync(ADMIN_PUBLIC+"/js/style/*.js"),
-        global: glob.sync(ADMIN_PUBLIC+"/js/global/*.js"),
+        //inc: glob.sync(ADMIN_PUBLIC+"/js/style/*.js"),
+        //global: glob.sync(ADMIN_PUBLIC+"/js/global/*.js"),
+        login:glob.sync(ADMIN_PUBLIC+"/js/login/*.js"),
         test2: BLOG_PUBLIC+"/js/test.js",
         vendor: ['react','react-dom'] //第三方库
     },
@@ -25,7 +26,7 @@ module.exports = {
     module:{
         loaders:[
             {
-                test:/\.css$/,loader:'style-loader!css-loader'
+                test:/\.(css|less)$/,loader:'style-loader!css-loader!less-loader'
             },
             {
                 test:/\.(png|jpe?g|gif)$/,loader:"url-loader?limit=40000000&name=[name].[ext]",

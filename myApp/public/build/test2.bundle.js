@@ -1,1 +1,1 @@
-webpackJsonp([2],[function(o,c){"use strict";cosolr.log(123123)}]);
+webpackJsonp([1],[function(o,c){"use strict";cosolr.log(123123)}]);
