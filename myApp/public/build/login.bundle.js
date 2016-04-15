@@ -40,15 +40,11 @@ webpackJsonp([0],[
 /* 2 */
 /***/ function(module, exports, __webpack_require__) {
 
-	"use strict";
+	/* WEBPACK VAR INJECTION */(function(React) {'use strict';
 
 	Object.defineProperty(exports, "__esModule", {
 	    value: true
 	});
-
-	var _react = __webpack_require__(3);
-
-	var _react2 = _interopRequireDefault(_react);
 
 	var _redux = __webpack_require__(160);
 
@@ -68,27 +64,27 @@ webpackJsonp([0],[
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-	var App = _react2.default.createClass({
-	    displayName: "App",
+	var App = React.createClass({
+	    displayName: 'App',
 	    render: function render() {
 	        var _props = this.props;
 	        var actions = _props.actions;
 	        var register = _props.register;
 	        var forget = _props.forget;
 
-	        return _react2.default.createElement(
-	            "div",
+	        return React.createElement(
+	            'div',
 	            null,
-	            _react2.default.createElement(
-	                "div",
-	                { className: "login-content" },
-	                _react2.default.createElement(
-	                    "div",
-	                    { className: "login-form" },
-	                    _react2.default.createElement(_Components2.default, { actions: actions, register: register, forget: forget })
+	            React.createElement(
+	                'div',
+	                { className: 'login-content' },
+	                React.createElement(
+	                    'div',
+	                    { className: 'login-form' },
+	                    React.createElement(_Components2.default, { actions: actions, register: register, forget: forget })
 	                )
 	            ),
-	            _react2.default.createElement("div", null)
+	            React.createElement('div', null)
 	        );
 	    }
 	});
@@ -104,6 +100,7 @@ webpackJsonp([0],[
 	    };
 	}
 	exports.default = (0, _reactRedux.connect)(handleNumber, mapActions)(App);
+	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(3)))
 
 /***/ },
 /* 3 */,
