@@ -130,3 +130,12 @@ form .input-cus::-webkit-input-placeholder  {
 .ant-select-dropdown{
     border-radius:0px;
 }
+.ant-input:focus{
+    box-shadow: 0px 0px 1px 1px #f5f5f5;
+}
+.ant-select-selection:focus{
+    box-shadow: 0px 0px 1px 1px #f5f5f5;
+}
+.ant-select-arrow{
+    color:#fff;
+}

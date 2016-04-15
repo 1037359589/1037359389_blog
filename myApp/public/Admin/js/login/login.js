@@ -19,13 +19,9 @@ function noop() {
 
 let LoginForm = React.createClass({
     getInitialState(){
-      return {
-          show:true
-      }
-    },
-    getInitialState(){
         return {
-            show:this.props.show
+            show:this.props.show,
+            forget:this.props.forget
         }
     },
     onHidden(){
@@ -34,6 +30,14 @@ let LoginForm = React.createClass({
             show:show
         });
         this.props.onChangeForm(show);
+    },
+    isShowForget(){
+        var forget=!this.state.forget;
+        this.setState({
+            forget:forget
+        });
+        console.log(1231232);
+        this.props.onChangeForget(forget);
     },
     render() {
         const formItemLayout = {
@@ -92,7 +96,7 @@ let LoginForm = React.createClass({
                                 </label>
                             </Col>
                             <Col span="12">
-                                <a href="javascript:;" className="link-one" onClick={this.onClick}>忘记密码?</a>
+                                <a href="javascript:;" className="link-one" onClick={this.isShowForget} >忘记密码?</a>
                             </Col>
                         </Row>
                     </div>
@@ -112,9 +116,6 @@ let LoginForm = React.createClass({
 });
 
 var RegisterFrom= React.createClass({
-    toLogin:function(){
-
-    },
     getInitialState(){
         return {
             show:this.props.show
@@ -138,7 +139,7 @@ var RegisterFrom= React.createClass({
                  <header>管理员注册</header>
              </div>
              <p>如果,你是屌丝!!</p>
-             <QueueAnim component={Form} horizontal form={this.props.form}  delay={1000}
+             <QueueAnim component={Form} horizontal form={this.props.form}  delay={300}
                         className="ant-form ant-form-horizontal" type="bottom" leaveReverse>
                  <div key="a">
                      <Row>
@@ -238,6 +239,18 @@ var RegisterFrom= React.createClass({
 });
 
 var ForgetPassword=React.createClass({
+    getInitialState(){
+        return {
+            forget:this.props.forget
+        }
+    },
+    onHidden(){
+        var forget=!this.state.forget;
+        this.setState({
+            forget:forget
+        });
+        this.props.onChangeForm(forget);
+    },
     render(){
         const formItemLayout = {
             labelCol: { span: 0 },
@@ -249,7 +262,7 @@ var ForgetPassword=React.createClass({
                     <header>忘记密码??</header>
                 </div>
                 <p>什么记性!!</p>
-                <QueueAnim component={Form} horizontal form={this.props.form}  delay={1000}
+                <QueueAnim component={Form} horizontal form={this.props.form}  delay={300}
                            className="ant-form ant-form-horizontal" type="bottom" leaveReverse>
                     <div key="a">
                         <Row>
@@ -265,7 +278,7 @@ var ForgetPassword=React.createClass({
                     <div key="b">
                         <Row>
                             <Col span="7">
-                                <Button type="ghost" className="sub-cus-2">返回登陆</Button>
+                                <Button type="ghost" className="sub-cus-2" onClick={this.onHidden}>返回登陆</Button>
                             </Col>
                             <Col span="7" offset="10">
                                 <Button type="primary"  className="sub-cus">发送</Button>
@@ -282,7 +295,7 @@ var ForgetPassword=React.createClass({
 var List=React.createClass({
     render(){
         return (
-            <QueueAnim delay={500} style={{ height: 150 }}>
+            <QueueAnim delay={300} >
                 <div key="a">依次进场</div>
                 <div key="b">依次进场</div>
                 <div key="c">依次进场</div>
@@ -296,7 +309,8 @@ var List=React.createClass({
 var App=React.createClass({
     getInitialState(){
         return {
-            show:false
+            show:false,
+            forget:false
         }
     },
     onChangeForm (show){
@@ -304,9 +318,16 @@ var App=React.createClass({
             show:show
         })
     },
+    isShowForget(forget){
+        console.log(111);
+        this.setState({
+            forget:forget
+        })
+    },
     render(){
-        var  form=this.state.show?<RegisterFrom onChangeForm={this.onChangeForm} show={this.state.show}/>
-            :<LoginForm onChangeForm={this.onChangeForm} show={this.state.show}/>;
+        var formOne=this.state.show?<RegisterFrom onChangeForm={this.onChangeForm} show={this.state.show} />
+            :<LoginForm onChangeForm={this.onChangeForm} show={this.state.show} onChangeForget={this.isShowForget}/>;
+        var form=this.state.forget?<ForgetPassword forget={this.state.forget} onChangeForm={this.isShowForget}/>:formOne;
         return (
             <div>
                 <div className="login-content">

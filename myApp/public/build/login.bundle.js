@@ -11,11 +11,7 @@ webpackJsonp([0],[
 
 	/* WEBPACK VAR INJECTION */(function(React, ReactDOM) {'use strict';
 
-	var _React$createClass;
-
 	var _antd = __webpack_require__(160);
-
-	function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
 
 	/**
 	 * Created by bll on 16/4/13.
@@ -37,165 +33,170 @@ webpackJsonp([0],[
 	    return false;
 	}
 
-	var LoginForm = React.createClass((_React$createClass = {
+	var LoginForm = React.createClass({
 	    displayName: 'LoginForm',
 	    getInitialState: function getInitialState() {
 	        return {
-	            show: true
+	            show: this.props.show,
+	            forget: this.props.forget
 	        };
-	    }
-	}, _defineProperty(_React$createClass, 'getInitialState', function getInitialState() {
-	    return {
-	        show: this.props.show
-	    };
-	}), _defineProperty(_React$createClass, 'onHidden', function onHidden() {
-	    var show = !this.state.show;
-	    this.setState({
-	        show: show
-	    });
-	    this.props.onChangeForm(show);
-	}), _defineProperty(_React$createClass, 'render', function render() {
-	    var formItemLayout = {
-	        labelCol: { span: 0 },
-	        wrapperCol: { span: 24 }
-	    };
-	    return React.createElement(
-	        'div',
-	        null,
-	        React.createElement(
+	    },
+	    onHidden: function onHidden() {
+	        var show = !this.state.show;
+	        this.setState({
+	            show: show
+	        });
+	        this.props.onChangeForm(show);
+	    },
+	    isShowForget: function isShowForget() {
+	        var forget = !this.state.forget;
+	        this.setState({
+	            forget: forget
+	        });
+	        console.log(1231232);
+	        this.props.onChangeForget(forget);
+	    },
+	    render: function render() {
+	        var formItemLayout = {
+	            labelCol: { span: 0 },
+	            wrapperCol: { span: 24 }
+	        };
+	        return React.createElement(
 	            'div',
-	            { className: 'logo-p' },
-	            React.createElement(
-	                'header',
-	                null,
-	                '管理员登陆'
-	            )
-	        ),
-	        React.createElement(
-	            'p',
 	            null,
-	            '曹操来了!!'
-	        ),
-	        React.createElement(
-	            _antd.QueueAnim,
-	            { component: _antd.Form, horizontal: true, form: this.props.form, delay: 300,
-	                className: 'ant-form ant-form-horizontal', type: 'bottom', leaveReverse: true },
 	            React.createElement(
 	                'div',
-	                { key: 'a' },
+	                { className: 'logo-p' },
 	                React.createElement(
-	                    _antd.Row,
+	                    'header',
 	                    null,
-	                    React.createElement(
-	                        _antd.Col,
-	                        { span: '24' },
-	                        React.createElement(
-	                            FormItem,
-	                            formItemLayout,
-	                            React.createElement(_antd.Input, { type: 'password', onContextMenu: noop, onPaste: noop, onCopy: noop, onCut: noop,
-	                                className: 'input-cus', autoComplete: 'off', id: 'pass', placeholder: '请输入管理员用户名'
-	                            })
-	                        )
-	                    )
+	                    '管理员登陆'
 	                )
 	            ),
 	            React.createElement(
-	                'div',
-	                { key: 'b' },
-	                React.createElement(
-	                    _antd.Row,
-	                    null,
-	                    React.createElement(
-	                        _antd.Col,
-	                        { span: '24' },
-	                        React.createElement(
-	                            FormItem,
-	                            formItemLayout,
-	                            React.createElement(_antd.Input, { type: 'password', className: 'input-cus',
-	                                onContextMenu: noop, onPaste: noop, onCopy: noop, onCut: noop,
-	                                autoComplete: 'off', id: 'rePass', placeholder: '请输入密码'
-	                            })
-	                        )
-	                    )
-	                )
+	                'p',
+	                null,
+	                '曹操来了!!'
 	            ),
 	            React.createElement(
-	                'div',
-	                { key: 'c' },
+	                _antd.QueueAnim,
+	                { component: _antd.Form, horizontal: true, form: this.props.form, delay: 300,
+	                    className: 'ant-form ant-form-horizontal', type: 'bottom', leaveReverse: true },
 	                React.createElement(
-	                    _antd.Row,
-	                    null,
+	                    'div',
+	                    { key: 'a' },
 	                    React.createElement(
-	                        _antd.Col,
-	                        { span: '24' },
+	                        _antd.Row,
+	                        null,
 	                        React.createElement(
 	                            _antd.Col,
 	                            { span: '24' },
 	                            React.createElement(
-	                                _antd.Button,
-	                                { type: 'primary', className: 'sub-cus' },
-	                                '登陆'
+	                                FormItem,
+	                                formItemLayout,
+	                                React.createElement(_antd.Input, { type: 'password', onContextMenu: noop, onPaste: noop, onCopy: noop, onCut: noop,
+	                                    className: 'input-cus', autoComplete: 'off', id: 'pass', placeholder: '请输入管理员用户名'
+	                                })
 	                            )
 	                        )
 	                    )
-	                )
-	            ),
-	            React.createElement(
-	                'div',
-	                { key: 'd' },
+	                ),
 	                React.createElement(
-	                    _antd.Row,
-	                    null,
+	                    'div',
+	                    { key: 'b' },
 	                    React.createElement(
-	                        _antd.Col,
-	                        { span: '12' },
-	                        React.createElement(
-	                            'label',
-	                            null,
-	                            React.createElement(_antd.Checkbox, { defaultChecked: false }),
-	                            '记住我'
-	                        )
-	                    ),
-	                    React.createElement(
-	                        _antd.Col,
-	                        { span: '12' },
-	                        React.createElement(
-	                            'a',
-	                            { href: 'javascript:;', className: 'link-one', onClick: this.onClick },
-	                            '忘记密码?'
-	                        )
-	                    )
-	                )
-	            ),
-	            React.createElement(
-	                'div',
-	                { key: 'e' },
-	                React.createElement(
-	                    _antd.Row,
-	                    null,
-	                    React.createElement(
-	                        _antd.Col,
-	                        { span: '24' },
+	                        _antd.Row,
+	                        null,
 	                        React.createElement(
 	                            _antd.Col,
 	                            { span: '24' },
 	                            React.createElement(
-	                                _antd.Button,
-	                                { type: 'ghost', className: 'sub-cus-2', onClick: this.onHidden },
-	                                '创建账户'
+	                                FormItem,
+	                                formItemLayout,
+	                                React.createElement(_antd.Input, { type: 'password', className: 'input-cus',
+	                                    onContextMenu: noop, onPaste: noop, onCopy: noop, onCut: noop,
+	                                    autoComplete: 'off', id: 'rePass', placeholder: '请输入密码'
+	                                })
+	                            )
+	                        )
+	                    )
+	                ),
+	                React.createElement(
+	                    'div',
+	                    { key: 'c' },
+	                    React.createElement(
+	                        _antd.Row,
+	                        null,
+	                        React.createElement(
+	                            _antd.Col,
+	                            { span: '24' },
+	                            React.createElement(
+	                                _antd.Col,
+	                                { span: '24' },
+	                                React.createElement(
+	                                    _antd.Button,
+	                                    { type: 'primary', className: 'sub-cus' },
+	                                    '登陆'
+	                                )
+	                            )
+	                        )
+	                    )
+	                ),
+	                React.createElement(
+	                    'div',
+	                    { key: 'd' },
+	                    React.createElement(
+	                        _antd.Row,
+	                        null,
+	                        React.createElement(
+	                            _antd.Col,
+	                            { span: '12' },
+	                            React.createElement(
+	                                'label',
+	                                null,
+	                                React.createElement(_antd.Checkbox, { defaultChecked: false }),
+	                                '记住我'
+	                            )
+	                        ),
+	                        React.createElement(
+	                            _antd.Col,
+	                            { span: '12' },
+	                            React.createElement(
+	                                'a',
+	                                { href: 'javascript:;', className: 'link-one', onClick: this.isShowForget },
+	                                '忘记密码?'
+	                            )
+	                        )
+	                    )
+	                ),
+	                React.createElement(
+	                    'div',
+	                    { key: 'e' },
+	                    React.createElement(
+	                        _antd.Row,
+	                        null,
+	                        React.createElement(
+	                            _antd.Col,
+	                            { span: '24' },
+	                            React.createElement(
+	                                _antd.Col,
+	                                { span: '24' },
+	                                React.createElement(
+	                                    _antd.Button,
+	                                    { type: 'ghost', className: 'sub-cus-2', onClick: this.onHidden },
+	                                    '创建账户'
+	                                )
 	                            )
 	                        )
 	                    )
 	                )
 	            )
-	        )
-	    );
-	}), _React$createClass));
+	        );
+	    }
+	});
 
 	var RegisterFrom = React.createClass({
 	    displayName: 'RegisterFrom',
-
-	    toLogin: function toLogin() {},
 	    getInitialState: function getInitialState() {
 	        return {
 	            show: this.props.show
@@ -232,7 +233,7 @@ webpackJsonp([0],[
 	            ),
 	            React.createElement(
 	                _antd.QueueAnim,
-	                { component: _antd.Form, horizontal: true, form: this.props.form, delay: 1000,
+	                { component: _antd.Form, horizontal: true, form: this.props.form, delay: 300,
 	                    className: 'ant-form ant-form-horizontal', type: 'bottom', leaveReverse: true },
 	                React.createElement(
 	                    'div',
@@ -418,6 +419,18 @@ webpackJsonp([0],[
 
 	var ForgetPassword = React.createClass({
 	    displayName: 'ForgetPassword',
+	    getInitialState: function getInitialState() {
+	        return {
+	            forget: this.props.forget
+	        };
+	    },
+	    onHidden: function onHidden() {
+	        var forget = !this.state.forget;
+	        this.setState({
+	            forget: forget
+	        });
+	        this.props.onChangeForm(forget);
+	    },
 	    render: function render() {
 	        var formItemLayout = {
 	            labelCol: { span: 0 },
@@ -442,7 +455,7 @@ webpackJsonp([0],[
 	            ),
 	            React.createElement(
 	                _antd.QueueAnim,
-	                { component: _antd.Form, horizontal: true, form: this.props.form, delay: 1000,
+	                { component: _antd.Form, horizontal: true, form: this.props.form, delay: 300,
 	                    className: 'ant-form ant-form-horizontal', type: 'bottom', leaveReverse: true },
 	                React.createElement(
 	                    'div',
@@ -474,7 +487,7 @@ webpackJsonp([0],[
 	                            { span: '7' },
 	                            React.createElement(
 	                                _antd.Button,
-	                                { type: 'ghost', className: 'sub-cus-2' },
+	                                { type: 'ghost', className: 'sub-cus-2', onClick: this.onHidden },
 	                                '返回登陆'
 	                            )
 	                        ),
@@ -499,7 +512,7 @@ webpackJsonp([0],[
 	    render: function render() {
 	        return React.createElement(
 	            _antd.QueueAnim,
-	            { delay: 500, style: { height: 150 } },
+	            { delay: 300 },
 	            React.createElement(
 	                'div',
 	                { key: 'a' },
@@ -537,7 +550,8 @@ webpackJsonp([0],[
 	    displayName: 'App',
 	    getInitialState: function getInitialState() {
 	        return {
-	            show: false
+	            show: false,
+	            forget: false
 	        };
 	    },
 	    onChangeForm: function onChangeForm(show) {
@@ -545,8 +559,15 @@ webpackJsonp([0],[
 	            show: show
 	        });
 	    },
+	    isShowForget: function isShowForget(forget) {
+	        console.log(111);
+	        this.setState({
+	            forget: forget
+	        });
+	    },
 	    render: function render() {
-	        var form = this.state.show ? React.createElement(RegisterFrom, { onChangeForm: this.onChangeForm, show: this.state.show }) : React.createElement(LoginForm, { onChangeForm: this.onChangeForm, show: this.state.show });
+	        var formOne = this.state.show ? React.createElement(RegisterFrom, { onChangeForm: this.onChangeForm, show: this.state.show }) : React.createElement(LoginForm, { onChangeForm: this.onChangeForm, show: this.state.show, onChangeForget: this.isShowForget });
+	        var form = this.state.forget ? React.createElement(ForgetPassword, { forget: this.state.forget, onChangeForm: this.isShowForget }) : formOne;
 	        return React.createElement(
 	            'div',
 	            null,
