@@ -1,1 +1,13 @@
-webpackJsonp([1],[function(o,c){"use strict";cosolr.log(123123)}]);
+webpackJsonp([1],[
+/* 0 */
+/***/ function(module, exports) {
+
+	"use strict";
+
+	/**
+	 * Created by bll on 16/4/11.
+	 */
+	cosolr.log(123123);
+
+/***/ }
+]);

@@ -1,0 +1,1769 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/local/bin/node',
+1 verbose cli   '/usr/local/bin/npm',
+1 verbose cli   'install',
+1 verbose cli   'react-router',
+1 verbose cli   '--save-dev' ]
+2 info using npm@2.14.7
+3 info using node@v4.2.2
+4 verbose install initial load of /Applications/MAMP/htdocs/blog_3/myApp/package.json
+5 verbose installManyTop reading scoped package data from /Applications/MAMP/htdocs/blog_3/myApp/node_modules/antd/package.json
+6 verbose installManyTop reading scoped package data from /Applications/MAMP/htdocs/blog_3/myApp/node_modules/babel/package.json
+7 verbose installManyTop reading scoped package data from /Applications/MAMP/htdocs/blog_3/myApp/node_modules/babel-core/package.json
+8 verbose installManyTop reading scoped package data from /Applications/MAMP/htdocs/blog_3/myApp/node_modules/babel-loader/package.json
+9 verbose installManyTop reading scoped package data from /Applications/MAMP/htdocs/blog_3/myApp/node_modules/babel-plugin-add-module-exports/package.json
+10 verbose installManyTop reading scoped package data from /Applications/MAMP/htdocs/blog_3/myApp/node_modules/babel-preset-es2015/package.json
+11 verbose installManyTop reading scoped package data from /Applications/MAMP/htdocs/blog_3/myApp/node_modules/babel-preset-react/package.json
+12 verbose installManyTop reading scoped package data from /Applications/MAMP/htdocs/blog_3/myApp/node_modules/babel-preset-stage-0/package.json
+13 verbose installManyTop reading scoped package data from /Applications/MAMP/htdocs/blog_3/myApp/node_modules/body-parser/package.json
+14 verbose installManyTop reading scoped package data from /Applications/MAMP/htdocs/blog_3/myApp/node_modules/cookie-parser/package.json
+15 verbose installManyTop reading scoped package data from /Applications/MAMP/htdocs/blog_3/myApp/node_modules/css-loader/package.json
+16 verbose installManyTop reading scoped package data from /Applications/MAMP/htdocs/blog_3/myApp/node_modules/debug/package.json
+17 verbose installManyTop reading scoped package data from /Applications/MAMP/htdocs/blog_3/myApp/node_modules/ejs/package.json
+18 verbose installManyTop reading scoped package data from /Applications/MAMP/htdocs/blog_3/myApp/node_modules/express/package.json
+19 verbose installManyTop reading scoped package data from /Applications/MAMP/htdocs/blog_3/myApp/node_modules/file-loader/package.json
+20 verbose installManyTop reading scoped package data from /Applications/MAMP/htdocs/blog_3/myApp/node_modules/glob/package.json
+21 verbose installManyTop reading scoped package data from /Applications/MAMP/htdocs/blog_3/myApp/node_modules/html/package.json
+22 verbose installManyTop reading scoped package data from /Applications/MAMP/htdocs/blog_3/myApp/node_modules/jade/package.json
+23 verbose installManyTop reading scoped package data from /Applications/MAMP/htdocs/blog_3/myApp/node_modules/jquery/package.json
+24 verbose installManyTop reading scoped package data from /Applications/MAMP/htdocs/blog_3/myApp/node_modules/less/package.json
+25 verbose installManyTop reading scoped package data from /Applications/MAMP/htdocs/blog_3/myApp/node_modules/less-loader/package.json
+26 verbose installManyTop reading scoped package data from /Applications/MAMP/htdocs/blog_3/myApp/node_modules/material-ui/package.json
+27 verbose installManyTop reading scoped package data from /Applications/MAMP/htdocs/blog_3/myApp/node_modules/morgan/package.json
+28 verbose installManyTop reading scoped package data from /Applications/MAMP/htdocs/blog_3/myApp/node_modules/rctui/package.json
+29 verbose installManyTop reading scoped package data from /Applications/MAMP/htdocs/blog_3/myApp/node_modules/react/package.json
+30 verbose installManyTop reading scoped package data from /Applications/MAMP/htdocs/blog_3/myApp/node_modules/react-dom/package.json
+31 verbose installManyTop reading scoped package data from /Applications/MAMP/htdocs/blog_3/myApp/node_modules/react-hot-loader/package.json
+32 verbose installManyTop reading scoped package data from /Applications/MAMP/htdocs/blog_3/myApp/node_modules/react-redux/package.json
+33 verbose installManyTop reading scoped package data from /Applications/MAMP/htdocs/blog_3/myApp/node_modules/react-tap-event-plugin/package.json
+34 verbose installManyTop reading scoped package data from /Applications/MAMP/htdocs/blog_3/myApp/node_modules/react-widgets/package.json
+35 verbose installManyTop reading scoped package data from /Applications/MAMP/htdocs/blog_3/myApp/node_modules/redux/package.json
+36 verbose installManyTop reading scoped package data from /Applications/MAMP/htdocs/blog_3/myApp/node_modules/redux-devtools/package.json
+37 verbose installManyTop reading scoped package data from /Applications/MAMP/htdocs/blog_3/myApp/node_modules/redux-thunk/package.json
+38 verbose installManyTop reading scoped package data from /Applications/MAMP/htdocs/blog_3/myApp/node_modules/serve-favicon/package.json
+39 verbose installManyTop reading scoped package data from /Applications/MAMP/htdocs/blog_3/myApp/node_modules/style-loader/package.json
+40 verbose installManyTop reading scoped package data from /Applications/MAMP/htdocs/blog_3/myApp/node_modules/url-loader/package.json
+41 verbose installManyTop reading scoped package data from /Applications/MAMP/htdocs/blog_3/myApp/node_modules/webpack/package.json
+42 verbose installManyTop reading scoped package data from /Applications/MAMP/htdocs/blog_3/myApp/node_modules/webpack-dev-server/package.json
+43 info package.json html@0.0.10 license should be a valid SPDX license expression
+44 info package.json less-loader@2.2.3 No license field.
+45 info package.json react-tap-event-plugin@1.0.0 No license field.
+46 verbose readDependencies loading dependencies from /Applications/MAMP/htdocs/blog_3/myApp/package.json
+47 silly cache add args [ 'react-router', null ]
+48 verbose cache add spec react-router
+49 silly cache add parsed spec Result {
+49 silly cache add   raw: 'react-router',
+49 silly cache add   scope: null,
+49 silly cache add   name: 'react-router',
+49 silly cache add   rawSpec: '',
+49 silly cache add   spec: '*',
+49 silly cache add   type: 'range' }
+50 silly addNamed react-router@*
+51 verbose addNamed "*" is a valid semver range for react-router
+52 silly addNameRange { name: 'react-router', range: '*', hasData: false }
+53 silly mapToRegistry name react-router
+54 silly mapToRegistry using default registry
+55 silly mapToRegistry registry https://registry.npm.taobao.org/
+56 silly mapToRegistry uri https://registry.npm.taobao.org/react-router
+57 verbose addNameRange registry:https://registry.npm.taobao.org/react-router not in flight; fetching
+58 verbose request uri https://registry.npm.taobao.org/react-router
+59 verbose request no auth needed
+60 info attempt registry request try #1 at 10:57:00
+61 verbose request id c37909d16f3ba078
+62 verbose etag "1e380-Zi7hU9WF3PJI+bU1rrcsgA"
+63 http request GET https://registry.npm.taobao.org/react-router
+64 http 200 https://registry.npm.taobao.org/react-router
+65 verbose headers { date: 'Fri, 15 Apr 2016 02:57:00 GMT',
+65 verbose headers   'content-type': 'application/json; charset=utf-8',
+65 verbose headers   'content-length': '150242',
+65 verbose headers   connection: 'keep-alive',
+65 verbose headers   etag: '"24ae2-QLJgjsCs82wXrVA5xiTwrw"',
+65 verbose headers   'x-readtime': '77' }
+66 silly get cb [ 200,
+66 silly get   { date: 'Fri, 15 Apr 2016 02:57:00 GMT',
+66 silly get     'content-type': 'application/json; charset=utf-8',
+66 silly get     'content-length': '150242',
+66 silly get     connection: 'keep-alive',
+66 silly get     etag: '"24ae2-QLJgjsCs82wXrVA5xiTwrw"',
+66 silly get     'x-readtime': '77' } ]
+67 verbose get saving react-router to /Users/bll/Documents/nodejs/node_cache/registry.npm.taobao.org/react-router/.cache.json
+68 silly addNameRange number 2 { name: 'react-router', range: '*', hasData: true }
+69 silly addNameRange versions [ 'react-router',
+69 silly addNameRange   [ '2.2.2',
+69 silly addNameRange     '2.2.1',
+69 silly addNameRange     '2.2.0',
+69 silly addNameRange     '2.1.1',
+69 silly addNameRange     '2.1.0',
+69 silly addNameRange     '2.0.1',
+69 silly addNameRange     '2.0.0',
+69 silly addNameRange     '2.0.0-rc6',
+69 silly addNameRange     '2.0.0-rc5',
+69 silly addNameRange     '2.0.0-rc4',
+69 silly addNameRange     '2.0.0-rc3',
+69 silly addNameRange     '2.0.0-rc2',
+69 silly addNameRange     '2.0.0-rc1',
+69 silly addNameRange     '1.0.3',
+69 silly addNameRange     '1.0.2',
+69 silly addNameRange     '1.0.1',
+69 silly addNameRange     '1.0.0',
+69 silly addNameRange     '1.0.0-rc4',
+69 silly addNameRange     '0.13.5',
+69 silly addNameRange     '1.0.0-rc3',
+69 silly addNameRange     '1.0.0-rc2',
+69 silly addNameRange     '0.13.4',
+69 silly addNameRange     '1.0.0-rc1',
+69 silly addNameRange     '1.0.0-beta4',
+69 silly addNameRange     '1.0.0-beta3',
+69 silly addNameRange     '1.0.0-beta2',
+69 silly addNameRange     '1.0.0-beta1',
+69 silly addNameRange     '1.0.0-alpha2',
+69 silly addNameRange     '1.0.0-alpha1',
+69 silly addNameRange     '0.13.3',
+69 silly addNameRange     '0.13.2',
+69 silly addNameRange     '0.13.1',
+69 silly addNameRange     '0.13.0',
+69 silly addNameRange     '0.12.4',
+69 silly addNameRange     '0.12.3',
+69 silly addNameRange     '0.12.2',
+69 silly addNameRange     '0.12.1',
+69 silly addNameRange     '0.12.0',
+69 silly addNameRange     '0.11.6',
+69 silly addNameRange     '0.11.5',
+69 silly addNameRange     '0.11.4',
+69 silly addNameRange     '0.11.3',
+69 silly addNameRange     '0.11.2',
+69 silly addNameRange     '0.11.1',
+69 silly addNameRange     '0.11.0',
+69 silly addNameRange     '0.10.2',
+69 silly addNameRange     '0.10.1',
+69 silly addNameRange     '0.10.0',
+69 silly addNameRange     '0.9.5',
+69 silly addNameRange     '0.9.4',
+69 silly addNameRange     '0.9.3',
+69 silly addNameRange     '0.9.2',
+69 silly addNameRange     '0.9.1',
+69 silly addNameRange     '0.9.0',
+69 silly addNameRange     '0.8.0',
+69 silly addNameRange     '0.7.0',
+69 silly addNameRange     '0.6.1',
+69 silly addNameRange     '0.6.0',
+69 silly addNameRange     '0.5.3',
+69 silly addNameRange     '0.5.2',
+69 silly addNameRange     '0.5.1',
+69 silly addNameRange     '0.5.0',
+69 silly addNameRange     '0.4.2',
+69 silly addNameRange     '0.4.1',
+69 silly addNameRange     '0.4.0',
+69 silly addNameRange     '0.0.1',
+69 silly addNameRange     '0.0.0' ] ]
+70 silly addNamed react-router@2.2.2
+71 verbose addNamed "2.2.2" is a plain semver version for react-router
+72 silly mapToRegistry name react-router
+73 silly mapToRegistry using default registry
+74 silly mapToRegistry registry https://registry.npm.taobao.org/
+75 silly mapToRegistry uri https://registry.npm.taobao.org/react-router
+76 verbose addRemoteTarball https://registry.npm.taobao.org/react-router/download/react-router-2.2.2.tgz not in flight; adding
+77 verbose addRemoteTarball [ 'https://registry.npm.taobao.org/react-router/download/react-router-2.2.2.tgz',
+77 verbose addRemoteTarball   '3b474221c3cf3a3ad7fe901f532ff0cd5c490379' ]
+78 info retry fetch attempt 1 at 10:57:01
+79 info attempt registry request try #1 at 10:57:01
+80 http fetch GET https://registry.npm.taobao.org/react-router/download/react-router-2.2.2.tgz
+81 http fetch 200 https://registry.npm.taobao.org/react-router/download/react-router-2.2.2.tgz
+82 silly fetchAndShaCheck shasum 3b474221c3cf3a3ad7fe901f532ff0cd5c490379
+83 verbose addTmpTarball /var/folders/x9/mmy_0vqd6yzd65htc27_cx9h0000gn/T/npm-9643-3c63ddbd/registry.npm.taobao.org/react-router/download/react-router-2.2.2.tgz not in flight; adding
+84 verbose addTmpTarball already have metadata; skipping unpack for react-router@2.2.2
+85 silly cache afterAdd react-router@2.2.2
+86 verbose afterAdd /Users/bll/Documents/nodejs/node_cache/react-router/2.2.2/package/package.json not in flight; writing
+87 verbose afterAdd /Users/bll/Documents/nodejs/node_cache/react-router/2.2.2/package/package.json written
+88 silly install resolved [ { name: 'react-router',
+88 silly install resolved     version: '2.2.2',
+88 silly install resolved     description: 'A complete routing library for React.js',
+88 silly install resolved     files: [ '*.md', 'docs', 'es', 'lib', 'umd' ],
+88 silly install resolved     main: 'lib/index',
+88 silly install resolved     'jsnext:main': 'es/index',
+88 silly install resolved     repository:
+88 silly install resolved      { type: 'git',
+88 silly install resolved        url: 'git+https://github.com/reactjs/react-router.git' },
+88 silly install resolved     homepage: 'https://reactjs.org/react-router/',
+88 silly install resolved     bugs: { url: 'https://github.com/reactjs/react-router/issues' },
+88 silly install resolved     scripts:
+88 silly install resolved      { build: 'npm run build-cjs && npm run build-es',
+88 silly install resolved        'build-cjs': 'rimraf lib && babel ./modules -d lib --ignore \'__tests__\'',
+88 silly install resolved        'build-es': 'rimraf es && babel ./modules -d es --blacklist=es6.modules --ignore \'__tests__\'',
+88 silly install resolved        'build-umd': 'NODE_ENV=development webpack modules/index.js umd/ReactRouter.js',
+88 silly install resolved        'build-min': 'NODE_ENV=production webpack -p modules/index.js umd/ReactRouter.min.js',
+88 silly install resolved        lint: 'eslint modules examples',
+88 silly install resolved        start: 'node examples/server.js',
+88 silly install resolved        test: 'npm run lint && npm run test-node && npm run test-browser',
+88 silly install resolved        'test-browser': 'karma start',
+88 silly install resolved        'test-node': 'mocha --compilers js:babel-core/register tests.node.js' },
+88 silly install resolved     authors: [ 'Ryan Florence', 'Michael Jackson' ],
+88 silly install resolved     license: 'MIT',
+88 silly install resolved     dependencies: { history: '^2.0.1', invariant: '^2.2.1', warning: '^2.1.0' },
+88 silly install resolved     devDependencies:
+88 silly install resolved      { babel: '^5.8.38',
+88 silly install resolved        'babel-core': '^5.8.38',
+88 silly install resolved        'babel-eslint': '^4.1.8',
+88 silly install resolved        'babel-loader': '^5.4.0',
+88 silly install resolved        'babel-plugin-dev-expression': '^0.1.0',
+88 silly install resolved        'bundle-loader': '^0.5.4',
+88 silly install resolved        'codecov.io': '^0.1.6',
+88 silly install resolved        coveralls: '^2.11.9',
+88 silly install resolved        'css-loader': '^0.23.1',
+88 silly install resolved        eslint: '^1.10.3',
+88 silly install resolved        'eslint-config-rackt': '^1.1.1',
+88 silly install resolved        'eslint-plugin-react': '^3.16.1',
+88 silly install resolved        expect: '^1.16.0',
+88 silly install resolved        express: '^4.13.4',
+88 silly install resolved        'express-urlrewrite': '^1.2.0',
+88 silly install resolved        'gzip-size': '^3.0.0',
+88 silly install resolved        'isparta-loader': '^1.0.0',
+88 silly install resolved        karma: '^0.13.22',
+88 silly install resolved        'karma-browserstack-launcher': '^0.1.10',
+88 silly install resolved        'karma-chrome-launcher': '^0.2.3',
+88 silly install resolved        'karma-coverage': '^0.5.5',
+88 silly install resolved        'karma-mocha': '^0.2.2',
+88 silly install resolved        'karma-mocha-reporter': '^2.0.0',
+88 silly install resolved        'karma-sourcemap-loader': '^0.3.7',
+88 silly install resolved        'karma-webpack': '^1.7.0',
+88 silly install resolved        mocha: '^2.4.5',
+88 silly install resolved        'pretty-bytes': '^3.0.1',
+88 silly install resolved        qs: '^6.1.0',
+88 silly install resolved        react: '^15.0.0',
+88 silly install resolved        'react-addons-css-transition-group': '^15.0.0',
+88 silly install resolved        'react-addons-test-utils': '^15.0.0',
+88 silly install resolved        'react-dom': '^15.0.0',
+88 silly install resolved        rimraf: '^2.5.2',
+88 silly install resolved        'style-loader': '^0.13.1',
+88 silly install resolved        webpack: '^1.12.14',
+88 silly install resolved        'webpack-dev-middleware': '^1.6.1' },
+88 silly install resolved     tags: [ 'react', 'router' ],
+88 silly install resolved     keywords:
+88 silly install resolved      [ 'react',
+88 silly install resolved        'react-component',
+88 silly install resolved        'routing',
+88 silly install resolved        'route',
+88 silly install resolved        'routes',
+88 silly install resolved        'router' ],
+88 silly install resolved     gitHead: 'c58c806b82ed7dec960f042e31b24091bee7dad0',
+88 silly install resolved     _id: 'react-router@2.2.2',
+88 silly install resolved     _shasum: '3b474221c3cf3a3ad7fe901f532ff0cd5c490379',
+88 silly install resolved     _from: 'react-router@*',
+88 silly install resolved     _npmVersion: '3.8.7',
+88 silly install resolved     _nodeVersion: '5.10.1',
+88 silly install resolved     _npmUser: { name: 'taion', email: 'tesrin@gmail.com' },
+88 silly install resolved     dist:
+88 silly install resolved      { shasum: '3b474221c3cf3a3ad7fe901f532ff0cd5c490379',
+88 silly install resolved        size: 115936,
+88 silly install resolved        noattachment: false,
+88 silly install resolved        tarball: 'http://registry.npm.taobao.org/react-router/download/react-router-2.2.2.tgz' },
+88 silly install resolved     maintainers: [ [Object], [Object], [Object] ],
+88 silly install resolved     _npmOperationalInternal:
+88 silly install resolved      { host: 'packages-16-east.internal.npmjs.com',
+88 silly install resolved        tmp: 'tmp/react-router-2.2.2.tgz_1460652181603_0.18195841857232153' },
+88 silly install resolved     directories: {},
+88 silly install resolved     publish_time: 1460652183733,
+88 silly install resolved     _cnpm_publish_time: 1460652183733,
+88 silly install resolved     _resolved: 'https://registry.npm.taobao.org/react-router/download/react-router-2.2.2.tgz' } ]
+89 info install react-router@2.2.2 into /Applications/MAMP/htdocs/blog_3/myApp
+90 info installOne react-router@2.2.2
+91 verbose installOne of react-router to /Applications/MAMP/htdocs/blog_3/myApp not in flight; installing
+92 verbose lock using /Users/bll/Documents/nodejs/node_cache/_locks/react-router-6ca06cb09d0c4db7.lock for /Applications/MAMP/htdocs/blog_3/myApp/node_modules/react-router
+93 silly install write writing react-router 2.2.2 to /Applications/MAMP/htdocs/blog_3/myApp/node_modules/react-router
+94 verbose unbuild node_modules/react-router
+95 silly gentlyRm /Applications/MAMP/htdocs/blog_3/myApp/node_modules/react-router is being purged from base /Applications/MAMP/htdocs/blog_3/myApp
+96 verbose gentlyRm don't care about contents; nuking /Applications/MAMP/htdocs/blog_3/myApp/node_modules/react-router
+97 verbose tar unpack /Users/bll/Documents/nodejs/node_cache/react-router/2.2.2/package.tgz
+98 verbose tar unpacking to /Applications/MAMP/htdocs/blog_3/myApp/node_modules/react-router
+99 silly gentlyRm /Applications/MAMP/htdocs/blog_3/myApp/node_modules/react-router is being purged
+100 verbose gentlyRm don't care about contents; nuking /Applications/MAMP/htdocs/blog_3/myApp/node_modules/react-router
+101 silly gunzTarPerm modes [ '755', '644' ]
+102 silly gunzTarPerm extractEntry package.json
+103 silly gunzTarPerm extractEntry README.md
+104 silly gunzTarPerm extractEntry CODE_OF_CONDUCT.md
+105 silly gunzTarPerm extractEntry CONTRIBUTING.md
+106 silly gunzTarPerm extractEntry ISSUE_TEMPLATE.md
+107 silly gunzTarPerm extractEntry LICENSE.md
+108 silly gunzTarPerm extractEntry SPONSORS.md
+109 silly gunzTarPerm extractEntry es/AsyncUtils.js
+110 silly gunzTarPerm extractEntry es/Router.js
+111 silly gunzTarPerm extractEntry es/RouterContext.js
+112 silly gunzTarPerm extractEntry es/RouterUtils.js
+113 silly gunzTarPerm extractEntry es/RoutingContext.js
+114 silly gunzTarPerm extractEntry es/RouteUtils.js
+115 silly gunzTarPerm extractEntry es/browserHistory.js
+116 silly gunzTarPerm extractEntry es/computeChangedRoutes.js
+117 silly gunzTarPerm extractEntry es/createMemoryHistory.js
+118 silly gunzTarPerm extractEntry es/createRouterHistory.js
+119 silly gunzTarPerm extractEntry es/createTransitionManager.js
+120 silly gunzTarPerm extractEntry es/RouteContext.js
+121 silly gunzTarPerm extractEntry es/deprecateObjectProperties.js
+122 silly gunzTarPerm extractEntry es/Route.js
+123 silly gunzTarPerm extractEntry es/getComponents.js
+124 silly gunzTarPerm extractEntry es/Redirect.js
+125 silly gunzTarPerm extractEntry es/getRouteParams.js
+126 silly gunzTarPerm extractEntry es/PropTypes.js
+127 silly gunzTarPerm extractEntry es/hashHistory.js
+128 silly gunzTarPerm extractEntry es/PatternUtils.js
+129 silly gunzTarPerm extractEntry es/index.js
+130 silly gunzTarPerm extractEntry es/Link.js
+131 silly gunzTarPerm extractEntry es/isActive.js
+132 silly gunzTarPerm extractEntry es/Lifecycle.js
+133 silly gunzTarPerm extractEntry es/match.js
+134 silly gunzTarPerm extractEntry es/IndexRoute.js
+135 silly gunzTarPerm extractEntry es/matchRoutes.js
+136 silly gunzTarPerm extractEntry es/IndexRedirect.js
+137 silly gunzTarPerm extractEntry es/routerWarning.js
+138 silly gunzTarPerm extractEntry es/IndexLink.js
+139 silly gunzTarPerm extractEntry es/useRouterHistory.js
+140 silly gunzTarPerm extractEntry es/History.js
+141 silly gunzTarPerm extractEntry es/useRoutes.js
+142 silly gunzTarPerm extractEntry es/TransitionUtils.js
+143 silly gunzTarPerm extractEntry lib/AsyncUtils.js
+144 silly gunzTarPerm extractEntry lib/Router.js
+145 silly gunzTarPerm extractEntry lib/RouterContext.js
+146 silly gunzTarPerm extractEntry lib/RouterUtils.js
+147 silly gunzTarPerm extractEntry lib/RoutingContext.js
+148 silly gunzTarPerm extractEntry lib/RouteUtils.js
+149 silly gunzTarPerm extractEntry lib/browserHistory.js
+150 silly gunzTarPerm extractEntry lib/computeChangedRoutes.js
+151 silly gunzTarPerm extractEntry lib/createMemoryHistory.js
+152 silly gunzTarPerm extractEntry lib/createRouterHistory.js
+153 silly gunzTarPerm extractEntry lib/createTransitionManager.js
+154 silly gunzTarPerm extractEntry lib/RouteContext.js
+155 silly gunzTarPerm extractEntry lib/deprecateObjectProperties.js
+156 silly gunzTarPerm extractEntry lib/Route.js
+157 silly gunzTarPerm extractEntry lib/getComponents.js
+158 silly gunzTarPerm extractEntry lib/Redirect.js
+159 silly gunzTarPerm extractEntry lib/getRouteParams.js
+160 silly gunzTarPerm extractEntry lib/PropTypes.js
+161 silly gunzTarPerm extractEntry lib/hashHistory.js
+162 silly gunzTarPerm extractEntry lib/PatternUtils.js
+163 silly gunzTarPerm extractEntry lib/index.js
+164 silly gunzTarPerm extractEntry lib/Link.js
+165 silly gunzTarPerm extractEntry lib/isActive.js
+166 silly gunzTarPerm extractEntry lib/Lifecycle.js
+167 silly gunzTarPerm extractEntry lib/match.js
+168 silly gunzTarPerm extractEntry lib/IndexRoute.js
+169 silly gunzTarPerm extractEntry lib/matchRoutes.js
+170 silly gunzTarPerm extractEntry lib/IndexRedirect.js
+171 silly gunzTarPerm extractEntry lib/routerWarning.js
+172 silly gunzTarPerm extractEntry lib/IndexLink.js
+173 silly gunzTarPerm extractEntry lib/useRouterHistory.js
+174 silly gunzTarPerm extractEntry lib/History.js
+175 silly gunzTarPerm extractEntry lib/useRoutes.js
+176 silly gunzTarPerm extractEntry lib/TransitionUtils.js
+177 silly gunzTarPerm extractEntry CHANGES.md
+178 silly gunzTarPerm extractEntry umd/ReactRouter.js
+179 silly gunzTarPerm extractEntry umd/ReactRouter.min.js
+180 silly gunzTarPerm extractEntry docs/README.md
+181 silly gunzTarPerm extractEntry docs/API.md
+182 silly gunzTarPerm extractEntry docs/Glossary.md
+183 silly gunzTarPerm extractEntry docs/Introduction.md
+184 silly gunzTarPerm extractEntry docs/Troubleshooting.md
+185 silly gunzTarPerm extractEntry docs/guides/README.md
+186 silly gunzTarPerm extractEntry docs/guides/NavigatingOutsideOfComponents.md
+187 silly gunzTarPerm extractEntry docs/guides/DynamicRouting.md
+188 silly gunzTarPerm extractEntry docs/guides/Histories.md
+189 silly gunzTarPerm extractEntry docs/guides/IndexRoutes.md
+190 silly gunzTarPerm extractEntry docs/guides/MinimizingBundleSize.md
+191 silly gunzTarPerm extractEntry docs/guides/ConfirmingNavigation.md
+192 silly gunzTarPerm extractEntry docs/guides/ComponentLifecycle.md
+193 silly gunzTarPerm extractEntry docs/guides/RouteConfiguration.md
+194 silly gunzTarPerm extractEntry docs/guides/RouteMatching.md
+195 silly gunzTarPerm extractEntry docs/guides/ServerRendering.md
+196 silly gunzTarPerm extractEntry docs/guides/testing.md
+197 verbose write writing to /Applications/MAMP/htdocs/blog_3/myApp/node_modules/react-router/package.json
+198 info preinstall react-router@2.2.2
+199 verbose readDependencies loading dependencies from /Applications/MAMP/htdocs/blog_3/myApp/node_modules/react-router/package.json
+200 silly prepareForInstallMany adding history@^2.0.1 from react-router dependencies
+201 silly prepareForInstallMany adding invariant@^2.2.1 from react-router dependencies
+202 silly prepareForInstallMany adding warning@^2.1.0 from react-router dependencies
+203 verbose readDependencies loading dependencies from /Applications/MAMP/htdocs/blog_3/myApp/node_modules/react-router/package.json
+204 silly cache add args [ 'history@^2.0.1', null ]
+205 verbose cache add spec history@^2.0.1
+206 silly cache add args [ 'invariant@^2.2.1', null ]
+207 verbose cache add spec invariant@^2.2.1
+208 silly cache add parsed spec Result {
+208 silly cache add   raw: 'history@^2.0.1',
+208 silly cache add   scope: null,
+208 silly cache add   name: 'history',
+208 silly cache add   rawSpec: '^2.0.1',
+208 silly cache add   spec: '>=2.0.1 <3.0.0',
+208 silly cache add   type: 'range' }
+209 silly addNamed history@>=2.0.1 <3.0.0
+210 verbose addNamed ">=2.0.1 <3.0.0" is a valid semver range for history
+211 silly addNameRange { name: 'history', range: '>=2.0.1 <3.0.0', hasData: false }
+212 silly mapToRegistry name history
+213 silly mapToRegistry using default registry
+214 silly mapToRegistry registry https://registry.npm.taobao.org/
+215 silly mapToRegistry uri https://registry.npm.taobao.org/history
+216 verbose addNameRange registry:https://registry.npm.taobao.org/history not in flight; fetching
+217 silly cache add parsed spec Result {
+217 silly cache add   raw: 'invariant@^2.2.1',
+217 silly cache add   scope: null,
+217 silly cache add   name: 'invariant',
+217 silly cache add   rawSpec: '^2.2.1',
+217 silly cache add   spec: '>=2.2.1 <3.0.0',
+217 silly cache add   type: 'range' }
+218 silly addNamed invariant@>=2.2.1 <3.0.0
+219 verbose addNamed ">=2.2.1 <3.0.0" is a valid semver range for invariant
+220 silly addNameRange { name: 'invariant', range: '>=2.2.1 <3.0.0', hasData: false }
+221 silly mapToRegistry name invariant
+222 silly mapToRegistry using default registry
+223 silly mapToRegistry registry https://registry.npm.taobao.org/
+224 silly mapToRegistry uri https://registry.npm.taobao.org/invariant
+225 verbose addNameRange registry:https://registry.npm.taobao.org/invariant not in flight; fetching
+226 silly cache add args [ 'warning@^2.1.0', null ]
+227 verbose cache add spec warning@^2.1.0
+228 silly cache add parsed spec Result {
+228 silly cache add   raw: 'warning@^2.1.0',
+228 silly cache add   scope: null,
+228 silly cache add   name: 'warning',
+228 silly cache add   rawSpec: '^2.1.0',
+228 silly cache add   spec: '>=2.1.0 <3.0.0',
+228 silly cache add   type: 'range' }
+229 silly addNamed warning@>=2.1.0 <3.0.0
+230 verbose addNamed ">=2.1.0 <3.0.0" is a valid semver range for warning
+231 silly addNameRange { name: 'warning', range: '>=2.1.0 <3.0.0', hasData: false }
+232 silly mapToRegistry name warning
+233 silly mapToRegistry using default registry
+234 silly mapToRegistry registry https://registry.npm.taobao.org/
+235 silly mapToRegistry uri https://registry.npm.taobao.org/warning
+236 verbose addNameRange registry:https://registry.npm.taobao.org/warning not in flight; fetching
+237 verbose request uri https://registry.npm.taobao.org/history
+238 verbose request no auth needed
+239 info attempt registry request try #1 at 10:57:01
+240 verbose etag "16e6c-dxzwYwEJTgOwkSBRSJ3e1A"
+241 http request GET https://registry.npm.taobao.org/history
+242 verbose request uri https://registry.npm.taobao.org/invariant
+243 verbose request no auth needed
+244 info attempt registry request try #1 at 10:57:01
+245 verbose etag "3aaf-Qt+k5jFySzpbnjTkPaZu3A"
+246 http request GET https://registry.npm.taobao.org/invariant
+247 verbose request uri https://registry.npm.taobao.org/warning
+248 verbose request no auth needed
+249 info attempt registry request try #1 at 10:57:01
+250 verbose etag "1f38-8lpGahcvyKrTe6Qh9ccTZg"
+251 http request GET https://registry.npm.taobao.org/warning
+252 http 304 https://registry.npm.taobao.org/invariant
+253 verbose headers { date: 'Fri, 15 Apr 2016 02:57:01 GMT',
+253 verbose headers   connection: 'keep-alive',
+253 verbose headers   etag: '"3aaf-Qt+k5jFySzpbnjTkPaZu3A"',
+253 verbose headers   'x-readtime': '28' }
+254 silly get cb [ 304,
+254 silly get   { date: 'Fri, 15 Apr 2016 02:57:01 GMT',
+254 silly get     connection: 'keep-alive',
+254 silly get     etag: '"3aaf-Qt+k5jFySzpbnjTkPaZu3A"',
+254 silly get     'x-readtime': '28' } ]
+255 verbose etag https://registry.npm.taobao.org/invariant from cache
+256 verbose get saving invariant to /Users/bll/Documents/nodejs/node_cache/registry.npm.taobao.org/invariant/.cache.json
+257 silly addNameRange number 2 { name: 'invariant', range: '>=2.2.1 <3.0.0', hasData: true }
+258 silly addNameRange versions [ 'invariant',
+258 silly addNameRange   [ '2.2.1',
+258 silly addNameRange     '2.2.0',
+258 silly addNameRange     '2.1.3',
+258 silly addNameRange     '2.1.2',
+258 silly addNameRange     '2.1.1',
+258 silly addNameRange     '2.1.0',
+258 silly addNameRange     '2.0.0',
+258 silly addNameRange     '1.0.2',
+258 silly addNameRange     '1.0.1',
+258 silly addNameRange     '1.0.0' ] ]
+259 silly addNamed invariant@2.2.1
+260 verbose addNamed "2.2.1" is a plain semver version for invariant
+261 silly cache afterAdd invariant@2.2.1
+262 verbose afterAdd /Users/bll/Documents/nodejs/node_cache/invariant/2.2.1/package/package.json not in flight; writing
+263 verbose afterAdd /Users/bll/Documents/nodejs/node_cache/invariant/2.2.1/package/package.json written
+264 http 304 https://registry.npm.taobao.org/warning
+265 verbose headers { date: 'Fri, 15 Apr 2016 02:57:01 GMT',
+265 verbose headers   connection: 'keep-alive',
+265 verbose headers   etag: '"1f38-8lpGahcvyKrTe6Qh9ccTZg"',
+265 verbose headers   'x-readtime': '34' }
+266 silly get cb [ 304,
+266 silly get   { date: 'Fri, 15 Apr 2016 02:57:01 GMT',
+266 silly get     connection: 'keep-alive',
+266 silly get     etag: '"1f38-8lpGahcvyKrTe6Qh9ccTZg"',
+266 silly get     'x-readtime': '34' } ]
+267 verbose etag https://registry.npm.taobao.org/warning from cache
+268 verbose get saving warning to /Users/bll/Documents/nodejs/node_cache/registry.npm.taobao.org/warning/.cache.json
+269 silly addNameRange number 2 { name: 'warning', range: '>=2.1.0 <3.0.0', hasData: true }
+270 silly addNameRange versions [ 'warning', [ '2.1.0', '2.0.0', '1.0.2', '1.0.1', '1.0.0' ] ]
+271 silly addNamed warning@2.1.0
+272 verbose addNamed "2.1.0" is a plain semver version for warning
+273 silly cache afterAdd warning@2.1.0
+274 verbose afterAdd /Users/bll/Documents/nodejs/node_cache/warning/2.1.0/package/package.json not in flight; writing
+275 verbose afterAdd /Users/bll/Documents/nodejs/node_cache/warning/2.1.0/package/package.json written
+276 http 200 https://registry.npm.taobao.org/history
+277 verbose headers { date: 'Fri, 15 Apr 2016 02:57:01 GMT',
+277 verbose headers   'content-type': 'application/json; charset=utf-8',
+277 verbose headers   'content-length': '104357',
+277 verbose headers   connection: 'keep-alive',
+277 verbose headers   etag: '"197a5-Kxo0R4KE83rYODh+ZBXsqA"',
+277 verbose headers   'x-readtime': '44' }
+278 silly get cb [ 200,
+278 silly get   { date: 'Fri, 15 Apr 2016 02:57:01 GMT',
+278 silly get     'content-type': 'application/json; charset=utf-8',
+278 silly get     'content-length': '104357',
+278 silly get     connection: 'keep-alive',
+278 silly get     etag: '"197a5-Kxo0R4KE83rYODh+ZBXsqA"',
+278 silly get     'x-readtime': '44' } ]
+279 verbose get saving history to /Users/bll/Documents/nodejs/node_cache/registry.npm.taobao.org/history/.cache.json
+280 silly addNameRange number 2 { name: 'history', range: '>=2.0.1 <3.0.0', hasData: true }
+281 silly addNameRange versions [ 'history',
+281 silly addNameRange   [ '3.0.0-0',
+281 silly addNameRange     '2.0.1',
+281 silly addNameRange     '2.0.0',
+281 silly addNameRange     '2.0.0-rc3',
+281 silly addNameRange     '2.0.0-rc2',
+281 silly addNameRange     '2.0.0-rc1',
+281 silly addNameRange     '1.17.0',
+281 silly addNameRange     '1.16.0',
+281 silly addNameRange     '1.15.0',
+281 silly addNameRange     '1.14.0',
+281 silly addNameRange     '1.13.1',
+281 silly addNameRange     '1.13.0',
+281 silly addNameRange     '1.12.6',
+281 silly addNameRange     '1.12.5',
+281 silly addNameRange     '1.12.4',
+281 silly addNameRange     '1.12.3',
+281 silly addNameRange     '1.12.2',
+281 silly addNameRange     '1.12.1',
+281 silly addNameRange     '1.12.0',
+281 silly addNameRange     '1.11.1',
+281 silly addNameRange     '1.11.0',
+281 silly addNameRange     '1.10.2',
+281 silly addNameRange     '1.10.1',
+281 silly addNameRange     '1.10.0',
+281 silly addNameRange     '1.9.1',
+281 silly addNameRange     '1.9.0',
+281 silly addNameRange     '1.8.5',
+281 silly addNameRange     '1.8.4',
+281 silly addNameRange     '1.8.3',
+281 silly addNameRange     '1.8.2',
+281 silly addNameRange     '1.8.1',
+281 silly addNameRange     '1.8.0',
+281 silly addNameRange     '1.7.0',
+281 silly addNameRange     '1.6.0',
+281 silly addNameRange     '1.5.0',
+281 silly addNameRange     '1.4.1',
+281 silly addNameRange     '1.4.0',
+281 silly addNameRange     '1.3.3',
+281 silly addNameRange     '1.3.2',
+281 silly addNameRange     '1.3.1',
+281 silly addNameRange     '1.3.0',
+281 silly addNameRange     '1.2.2',
+281 silly addNameRange     '1.2.1',
+281 silly addNameRange     '1.2.0',
+281 silly addNameRange     '1.1.0',
+281 silly addNameRange     '1.0.0',
+281 silly addNameRange     '0.1.0' ] ]
+282 silly addNamed history@2.0.1
+283 verbose addNamed "2.0.1" is a plain semver version for history
+284 silly mapToRegistry name history
+285 silly mapToRegistry using default registry
+286 silly mapToRegistry registry https://registry.npm.taobao.org/
+287 silly mapToRegistry uri https://registry.npm.taobao.org/history
+288 verbose addRemoteTarball https://registry.npm.taobao.org/history/download/history-2.0.1.tgz not in flight; adding
+289 verbose addRemoteTarball [ 'https://registry.npm.taobao.org/history/download/history-2.0.1.tgz',
+289 verbose addRemoteTarball   '4a0b7f2b87b29f4da2d47910f0c86de0fad579f8' ]
+290 info retry fetch attempt 1 at 10:57:02
+291 info attempt registry request try #1 at 10:57:02
+292 http fetch GET https://registry.npm.taobao.org/history/download/history-2.0.1.tgz
+293 http fetch 200 https://registry.npm.taobao.org/history/download/history-2.0.1.tgz
+294 silly fetchAndShaCheck shasum 4a0b7f2b87b29f4da2d47910f0c86de0fad579f8
+295 verbose addTmpTarball /var/folders/x9/mmy_0vqd6yzd65htc27_cx9h0000gn/T/npm-9643-3c63ddbd/registry.npm.taobao.org/history/download/history-2.0.1.tgz not in flight; adding
+296 verbose addTmpTarball already have metadata; skipping unpack for history@2.0.1
+297 silly cache afterAdd history@2.0.1
+298 verbose afterAdd /Users/bll/Documents/nodejs/node_cache/history/2.0.1/package/package.json not in flight; writing
+299 verbose afterAdd /Users/bll/Documents/nodejs/node_cache/history/2.0.1/package/package.json written
+300 silly install resolved [ { name: 'invariant',
+300 silly install resolved     version: '2.2.1',
+300 silly install resolved     description: 'invariant',
+300 silly install resolved     keywords: [ 'test' ],
+300 silly install resolved     license: 'BSD-3-Clause',
+300 silly install resolved     author: { name: 'Andres Suarez', email: 'zertosh@gmail.com' },
+300 silly install resolved     files: [ 'invariant.js', 'browser.js' ],
+300 silly install resolved     repository:
+300 silly install resolved      { type: 'git',
+300 silly install resolved        url: 'git+https://github.com/zertosh/invariant.git' },
+300 silly install resolved     scripts: { test: 'NODE_ENV=production tap test/*.js && NODE_ENV=development tap test/*.js' },
+300 silly install resolved     dependencies: { 'loose-envify': '^1.0.0' },
+300 silly install resolved     devDependencies: { browserify: '^11.0.1', tap: '^1.4.0' },
+300 silly install resolved     main: 'invariant.js',
+300 silly install resolved     browser: 'browser.js',
+300 silly install resolved     browserify: { transform: [Object] },
+300 silly install resolved     gitHead: '594d6cbcde933a7bd3ecd76a7c4f19892a95e0de',
+300 silly install resolved     bugs: { url: 'https://github.com/zertosh/invariant/issues' },
+300 silly install resolved     homepage: 'https://github.com/zertosh/invariant#readme',
+300 silly install resolved     _id: 'invariant@2.2.1',
+300 silly install resolved     _shasum: 'b097010547668c7e337028ebe816ebe36c8a8d54',
+300 silly install resolved     _from: 'invariant@>=2.2.1 <3.0.0',
+300 silly install resolved     _npmVersion: '2.14.4',
+300 silly install resolved     _nodeVersion: '4.1.1',
+300 silly install resolved     _npmUser: { name: 'zertosh', email: 'zertosh@gmail.com' },
+300 silly install resolved     dist:
+300 silly install resolved      { shasum: 'b097010547668c7e337028ebe816ebe36c8a8d54',
+300 silly install resolved        size: 2809,
+300 silly install resolved        noattachment: false,
+300 silly install resolved        tarball: 'http://registry.npm.taobao.org/invariant/download/invariant-2.2.1.tgz' },
+300 silly install resolved     maintainers: [ [Object], [Object] ],
+300 silly install resolved     _npmOperationalInternal:
+300 silly install resolved      { host: 'packages-13-west.internal.npmjs.com',
+300 silly install resolved        tmp: 'tmp/invariant-2.2.1.tgz_1457504319192_0.7920392917003483' },
+300 silly install resolved     directories: {},
+300 silly install resolved     publish_time: 1457504321916,
+300 silly install resolved     _cnpm_publish_time: 1457504321916,
+300 silly install resolved     _resolved: 'https://registry.npm.taobao.org/invariant/download/invariant-2.2.1.tgz',
+300 silly install resolved     readme: 'ERROR: No README data found!' },
+300 silly install resolved   { name: 'warning',
+300 silly install resolved     version: '2.1.0',
+300 silly install resolved     description: 'A mirror of Facebook\'s Warning',
+300 silly install resolved     main: 'warning.js',
+300 silly install resolved     browser: 'browser.js',
+300 silly install resolved     browserify: { transform: [Object] },
+300 silly install resolved     files: [ 'browser.js', 'warning.js' ],
+300 silly install resolved     scripts: { test: 'NODE_ENV=production tap test/*.js && NODE_ENV=development tap test/*.js' },
+300 silly install resolved     dependencies: { 'loose-envify': '^1.0.0' },
+300 silly install resolved     devDependencies: { browserify: '^11.0.1', tap: '^1.4.0' },
+300 silly install resolved     repository: { type: 'git', url: 'git+https://github.com/r3dm/warning.git' },
+300 silly install resolved     keywords: [ 'warning', 'facebook', 'react', 'invariant' ],
+300 silly install resolved     author:
+300 silly install resolved      { name: 'Berkeley Martinez',
+300 silly install resolved        email: 'berkeley@r3dm.com',
+300 silly install resolved        url: 'http://r3dm.com' },
+300 silly install resolved     license: 'BSD-2-Clause',
+300 silly install resolved     bugs: { url: 'https://github.com/r3dm/warning/issues' },
+300 silly install resolved     homepage: 'https://github.com/r3dm/warning',
+300 silly install resolved     gitHead: 'b7d56e3f6c21c3ee05af617222d16c7d80118443',
+300 silly install resolved     _id: 'warning@2.1.0',
+300 silly install resolved     _shasum: '21220d9c63afc77a8c92111e011af705ce0c6901',
+300 silly install resolved     _from: 'warning@>=2.1.0 <3.0.0',
+300 silly install resolved     _npmVersion: '2.11.1',
+300 silly install resolved     _nodeVersion: '1.6.4',
+300 silly install resolved     _npmUser: { name: 'berkeleytrue', email: 'berkeley@robotie.com' },
+300 silly install resolved     maintainers: [ [Object] ],
+300 silly install resolved     dist:
+300 silly install resolved      { shasum: '21220d9c63afc77a8c92111e011af705ce0c6901',
+300 silly install resolved        size: 2861,
+300 silly install resolved        noattachment: false,
+300 silly install resolved        tarball: 'http://registry.npm.taobao.org/warning/download/warning-2.1.0.tgz' },
+300 silly install resolved     directories: {},
+300 silly install resolved     publish_time: 1443994015529,
+300 silly install resolved     _cnpm_publish_time: 1443994015529,
+300 silly install resolved     _resolved: 'https://registry.npm.taobao.org/warning/download/warning-2.1.0.tgz',
+300 silly install resolved     readme: 'ERROR: No README data found!' },
+300 silly install resolved   { name: 'history',
+300 silly install resolved     version: '2.0.1',
+300 silly install resolved     description: 'Manage browser history with JavaScript',
+300 silly install resolved     files: [ 'es6', 'lib', 'modules/*.js', 'umd' ],
+300 silly install resolved     main: 'lib/index',
+300 silly install resolved     'jsnext:main': 'es6/index',
+300 silly install resolved     repository:
+300 silly install resolved      { type: 'git',
+300 silly install resolved        url: 'git+https://github.com/mjackson/history.git' },
+300 silly install resolved     scripts:
+300 silly install resolved      { lint: 'eslint modules',
+300 silly install resolved        start: 'webpack-dev-server -d --content-base ./ --history-api-fallback --inline modules/index.js',
+300 silly install resolved        'build-cjs': 'rimraf lib && babel ./modules --stage 0 --loose all --plugins dev-expression -d lib --ignore \'__tests__\'',
+300 silly install resolved        'build-es6': 'rimraf es6 && babel ./modules --stage 0 --loose all --plugins dev-expression -d es6 --blacklist=es6.modules --ignore \'__tests__\'',
+300 silly install resolved        'build-umd': 'NODE_ENV=production webpack modules/index.js umd/History.js',
+300 silly install resolved        'build-min': 'NODE_ENV=production webpack -p modules/index.js umd/History.min.js',
+300 silly install resolved        build: 'node ./scripts/build.js',
+300 silly install resolved        release: 'node ./scripts/release.js',
+300 silly install resolved        prepublish: 'npm run build',
+300 silly install resolved        test: 'npm run lint && karma start' },
+300 silly install resolved     authors: [ 'Michael Jackson' ],
+300 silly install resolved     license: 'MIT',
+300 silly install resolved     dependencies:
+300 silly install resolved      { 'deep-equal': '^1.0.0',
+300 silly install resolved        invariant: '^2.0.0',
+300 silly install resolved        'query-string': '^3.0.0',
+300 silly install resolved        warning: '^2.0.0' },
+300 silly install resolved     devDependencies:
+300 silly install resolved      { assert: '1.3.0',
+300 silly install resolved        babel: '^5.8.35',
+300 silly install resolved        'babel-core': '^5.8.35',
+300 silly install resolved        'babel-eslint': '^4.1.8',
+300 silly install resolved        'babel-loader': '^5.4.0',
+300 silly install resolved        'babel-plugin-dev-expression': '^0.1.0',
+300 silly install resolved        eslint: '^1.10.3',
+300 silly install resolved        'eslint-config-rackt': '^1.1.1',
+300 silly install resolved        'eslint-plugin-react': '^3.16.1',
+300 silly install resolved        expect: '^1.12.0',
+300 silly install resolved        'gzip-size': '^3.0.0',
+300 silly install resolved        karma: '^0.13.3',
+300 silly install resolved        'karma-browserstack-launcher': '^0.1.3',
+300 silly install resolved        'karma-chrome-launcher': '^0.2.0',
+300 silly install resolved        'karma-mocha': '^0.2.0',
+300 silly install resolved        'karma-mocha-reporter': '^1.0.4',
+300 silly install resolved        'karma-sourcemap-loader': '^0.3.5',
+300 silly install resolved        'karma-webpack': '^1.7.0',
+300 silly install resolved        mocha: '^2.0.1',
+300 silly install resolved        'pretty-bytes': '^3.0.1',
+300 silly install resolved        'readline-sync': '^1.4.1',
+300 silly install resolved        rimraf: '^2.4.2',
+300 silly install resolved        webpack: '^1.4.13',
+300 silly install resolved        'webpack-dev-server': '^1.10.1' },
+300 silly install resolved     tags: [ 'history', 'location' ],
+300 silly install resolved     keywords: [ 'history', 'location' ],
+300 silly install resolved     gitHead: '1b4003f91cfb09c47122831633226a657c5ea686',
+300 silly install resolved     bugs: { url: 'https://github.com/mjackson/history/issues' },
+300 silly install resolved     homepage: 'https://github.com/mjackson/history#readme',
+300 silly install resolved     _id: 'history@2.0.1',
+300 silly install resolved     _shasum: '4a0b7f2b87b29f4da2d47910f0c86de0fad579f8',
+300 silly install resolved     _from: 'history@>=2.0.1 <3.0.0',
+300 silly install resolved     _npmVersion: '3.3.12',
+300 silly install resolved     _nodeVersion: '5.3.0',
+300 silly install resolved     _npmUser: { name: 'mjackson', email: 'mjijackson@gmail.com' },
+300 silly install resolved     dist:
+300 silly install resolved      { shasum: '4a0b7f2b87b29f4da2d47910f0c86de0fad579f8',
+300 silly install resolved        size: 51253,
+300 silly install resolved        noattachment: false,
+300 silly install resolved        tarball: 'http://registry.npm.taobao.org/history/download/history-2.0.1.tgz' },
+300 silly install resolved     maintainers: [ [Object] ],
+300 silly install resolved     _npmOperationalInternal:
+300 silly install resolved      { host: 'packages-13-west.internal.npmjs.com',
+300 silly install resolved        tmp: 'tmp/history-2.0.1.tgz_1456978260388_0.6892792345024645' },
+300 silly install resolved     directories: {},
+300 silly install resolved     publish_time: 1456978261244,
+300 silly install resolved     _cnpm_publish_time: 1456978261244,
+300 silly install resolved     _resolved: 'https://registry.npm.taobao.org/history/download/history-2.0.1.tgz' } ]
+301 info install invariant@2.2.1 into /Applications/MAMP/htdocs/blog_3/myApp/node_modules/react-router
+302 info install warning@2.1.0 into /Applications/MAMP/htdocs/blog_3/myApp/node_modules/react-router
+303 info install history@2.0.1 into /Applications/MAMP/htdocs/blog_3/myApp/node_modules/react-router
+304 info installOne invariant@2.2.1
+305 verbose installOne of invariant to /Applications/MAMP/htdocs/blog_3/myApp/node_modules/react-router not in flight; installing
+306 info installOne warning@2.1.0
+307 verbose installOne of warning to /Applications/MAMP/htdocs/blog_3/myApp/node_modules/react-router not in flight; installing
+308 info installOne history@2.0.1
+309 verbose installOne of history to /Applications/MAMP/htdocs/blog_3/myApp/node_modules/react-router not in flight; installing
+310 verbose lock using /Users/bll/Documents/nodejs/node_cache/_locks/invariant-c6f227120045335c.lock for /Applications/MAMP/htdocs/blog_3/myApp/node_modules/react-router/node_modules/invariant
+311 verbose lock using /Users/bll/Documents/nodejs/node_cache/_locks/warning-3cbe0bd36d644289.lock for /Applications/MAMP/htdocs/blog_3/myApp/node_modules/react-router/node_modules/warning
+312 silly install write writing invariant 2.2.1 to /Applications/MAMP/htdocs/blog_3/myApp/node_modules/react-router/node_modules/invariant
+313 silly install write writing warning 2.1.0 to /Applications/MAMP/htdocs/blog_3/myApp/node_modules/react-router/node_modules/warning
+314 verbose lock using /Users/bll/Documents/nodejs/node_cache/_locks/history-6b582b944fe0e4bf.lock for /Applications/MAMP/htdocs/blog_3/myApp/node_modules/react-router/node_modules/history
+315 silly install write writing history 2.0.1 to /Applications/MAMP/htdocs/blog_3/myApp/node_modules/react-router/node_modules/history
+316 verbose unbuild node_modules/react-router/node_modules/invariant
+317 verbose unbuild node_modules/react-router/node_modules/warning
+318 verbose unbuild node_modules/react-router/node_modules/history
+319 silly gentlyRm /Applications/MAMP/htdocs/blog_3/myApp/node_modules/react-router/node_modules/invariant is being purged from base /Applications/MAMP/htdocs/blog_3/myApp
+320 verbose gentlyRm don't care about contents; nuking /Applications/MAMP/htdocs/blog_3/myApp/node_modules/react-router/node_modules/invariant
+321 silly gentlyRm /Applications/MAMP/htdocs/blog_3/myApp/node_modules/react-router/node_modules/warning is being purged from base /Applications/MAMP/htdocs/blog_3/myApp
+322 verbose gentlyRm don't care about contents; nuking /Applications/MAMP/htdocs/blog_3/myApp/node_modules/react-router/node_modules/warning
+323 verbose tar unpack /Users/bll/Documents/nodejs/node_cache/invariant/2.2.1/package.tgz
+324 verbose tar unpacking to /Applications/MAMP/htdocs/blog_3/myApp/node_modules/react-router/node_modules/invariant
+325 silly gentlyRm /Applications/MAMP/htdocs/blog_3/myApp/node_modules/react-router/node_modules/invariant is being purged
+326 verbose gentlyRm don't care about contents; nuking /Applications/MAMP/htdocs/blog_3/myApp/node_modules/react-router/node_modules/invariant
+327 verbose tar unpack /Users/bll/Documents/nodejs/node_cache/warning/2.1.0/package.tgz
+328 verbose tar unpacking to /Applications/MAMP/htdocs/blog_3/myApp/node_modules/react-router/node_modules/warning
+329 silly gentlyRm /Applications/MAMP/htdocs/blog_3/myApp/node_modules/react-router/node_modules/warning is being purged
+330 verbose gentlyRm don't care about contents; nuking /Applications/MAMP/htdocs/blog_3/myApp/node_modules/react-router/node_modules/warning
+331 silly gentlyRm /Applications/MAMP/htdocs/blog_3/myApp/node_modules/react-router/node_modules/history is being purged from base /Applications/MAMP/htdocs/blog_3/myApp
+332 verbose gentlyRm don't care about contents; nuking /Applications/MAMP/htdocs/blog_3/myApp/node_modules/react-router/node_modules/history
+333 silly gunzTarPerm modes [ '755', '644' ]
+334 silly gunzTarPerm modes [ '755', '644' ]
+335 verbose tar unpack /Users/bll/Documents/nodejs/node_cache/history/2.0.1/package.tgz
+336 verbose tar unpacking to /Applications/MAMP/htdocs/blog_3/myApp/node_modules/react-router/node_modules/history
+337 silly gentlyRm /Applications/MAMP/htdocs/blog_3/myApp/node_modules/react-router/node_modules/history is being purged
+338 verbose gentlyRm don't care about contents; nuking /Applications/MAMP/htdocs/blog_3/myApp/node_modules/react-router/node_modules/history
+339 silly gunzTarPerm modes [ '755', '644' ]
+340 silly gunzTarPerm extractEntry package.json
+341 silly gunzTarPerm extractEntry package.json
+342 silly gunzTarPerm extractEntry package.json
+343 silly gunzTarPerm extractEntry README.md
+344 silly gunzTarPerm extractEntry browser.js
+345 silly gunzTarPerm extractEntry README.md
+346 silly gunzTarPerm extractEntry browser.js
+347 silly gunzTarPerm extractEntry README.md
+348 silly gunzTarPerm extractEntry LICENSE.md
+349 silly gunzTarPerm extractEntry invariant.js
+350 silly gunzTarPerm extractEntry CHANGELOG.md
+351 silly gunzTarPerm extractEntry warning.js
+352 silly gunzTarPerm extractEntry CHANGELOG.md
+353 silly gunzTarPerm extractEntry es6/Actions.js
+354 silly gunzTarPerm extractEntry es6/createBrowserHistory.js
+355 silly gunzTarPerm extractEntry es6/createDOMHistory.js
+356 silly gunzTarPerm extractEntry es6/createHashHistory.js
+357 silly gunzTarPerm extractEntry es6/createHistory.js
+358 silly gunzTarPerm extractEntry es6/PathUtils.js
+359 silly gunzTarPerm extractEntry es6/createMemoryHistory.js
+360 silly gunzTarPerm extractEntry es6/deprecate.js
+361 silly gunzTarPerm extractEntry es6/enableBeforeUnload.js
+362 silly gunzTarPerm extractEntry es6/enableQueries.js
+363 silly gunzTarPerm extractEntry es6/index.js
+364 silly gunzTarPerm extractEntry es6/ExecutionEnvironment.js
+365 silly gunzTarPerm extractEntry es6/runTransitionHook.js
+366 silly gunzTarPerm extractEntry es6/DOMUtils.js
+367 silly gunzTarPerm extractEntry es6/useBasename.js
+368 silly gunzTarPerm extractEntry es6/DOMStateStorage.js
+369 silly gunzTarPerm extractEntry es6/useBeforeUnload.js
+370 silly gunzTarPerm extractEntry es6/AsyncUtils.js
+371 silly gunzTarPerm extractEntry es6/useQueries.js
+372 silly gunzTarPerm extractEntry es6/createLocation.js
+373 silly gunzTarPerm extractEntry lib/Actions.js
+374 silly gunzTarPerm extractEntry lib/createBrowserHistory.js
+375 silly gunzTarPerm extractEntry lib/createDOMHistory.js
+376 silly gunzTarPerm extractEntry lib/createHashHistory.js
+377 silly gunzTarPerm extractEntry lib/createHistory.js
+378 silly gunzTarPerm extractEntry lib/PathUtils.js
+379 silly gunzTarPerm extractEntry lib/createMemoryHistory.js
+380 silly gunzTarPerm extractEntry lib/deprecate.js
+381 silly gunzTarPerm extractEntry lib/enableBeforeUnload.js
+382 silly gunzTarPerm extractEntry lib/enableQueries.js
+383 silly gunzTarPerm extractEntry lib/index.js
+384 silly gunzTarPerm extractEntry lib/ExecutionEnvironment.js
+385 silly gunzTarPerm extractEntry lib/runTransitionHook.js
+386 silly gunzTarPerm extractEntry lib/DOMUtils.js
+387 silly gunzTarPerm extractEntry lib/useBasename.js
+388 silly gunzTarPerm extractEntry lib/DOMStateStorage.js
+389 silly gunzTarPerm extractEntry lib/useBeforeUnload.js
+390 silly gunzTarPerm extractEntry lib/AsyncUtils.js
+391 silly gunzTarPerm extractEntry lib/useQueries.js
+392 silly gunzTarPerm extractEntry lib/createLocation.js
+393 silly gunzTarPerm extractEntry modules/Actions.js
+394 silly gunzTarPerm extractEntry modules/createBrowserHistory.js
+395 silly gunzTarPerm extractEntry modules/createDOMHistory.js
+396 silly gunzTarPerm extractEntry modules/createHashHistory.js
+397 silly gunzTarPerm extractEntry modules/createHistory.js
+398 silly gunzTarPerm extractEntry modules/PathUtils.js
+399 silly gunzTarPerm extractEntry modules/createMemoryHistory.js
+400 silly gunzTarPerm extractEntry modules/deprecate.js
+401 silly gunzTarPerm extractEntry modules/enableBeforeUnload.js
+402 silly gunzTarPerm extractEntry modules/enableQueries.js
+403 silly gunzTarPerm extractEntry modules/index.js
+404 silly gunzTarPerm extractEntry modules/ExecutionEnvironment.js
+405 silly gunzTarPerm extractEntry modules/runTransitionHook.js
+406 silly gunzTarPerm extractEntry modules/DOMUtils.js
+407 silly gunzTarPerm extractEntry modules/useBasename.js
+408 silly gunzTarPerm extractEntry modules/DOMStateStorage.js
+409 silly gunzTarPerm extractEntry modules/useBeforeUnload.js
+410 silly gunzTarPerm extractEntry modules/AsyncUtils.js
+411 silly gunzTarPerm extractEntry modules/useQueries.js
+412 silly gunzTarPerm extractEntry modules/createLocation.js
+413 silly gunzTarPerm extractEntry umd/History.js
+414 silly gunzTarPerm extractEntry umd/History.min.js
+415 silly gunzTarPerm extractEntry CHANGES.md
+416 silly gunzTarPerm extractEntry LICENSE.md
+417 verbose write writing to /Applications/MAMP/htdocs/blog_3/myApp/node_modules/react-router/node_modules/invariant/package.json
+418 info preinstall invariant@2.2.1
+419 verbose readDependencies loading dependencies from /Applications/MAMP/htdocs/blog_3/myApp/node_modules/react-router/node_modules/invariant/package.json
+420 verbose write writing to /Applications/MAMP/htdocs/blog_3/myApp/node_modules/react-router/node_modules/warning/package.json
+421 silly prepareForInstallMany adding loose-envify@^1.0.0 from invariant dependencies
+422 verbose readDependencies loading dependencies from /Applications/MAMP/htdocs/blog_3/myApp/node_modules/react-router/node_modules/invariant/package.json
+423 info preinstall warning@2.1.0
+424 verbose readDependencies loading dependencies from /Applications/MAMP/htdocs/blog_3/myApp/node_modules/react-router/node_modules/warning/package.json
+425 silly cache add args [ 'loose-envify@^1.0.0', null ]
+426 verbose cache add spec loose-envify@^1.0.0
+427 silly cache add parsed spec Result {
+427 silly cache add   raw: 'loose-envify@^1.0.0',
+427 silly cache add   scope: null,
+427 silly cache add   name: 'loose-envify',
+427 silly cache add   rawSpec: '^1.0.0',
+427 silly cache add   spec: '>=1.0.0 <2.0.0',
+427 silly cache add   type: 'range' }
+428 silly addNamed loose-envify@>=1.0.0 <2.0.0
+429 verbose addNamed ">=1.0.0 <2.0.0" is a valid semver range for loose-envify
+430 silly addNameRange { name: 'loose-envify', range: '>=1.0.0 <2.0.0', hasData: false }
+431 silly mapToRegistry name loose-envify
+432 silly mapToRegistry using default registry
+433 silly mapToRegistry registry https://registry.npm.taobao.org/
+434 silly mapToRegistry uri https://registry.npm.taobao.org/loose-envify
+435 verbose addNameRange registry:https://registry.npm.taobao.org/loose-envify not in flight; fetching
+436 silly prepareForInstallMany adding loose-envify@^1.0.0 from warning dependencies
+437 verbose readDependencies loading dependencies from /Applications/MAMP/htdocs/blog_3/myApp/node_modules/react-router/node_modules/warning/package.json
+438 verbose request uri https://registry.npm.taobao.org/loose-envify
+439 verbose request no auth needed
+440 info attempt registry request try #1 at 10:57:02
+441 verbose etag "10ff-uzE930fra6COxBNe4i16tg"
+442 http request GET https://registry.npm.taobao.org/loose-envify
+443 silly cache add args [ 'loose-envify@^1.0.0', null ]
+444 verbose cache add spec loose-envify@^1.0.0
+445 silly cache add parsed spec Result {
+445 silly cache add   raw: 'loose-envify@^1.0.0',
+445 silly cache add   scope: null,
+445 silly cache add   name: 'loose-envify',
+445 silly cache add   rawSpec: '^1.0.0',
+445 silly cache add   spec: '>=1.0.0 <2.0.0',
+445 silly cache add   type: 'range' }
+446 silly addNamed loose-envify@>=1.0.0 <2.0.0
+447 verbose addNamed ">=1.0.0 <2.0.0" is a valid semver range for loose-envify
+448 silly addNameRange { name: 'loose-envify', range: '>=1.0.0 <2.0.0', hasData: false }
+449 silly mapToRegistry name loose-envify
+450 silly mapToRegistry using default registry
+451 silly mapToRegistry registry https://registry.npm.taobao.org/
+452 silly mapToRegistry uri https://registry.npm.taobao.org/loose-envify
+453 verbose addNameRange registry:https://registry.npm.taobao.org/loose-envify already in flight; waiting
+454 http 304 https://registry.npm.taobao.org/loose-envify
+455 verbose headers { date: 'Fri, 15 Apr 2016 02:57:02 GMT',
+455 verbose headers   connection: 'keep-alive',
+455 verbose headers   etag: '"10ff-uzE930fra6COxBNe4i16tg"',
+455 verbose headers   'x-readtime': '19' }
+456 silly get cb [ 304,
+456 silly get   { date: 'Fri, 15 Apr 2016 02:57:02 GMT',
+456 silly get     connection: 'keep-alive',
+456 silly get     etag: '"10ff-uzE930fra6COxBNe4i16tg"',
+456 silly get     'x-readtime': '19' } ]
+457 verbose etag https://registry.npm.taobao.org/loose-envify from cache
+458 verbose get saving loose-envify to /Users/bll/Documents/nodejs/node_cache/registry.npm.taobao.org/loose-envify/.cache.json
+459 silly addNameRange number 2 { name: 'loose-envify', range: '>=1.0.0 <2.0.0', hasData: true }
+460 silly addNameRange versions [ 'loose-envify', [ '1.1.0', '1.0.0' ] ]
+461 silly addNamed loose-envify@1.1.0
+462 verbose addNamed "1.1.0" is a plain semver version for loose-envify
+463 silly addNameRange number 2 { name: 'loose-envify', range: '>=1.0.0 <2.0.0', hasData: true }
+464 silly addNameRange versions [ 'loose-envify', [ '1.1.0', '1.0.0' ] ]
+465 silly addNamed loose-envify@1.1.0
+466 verbose addNamed "1.1.0" is a plain semver version for loose-envify
+467 silly cache afterAdd loose-envify@1.1.0
+468 verbose afterAdd /Users/bll/Documents/nodejs/node_cache/loose-envify/1.1.0/package/package.json not in flight; writing
+469 silly cache afterAdd loose-envify@1.1.0
+470 verbose afterAdd /Users/bll/Documents/nodejs/node_cache/loose-envify/1.1.0/package/package.json already in flight; not writing
+471 verbose afterAdd /Users/bll/Documents/nodejs/node_cache/loose-envify/1.1.0/package/package.json written
+472 silly install resolved [ { name: 'loose-envify',
+472 silly install resolved     version: '1.1.0',
+472 silly install resolved     description: 'Fast (and loose) selective `process.env` replacer using js-tokens instead of an AST',
+472 silly install resolved     keywords:
+472 silly install resolved      [ 'environment',
+472 silly install resolved        'variables',
+472 silly install resolved        'browserify',
+472 silly install resolved        'browserify-transform',
+472 silly install resolved        'transform',
+472 silly install resolved        'source',
+472 silly install resolved        'configuration' ],
+472 silly install resolved     homepage: 'https://github.com/zertosh/loose-envify',
+472 silly install resolved     license: 'MIT',
+472 silly install resolved     author: { name: 'Andres Suarez', email: 'zertosh@gmail.com' },
+472 silly install resolved     repository:
+472 silly install resolved      { type: 'git',
+472 silly install resolved        url: 'git://github.com/zertosh/loose-envify.git' },
+472 silly install resolved     scripts: { test: 'tap test/*.js' },
+472 silly install resolved     dependencies: { 'js-tokens': '^1.0.1' },
+472 silly install resolved     devDependencies: { browserify: '^11.0.1', envify: '^3.4.0', tap: '^1.4.0' },
+472 silly install resolved     gitHead: 'f536f4fdbde317d77827ac8655c6c8473928b9e1',
+472 silly install resolved     bugs: { url: 'https://github.com/zertosh/loose-envify/issues' },
+472 silly install resolved     _id: 'loose-envify@1.1.0',
+472 silly install resolved     _shasum: '527582d62cff4e04da3f9976c7110d3392ec7e0c',
+472 silly install resolved     _from: 'loose-envify@>=1.0.0 <2.0.0',
+472 silly install resolved     _npmVersion: '2.14.4',
+472 silly install resolved     _nodeVersion: '4.1.2',
+472 silly install resolved     _npmUser: { name: 'zertosh', email: 'zertosh@gmail.com' },
+472 silly install resolved     maintainers: [ [Object] ],
+472 silly install resolved     dist:
+472 silly install resolved      { shasum: '527582d62cff4e04da3f9976c7110d3392ec7e0c',
+472 silly install resolved        tarball: 'http://registry.npmjs.org/loose-envify/-/loose-envify-1.1.0.tgz' },
+472 silly install resolved     directories: {},
+472 silly install resolved     _resolved: 'https://registry.npmjs.org/loose-envify/-/loose-envify-1.1.0.tgz',
+472 silly install resolved     readme: 'ERROR: No README data found!' } ]
+473 info install loose-envify@1.1.0 into /Applications/MAMP/htdocs/blog_3/myApp/node_modules/react-router/node_modules/invariant
+474 info installOne loose-envify@1.1.0
+475 verbose installOne of loose-envify to /Applications/MAMP/htdocs/blog_3/myApp/node_modules/react-router/node_modules/invariant not in flight; installing
+476 silly install resolved [ { name: 'loose-envify',
+476 silly install resolved     version: '1.1.0',
+476 silly install resolved     description: 'Fast (and loose) selective `process.env` replacer using js-tokens instead of an AST',
+476 silly install resolved     keywords:
+476 silly install resolved      [ 'environment',
+476 silly install resolved        'variables',
+476 silly install resolved        'browserify',
+476 silly install resolved        'browserify-transform',
+476 silly install resolved        'transform',
+476 silly install resolved        'source',
+476 silly install resolved        'configuration' ],
+476 silly install resolved     homepage: 'https://github.com/zertosh/loose-envify',
+476 silly install resolved     license: 'MIT',
+476 silly install resolved     author: { name: 'Andres Suarez', email: 'zertosh@gmail.com' },
+476 silly install resolved     repository:
+476 silly install resolved      { type: 'git',
+476 silly install resolved        url: 'git://github.com/zertosh/loose-envify.git' },
+476 silly install resolved     scripts: { test: 'tap test/*.js' },
+476 silly install resolved     dependencies: { 'js-tokens': '^1.0.1' },
+476 silly install resolved     devDependencies: { browserify: '^11.0.1', envify: '^3.4.0', tap: '^1.4.0' },
+476 silly install resolved     gitHead: 'f536f4fdbde317d77827ac8655c6c8473928b9e1',
+476 silly install resolved     bugs: { url: 'https://github.com/zertosh/loose-envify/issues' },
+476 silly install resolved     _id: 'loose-envify@1.1.0',
+476 silly install resolved     _shasum: '527582d62cff4e04da3f9976c7110d3392ec7e0c',
+476 silly install resolved     _from: 'loose-envify@>=1.0.0 <2.0.0',
+476 silly install resolved     _npmVersion: '2.14.4',
+476 silly install resolved     _nodeVersion: '4.1.2',
+476 silly install resolved     _npmUser: { name: 'zertosh', email: 'zertosh@gmail.com' },
+476 silly install resolved     maintainers: [ [Object] ],
+476 silly install resolved     dist:
+476 silly install resolved      { shasum: '527582d62cff4e04da3f9976c7110d3392ec7e0c',
+476 silly install resolved        tarball: 'http://registry.npmjs.org/loose-envify/-/loose-envify-1.1.0.tgz' },
+476 silly install resolved     directories: {},
+476 silly install resolved     _resolved: 'https://registry.npmjs.org/loose-envify/-/loose-envify-1.1.0.tgz',
+476 silly install resolved     readme: 'ERROR: No README data found!' } ]
+477 info install loose-envify@1.1.0 into /Applications/MAMP/htdocs/blog_3/myApp/node_modules/react-router/node_modules/warning
+478 info installOne loose-envify@1.1.0
+479 verbose installOne of loose-envify to /Applications/MAMP/htdocs/blog_3/myApp/node_modules/react-router/node_modules/warning not in flight; installing
+480 verbose lock using /Users/bll/Documents/nodejs/node_cache/_locks/loose-envify-4776933ba4df2388.lock for /Applications/MAMP/htdocs/blog_3/myApp/node_modules/react-router/node_modules/invariant/node_modules/loose-envify
+481 verbose lock using /Users/bll/Documents/nodejs/node_cache/_locks/loose-envify-d49b96e1c9ba61b4.lock for /Applications/MAMP/htdocs/blog_3/myApp/node_modules/react-router/node_modules/warning/node_modules/loose-envify
+482 silly install write writing loose-envify 1.1.0 to /Applications/MAMP/htdocs/blog_3/myApp/node_modules/react-router/node_modules/invariant/node_modules/loose-envify
+483 silly install write writing loose-envify 1.1.0 to /Applications/MAMP/htdocs/blog_3/myApp/node_modules/react-router/node_modules/warning/node_modules/loose-envify
+484 verbose unbuild node_modules/react-router/node_modules/invariant/node_modules/loose-envify
+485 verbose unbuild node_modules/react-router/node_modules/warning/node_modules/loose-envify
+486 silly gentlyRm /Applications/MAMP/htdocs/blog_3/myApp/node_modules/react-router/node_modules/invariant/node_modules/loose-envify is being purged from base /Applications/MAMP/htdocs/blog_3/myApp
+487 verbose gentlyRm don't care about contents; nuking /Applications/MAMP/htdocs/blog_3/myApp/node_modules/react-router/node_modules/invariant/node_modules/loose-envify
+488 silly gentlyRm /Applications/MAMP/htdocs/blog_3/myApp/node_modules/react-router/node_modules/warning/node_modules/loose-envify is being purged from base /Applications/MAMP/htdocs/blog_3/myApp
+489 verbose gentlyRm don't care about contents; nuking /Applications/MAMP/htdocs/blog_3/myApp/node_modules/react-router/node_modules/warning/node_modules/loose-envify
+490 verbose tar unpack /Users/bll/Documents/nodejs/node_cache/loose-envify/1.1.0/package.tgz
+491 verbose tar unpacking to /Applications/MAMP/htdocs/blog_3/myApp/node_modules/react-router/node_modules/invariant/node_modules/loose-envify
+492 silly gentlyRm /Applications/MAMP/htdocs/blog_3/myApp/node_modules/react-router/node_modules/invariant/node_modules/loose-envify is being purged
+493 verbose gentlyRm don't care about contents; nuking /Applications/MAMP/htdocs/blog_3/myApp/node_modules/react-router/node_modules/invariant/node_modules/loose-envify
+494 verbose tar unpack /Users/bll/Documents/nodejs/node_cache/loose-envify/1.1.0/package.tgz
+495 verbose tar unpacking to /Applications/MAMP/htdocs/blog_3/myApp/node_modules/react-router/node_modules/warning/node_modules/loose-envify
+496 silly gentlyRm /Applications/MAMP/htdocs/blog_3/myApp/node_modules/react-router/node_modules/warning/node_modules/loose-envify is being purged
+497 verbose gentlyRm don't care about contents; nuking /Applications/MAMP/htdocs/blog_3/myApp/node_modules/react-router/node_modules/warning/node_modules/loose-envify
+498 silly gunzTarPerm modes [ '755', '644' ]
+499 silly gunzTarPerm modes [ '755', '644' ]
+500 silly gunzTarPerm extractEntry package.json
+501 silly gunzTarPerm extractEntry package.json
+502 silly gunzTarPerm extractEntry .npmignore
+503 silly gunzTarPerm extractEntry README.md
+504 silly gunzTarPerm extractEntry .npmignore
+505 silly gunzTarPerm extractEntry README.md
+506 silly gunzTarPerm extractEntry index.js
+507 silly gunzTarPerm extractEntry custom.js
+508 silly gunzTarPerm extractEntry index.js
+509 silly gunzTarPerm extractEntry custom.js
+510 silly gunzTarPerm extractEntry loose-envify.js
+511 silly gunzTarPerm extractEntry replace.js
+512 silly gunzTarPerm extractEntry loose-envify.js
+513 silly gunzTarPerm extractEntry replace.js
+514 verbose write writing to /Applications/MAMP/htdocs/blog_3/myApp/node_modules/react-router/node_modules/warning/node_modules/loose-envify/package.json
+515 verbose write writing to /Applications/MAMP/htdocs/blog_3/myApp/node_modules/react-router/node_modules/invariant/node_modules/loose-envify/package.json
+516 info preinstall loose-envify@1.1.0
+517 info preinstall loose-envify@1.1.0
+518 verbose readDependencies loading dependencies from /Applications/MAMP/htdocs/blog_3/myApp/node_modules/react-router/node_modules/invariant/node_modules/loose-envify/package.json
+519 verbose readDependencies loading dependencies from /Applications/MAMP/htdocs/blog_3/myApp/node_modules/react-router/node_modules/warning/node_modules/loose-envify/package.json
+520 silly prepareForInstallMany adding js-tokens@^1.0.1 from loose-envify dependencies
+521 verbose readDependencies loading dependencies from /Applications/MAMP/htdocs/blog_3/myApp/node_modules/react-router/node_modules/invariant/node_modules/loose-envify/package.json
+522 silly prepareForInstallMany adding js-tokens@^1.0.1 from loose-envify dependencies
+523 verbose readDependencies loading dependencies from /Applications/MAMP/htdocs/blog_3/myApp/node_modules/react-router/node_modules/warning/node_modules/loose-envify/package.json
+524 verbose write writing to /Applications/MAMP/htdocs/blog_3/myApp/node_modules/react-router/node_modules/history/package.json
+525 silly cache add args [ 'js-tokens@^1.0.1', null ]
+526 verbose cache add spec js-tokens@^1.0.1
+527 silly cache add args [ 'js-tokens@^1.0.1', null ]
+528 verbose cache add spec js-tokens@^1.0.1
+529 silly cache add parsed spec Result {
+529 silly cache add   raw: 'js-tokens@^1.0.1',
+529 silly cache add   scope: null,
+529 silly cache add   name: 'js-tokens',
+529 silly cache add   rawSpec: '^1.0.1',
+529 silly cache add   spec: '>=1.0.1 <2.0.0',
+529 silly cache add   type: 'range' }
+530 silly addNamed js-tokens@>=1.0.1 <2.0.0
+531 verbose addNamed ">=1.0.1 <2.0.0" is a valid semver range for js-tokens
+532 silly addNameRange { name: 'js-tokens', range: '>=1.0.1 <2.0.0', hasData: false }
+533 silly mapToRegistry name js-tokens
+534 silly mapToRegistry using default registry
+535 silly mapToRegistry registry https://registry.npm.taobao.org/
+536 silly mapToRegistry uri https://registry.npm.taobao.org/js-tokens
+537 verbose addNameRange registry:https://registry.npm.taobao.org/js-tokens not in flight; fetching
+538 silly cache add parsed spec Result {
+538 silly cache add   raw: 'js-tokens@^1.0.1',
+538 silly cache add   scope: null,
+538 silly cache add   name: 'js-tokens',
+538 silly cache add   rawSpec: '^1.0.1',
+538 silly cache add   spec: '>=1.0.1 <2.0.0',
+538 silly cache add   type: 'range' }
+539 silly addNamed js-tokens@>=1.0.1 <2.0.0
+540 verbose addNamed ">=1.0.1 <2.0.0" is a valid semver range for js-tokens
+541 silly addNameRange { name: 'js-tokens', range: '>=1.0.1 <2.0.0', hasData: false }
+542 silly mapToRegistry name js-tokens
+543 silly mapToRegistry using default registry
+544 silly mapToRegistry registry https://registry.npm.taobao.org/
+545 silly mapToRegistry uri https://registry.npm.taobao.org/js-tokens
+546 verbose addNameRange registry:https://registry.npm.taobao.org/js-tokens already in flight; waiting
+547 info preinstall history@2.0.1
+548 verbose request uri https://registry.npm.taobao.org/js-tokens
+549 verbose request no auth needed
+550 info attempt registry request try #1 at 10:57:02
+551 verbose etag "4ad8-lieYc6SNQ39YAMgnXOXWsw"
+552 http request GET https://registry.npm.taobao.org/js-tokens
+553 verbose readDependencies loading dependencies from /Applications/MAMP/htdocs/blog_3/myApp/node_modules/react-router/node_modules/history/package.json
+554 silly prepareForInstallMany adding deep-equal@^1.0.0 from history dependencies
+555 silly prepareForInstallMany adding query-string@^3.0.0 from history dependencies
+556 verbose readDependencies loading dependencies from /Applications/MAMP/htdocs/blog_3/myApp/node_modules/react-router/node_modules/history/package.json
+557 silly cache add args [ 'deep-equal@^1.0.0', null ]
+558 verbose cache add spec deep-equal@^1.0.0
+559 silly cache add args [ 'query-string@^3.0.0', null ]
+560 verbose cache add spec query-string@^3.0.0
+561 silly cache add parsed spec Result {
+561 silly cache add   raw: 'deep-equal@^1.0.0',
+561 silly cache add   scope: null,
+561 silly cache add   name: 'deep-equal',
+561 silly cache add   rawSpec: '^1.0.0',
+561 silly cache add   spec: '>=1.0.0 <2.0.0',
+561 silly cache add   type: 'range' }
+562 silly addNamed deep-equal@>=1.0.0 <2.0.0
+563 verbose addNamed ">=1.0.0 <2.0.0" is a valid semver range for deep-equal
+564 silly addNameRange { name: 'deep-equal', range: '>=1.0.0 <2.0.0', hasData: false }
+565 silly mapToRegistry name deep-equal
+566 silly mapToRegistry using default registry
+567 silly mapToRegistry registry https://registry.npm.taobao.org/
+568 silly mapToRegistry uri https://registry.npm.taobao.org/deep-equal
+569 verbose addNameRange registry:https://registry.npm.taobao.org/deep-equal not in flight; fetching
+570 silly cache add parsed spec Result {
+570 silly cache add   raw: 'query-string@^3.0.0',
+570 silly cache add   scope: null,
+570 silly cache add   name: 'query-string',
+570 silly cache add   rawSpec: '^3.0.0',
+570 silly cache add   spec: '>=3.0.0 <4.0.0',
+570 silly cache add   type: 'range' }
+571 silly addNamed query-string@>=3.0.0 <4.0.0
+572 verbose addNamed ">=3.0.0 <4.0.0" is a valid semver range for query-string
+573 silly addNameRange { name: 'query-string', range: '>=3.0.0 <4.0.0', hasData: false }
+574 silly mapToRegistry name query-string
+575 silly mapToRegistry using default registry
+576 silly mapToRegistry registry https://registry.npm.taobao.org/
+577 silly mapToRegistry uri https://registry.npm.taobao.org/query-string
+578 verbose addNameRange registry:https://registry.npm.taobao.org/query-string not in flight; fetching
+579 verbose request uri https://registry.npm.taobao.org/deep-equal
+580 verbose request no auth needed
+581 info attempt registry request try #1 at 10:57:02
+582 verbose etag "337d-3lzk9i1PxAPtXh7VCop7VQ"
+583 http request GET https://registry.npm.taobao.org/deep-equal
+584 verbose request uri https://registry.npm.taobao.org/query-string
+585 verbose request no auth needed
+586 info attempt registry request try #1 at 10:57:02
+587 verbose etag "84e4-gw3SdDKkC5inljSnaxsa4w"
+588 http request GET https://registry.npm.taobao.org/query-string
+589 http 304 https://registry.npm.taobao.org/query-string
+590 verbose headers { date: 'Fri, 15 Apr 2016 02:57:02 GMT',
+590 verbose headers   connection: 'keep-alive',
+590 verbose headers   etag: '"84e4-gw3SdDKkC5inljSnaxsa4w"',
+590 verbose headers   'x-readtime': '30' }
+591 silly get cb [ 304,
+591 silly get   { date: 'Fri, 15 Apr 2016 02:57:02 GMT',
+591 silly get     connection: 'keep-alive',
+591 silly get     etag: '"84e4-gw3SdDKkC5inljSnaxsa4w"',
+591 silly get     'x-readtime': '30' } ]
+592 verbose etag https://registry.npm.taobao.org/query-string from cache
+593 verbose get saving query-string to /Users/bll/Documents/nodejs/node_cache/registry.npm.taobao.org/query-string/.cache.json
+594 silly addNameRange number 2 { name: 'query-string', range: '>=3.0.0 <4.0.0', hasData: true }
+595 silly addNameRange versions [ 'query-string',
+595 silly addNameRange   [ '4.1.0',
+595 silly addNameRange     '4.0.2',
+595 silly addNameRange     '4.0.0',
+595 silly addNameRange     '3.0.3',
+595 silly addNameRange     '3.0.2',
+595 silly addNameRange     '3.0.1',
+595 silly addNameRange     '3.0.0',
+595 silly addNameRange     '2.4.2',
+595 silly addNameRange     '2.4.1',
+595 silly addNameRange     '2.4.0',
+595 silly addNameRange     '2.3.0',
+595 silly addNameRange     '2.2.0',
+595 silly addNameRange     '2.1.0',
+595 silly addNameRange     '2.0.0',
+595 silly addNameRange     '1.0.1',
+595 silly addNameRange     '1.0.0',
+595 silly addNameRange     '0.4.1',
+595 silly addNameRange     '0.4.0',
+595 silly addNameRange     '0.3.1',
+595 silly addNameRange     '0.3.0',
+595 silly addNameRange     '0.2.0',
+595 silly addNameRange     '0.1.1',
+595 silly addNameRange     '0.1.0' ] ]
+596 silly addNamed query-string@3.0.3
+597 verbose addNamed "3.0.3" is a plain semver version for query-string
+598 http 200 https://registry.npm.taobao.org/deep-equal
+599 verbose headers { date: 'Fri, 15 Apr 2016 02:57:02 GMT',
+599 verbose headers   'content-type': 'application/json; charset=utf-8',
+599 verbose headers   'content-length': '13227',
+599 verbose headers   connection: 'keep-alive',
+599 verbose headers   etag: '"33ab-FuUR5TIPFUWUpm3lrunqvQ"',
+599 verbose headers   'x-readtime': '25' }
+600 silly get cb [ 200,
+600 silly get   { date: 'Fri, 15 Apr 2016 02:57:02 GMT',
+600 silly get     'content-type': 'application/json; charset=utf-8',
+600 silly get     'content-length': '13227',
+600 silly get     connection: 'keep-alive',
+600 silly get     etag: '"33ab-FuUR5TIPFUWUpm3lrunqvQ"',
+600 silly get     'x-readtime': '25' } ]
+601 verbose get saving deep-equal to /Users/bll/Documents/nodejs/node_cache/registry.npm.taobao.org/deep-equal/.cache.json
+602 http 304 https://registry.npm.taobao.org/js-tokens
+603 verbose headers { date: 'Fri, 15 Apr 2016 02:57:03 GMT',
+603 verbose headers   connection: 'keep-alive',
+603 verbose headers   etag: '"4ad8-lieYc6SNQ39YAMgnXOXWsw"',
+603 verbose headers   'x-readtime': '41' }
+604 silly get cb [ 304,
+604 silly get   { date: 'Fri, 15 Apr 2016 02:57:03 GMT',
+604 silly get     connection: 'keep-alive',
+604 silly get     etag: '"4ad8-lieYc6SNQ39YAMgnXOXWsw"',
+604 silly get     'x-readtime': '41' } ]
+605 verbose etag https://registry.npm.taobao.org/js-tokens from cache
+606 verbose get saving js-tokens to /Users/bll/Documents/nodejs/node_cache/registry.npm.taobao.org/js-tokens/.cache.json
+607 silly cache afterAdd query-string@3.0.3
+608 verbose afterAdd /Users/bll/Documents/nodejs/node_cache/query-string/3.0.3/package/package.json not in flight; writing
+609 silly addNameRange number 2 { name: 'deep-equal', range: '>=1.0.0 <2.0.0', hasData: true }
+610 silly addNameRange versions [ 'deep-equal',
+610 silly addNameRange   [ '1.0.1',
+610 silly addNameRange     '1.0.0',
+610 silly addNameRange     '0.2.2',
+610 silly addNameRange     '0.2.1',
+610 silly addNameRange     '0.2.0',
+610 silly addNameRange     '0.1.2',
+610 silly addNameRange     '0.1.1',
+610 silly addNameRange     '0.1.0',
+610 silly addNameRange     '0.0.0' ] ]
+611 silly addNamed deep-equal@1.0.1
+612 verbose addNamed "1.0.1" is a plain semver version for deep-equal
+613 silly addNameRange number 2 { name: 'js-tokens', range: '>=1.0.1 <2.0.0', hasData: true }
+614 silly addNameRange versions [ 'js-tokens',
+614 silly addNameRange   [ '1.0.3',
+614 silly addNameRange     '1.0.2',
+614 silly addNameRange     '1.0.1',
+614 silly addNameRange     '1.0.0',
+614 silly addNameRange     '0.4.1',
+614 silly addNameRange     '0.4.0',
+614 silly addNameRange     '0.3.1',
+614 silly addNameRange     '0.3.0',
+614 silly addNameRange     '0.2.0',
+614 silly addNameRange     '0.1.0' ] ]
+615 silly addNamed js-tokens@1.0.3
+616 verbose addNamed "1.0.3" is a plain semver version for js-tokens
+617 silly addNameRange number 2 { name: 'js-tokens', range: '>=1.0.1 <2.0.0', hasData: true }
+618 silly addNameRange versions [ 'js-tokens',
+618 silly addNameRange   [ '1.0.3',
+618 silly addNameRange     '1.0.2',
+618 silly addNameRange     '1.0.1',
+618 silly addNameRange     '1.0.0',
+618 silly addNameRange     '0.4.1',
+618 silly addNameRange     '0.4.0',
+618 silly addNameRange     '0.3.1',
+618 silly addNameRange     '0.3.0',
+618 silly addNameRange     '0.2.0',
+618 silly addNameRange     '0.1.0' ] ]
+619 silly addNamed js-tokens@1.0.3
+620 verbose addNamed "1.0.3" is a plain semver version for js-tokens
+621 verbose afterAdd /Users/bll/Documents/nodejs/node_cache/query-string/3.0.3/package/package.json written
+622 silly cache afterAdd deep-equal@1.0.1
+623 verbose afterAdd /Users/bll/Documents/nodejs/node_cache/deep-equal/1.0.1/package/package.json not in flight; writing
+624 silly cache afterAdd js-tokens@1.0.3
+625 verbose afterAdd /Users/bll/Documents/nodejs/node_cache/js-tokens/1.0.3/package/package.json not in flight; writing
+626 silly cache afterAdd js-tokens@1.0.3
+627 verbose afterAdd /Users/bll/Documents/nodejs/node_cache/js-tokens/1.0.3/package/package.json already in flight; not writing
+628 verbose afterAdd /Users/bll/Documents/nodejs/node_cache/deep-equal/1.0.1/package/package.json written
+629 silly install resolved [ { name: 'query-string',
+629 silly install resolved     version: '3.0.3',
+629 silly install resolved     description: 'Parse and stringify URL query strings',
+629 silly install resolved     license: 'MIT',
+629 silly install resolved     repository:
+629 silly install resolved      { type: 'git',
+629 silly install resolved        url: 'git+https://github.com/sindresorhus/query-string.git' },
+629 silly install resolved     author:
+629 silly install resolved      { name: 'Sindre Sorhus',
+629 silly install resolved        email: 'sindresorhus@gmail.com',
+629 silly install resolved        url: 'sindresorhus.com' },
+629 silly install resolved     engines: { node: '>=0.10.0' },
+629 silly install resolved     scripts: { test: 'xo && ava' },
+629 silly install resolved     files: [ 'index.js' ],
+629 silly install resolved     keywords:
+629 silly install resolved      [ 'browser',
+629 silly install resolved        'querystring',
+629 silly install resolved        'query',
+629 silly install resolved        'string',
+629 silly install resolved        'qs',
+629 silly install resolved        'param',
+629 silly install resolved        'parameter',
+629 silly install resolved        'url',
+629 silly install resolved        'uri',
+629 silly install resolved        'parse',
+629 silly install resolved        'stringify',
+629 silly install resolved        'encode',
+629 silly install resolved        'decode' ],
+629 silly install resolved     dependencies: { 'strict-uri-encode': '^1.0.0' },
+629 silly install resolved     devDependencies: { ava: '*', xo: '*' },
+629 silly install resolved     gitHead: '71bc3ed002a25def027174da9f3651b6d3c26db4',
+629 silly install resolved     bugs: { url: 'https://github.com/sindresorhus/query-string/issues' },
+629 silly install resolved     homepage: 'https://github.com/sindresorhus/query-string#readme',
+629 silly install resolved     _id: 'query-string@3.0.3',
+629 silly install resolved     _shasum: 'ae2e14b4d05071d4e9b9eb4873c35b0dcd42e638',
+629 silly install resolved     _from: 'query-string@>=3.0.0 <4.0.0',
+629 silly install resolved     _npmVersion: '3.8.2',
+629 silly install resolved     _nodeVersion: '4.3.0',
+629 silly install resolved     _npmUser: { name: 'sindresorhus', email: 'sindresorhus@gmail.com' },
+629 silly install resolved     dist:
+629 silly install resolved      { shasum: 'ae2e14b4d05071d4e9b9eb4873c35b0dcd42e638',
+629 silly install resolved        size: 2506,
+629 silly install resolved        noattachment: false,
+629 silly install resolved        tarball: 'http://registry.npm.taobao.org/query-string/download/query-string-3.0.3.tgz' },
+629 silly install resolved     maintainers: [ [Object] ],
+629 silly install resolved     _npmOperationalInternal:
+629 silly install resolved      { host: 'packages-13-west.internal.npmjs.com',
+629 silly install resolved        tmp: 'tmp/query-string-3.0.3.tgz_1458385547492_0.6452929894439876' },
+629 silly install resolved     directories: {},
+629 silly install resolved     publish_time: 1458385547948,
+629 silly install resolved     _cnpm_publish_time: 1458385547948,
+629 silly install resolved     _resolved: 'https://registry.npm.taobao.org/query-string/download/query-string-3.0.3.tgz',
+629 silly install resolved     readme: 'ERROR: No README data found!' },
+629 silly install resolved   { name: 'deep-equal',
+629 silly install resolved     version: '1.0.1',
+629 silly install resolved     description: 'node\'s assert.deepEqual algorithm',
+629 silly install resolved     main: 'index.js',
+629 silly install resolved     directories: { lib: '.', example: 'example', test: 'test' },
+629 silly install resolved     scripts: { test: 'tape test/*.js' },
+629 silly install resolved     devDependencies: { tape: '^3.5.0' },
+629 silly install resolved     repository:
+629 silly install resolved      { type: 'git',
+629 silly install resolved        url: 'git+ssh://git@github.com/substack/node-deep-equal.git' },
+629 silly install resolved     keywords: [ 'equality', 'equal', 'compare' ],
+629 silly install resolved     author:
+629 silly install resolved      { name: 'James Halliday',
+629 silly install resolved        email: 'mail@substack.net',
+629 silly install resolved        url: 'http://substack.net' },
+629 silly install resolved     license: 'MIT',
+629 silly install resolved     testling: { files: 'test/*.js', browsers: [Object] },
+629 silly install resolved     gitHead: '59c511f5aeae19e3dd1de054077a789d7302be34',
+629 silly install resolved     bugs: { url: 'https://github.com/substack/node-deep-equal/issues' },
+629 silly install resolved     homepage: 'https://github.com/substack/node-deep-equal#readme',
+629 silly install resolved     _id: 'deep-equal@1.0.1',
+629 silly install resolved     _shasum: 'f5d260292b660e084eff4cdbc9f08ad3247448b5',
+629 silly install resolved     _from: 'deep-equal@>=1.0.0 <2.0.0',
+629 silly install resolved     _npmVersion: '3.2.2',
+629 silly install resolved     _nodeVersion: '2.4.0',
+629 silly install resolved     _npmUser: { name: 'substack', email: 'substack@gmail.com' },
+629 silly install resolved     dist:
+629 silly install resolved      { shasum: 'f5d260292b660e084eff4cdbc9f08ad3247448b5',
+629 silly install resolved        tarball: 'http://registry.npmjs.org/deep-equal/-/deep-equal-1.0.1.tgz' },
+629 silly install resolved     maintainers: [ [Object] ],
+629 silly install resolved     _resolved: 'https://registry.npmjs.org/deep-equal/-/deep-equal-1.0.1.tgz',
+629 silly install resolved     readme: 'ERROR: No README data found!' } ]
+630 info install query-string@3.0.3 into /Applications/MAMP/htdocs/blog_3/myApp/node_modules/react-router/node_modules/history
+631 info install deep-equal@1.0.1 into /Applications/MAMP/htdocs/blog_3/myApp/node_modules/react-router/node_modules/history
+632 info installOne query-string@3.0.3
+633 verbose installOne of query-string to /Applications/MAMP/htdocs/blog_3/myApp/node_modules/react-router/node_modules/history not in flight; installing
+634 info installOne deep-equal@1.0.1
+635 verbose installOne of deep-equal to /Applications/MAMP/htdocs/blog_3/myApp/node_modules/react-router/node_modules/history not in flight; installing
+636 verbose afterAdd /Users/bll/Documents/nodejs/node_cache/js-tokens/1.0.3/package/package.json written
+637 silly install resolved [ { name: 'js-tokens',
+637 silly install resolved     version: '1.0.3',
+637 silly install resolved     author: { name: 'Simon Lydell' },
+637 silly install resolved     license: 'MIT',
+637 silly install resolved     description: 'A regex that tokenizes JavaScript.',
+637 silly install resolved     keywords: [ 'JavaScript', 'js', 'token', 'tokenize', 'regex' ],
+637 silly install resolved     files: [ 'index.js' ],
+637 silly install resolved     repository:
+637 silly install resolved      { type: 'git',
+637 silly install resolved        url: 'git+https://github.com/lydell/js-tokens.git' },
+637 silly install resolved     scripts:
+637 silly install resolved      { test: 'mocha --ui tdd',
+637 silly install resolved        'esprima-compare': 'node esprima-compare ./index.js everything.js/es5.js',
+637 silly install resolved        build: 'node generate-index.js',
+637 silly install resolved        dev: 'npm run build && npm test' },
+637 silly install resolved     devDependencies:
+637 silly install resolved      { 'coffee-script': '~1.10.0',
+637 silly install resolved        esprima: '^2.3.0',
+637 silly install resolved        'everything.js': '^1.0.3',
+637 silly install resolved        mocha: '^2.2.5' },
+637 silly install resolved     gitHead: '8fef3fe3b80636bc885bbfc9fa0012a4a2956352',
+637 silly install resolved     bugs: { url: 'https://github.com/lydell/js-tokens/issues' },
+637 silly install resolved     homepage: 'https://github.com/lydell/js-tokens#readme',
+637 silly install resolved     _id: 'js-tokens@1.0.3',
+637 silly install resolved     _shasum: '14e56eb68c8f1a92c43d59f5014ec29dc20f2ae1',
+637 silly install resolved     _from: 'js-tokens@>=1.0.1 <2.0.0',
+637 silly install resolved     _npmVersion: '3.7.3',
+637 silly install resolved     _nodeVersion: '5.9.0',
+637 silly install resolved     _npmUser: { name: 'lydell', email: 'simon.lydell@gmail.com' },
+637 silly install resolved     dist:
+637 silly install resolved      { shasum: '14e56eb68c8f1a92c43d59f5014ec29dc20f2ae1',
+637 silly install resolved        size: 5359,
+637 silly install resolved        noattachment: false,
+637 silly install resolved        tarball: 'http://registry.npm.taobao.org/js-tokens/download/js-tokens-1.0.3.tgz' },
+637 silly install resolved     maintainers: [ [Object] ],
+637 silly install resolved     _npmOperationalInternal:
+637 silly install resolved      { host: 'packages-16-east.internal.npmjs.com',
+637 silly install resolved        tmp: 'tmp/js-tokens-1.0.3.tgz_1459075945273_0.8152586803771555' },
+637 silly install resolved     directories: {},
+637 silly install resolved     publish_time: 1459075946157,
+637 silly install resolved     _cnpm_publish_time: 1459075946157,
+637 silly install resolved     _resolved: 'https://registry.npm.taobao.org/js-tokens/download/js-tokens-1.0.3.tgz',
+637 silly install resolved     readme: 'ERROR: No README data found!' } ]
+638 info install js-tokens@1.0.3 into /Applications/MAMP/htdocs/blog_3/myApp/node_modules/react-router/node_modules/invariant/node_modules/loose-envify
+639 info installOne js-tokens@1.0.3
+640 verbose installOne of js-tokens to /Applications/MAMP/htdocs/blog_3/myApp/node_modules/react-router/node_modules/invariant/node_modules/loose-envify not in flight; installing
+641 silly install resolved [ { name: 'js-tokens',
+641 silly install resolved     version: '1.0.3',
+641 silly install resolved     author: { name: 'Simon Lydell' },
+641 silly install resolved     license: 'MIT',
+641 silly install resolved     description: 'A regex that tokenizes JavaScript.',
+641 silly install resolved     keywords: [ 'JavaScript', 'js', 'token', 'tokenize', 'regex' ],
+641 silly install resolved     files: [ 'index.js' ],
+641 silly install resolved     repository:
+641 silly install resolved      { type: 'git',
+641 silly install resolved        url: 'git+https://github.com/lydell/js-tokens.git' },
+641 silly install resolved     scripts:
+641 silly install resolved      { test: 'mocha --ui tdd',
+641 silly install resolved        'esprima-compare': 'node esprima-compare ./index.js everything.js/es5.js',
+641 silly install resolved        build: 'node generate-index.js',
+641 silly install resolved        dev: 'npm run build && npm test' },
+641 silly install resolved     devDependencies:
+641 silly install resolved      { 'coffee-script': '~1.10.0',
+641 silly install resolved        esprima: '^2.3.0',
+641 silly install resolved        'everything.js': '^1.0.3',
+641 silly install resolved        mocha: '^2.2.5' },
+641 silly install resolved     gitHead: '8fef3fe3b80636bc885bbfc9fa0012a4a2956352',
+641 silly install resolved     bugs: { url: 'https://github.com/lydell/js-tokens/issues' },
+641 silly install resolved     homepage: 'https://github.com/lydell/js-tokens#readme',
+641 silly install resolved     _id: 'js-tokens@1.0.3',
+641 silly install resolved     _shasum: '14e56eb68c8f1a92c43d59f5014ec29dc20f2ae1',
+641 silly install resolved     _from: 'js-tokens@>=1.0.1 <2.0.0',
+641 silly install resolved     _npmVersion: '3.7.3',
+641 silly install resolved     _nodeVersion: '5.9.0',
+641 silly install resolved     _npmUser: { name: 'lydell', email: 'simon.lydell@gmail.com' },
+641 silly install resolved     dist:
+641 silly install resolved      { shasum: '14e56eb68c8f1a92c43d59f5014ec29dc20f2ae1',
+641 silly install resolved        size: 5359,
+641 silly install resolved        noattachment: false,
+641 silly install resolved        tarball: 'http://registry.npm.taobao.org/js-tokens/download/js-tokens-1.0.3.tgz' },
+641 silly install resolved     maintainers: [ [Object] ],
+641 silly install resolved     _npmOperationalInternal:
+641 silly install resolved      { host: 'packages-16-east.internal.npmjs.com',
+641 silly install resolved        tmp: 'tmp/js-tokens-1.0.3.tgz_1459075945273_0.8152586803771555' },
+641 silly install resolved     directories: {},
+641 silly install resolved     publish_time: 1459075946157,
+641 silly install resolved     _cnpm_publish_time: 1459075946157,
+641 silly install resolved     _resolved: 'https://registry.npm.taobao.org/js-tokens/download/js-tokens-1.0.3.tgz',
+641 silly install resolved     readme: 'ERROR: No README data found!' } ]
+642 info install js-tokens@1.0.3 into /Applications/MAMP/htdocs/blog_3/myApp/node_modules/react-router/node_modules/warning/node_modules/loose-envify
+643 info installOne js-tokens@1.0.3
+644 verbose installOne of js-tokens to /Applications/MAMP/htdocs/blog_3/myApp/node_modules/react-router/node_modules/warning/node_modules/loose-envify not in flight; installing
+645 verbose lock using /Users/bll/Documents/nodejs/node_cache/_locks/deep-equal-5ec48dc7fd22ce74.lock for /Applications/MAMP/htdocs/blog_3/myApp/node_modules/react-router/node_modules/history/node_modules/deep-equal
+646 verbose lock using /Users/bll/Documents/nodejs/node_cache/_locks/query-string-43eca5d243a7a739.lock for /Applications/MAMP/htdocs/blog_3/myApp/node_modules/react-router/node_modules/history/node_modules/query-string
+647 silly install write writing deep-equal 1.0.1 to /Applications/MAMP/htdocs/blog_3/myApp/node_modules/react-router/node_modules/history/node_modules/deep-equal
+648 silly install write writing query-string 3.0.3 to /Applications/MAMP/htdocs/blog_3/myApp/node_modules/react-router/node_modules/history/node_modules/query-string
+649 verbose lock using /Users/bll/Documents/nodejs/node_cache/_locks/js-tokens-58c1bea0d47a3b3f.lock for /Applications/MAMP/htdocs/blog_3/myApp/node_modules/react-router/node_modules/warning/node_modules/loose-envify/node_modules/js-tokens
+650 verbose lock using /Users/bll/Documents/nodejs/node_cache/_locks/js-tokens-65795ed3697468b3.lock for /Applications/MAMP/htdocs/blog_3/myApp/node_modules/react-router/node_modules/invariant/node_modules/loose-envify/node_modules/js-tokens
+651 silly install write writing js-tokens 1.0.3 to /Applications/MAMP/htdocs/blog_3/myApp/node_modules/react-router/node_modules/warning/node_modules/loose-envify/node_modules/js-tokens
+652 silly install write writing js-tokens 1.0.3 to /Applications/MAMP/htdocs/blog_3/myApp/node_modules/react-router/node_modules/invariant/node_modules/loose-envify/node_modules/js-tokens
+653 verbose unbuild node_modules/react-router/node_modules/history/node_modules/deep-equal
+654 verbose unbuild node_modules/react-router/node_modules/history/node_modules/query-string
+655 verbose unbuild node_modules/react-router/node_modules/warning/node_modules/loose-envify/node_modules/js-tokens
+656 verbose unbuild node_modules/react-router/node_modules/invariant/node_modules/loose-envify/node_modules/js-tokens
+657 silly gentlyRm /Applications/MAMP/htdocs/blog_3/myApp/node_modules/react-router/node_modules/history/node_modules/deep-equal is being purged from base /Applications/MAMP/htdocs/blog_3/myApp
+658 verbose gentlyRm don't care about contents; nuking /Applications/MAMP/htdocs/blog_3/myApp/node_modules/react-router/node_modules/history/node_modules/deep-equal
+659 silly gentlyRm /Applications/MAMP/htdocs/blog_3/myApp/node_modules/react-router/node_modules/history/node_modules/query-string is being purged from base /Applications/MAMP/htdocs/blog_3/myApp
+660 verbose gentlyRm don't care about contents; nuking /Applications/MAMP/htdocs/blog_3/myApp/node_modules/react-router/node_modules/history/node_modules/query-string
+661 verbose tar unpack /Users/bll/Documents/nodejs/node_cache/deep-equal/1.0.1/package.tgz
+662 verbose tar unpacking to /Applications/MAMP/htdocs/blog_3/myApp/node_modules/react-router/node_modules/history/node_modules/deep-equal
+663 silly gentlyRm /Applications/MAMP/htdocs/blog_3/myApp/node_modules/react-router/node_modules/history/node_modules/deep-equal is being purged
+664 verbose gentlyRm don't care about contents; nuking /Applications/MAMP/htdocs/blog_3/myApp/node_modules/react-router/node_modules/history/node_modules/deep-equal
+665 verbose tar unpack /Users/bll/Documents/nodejs/node_cache/query-string/3.0.3/package.tgz
+666 verbose tar unpacking to /Applications/MAMP/htdocs/blog_3/myApp/node_modules/react-router/node_modules/history/node_modules/query-string
+667 silly gentlyRm /Applications/MAMP/htdocs/blog_3/myApp/node_modules/react-router/node_modules/history/node_modules/query-string is being purged
+668 verbose gentlyRm don't care about contents; nuking /Applications/MAMP/htdocs/blog_3/myApp/node_modules/react-router/node_modules/history/node_modules/query-string
+669 silly gentlyRm /Applications/MAMP/htdocs/blog_3/myApp/node_modules/react-router/node_modules/warning/node_modules/loose-envify/node_modules/js-tokens is being purged from base /Applications/MAMP/htdocs/blog_3/myApp
+670 verbose gentlyRm don't care about contents; nuking /Applications/MAMP/htdocs/blog_3/myApp/node_modules/react-router/node_modules/warning/node_modules/loose-envify/node_modules/js-tokens
+671 silly gentlyRm /Applications/MAMP/htdocs/blog_3/myApp/node_modules/react-router/node_modules/invariant/node_modules/loose-envify/node_modules/js-tokens is being purged from base /Applications/MAMP/htdocs/blog_3/myApp
+672 verbose gentlyRm don't care about contents; nuking /Applications/MAMP/htdocs/blog_3/myApp/node_modules/react-router/node_modules/invariant/node_modules/loose-envify/node_modules/js-tokens
+673 silly gunzTarPerm modes [ '755', '644' ]
+674 silly gunzTarPerm modes [ '755', '644' ]
+675 verbose tar unpack /Users/bll/Documents/nodejs/node_cache/js-tokens/1.0.3/package.tgz
+676 verbose tar unpacking to /Applications/MAMP/htdocs/blog_3/myApp/node_modules/react-router/node_modules/warning/node_modules/loose-envify/node_modules/js-tokens
+677 silly gentlyRm /Applications/MAMP/htdocs/blog_3/myApp/node_modules/react-router/node_modules/warning/node_modules/loose-envify/node_modules/js-tokens is being purged
+678 verbose gentlyRm don't care about contents; nuking /Applications/MAMP/htdocs/blog_3/myApp/node_modules/react-router/node_modules/warning/node_modules/loose-envify/node_modules/js-tokens
+679 verbose tar unpack /Users/bll/Documents/nodejs/node_cache/js-tokens/1.0.3/package.tgz
+680 verbose tar unpacking to /Applications/MAMP/htdocs/blog_3/myApp/node_modules/react-router/node_modules/invariant/node_modules/loose-envify/node_modules/js-tokens
+681 silly gentlyRm /Applications/MAMP/htdocs/blog_3/myApp/node_modules/react-router/node_modules/invariant/node_modules/loose-envify/node_modules/js-tokens is being purged
+682 verbose gentlyRm don't care about contents; nuking /Applications/MAMP/htdocs/blog_3/myApp/node_modules/react-router/node_modules/invariant/node_modules/loose-envify/node_modules/js-tokens
+683 silly gunzTarPerm modes [ '755', '644' ]
+684 silly gunzTarPerm modes [ '755', '644' ]
+685 silly gunzTarPerm extractEntry package.json
+686 silly gunzTarPerm extractEntry package.json
+687 silly gunzTarPerm extractEntry package.json
+688 silly gunzTarPerm modified mode [ 'package.json', 436, 420 ]
+689 silly gunzTarPerm extractEntry package.json
+690 silly gunzTarPerm modified mode [ 'package.json', 436, 420 ]
+691 silly gunzTarPerm extractEntry LICENSE
+692 silly gunzTarPerm extractEntry index.js
+693 silly gunzTarPerm extractEntry LICENSE
+694 silly gunzTarPerm modified mode [ 'LICENSE', 436, 420 ]
+695 silly gunzTarPerm extractEntry index.js
+696 silly gunzTarPerm modified mode [ 'index.js', 436, 420 ]
+697 silly gunzTarPerm extractEntry LICENSE
+698 silly gunzTarPerm modified mode [ 'LICENSE', 436, 420 ]
+699 silly gunzTarPerm extractEntry index.js
+700 silly gunzTarPerm modified mode [ 'index.js', 436, 420 ]
+701 silly gunzTarPerm extractEntry index.js
+702 silly gunzTarPerm extractEntry license
+703 silly gunzTarPerm extractEntry .travis.yml
+704 silly gunzTarPerm extractEntry example/cmp.js
+705 silly gunzTarPerm extractEntry changelog.md
+706 silly gunzTarPerm modified mode [ 'changelog.md', 436, 420 ]
+707 silly gunzTarPerm extractEntry readme.md
+708 silly gunzTarPerm modified mode [ 'readme.md', 436, 420 ]
+709 silly gunzTarPerm extractEntry changelog.md
+710 silly gunzTarPerm modified mode [ 'changelog.md', 436, 420 ]
+711 silly gunzTarPerm extractEntry readme.md
+712 silly gunzTarPerm modified mode [ 'readme.md', 436, 420 ]
+713 silly gunzTarPerm extractEntry readme.md
+714 silly gunzTarPerm extractEntry lib/is_arguments.js
+715 silly gunzTarPerm extractEntry lib/keys.js
+716 silly gunzTarPerm extractEntry readme.markdown
+717 silly gunzTarPerm extractEntry test/cmp.js
+718 verbose write writing to /Applications/MAMP/htdocs/blog_3/myApp/node_modules/react-router/node_modules/history/node_modules/query-string/package.json
+719 info preinstall query-string@3.0.3
+720 verbose write writing to /Applications/MAMP/htdocs/blog_3/myApp/node_modules/react-router/node_modules/warning/node_modules/loose-envify/node_modules/js-tokens/package.json
+721 verbose readDependencies loading dependencies from /Applications/MAMP/htdocs/blog_3/myApp/node_modules/react-router/node_modules/history/node_modules/query-string/package.json
+722 verbose write writing to /Applications/MAMP/htdocs/blog_3/myApp/node_modules/react-router/node_modules/invariant/node_modules/loose-envify/node_modules/js-tokens/package.json
+723 info preinstall js-tokens@1.0.3
+724 info preinstall js-tokens@1.0.3
+725 silly prepareForInstallMany adding strict-uri-encode@^1.0.0 from query-string dependencies
+726 verbose readDependencies loading dependencies from /Applications/MAMP/htdocs/blog_3/myApp/node_modules/react-router/node_modules/history/node_modules/query-string/package.json
+727 verbose readDependencies loading dependencies from /Applications/MAMP/htdocs/blog_3/myApp/node_modules/react-router/node_modules/warning/node_modules/loose-envify/node_modules/js-tokens/package.json
+728 verbose readDependencies loading dependencies from /Applications/MAMP/htdocs/blog_3/myApp/node_modules/react-router/node_modules/invariant/node_modules/loose-envify/node_modules/js-tokens/package.json
+729 verbose readDependencies loading dependencies from /Applications/MAMP/htdocs/blog_3/myApp/node_modules/react-router/node_modules/warning/node_modules/loose-envify/node_modules/js-tokens/package.json
+730 silly cache add args [ 'strict-uri-encode@^1.0.0', null ]
+731 verbose cache add spec strict-uri-encode@^1.0.0
+732 silly cache add parsed spec Result {
+732 silly cache add   raw: 'strict-uri-encode@^1.0.0',
+732 silly cache add   scope: null,
+732 silly cache add   name: 'strict-uri-encode',
+732 silly cache add   rawSpec: '^1.0.0',
+732 silly cache add   spec: '>=1.0.0 <2.0.0',
+732 silly cache add   type: 'range' }
+733 silly addNamed strict-uri-encode@>=1.0.0 <2.0.0
+734 verbose addNamed ">=1.0.0 <2.0.0" is a valid semver range for strict-uri-encode
+735 silly addNameRange { name: 'strict-uri-encode',
+735 silly addNameRange   range: '>=1.0.0 <2.0.0',
+735 silly addNameRange   hasData: false }
+736 silly mapToRegistry name strict-uri-encode
+737 silly mapToRegistry using default registry
+738 silly mapToRegistry registry https://registry.npm.taobao.org/
+739 silly mapToRegistry uri https://registry.npm.taobao.org/strict-uri-encode
+740 verbose addNameRange registry:https://registry.npm.taobao.org/strict-uri-encode not in flight; fetching
+741 verbose readDependencies loading dependencies from /Applications/MAMP/htdocs/blog_3/myApp/node_modules/react-router/node_modules/invariant/node_modules/loose-envify/node_modules/js-tokens/package.json
+742 silly install resolved []
+743 verbose about to build /Applications/MAMP/htdocs/blog_3/myApp/node_modules/react-router/node_modules/warning/node_modules/loose-envify/node_modules/js-tokens
+744 info build /Applications/MAMP/htdocs/blog_3/myApp/node_modules/react-router/node_modules/warning/node_modules/loose-envify/node_modules/js-tokens
+745 silly install resolved []
+746 verbose about to build /Applications/MAMP/htdocs/blog_3/myApp/node_modules/react-router/node_modules/invariant/node_modules/loose-envify/node_modules/js-tokens
+747 info build /Applications/MAMP/htdocs/blog_3/myApp/node_modules/react-router/node_modules/invariant/node_modules/loose-envify/node_modules/js-tokens
+748 info linkStuff js-tokens@1.0.3
+749 silly linkStuff js-tokens@1.0.3 has /Applications/MAMP/htdocs/blog_3/myApp/node_modules/react-router/node_modules/warning/node_modules/loose-envify/node_modules as its parent node_modules
+750 info linkStuff js-tokens@1.0.3
+751 silly linkStuff js-tokens@1.0.3 has /Applications/MAMP/htdocs/blog_3/myApp/node_modules/react-router/node_modules/invariant/node_modules/loose-envify/node_modules as its parent node_modules
+752 verbose request uri https://registry.npm.taobao.org/strict-uri-encode
+753 verbose request no auth needed
+754 info attempt registry request try #1 at 10:57:03
+755 verbose etag "190e-bWVq4DbHNqdCY8zwohGA4Q"
+756 http request GET https://registry.npm.taobao.org/strict-uri-encode
+757 verbose linkBins js-tokens@1.0.3
+758 verbose linkMans js-tokens@1.0.3
+759 verbose rebuildBundles js-tokens@1.0.3
+760 verbose linkBins js-tokens@1.0.3
+761 verbose linkMans js-tokens@1.0.3
+762 verbose rebuildBundles js-tokens@1.0.3
+763 info install js-tokens@1.0.3
+764 info install js-tokens@1.0.3
+765 info postinstall js-tokens@1.0.3
+766 info postinstall js-tokens@1.0.3
+767 verbose unlock done using /Users/bll/Documents/nodejs/node_cache/_locks/js-tokens-58c1bea0d47a3b3f.lock for /Applications/MAMP/htdocs/blog_3/myApp/node_modules/react-router/node_modules/warning/node_modules/loose-envify/node_modules/js-tokens
+768 verbose about to build /Applications/MAMP/htdocs/blog_3/myApp/node_modules/react-router/node_modules/warning/node_modules/loose-envify
+769 info build /Applications/MAMP/htdocs/blog_3/myApp/node_modules/react-router/node_modules/warning/node_modules/loose-envify
+770 verbose unlock done using /Users/bll/Documents/nodejs/node_cache/_locks/js-tokens-65795ed3697468b3.lock for /Applications/MAMP/htdocs/blog_3/myApp/node_modules/react-router/node_modules/invariant/node_modules/loose-envify/node_modules/js-tokens
+771 verbose about to build /Applications/MAMP/htdocs/blog_3/myApp/node_modules/react-router/node_modules/invariant/node_modules/loose-envify
+772 info build /Applications/MAMP/htdocs/blog_3/myApp/node_modules/react-router/node_modules/invariant/node_modules/loose-envify
+773 info linkStuff loose-envify@1.1.0
+774 silly linkStuff loose-envify@1.1.0 has /Applications/MAMP/htdocs/blog_3/myApp/node_modules/react-router/node_modules/warning/node_modules as its parent node_modules
+775 info linkStuff loose-envify@1.1.0
+776 silly linkStuff loose-envify@1.1.0 has /Applications/MAMP/htdocs/blog_3/myApp/node_modules/react-router/node_modules/invariant/node_modules as its parent node_modules
+777 verbose write writing to /Applications/MAMP/htdocs/blog_3/myApp/node_modules/react-router/node_modules/history/node_modules/deep-equal/package.json
+778 verbose linkBins loose-envify@1.1.0
+779 verbose linkMans loose-envify@1.1.0
+780 verbose rebuildBundles loose-envify@1.1.0
+781 verbose linkBins loose-envify@1.1.0
+782 verbose linkMans loose-envify@1.1.0
+783 verbose rebuildBundles loose-envify@1.1.0
+784 verbose rebuildBundles [ 'js-tokens' ]
+785 info install loose-envify@1.1.0
+786 verbose rebuildBundles [ 'js-tokens' ]
+787 info install loose-envify@1.1.0
+788 info postinstall loose-envify@1.1.0
+789 info postinstall loose-envify@1.1.0
+790 info preinstall deep-equal@1.0.1
+791 verbose readDependencies loading dependencies from /Applications/MAMP/htdocs/blog_3/myApp/node_modules/react-router/node_modules/history/node_modules/deep-equal/package.json
+792 verbose unlock done using /Users/bll/Documents/nodejs/node_cache/_locks/loose-envify-d49b96e1c9ba61b4.lock for /Applications/MAMP/htdocs/blog_3/myApp/node_modules/react-router/node_modules/warning/node_modules/loose-envify
+793 verbose about to build /Applications/MAMP/htdocs/blog_3/myApp/node_modules/react-router/node_modules/warning
+794 info build /Applications/MAMP/htdocs/blog_3/myApp/node_modules/react-router/node_modules/warning
+795 verbose unlock done using /Users/bll/Documents/nodejs/node_cache/_locks/loose-envify-4776933ba4df2388.lock for /Applications/MAMP/htdocs/blog_3/myApp/node_modules/react-router/node_modules/invariant/node_modules/loose-envify
+796 verbose about to build /Applications/MAMP/htdocs/blog_3/myApp/node_modules/react-router/node_modules/invariant
+797 info build /Applications/MAMP/htdocs/blog_3/myApp/node_modules/react-router/node_modules/invariant
+798 info linkStuff warning@2.1.0
+799 silly linkStuff warning@2.1.0 has /Applications/MAMP/htdocs/blog_3/myApp/node_modules/react-router/node_modules as its parent node_modules
+800 info linkStuff invariant@2.2.1
+801 silly linkStuff invariant@2.2.1 has /Applications/MAMP/htdocs/blog_3/myApp/node_modules/react-router/node_modules as its parent node_modules
+802 verbose readDependencies loading dependencies from /Applications/MAMP/htdocs/blog_3/myApp/node_modules/react-router/node_modules/history/node_modules/deep-equal/package.json
+803 verbose linkBins warning@2.1.0
+804 verbose linkMans warning@2.1.0
+805 verbose rebuildBundles warning@2.1.0
+806 verbose linkBins invariant@2.2.1
+807 verbose linkMans invariant@2.2.1
+808 verbose rebuildBundles invariant@2.2.1
+809 verbose rebuildBundles [ 'loose-envify' ]
+810 info install warning@2.1.0
+811 verbose rebuildBundles [ 'loose-envify' ]
+812 info install invariant@2.2.1
+813 silly install resolved []
+814 verbose about to build /Applications/MAMP/htdocs/blog_3/myApp/node_modules/react-router/node_modules/history/node_modules/deep-equal
+815 info build /Applications/MAMP/htdocs/blog_3/myApp/node_modules/react-router/node_modules/history/node_modules/deep-equal
+816 info postinstall warning@2.1.0
+817 info postinstall invariant@2.2.1
+818 verbose unlock done using /Users/bll/Documents/nodejs/node_cache/_locks/warning-3cbe0bd36d644289.lock for /Applications/MAMP/htdocs/blog_3/myApp/node_modules/react-router/node_modules/warning
+819 verbose unlock done using /Users/bll/Documents/nodejs/node_cache/_locks/invariant-c6f227120045335c.lock for /Applications/MAMP/htdocs/blog_3/myApp/node_modules/react-router/node_modules/invariant
+820 info linkStuff deep-equal@1.0.1
+821 silly linkStuff deep-equal@1.0.1 has /Applications/MAMP/htdocs/blog_3/myApp/node_modules/react-router/node_modules/history/node_modules as its parent node_modules
+822 verbose linkBins deep-equal@1.0.1
+823 verbose linkMans deep-equal@1.0.1
+824 verbose rebuildBundles deep-equal@1.0.1
+825 info install deep-equal@1.0.1
+826 info postinstall deep-equal@1.0.1
+827 verbose unlock done using /Users/bll/Documents/nodejs/node_cache/_locks/deep-equal-5ec48dc7fd22ce74.lock for /Applications/MAMP/htdocs/blog_3/myApp/node_modules/react-router/node_modules/history/node_modules/deep-equal
+828 http 304 https://registry.npm.taobao.org/strict-uri-encode
+829 verbose headers { date: 'Fri, 15 Apr 2016 02:57:03 GMT',
+829 verbose headers   connection: 'keep-alive',
+829 verbose headers   etag: '"190e-bWVq4DbHNqdCY8zwohGA4Q"',
+829 verbose headers   'x-readtime': '18' }
+830 silly get cb [ 304,
+830 silly get   { date: 'Fri, 15 Apr 2016 02:57:03 GMT',
+830 silly get     connection: 'keep-alive',
+830 silly get     etag: '"190e-bWVq4DbHNqdCY8zwohGA4Q"',
+830 silly get     'x-readtime': '18' } ]
+831 verbose etag https://registry.npm.taobao.org/strict-uri-encode from cache
+832 verbose get saving strict-uri-encode to /Users/bll/Documents/nodejs/node_cache/registry.npm.taobao.org/strict-uri-encode/.cache.json
+833 silly addNameRange number 2 { name: 'strict-uri-encode',
+833 silly addNameRange   range: '>=1.0.0 <2.0.0',
+833 silly addNameRange   hasData: true }
+834 silly addNameRange versions [ 'strict-uri-encode', [ '1.1.0', '1.0.2', '1.0.1', '1.0.0' ] ]
+835 silly addNamed strict-uri-encode@1.1.0
+836 verbose addNamed "1.1.0" is a plain semver version for strict-uri-encode
+837 silly cache afterAdd strict-uri-encode@1.1.0
+838 verbose afterAdd /Users/bll/Documents/nodejs/node_cache/strict-uri-encode/1.1.0/package/package.json not in flight; writing
+839 verbose afterAdd /Users/bll/Documents/nodejs/node_cache/strict-uri-encode/1.1.0/package/package.json written
+840 silly install resolved [ { name: 'strict-uri-encode',
+840 silly install resolved     version: '1.1.0',
+840 silly install resolved     description: 'A stricter URI encode adhering to RFC 3986',
+840 silly install resolved     license: 'MIT',
+840 silly install resolved     repository:
+840 silly install resolved      { type: 'git',
+840 silly install resolved        url: 'git+https://github.com/kevva/strict-uri-encode.git' },
+840 silly install resolved     author:
+840 silly install resolved      { name: 'Kevin Mårtensson',
+840 silly install resolved        email: 'kevinmartensson@gmail.com',
+840 silly install resolved        url: 'github.com/kevva' },
+840 silly install resolved     engines: { node: '>=0.10.0' },
+840 silly install resolved     scripts: { test: 'node test.js' },
+840 silly install resolved     files: [ 'index.js' ],
+840 silly install resolved     keywords: [ 'component', 'encode', 'RFC3986', 'uri' ],
+840 silly install resolved     devDependencies: { ava: '^0.0.4' },
+840 silly install resolved     gitHead: 'ce6681428485d30e29222c722f832df15e3c19ac',
+840 silly install resolved     bugs: { url: 'https://github.com/kevva/strict-uri-encode/issues' },
+840 silly install resolved     homepage: 'https://github.com/kevva/strict-uri-encode#readme',
+840 silly install resolved     _id: 'strict-uri-encode@1.1.0',
+840 silly install resolved     _shasum: '279b225df1d582b1f54e65addd4352e18faa0713',
+840 silly install resolved     _from: 'strict-uri-encode@>=1.0.0 <2.0.0',
+840 silly install resolved     _npmVersion: '3.5.3',
+840 silly install resolved     _nodeVersion: '5.3.0',
+840 silly install resolved     _npmUser: { name: 'kevva', email: 'kevinmartensson@gmail.com' },
+840 silly install resolved     dist:
+840 silly install resolved      { shasum: '279b225df1d582b1f54e65addd4352e18faa0713',
+840 silly install resolved        size: 1526,
+840 silly install resolved        noattachment: false,
+840 silly install resolved        tarball: 'http://registry.npm.taobao.org/strict-uri-encode/download/strict-uri-encode-1.1.0.tgz' },
+840 silly install resolved     maintainers: [ [Object] ],
+840 silly install resolved     directories: {},
+840 silly install resolved     publish_time: 1451891015092,
+840 silly install resolved     _cnpm_publish_time: 1451891015092,
+840 silly install resolved     _resolved: 'https://registry.npm.taobao.org/strict-uri-encode/download/strict-uri-encode-1.1.0.tgz',
+840 silly install resolved     readme: 'ERROR: No README data found!' } ]
+841 info install strict-uri-encode@1.1.0 into /Applications/MAMP/htdocs/blog_3/myApp/node_modules/react-router/node_modules/history/node_modules/query-string
+842 info installOne strict-uri-encode@1.1.0
+843 verbose installOne of strict-uri-encode to /Applications/MAMP/htdocs/blog_3/myApp/node_modules/react-router/node_modules/history/node_modules/query-string not in flight; installing
+844 verbose lock using /Users/bll/Documents/nodejs/node_cache/_locks/strict-uri-encode-331141cbaf16c27f.lock for /Applications/MAMP/htdocs/blog_3/myApp/node_modules/react-router/node_modules/history/node_modules/query-string/node_modules/strict-uri-encode
+845 silly install write writing strict-uri-encode 1.1.0 to /Applications/MAMP/htdocs/blog_3/myApp/node_modules/react-router/node_modules/history/node_modules/query-string/node_modules/strict-uri-encode
+846 verbose unbuild node_modules/react-router/node_modules/history/node_modules/query-string/node_modules/strict-uri-encode
+847 silly gentlyRm /Applications/MAMP/htdocs/blog_3/myApp/node_modules/react-router/node_modules/history/node_modules/query-string/node_modules/strict-uri-encode is being purged from base /Applications/MAMP/htdocs/blog_3/myApp
+848 verbose gentlyRm don't care about contents; nuking /Applications/MAMP/htdocs/blog_3/myApp/node_modules/react-router/node_modules/history/node_modules/query-string/node_modules/strict-uri-encode
+849 verbose tar unpack /Users/bll/Documents/nodejs/node_cache/strict-uri-encode/1.1.0/package.tgz
+850 verbose tar unpacking to /Applications/MAMP/htdocs/blog_3/myApp/node_modules/react-router/node_modules/history/node_modules/query-string/node_modules/strict-uri-encode
+851 silly gentlyRm /Applications/MAMP/htdocs/blog_3/myApp/node_modules/react-router/node_modules/history/node_modules/query-string/node_modules/strict-uri-encode is being purged
+852 verbose gentlyRm don't care about contents; nuking /Applications/MAMP/htdocs/blog_3/myApp/node_modules/react-router/node_modules/history/node_modules/query-string/node_modules/strict-uri-encode
+853 silly gunzTarPerm modes [ '755', '644' ]
+854 silly gunzTarPerm extractEntry package.json
+855 silly gunzTarPerm modified mode [ 'package.json', 436, 420 ]
+856 silly gunzTarPerm extractEntry index.js
+857 silly gunzTarPerm modified mode [ 'index.js', 436, 420 ]
+858 silly gunzTarPerm extractEntry license
+859 silly gunzTarPerm modified mode [ 'license', 436, 420 ]
+860 silly gunzTarPerm extractEntry readme.md
+861 silly gunzTarPerm modified mode [ 'readme.md', 436, 420 ]
+862 verbose write writing to /Applications/MAMP/htdocs/blog_3/myApp/node_modules/react-router/node_modules/history/node_modules/query-string/node_modules/strict-uri-encode/package.json
+863 info preinstall strict-uri-encode@1.1.0
+864 verbose readDependencies loading dependencies from /Applications/MAMP/htdocs/blog_3/myApp/node_modules/react-router/node_modules/history/node_modules/query-string/node_modules/strict-uri-encode/package.json
+865 verbose readDependencies loading dependencies from /Applications/MAMP/htdocs/blog_3/myApp/node_modules/react-router/node_modules/history/node_modules/query-string/node_modules/strict-uri-encode/package.json
+866 silly install resolved []
+867 verbose about to build /Applications/MAMP/htdocs/blog_3/myApp/node_modules/react-router/node_modules/history/node_modules/query-string/node_modules/strict-uri-encode
+868 info build /Applications/MAMP/htdocs/blog_3/myApp/node_modules/react-router/node_modules/history/node_modules/query-string/node_modules/strict-uri-encode
+869 info linkStuff strict-uri-encode@1.1.0
+870 silly linkStuff strict-uri-encode@1.1.0 has /Applications/MAMP/htdocs/blog_3/myApp/node_modules/react-router/node_modules/history/node_modules/query-string/node_modules as its parent node_modules
+871 verbose linkBins strict-uri-encode@1.1.0
+872 verbose linkMans strict-uri-encode@1.1.0
+873 verbose rebuildBundles strict-uri-encode@1.1.0
+874 info install strict-uri-encode@1.1.0
+875 info postinstall strict-uri-encode@1.1.0
+876 verbose unlock done using /Users/bll/Documents/nodejs/node_cache/_locks/strict-uri-encode-331141cbaf16c27f.lock for /Applications/MAMP/htdocs/blog_3/myApp/node_modules/react-router/node_modules/history/node_modules/query-string/node_modules/strict-uri-encode
+877 verbose about to build /Applications/MAMP/htdocs/blog_3/myApp/node_modules/react-router/node_modules/history/node_modules/query-string
+878 info build /Applications/MAMP/htdocs/blog_3/myApp/node_modules/react-router/node_modules/history/node_modules/query-string
+879 info linkStuff query-string@3.0.3
+880 silly linkStuff query-string@3.0.3 has /Applications/MAMP/htdocs/blog_3/myApp/node_modules/react-router/node_modules/history/node_modules as its parent node_modules
+881 verbose linkBins query-string@3.0.3
+882 verbose linkMans query-string@3.0.3
+883 verbose rebuildBundles query-string@3.0.3
+884 verbose rebuildBundles [ 'strict-uri-encode' ]
+885 info install query-string@3.0.3
+886 info postinstall query-string@3.0.3
+887 verbose unlock done using /Users/bll/Documents/nodejs/node_cache/_locks/query-string-43eca5d243a7a739.lock for /Applications/MAMP/htdocs/blog_3/myApp/node_modules/react-router/node_modules/history/node_modules/query-string
+888 verbose about to build /Applications/MAMP/htdocs/blog_3/myApp/node_modules/react-router/node_modules/history
+889 info build /Applications/MAMP/htdocs/blog_3/myApp/node_modules/react-router/node_modules/history
+890 info linkStuff history@2.0.1
+891 silly linkStuff history@2.0.1 has /Applications/MAMP/htdocs/blog_3/myApp/node_modules/react-router/node_modules as its parent node_modules
+892 verbose linkBins history@2.0.1
+893 verbose linkMans history@2.0.1
+894 verbose rebuildBundles history@2.0.1
+895 verbose rebuildBundles [ 'deep-equal', 'query-string' ]
+896 info install history@2.0.1
+897 info postinstall history@2.0.1
+898 verbose unlock done using /Users/bll/Documents/nodejs/node_cache/_locks/history-6b582b944fe0e4bf.lock for /Applications/MAMP/htdocs/blog_3/myApp/node_modules/react-router/node_modules/history
+899 verbose about to build /Applications/MAMP/htdocs/blog_3/myApp/node_modules/react-router
+900 info build /Applications/MAMP/htdocs/blog_3/myApp/node_modules/react-router
+901 info linkStuff react-router@2.2.2
+902 silly linkStuff react-router@2.2.2 has /Applications/MAMP/htdocs/blog_3/myApp/node_modules as its parent node_modules
+903 verbose linkBins react-router@2.2.2
+904 verbose linkMans react-router@2.2.2
+905 verbose rebuildBundles react-router@2.2.2
+906 verbose rebuildBundles [ 'history', 'invariant', 'warning' ]
+907 info install react-router@2.2.2
+908 info postinstall react-router@2.2.2
+909 verbose unlock done using /Users/bll/Documents/nodejs/node_cache/_locks/react-router-6ca06cb09d0c4db7.lock for /Applications/MAMP/htdocs/blog_3/myApp/node_modules/react-router
+910 verbose validateInstall loading /Applications/MAMP/htdocs/blog_3/myApp/package.json for validation
+911 verbose stack Error: The package react-tap-event-plugin@1.0.0 does not satisfy its siblings' peerDependencies requirements!
+911 verbose stack     at /usr/local/lib/node_modules/npm/lib/install.js:125:32
+911 verbose stack     at /usr/local/lib/node_modules/npm/lib/install.js:268:7
+911 verbose stack     at /usr/local/lib/node_modules/npm/node_modules/read-installed/read-installed.js:142:5
+911 verbose stack     at /usr/local/lib/node_modules/npm/node_modules/read-installed/read-installed.js:263:14
+911 verbose stack     at cb (/usr/local/lib/node_modules/npm/node_modules/slide/lib/async-map.js:47:24)
+911 verbose stack     at /usr/local/lib/node_modules/npm/node_modules/read-installed/read-installed.js:263:14
+911 verbose stack     at cb (/usr/local/lib/node_modules/npm/node_modules/slide/lib/async-map.js:47:24)
+911 verbose stack     at /usr/local/lib/node_modules/npm/node_modules/read-installed/read-installed.js:263:14
+911 verbose stack     at cb (/usr/local/lib/node_modules/npm/node_modules/slide/lib/async-map.js:47:24)
+911 verbose stack     at /usr/local/lib/node_modules/npm/node_modules/read-installed/read-installed.js:263:14
+912 verbose cwd /Applications/MAMP/htdocs/blog_3/myApp
+913 error Darwin 14.5.0
+914 error argv "/usr/local/bin/node" "/usr/local/bin/npm" "install" "react-router" "--save-dev"
+915 error node v4.2.2
+916 error npm  v2.14.7
+917 error code EPEERINVALID
+918 error peerinvalid The package react-tap-event-plugin@1.0.0 does not satisfy its siblings' peerDependencies requirements!
+918 error peerinvalid Peer material-ui@0.14.4 wants react-tap-event-plugin@^0.2.0
+919 verbose exit [ 1, true ]

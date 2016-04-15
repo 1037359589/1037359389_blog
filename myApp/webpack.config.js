@@ -32,6 +32,9 @@ module.exports = {
                 test:/\.(png|jpe?g|gif)$/,loader:"url-loader?limit=40000000&name=[name].[ext]",
                 include:ADMIN_PUBLIC+"/css/"
             },
+            //{
+            //  test:/\.woff(2)?(\?v=[0-9].[0-9].[0-9])?$/, loader:"url-loader?minetype=application/font-woff"
+            //},
             {
                 test: /\.js$/,
                 loader: 'babel-loader',
@@ -46,11 +49,11 @@ module.exports = {
         extensions: ['', '.js', '.json']
     },
     plugins: [
-        new uglifyJsPlugin({
-            compress: {
-                warnings: false
-            }
-        }),
+        //new uglifyJsPlugin({
+        //    compress: {
+        //        warnings: false
+        //    }
+        //}),
         new webpack.ProvidePlugin({
             React:'react',
             ReactDOM:'react-dom'
