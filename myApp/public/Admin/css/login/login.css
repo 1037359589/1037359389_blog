@@ -139,3 +139,17 @@ form .input-cus::-webkit-input-placeholder  {
 .ant-select-arrow{
     color:#fff;
 }
+#app .ant-input{
+    border-radius: 0px;
+    width:100%;
+    color: #d9ecf9;
+    line-height:200%;
+    padding: 6px 12px;
+    font-size:14px;
+    height:40px;
+    background-color: #6ba3c8;
+    border:0px;
+}
+#app .ant-input::-webkit-input-placeholder  {
+    color:#fafafa!important;
+}
