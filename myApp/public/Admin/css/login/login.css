@@ -52,7 +52,7 @@ body{
     background-color: #87D068;
 }
 form .input-cus{
-    border-radius: 0px;
+    border-radius: 3px;
     width:100%;
     color: #d9ecf9;
     line-height:200%;
@@ -64,7 +64,7 @@ form .input-cus{
 }
 
 .sub-cus-2{
-    border-radius: 0px;
+    border-radius: 3px;
     width:100%;
     color: #d9ecf9;
     line-height:200%;
@@ -87,16 +87,16 @@ form .input-cus::-webkit-input-placeholder  {
     font-size:18px;
     padding:15px;
 }
-.sub-cus{
+#app .ant-btn-primary{
     width:100%;
     background-color: #e7505a;
     padding: 8px 25px;
     line-height: 1.44;
-    border-radius: 0px;
+    border-radius: 3px;
     font-size:18px;
     color:#f5f5f5;
 }
-.sub-cus:hover {
+#app .ant-btn-primary:hover {
     background-color:#f21276
 }
 .login-form{
@@ -113,34 +113,41 @@ form .input-cus::-webkit-input-placeholder  {
     text-align: right;
     font-size:13px;
 }
-.cus-select .ant-select-selection__rendered {
+#app .ant-select-selection__rendered {
     padding: 3px 12px;
     background-color:#6ba3c8 ;
+    border-radius: 3px;
 }
-.cus-select .ant-select-selection__rendered span{
+#app  .ant-select-selection__rendered span{
     color:#fff;
 }
-.cus-select .ant-select-selection--single{
+#app  .ant-select-selection--single{
     height:auto!important;
 }
-.cus-select .ant-select-selection{
-    border-radius:0px;
+#app .ant-select-selection{
+    border-radius:3px;
     border: 0px;
 }
-.ant-select-dropdown{
-    border-radius:0px;
+#app .ant-form-explain{
+    color:#ff0000;
 }
+.ant-select-dropdown{
+    /*border-radius:0px;*/
+}
+/*#app .ant-input{*/
+    /*outline: 0px!important;*/
+/*}*/
 .ant-input:focus{
-    box-shadow: 0px 0px 1px 1px #f5f5f5;
+    box-shadow: 0px 0px 1px 1px #f5f5f5!important;
 }
 .ant-select-selection:focus{
-    box-shadow: 0px 0px 1px 1px #f5f5f5;
+    box-shadow: 0px 0px 1px 1px #f5f5f5!important;
 }
 .ant-select-arrow{
     color:#fff;
 }
 #app .ant-input{
-    border-radius: 0px;
+    border-radius: 3px;
     width:100%;
     color: #d9ecf9;
     line-height:200%;
@@ -152,4 +159,11 @@ form .input-cus::-webkit-input-placeholder  {
 }
 #app .ant-input::-webkit-input-placeholder  {
     color:#fafafa!important;
+}
+#app .has-success.has-feedback:after,
+#app .has-warning.has-feedback:after,
+#app .has-error.has-feedback:after,
+#app.is-validating.has-feedback:after{
+    height:40px;
+    line-height: 40px;
 }

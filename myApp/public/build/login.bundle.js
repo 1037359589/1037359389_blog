@@ -6,7 +6,7 @@ webpackJsonp([0],[
 	__webpack_require__(2);
 	__webpack_require__(617);
 	__webpack_require__(618);
-	module.exports = __webpack_require__(619);
+	module.exports = __webpack_require__(714);
 
 
 /***/ },
@@ -1948,8 +1948,6 @@ webpackJsonp([0],[
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-	function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
-
 	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
 	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
@@ -1976,163 +1974,228 @@ webpackJsonp([0],[
 	    return false;
 	}
 
-	var LoginForm = _react2.default.createClass({
-	    displayName: 'LoginForm',
-	    onHidden: function onHidden() {
-	        this.props.actions.toRegister();
-	    },
-	    isShowForget: function isShowForget() {
-	        this.props.actions.toForget();
-	    },
-	    render: function render() {
-	        var formItemLayout = {
-	            labelCol: { span: 0 },
-	            wrapperCol: { span: 24 }
-	        };
-	        return _react2.default.createElement(
-	            'div',
-	            null,
-	            _react2.default.createElement(
-	                'div',
-	                { className: 'logo-p' },
-	                _react2.default.createElement(
-	                    'header',
-	                    null,
-	                    '管理员登陆'
-	                )
-	            ),
-	            _react2.default.createElement(
-	                'p',
-	                null,
-	                '曹操来了!!'
-	            ),
-	            _react2.default.createElement(
-	                _antd.QueueAnim,
-	                { component: _antd.Form, horizontal: true, form: this.props.form, delay: 300,
-	                    className: 'ant-form ant-form-horizontal', type: 'bottom', leaveReverse: true },
-	                _react2.default.createElement(
-	                    'div',
-	                    { key: 'a' },
-	                    _react2.default.createElement(
-	                        _antd.Row,
-	                        null,
-	                        _react2.default.createElement(
-	                            _antd.Col,
-	                            { span: '24' },
-	                            _react2.default.createElement(
-	                                FormItem,
-	                                formItemLayout,
-	                                _react2.default.createElement(_antd.Input, { type: 'password', onContextMenu: noop, onPaste: noop, onCopy: noop, onCut: noop,
-	                                    className: 'input-cus', autoComplete: 'off', id: 'pass', placeholder: '请输入管理员用户名'
-	                                })
-	                            )
-	                        )
-	                    )
-	                ),
-	                _react2.default.createElement(
-	                    'div',
-	                    { key: 'b' },
-	                    _react2.default.createElement(
-	                        _antd.Row,
-	                        null,
-	                        _react2.default.createElement(
-	                            _antd.Col,
-	                            { span: '24' },
-	                            _react2.default.createElement(
-	                                FormItem,
-	                                formItemLayout,
-	                                _react2.default.createElement(_antd.Input, { type: 'password', className: 'input-cus',
-	                                    onContextMenu: noop, onPaste: noop, onCopy: noop, onCut: noop,
-	                                    autoComplete: 'off', id: 'rePass', placeholder: '请输入密码'
-	                                })
-	                            )
-	                        )
-	                    )
-	                ),
-	                _react2.default.createElement(
-	                    'div',
-	                    { key: 'c' },
-	                    _react2.default.createElement(
-	                        _antd.Row,
-	                        null,
-	                        _react2.default.createElement(
-	                            _antd.Col,
-	                            { span: '24' },
-	                            _react2.default.createElement(
-	                                _antd.Col,
-	                                { span: '24' },
-	                                _react2.default.createElement(
-	                                    _antd.Button,
-	                                    { type: 'primary', className: 'sub-cus' },
-	                                    '登陆'
-	                                )
-	                            )
-	                        )
-	                    )
-	                ),
-	                _react2.default.createElement(
-	                    'div',
-	                    { key: 'd' },
-	                    _react2.default.createElement(
-	                        _antd.Row,
-	                        null,
-	                        _react2.default.createElement(
-	                            _antd.Col,
-	                            { span: '12' },
-	                            _react2.default.createElement(
-	                                'label',
-	                                null,
-	                                _react2.default.createElement(_antd.Checkbox, { defaultChecked: false }),
-	                                '记住我'
-	                            )
-	                        ),
-	                        _react2.default.createElement(
-	                            _antd.Col,
-	                            { span: '12' },
-	                            _react2.default.createElement(
-	                                'a',
-	                                { href: 'javascript:;', className: 'link-one', onClick: this.isShowForget },
-	                                '忘记密码?'
-	                            )
-	                        )
-	                    )
-	                ),
-	                _react2.default.createElement(
-	                    'div',
-	                    { key: 'e' },
-	                    _react2.default.createElement(
-	                        _antd.Row,
-	                        null,
-	                        _react2.default.createElement(
-	                            _antd.Col,
-	                            { span: '24' },
-	                            _react2.default.createElement(
-	                                _antd.Col,
-	                                { span: '24' },
-	                                _react2.default.createElement(
-	                                    _antd.Button,
-	                                    { type: 'ghost', className: 'sub-cus-2', onClick: this.onHidden },
-	                                    '创建账户'
-	                                )
-	                            )
-	                        )
-	                    )
-	                )
-	            )
-	        );
-	    }
-	});
+	//var LoginForm = React.createClass({
+	var LoginForm = function (_Component) {
+	    _inherits(LoginForm, _Component);
 
-	var RegisterFrom = function (_Component) {
-	    _inherits(RegisterFrom, _Component);
+	    function LoginForm(props) {
+	        _classCallCheck(this, LoginForm);
+
+	        var _this = _possibleConstructorReturn(this, Object.getPrototypeOf(LoginForm).call(this, props));
+
+	        _this.onHidden = _this.onHidden.bind(_this);
+	        _this.isShowForget = _this.isShowForget.bind(_this);
+	        return _this;
+	    }
+
+	    _createClass(LoginForm, [{
+	        key: 'getValidateStatus',
+	        value: function getValidateStatus(field) {
+	            var _props$form = this.props.form;
+	            var isFieldValidating = _props$form.isFieldValidating;
+	            var getFieldError = _props$form.getFieldError;
+	            var getFieldValue = _props$form.getFieldValue;
+
+	            console.log(this.props.form);
+	            if (isFieldValidating(field)) {
+	                return 'validating';
+	            } else if (!!getFieldError(field)) {
+	                return 'error';
+	            } else if (getFieldValue(field)) {
+	                return 'success';
+	            }
+	        }
+	    }, {
+	        key: 'handleSubmit',
+	        value: function handleSubmit(e) {
+	            e.preventDefault();
+	            this.props.form.validateFields(function (errors, values) {
+	                if (!!errors) {
+	                    console.log('Errors in form!!!');
+	                    return;
+	                }
+	                console.log('Submit!!!');
+	                console.log(values);
+	            });
+	        }
+	    }, {
+	        key: 'onHidden',
+	        value: function onHidden() {
+	            this.props.actions.toRegister();
+	        }
+	    }, {
+	        key: 'isShowForget',
+	        value: function isShowForget() {
+	            this.props.actions.toForget();
+	        }
+	    }, {
+	        key: 'render',
+	        value: function render() {
+	            var _props$form2 = this.props.form;
+	            var getFieldProps = _props$form2.getFieldProps;
+	            var getFieldError = _props$form2.getFieldError;
+	            var isFieldValidating = _props$form2.isFieldValidating;
+
+	            var nameProps = getFieldProps('username', {
+	                rules: [{ required: true, min: 5, message: '请填写用户名!!' }]
+	            });
+	            var passProps = getFieldProps('password', {
+	                rules: [{ required: true, min: 6, max: 18, whitespace: true, message: '密码长度为6-18位!!' }]
+	            });
+	            var formItemLayout = {
+	                labelCol: { span: 0 },
+	                wrapperCol: { span: 24 }
+	            };
+	            return _react2.default.createElement(
+	                'div',
+	                null,
+	                _react2.default.createElement(
+	                    'div',
+	                    { className: 'logo-p' },
+	                    _react2.default.createElement(
+	                        'header',
+	                        null,
+	                        '管理员登陆'
+	                    )
+	                ),
+	                _react2.default.createElement(
+	                    'p',
+	                    null,
+	                    '曹操来了!!'
+	                ),
+	                _react2.default.createElement(
+	                    _antd.QueueAnim,
+	                    { component: _antd.Form, horizontal: true, delay: 300,
+	                        type: 'bottom', leaveReverse: true, form: this.props.form
+	                    },
+	                    _react2.default.createElement(
+	                        'div',
+	                        { key: 'a' },
+	                        _react2.default.createElement(
+	                            _antd.Row,
+	                            null,
+	                            _react2.default.createElement(
+	                                _antd.Col,
+	                                { span: '24' },
+	                                _react2.default.createElement(
+	                                    FormItem,
+	                                    _extends({ help: isFieldValidating('username') ? '校验中...' : (getFieldError('username') || []).join(', ')
+	                                    }, formItemLayout, { hasFeedback: true }),
+	                                    _react2.default.createElement(_antd.Input, _extends({ onContextMenu: noop, onPaste: noop, onCopy: noop, onCut: noop,
+	                                        autoComplete: 'off', placeholder: '请输入管理员用户名' }, nameProps))
+	                                )
+	                            )
+	                        )
+	                    ),
+	                    _react2.default.createElement(
+	                        'div',
+	                        { key: 'b' },
+	                        _react2.default.createElement(
+	                            _antd.Row,
+	                            null,
+	                            _react2.default.createElement(
+	                                _antd.Col,
+	                                { span: '24' },
+	                                _react2.default.createElement(
+	                                    FormItem,
+	                                    _extends({ help: isFieldValidating('password') ? '校验中...' : (getFieldError('password') || []).join(', ')
+	                                    }, formItemLayout, { hasFeedback: true }),
+	                                    _react2.default.createElement(_antd.Input, _extends({ type: 'password', onContextMenu: noop, onPaste: noop, onCopy: noop, onCut: noop
+	                                    }, passProps, { autoComplete: 'off', placeholder: '请输入密码'
+	                                    }))
+	                                )
+	                            )
+	                        )
+	                    ),
+	                    _react2.default.createElement(
+	                        'div',
+	                        { key: 'c' },
+	                        _react2.default.createElement(
+	                            _antd.Row,
+	                            null,
+	                            _react2.default.createElement(
+	                                _antd.Col,
+	                                { span: '24' },
+	                                _react2.default.createElement(
+	                                    _antd.Col,
+	                                    { span: '24' },
+	                                    _react2.default.createElement(
+	                                        _antd.Button,
+	                                        { type: 'primary', onClick: this.handleSubmit.bind(this) },
+	                                        '登陆'
+	                                    )
+	                                )
+	                            )
+	                        )
+	                    ),
+	                    _react2.default.createElement(
+	                        'div',
+	                        { key: 'd' },
+	                        _react2.default.createElement(
+	                            _antd.Row,
+	                            null,
+	                            _react2.default.createElement(
+	                                _antd.Col,
+	                                { span: '12' },
+	                                _react2.default.createElement(
+	                                    'label',
+	                                    null,
+	                                    _react2.default.createElement(_antd.Checkbox, { defaultChecked: false }),
+	                                    '记住我'
+	                                )
+	                            ),
+	                            _react2.default.createElement(
+	                                _antd.Col,
+	                                { span: '12' },
+	                                _react2.default.createElement(
+	                                    'a',
+	                                    { href: 'javascript:;', className: 'link-one', onClick: this.isShowForget },
+	                                    '忘记密码?'
+	                                )
+	                            )
+	                        )
+	                    ),
+	                    _react2.default.createElement(
+	                        'div',
+	                        { key: 'e' },
+	                        _react2.default.createElement(
+	                            _antd.Row,
+	                            null,
+	                            _react2.default.createElement(
+	                                _antd.Col,
+	                                { span: '24' },
+	                                _react2.default.createElement(
+	                                    _antd.Col,
+	                                    { span: '24' },
+	                                    _react2.default.createElement(
+	                                        _antd.Button,
+	                                        { type: 'ghost', className: 'sub-cus-2', onClick: this.onHidden },
+	                                        '创建账户'
+	                                    )
+	                                )
+	                            )
+	                        )
+	                    )
+	                )
+	            );
+	        }
+	    }]);
+
+	    return LoginForm;
+	}(_react.Component);
+
+	LoginForm = createForm()(LoginForm);
+
+	var RegisterFrom = function (_Component2) {
+	    _inherits(RegisterFrom, _Component2);
 
 	    function RegisterFrom(props) {
 	        _classCallCheck(this, RegisterFrom);
 
-	        var _this = _possibleConstructorReturn(this, Object.getPrototypeOf(RegisterFrom).call(this, props));
+	        var _this2 = _possibleConstructorReturn(this, Object.getPrototypeOf(RegisterFrom).call(this, props));
 
-	        _this.onHidden = _this.onHidden.bind(_this);
-	        return _this;
+	        _this2.onHidden = _this2.onHidden.bind(_this2);
+	        return _this2;
 	    }
 
 	    _createClass(RegisterFrom, [{
@@ -2143,10 +2206,10 @@ webpackJsonp([0],[
 	    }, {
 	        key: 'getValidateStatus',
 	        value: function getValidateStatus(field) {
-	            var _props$form = this.props.form;
-	            var isFieldValidating = _props$form.isFieldValidating;
-	            var getFieldError = _props$form.getFieldError;
-	            var getFieldValue = _props$form.getFieldValue;
+	            var _props$form3 = this.props.form;
+	            var isFieldValidating = _props$form3.isFieldValidating;
+	            var getFieldError = _props$form3.getFieldError;
+	            var getFieldValue = _props$form3.getFieldValue;
 
 
 	            if (isFieldValidating(field)) {
@@ -2224,13 +2287,16 @@ webpackJsonp([0],[
 	    }, {
 	        key: 'render',
 	        value: function render() {
-	            var _props$form2 = this.props.form;
-	            var getFieldProps = _props$form2.getFieldProps;
-	            var getFieldError = _props$form2.getFieldError;
-	            var isFieldValidating = _props$form2.isFieldValidating;
+	            var _props$form4 = this.props.form;
+	            var getFieldProps = _props$form4.getFieldProps;
+	            var getFieldError = _props$form4.getFieldError;
+	            var isFieldValidating = _props$form4.isFieldValidating;
 
+	            var permissionProps = getFieldProps('permission', {
+	                rules: [{ required: true, message: '请选择您的权限' }]
+	            });
 	            var nameProps = getFieldProps('name', {
-	                rules: [{ required: true, min: 5, message: '用户名至少为 5 个字符' }, { validator: this.userExists }]
+	                rules: [{ required: true, min: 5, message: '请输入管理员用户名,长度不能小于5个字符!!' }, { validator: this.userExists }]
 	            });
 	            var emailProps = getFieldProps('email', {
 	                validate: [{
@@ -2242,7 +2308,7 @@ webpackJsonp([0],[
 	                }]
 	            });
 	            var passwdProps = getFieldProps('passwd', {
-	                rules: [{ required: true, whitespace: true, message: '请填写密码' }, { validator: this.checkPass.bind(this) }]
+	                rules: [{ required: true, min: 6, max: 18, whitespace: true, message: '密码长度为6-18位' }, { validator: this.checkPass.bind(this) }]
 	            });
 	            var rePasswdProps = getFieldProps('rePasswd', {
 	                rules: [{
@@ -2279,8 +2345,8 @@ webpackJsonp([0],[
 	                ),
 	                _react2.default.createElement(
 	                    _antd.QueueAnim,
-	                    _defineProperty({ component: _antd.Form, horizontal: true, form: this.props.form, delay: 300,
-	                        className: 'ant-form ant-form-horizontal', type: 'bottom', leaveReverse: true }, 'form', this.props.form),
+	                    { component: _antd.Form, horizontal: true, delay: 300,
+	                        className: 'ant-form ant-form-horizontal', type: 'bottom', leaveReverse: true, form: this.props.form },
 	                    _react2.default.createElement(
 	                        'div',
 	                        { key: 'a' },
@@ -2312,7 +2378,7 @@ webpackJsonp([0],[
 	                                { span: '24' },
 	                                _react2.default.createElement(
 	                                    FormItem,
-	                                    _extends({}, formItemLayout, {
+	                                    _extends({}, formItemLayout, { help: isFieldValidating('email') ? '校验中...' : (getFieldError('email') || []).join(', '),
 	                                        hasFeedback: true }),
 	                                    _react2.default.createElement(_antd.Input, _extends({ type: 'email' }, emailProps, { ref: 'inputCus',
 	                                        autoComplete: 'off', placeholder: '请输入邮箱'
@@ -2332,7 +2398,7 @@ webpackJsonp([0],[
 	                                { span: '24' },
 	                                _react2.default.createElement(
 	                                    FormItem,
-	                                    _extends({}, formItemLayout, { hasFeedback: true }),
+	                                    _extends({}, formItemLayout, { hasFeedback: true, help: isFieldValidating('passwd') ? '校验中...' : (getFieldError('passwd') || []).join(', ') }),
 	                                    _react2.default.createElement(_antd.Input, _extends({ type: 'password', autoComplete: 'off', ref: 'inputCus' }, passwdProps, {
 	                                        onContextMenu: noop, onPaste: noop, onCopy: noop, onCut: noop,
 	                                        autoComplete: 'off', placeholder: '请输入密码'
@@ -2352,7 +2418,8 @@ webpackJsonp([0],[
 	                                { span: '24' },
 	                                _react2.default.createElement(
 	                                    FormItem,
-	                                    _extends({}, formItemLayout, { hasFeedback: true }),
+	                                    _extends({}, formItemLayout, { hasFeedback: true,
+	                                        help: isFieldValidating('rePasswd') ? '校验中...' : (getFieldError('rePasswd') || []).join(', ') }),
 	                                    _react2.default.createElement(_antd.Input, _extends({ type: 'password', autoComplete: 'off', ref: 'inputCus' }, rePasswdProps, {
 	                                        onContextMenu: noop, onPaste: noop, onCopy: noop, onCut: noop,
 	                                        autoComplete: 'off', placeholder: '两次输入的密码保持一致'
@@ -2372,19 +2439,35 @@ webpackJsonp([0],[
 	                                { span: '24' },
 	                                _react2.default.createElement(
 	                                    FormItem,
-	                                    formItemLayout,
+	                                    _extends({}, formItemLayout, { help: isFieldValidating('permission') ? '校验中...' : (getFieldError('permission') || []).join(', '),
+	                                        hasFeedback: true }),
 	                                    _react2.default.createElement(
 	                                        _antd.Select,
-	                                        { defaultValue: '普通管理员', className: 'cus-select' },
+	                                        _extends({}, permissionProps, { placeholder: '请选择国家', style: { width: '100%' } }),
 	                                        _react2.default.createElement(
 	                                            Option,
-	                                            { value: 'jack' },
-	                                            '超级管理员'
+	                                            { value: 'china' },
+	                                            '中国'
 	                                        ),
 	                                        _react2.default.createElement(
 	                                            Option,
-	                                            { value: 'lucy' },
-	                                            '普通管理员'
+	                                            { value: 'use' },
+	                                            '美国'
+	                                        ),
+	                                        _react2.default.createElement(
+	                                            Option,
+	                                            { value: 'japan' },
+	                                            '日本'
+	                                        ),
+	                                        _react2.default.createElement(
+	                                            Option,
+	                                            { value: 'korean' },
+	                                            '韩国'
+	                                        ),
+	                                        _react2.default.createElement(
+	                                            Option,
+	                                            { value: 'Thailand' },
+	                                            '泰国'
 	                                        )
 	                                    )
 	                                )
@@ -2425,7 +2508,7 @@ webpackJsonp([0],[
 	                                { span: '7' },
 	                                _react2.default.createElement(
 	                                    _antd.Button,
-	                                    { type: 'ghost', className: 'sub-cus-2', onClick: this.onHidden },
+	                                    { type: 'ghost', className: 'sub-cus-2', onClick: this.onHidden.bind(this) },
 	                                    '返回登陆'
 	                                )
 	                            ),
@@ -2456,7 +2539,29 @@ webpackJsonp([0],[
 	    onHidden: function onHidden() {
 	        this.props.actions.toForget();
 	    },
+	    handleSubmit: function handleSubmit(e) {
+	        e.preventDefault();
+	        this.props.form.validateFields(function (errors, values) {
+	            if (!!errors) {
+	                console.log('Errors in form!!!');
+	                return;
+	            }
+	            console.log('Submit!!!');
+	            console.log(values);
+	        });
+	    },
 	    render: function render() {
+	        var _props$form5 = this.props.form;
+	        var getFieldProps = _props$form5.getFieldProps;
+	        var getFieldError = _props$form5.getFieldError;
+	        var isFieldValidating = _props$form5.isFieldValidating;
+
+	        var emailProps = getFieldProps('email', {
+	            validate: [{
+	                rules: [{ required: true, type: 'email', message: '请输入正确的邮箱地址' }],
+	                trigger: ['onBlur', 'onChange']
+	            }]
+	        });
 	        var formItemLayout = {
 	            labelCol: { span: 0 },
 	            wrapperCol: { span: 24 }
@@ -2494,9 +2599,8 @@ webpackJsonp([0],[
 	                            _react2.default.createElement(
 	                                FormItem,
 	                                formItemLayout,
-	                                _react2.default.createElement(_antd.Input, { type: 'password', onContextMenu: noop, onPaste: noop, onCopy: noop, onCut: noop,
-	                                    className: 'input-cus', autoComplete: 'off', id: 'pass', placeholder: '请输入邮箱'
-	                                })
+	                                _react2.default.createElement(_antd.Input, _extends({ type: 'password', onContextMenu: noop, onPaste: noop, onCopy: noop, onCut: noop,
+	                                    className: 'input-cus', autoComplete: 'off', id: 'pass', placeholder: '请输入邮箱' }, emailProps))
 	                            )
 	                        )
 	                    )
@@ -2521,7 +2625,7 @@ webpackJsonp([0],[
 	                            { span: '7', offset: '10' },
 	                            _react2.default.createElement(
 	                                _antd.Button,
-	                                { type: 'primary', className: 'sub-cus' },
+	                                { type: 'primary', className: 'sub-cus', onClick: this.handleSubmit },
 	                                '发送'
 	                            )
 	                        )
@@ -2531,6 +2635,7 @@ webpackJsonp([0],[
 	        );
 	    }
 	});
+	ForgetPassword = createForm()(ForgetPassword);
 
 	var LoginAll = _react2.default.createClass({
 	    displayName: 'LoginAll',
@@ -56806,8 +56911,6 @@ webpackJsonp([0],[
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-	function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
-
 	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
 	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
@@ -56834,163 +56937,228 @@ webpackJsonp([0],[
 	    return false;
 	}
 
-	var LoginForm = _react2.default.createClass({
-	    displayName: 'LoginForm',
-	    onHidden: function onHidden() {
-	        this.props.actions.toRegister();
-	    },
-	    isShowForget: function isShowForget() {
-	        this.props.actions.toForget();
-	    },
-	    render: function render() {
-	        var formItemLayout = {
-	            labelCol: { span: 0 },
-	            wrapperCol: { span: 24 }
-	        };
-	        return _react2.default.createElement(
-	            'div',
-	            null,
-	            _react2.default.createElement(
-	                'div',
-	                { className: 'logo-p' },
-	                _react2.default.createElement(
-	                    'header',
-	                    null,
-	                    '管理员登陆'
-	                )
-	            ),
-	            _react2.default.createElement(
-	                'p',
-	                null,
-	                '曹操来了!!'
-	            ),
-	            _react2.default.createElement(
-	                _antd.QueueAnim,
-	                { component: _antd.Form, horizontal: true, form: this.props.form, delay: 300,
-	                    className: 'ant-form ant-form-horizontal', type: 'bottom', leaveReverse: true },
-	                _react2.default.createElement(
-	                    'div',
-	                    { key: 'a' },
-	                    _react2.default.createElement(
-	                        _antd.Row,
-	                        null,
-	                        _react2.default.createElement(
-	                            _antd.Col,
-	                            { span: '24' },
-	                            _react2.default.createElement(
-	                                FormItem,
-	                                formItemLayout,
-	                                _react2.default.createElement(_antd.Input, { type: 'password', onContextMenu: noop, onPaste: noop, onCopy: noop, onCut: noop,
-	                                    className: 'input-cus', autoComplete: 'off', id: 'pass', placeholder: '请输入管理员用户名'
-	                                })
-	                            )
-	                        )
-	                    )
-	                ),
-	                _react2.default.createElement(
-	                    'div',
-	                    { key: 'b' },
-	                    _react2.default.createElement(
-	                        _antd.Row,
-	                        null,
-	                        _react2.default.createElement(
-	                            _antd.Col,
-	                            { span: '24' },
-	                            _react2.default.createElement(
-	                                FormItem,
-	                                formItemLayout,
-	                                _react2.default.createElement(_antd.Input, { type: 'password', className: 'input-cus',
-	                                    onContextMenu: noop, onPaste: noop, onCopy: noop, onCut: noop,
-	                                    autoComplete: 'off', id: 'rePass', placeholder: '请输入密码'
-	                                })
-	                            )
-	                        )
-	                    )
-	                ),
-	                _react2.default.createElement(
-	                    'div',
-	                    { key: 'c' },
-	                    _react2.default.createElement(
-	                        _antd.Row,
-	                        null,
-	                        _react2.default.createElement(
-	                            _antd.Col,
-	                            { span: '24' },
-	                            _react2.default.createElement(
-	                                _antd.Col,
-	                                { span: '24' },
-	                                _react2.default.createElement(
-	                                    _antd.Button,
-	                                    { type: 'primary', className: 'sub-cus' },
-	                                    '登陆'
-	                                )
-	                            )
-	                        )
-	                    )
-	                ),
-	                _react2.default.createElement(
-	                    'div',
-	                    { key: 'd' },
-	                    _react2.default.createElement(
-	                        _antd.Row,
-	                        null,
-	                        _react2.default.createElement(
-	                            _antd.Col,
-	                            { span: '12' },
-	                            _react2.default.createElement(
-	                                'label',
-	                                null,
-	                                _react2.default.createElement(_antd.Checkbox, { defaultChecked: false }),
-	                                '记住我'
-	                            )
-	                        ),
-	                        _react2.default.createElement(
-	                            _antd.Col,
-	                            { span: '12' },
-	                            _react2.default.createElement(
-	                                'a',
-	                                { href: 'javascript:;', className: 'link-one', onClick: this.isShowForget },
-	                                '忘记密码?'
-	                            )
-	                        )
-	                    )
-	                ),
-	                _react2.default.createElement(
-	                    'div',
-	                    { key: 'e' },
-	                    _react2.default.createElement(
-	                        _antd.Row,
-	                        null,
-	                        _react2.default.createElement(
-	                            _antd.Col,
-	                            { span: '24' },
-	                            _react2.default.createElement(
-	                                _antd.Col,
-	                                { span: '24' },
-	                                _react2.default.createElement(
-	                                    _antd.Button,
-	                                    { type: 'ghost', className: 'sub-cus-2', onClick: this.onHidden },
-	                                    '创建账户'
-	                                )
-	                            )
-	                        )
-	                    )
-	                )
-	            )
-	        );
-	    }
-	});
+	//var LoginForm = React.createClass({
+	var LoginForm = function (_Component) {
+	    _inherits(LoginForm, _Component);
 
-	var RegisterFrom = function (_Component) {
-	    _inherits(RegisterFrom, _Component);
+	    function LoginForm(props) {
+	        _classCallCheck(this, LoginForm);
+
+	        var _this = _possibleConstructorReturn(this, Object.getPrototypeOf(LoginForm).call(this, props));
+
+	        _this.onHidden = _this.onHidden.bind(_this);
+	        _this.isShowForget = _this.isShowForget.bind(_this);
+	        return _this;
+	    }
+
+	    _createClass(LoginForm, [{
+	        key: 'getValidateStatus',
+	        value: function getValidateStatus(field) {
+	            var _props$form = this.props.form;
+	            var isFieldValidating = _props$form.isFieldValidating;
+	            var getFieldError = _props$form.getFieldError;
+	            var getFieldValue = _props$form.getFieldValue;
+
+	            console.log(this.props.form);
+	            if (isFieldValidating(field)) {
+	                return 'validating';
+	            } else if (!!getFieldError(field)) {
+	                return 'error';
+	            } else if (getFieldValue(field)) {
+	                return 'success';
+	            }
+	        }
+	    }, {
+	        key: 'handleSubmit',
+	        value: function handleSubmit(e) {
+	            e.preventDefault();
+	            this.props.form.validateFields(function (errors, values) {
+	                if (!!errors) {
+	                    console.log('Errors in form!!!');
+	                    return;
+	                }
+	                console.log('Submit!!!');
+	                console.log(values);
+	            });
+	        }
+	    }, {
+	        key: 'onHidden',
+	        value: function onHidden() {
+	            this.props.actions.toRegister();
+	        }
+	    }, {
+	        key: 'isShowForget',
+	        value: function isShowForget() {
+	            this.props.actions.toForget();
+	        }
+	    }, {
+	        key: 'render',
+	        value: function render() {
+	            var _props$form2 = this.props.form;
+	            var getFieldProps = _props$form2.getFieldProps;
+	            var getFieldError = _props$form2.getFieldError;
+	            var isFieldValidating = _props$form2.isFieldValidating;
+
+	            var nameProps = getFieldProps('username', {
+	                rules: [{ required: true, min: 5, message: '请填写用户名!!' }]
+	            });
+	            var passProps = getFieldProps('password', {
+	                rules: [{ required: true, min: 6, max: 18, whitespace: true, message: '密码长度为6-18位!!' }]
+	            });
+	            var formItemLayout = {
+	                labelCol: { span: 0 },
+	                wrapperCol: { span: 24 }
+	            };
+	            return _react2.default.createElement(
+	                'div',
+	                null,
+	                _react2.default.createElement(
+	                    'div',
+	                    { className: 'logo-p' },
+	                    _react2.default.createElement(
+	                        'header',
+	                        null,
+	                        '管理员登陆'
+	                    )
+	                ),
+	                _react2.default.createElement(
+	                    'p',
+	                    null,
+	                    '曹操来了!!'
+	                ),
+	                _react2.default.createElement(
+	                    _antd.QueueAnim,
+	                    { component: _antd.Form, horizontal: true, delay: 300,
+	                        type: 'bottom', leaveReverse: true, form: this.props.form
+	                    },
+	                    _react2.default.createElement(
+	                        'div',
+	                        { key: 'a' },
+	                        _react2.default.createElement(
+	                            _antd.Row,
+	                            null,
+	                            _react2.default.createElement(
+	                                _antd.Col,
+	                                { span: '24' },
+	                                _react2.default.createElement(
+	                                    FormItem,
+	                                    _extends({ help: isFieldValidating('username') ? '校验中...' : (getFieldError('username') || []).join(', ')
+	                                    }, formItemLayout, { hasFeedback: true }),
+	                                    _react2.default.createElement(_antd.Input, _extends({ onContextMenu: noop, onPaste: noop, onCopy: noop, onCut: noop,
+	                                        autoComplete: 'off', placeholder: '请输入管理员用户名' }, nameProps))
+	                                )
+	                            )
+	                        )
+	                    ),
+	                    _react2.default.createElement(
+	                        'div',
+	                        { key: 'b' },
+	                        _react2.default.createElement(
+	                            _antd.Row,
+	                            null,
+	                            _react2.default.createElement(
+	                                _antd.Col,
+	                                { span: '24' },
+	                                _react2.default.createElement(
+	                                    FormItem,
+	                                    _extends({ help: isFieldValidating('password') ? '校验中...' : (getFieldError('password') || []).join(', ')
+	                                    }, formItemLayout, { hasFeedback: true }),
+	                                    _react2.default.createElement(_antd.Input, _extends({ type: 'password', onContextMenu: noop, onPaste: noop, onCopy: noop, onCut: noop
+	                                    }, passProps, { autoComplete: 'off', placeholder: '请输入密码'
+	                                    }))
+	                                )
+	                            )
+	                        )
+	                    ),
+	                    _react2.default.createElement(
+	                        'div',
+	                        { key: 'c' },
+	                        _react2.default.createElement(
+	                            _antd.Row,
+	                            null,
+	                            _react2.default.createElement(
+	                                _antd.Col,
+	                                { span: '24' },
+	                                _react2.default.createElement(
+	                                    _antd.Col,
+	                                    { span: '24' },
+	                                    _react2.default.createElement(
+	                                        _antd.Button,
+	                                        { type: 'primary', onClick: this.handleSubmit.bind(this) },
+	                                        '登陆'
+	                                    )
+	                                )
+	                            )
+	                        )
+	                    ),
+	                    _react2.default.createElement(
+	                        'div',
+	                        { key: 'd' },
+	                        _react2.default.createElement(
+	                            _antd.Row,
+	                            null,
+	                            _react2.default.createElement(
+	                                _antd.Col,
+	                                { span: '12' },
+	                                _react2.default.createElement(
+	                                    'label',
+	                                    null,
+	                                    _react2.default.createElement(_antd.Checkbox, { defaultChecked: false }),
+	                                    '记住我'
+	                                )
+	                            ),
+	                            _react2.default.createElement(
+	                                _antd.Col,
+	                                { span: '12' },
+	                                _react2.default.createElement(
+	                                    'a',
+	                                    { href: 'javascript:;', className: 'link-one', onClick: this.isShowForget },
+	                                    '忘记密码?'
+	                                )
+	                            )
+	                        )
+	                    ),
+	                    _react2.default.createElement(
+	                        'div',
+	                        { key: 'e' },
+	                        _react2.default.createElement(
+	                            _antd.Row,
+	                            null,
+	                            _react2.default.createElement(
+	                                _antd.Col,
+	                                { span: '24' },
+	                                _react2.default.createElement(
+	                                    _antd.Col,
+	                                    { span: '24' },
+	                                    _react2.default.createElement(
+	                                        _antd.Button,
+	                                        { type: 'ghost', className: 'sub-cus-2', onClick: this.onHidden },
+	                                        '创建账户'
+	                                    )
+	                                )
+	                            )
+	                        )
+	                    )
+	                )
+	            );
+	        }
+	    }]);
+
+	    return LoginForm;
+	}(_react.Component);
+
+	LoginForm = createForm()(LoginForm);
+
+	var RegisterFrom = function (_Component2) {
+	    _inherits(RegisterFrom, _Component2);
 
 	    function RegisterFrom(props) {
 	        _classCallCheck(this, RegisterFrom);
 
-	        var _this = _possibleConstructorReturn(this, Object.getPrototypeOf(RegisterFrom).call(this, props));
+	        var _this2 = _possibleConstructorReturn(this, Object.getPrototypeOf(RegisterFrom).call(this, props));
 
-	        _this.onHidden = _this.onHidden.bind(_this);
-	        return _this;
+	        _this2.onHidden = _this2.onHidden.bind(_this2);
+	        return _this2;
 	    }
 
 	    _createClass(RegisterFrom, [{
@@ -57001,10 +57169,10 @@ webpackJsonp([0],[
 	    }, {
 	        key: 'getValidateStatus',
 	        value: function getValidateStatus(field) {
-	            var _props$form = this.props.form;
-	            var isFieldValidating = _props$form.isFieldValidating;
-	            var getFieldError = _props$form.getFieldError;
-	            var getFieldValue = _props$form.getFieldValue;
+	            var _props$form3 = this.props.form;
+	            var isFieldValidating = _props$form3.isFieldValidating;
+	            var getFieldError = _props$form3.getFieldError;
+	            var getFieldValue = _props$form3.getFieldValue;
 
 
 	            if (isFieldValidating(field)) {
@@ -57082,13 +57250,16 @@ webpackJsonp([0],[
 	    }, {
 	        key: 'render',
 	        value: function render() {
-	            var _props$form2 = this.props.form;
-	            var getFieldProps = _props$form2.getFieldProps;
-	            var getFieldError = _props$form2.getFieldError;
-	            var isFieldValidating = _props$form2.isFieldValidating;
+	            var _props$form4 = this.props.form;
+	            var getFieldProps = _props$form4.getFieldProps;
+	            var getFieldError = _props$form4.getFieldError;
+	            var isFieldValidating = _props$form4.isFieldValidating;
 
+	            var permissionProps = getFieldProps('permission', {
+	                rules: [{ required: true, message: '请选择您的权限' }]
+	            });
 	            var nameProps = getFieldProps('name', {
-	                rules: [{ required: true, min: 5, message: '用户名至少为 5 个字符' }, { validator: this.userExists }]
+	                rules: [{ required: true, min: 5, message: '请输入管理员用户名,长度不能小于5个字符!!' }, { validator: this.userExists }]
 	            });
 	            var emailProps = getFieldProps('email', {
 	                validate: [{
@@ -57100,7 +57271,7 @@ webpackJsonp([0],[
 	                }]
 	            });
 	            var passwdProps = getFieldProps('passwd', {
-	                rules: [{ required: true, whitespace: true, message: '请填写密码' }, { validator: this.checkPass.bind(this) }]
+	                rules: [{ required: true, min: 6, max: 18, whitespace: true, message: '密码长度为6-18位' }, { validator: this.checkPass.bind(this) }]
 	            });
 	            var rePasswdProps = getFieldProps('rePasswd', {
 	                rules: [{
@@ -57137,8 +57308,8 @@ webpackJsonp([0],[
 	                ),
 	                _react2.default.createElement(
 	                    _antd.QueueAnim,
-	                    _defineProperty({ component: _antd.Form, horizontal: true, form: this.props.form, delay: 300,
-	                        className: 'ant-form ant-form-horizontal', type: 'bottom', leaveReverse: true }, 'form', this.props.form),
+	                    { component: _antd.Form, horizontal: true, delay: 300,
+	                        className: 'ant-form ant-form-horizontal', type: 'bottom', leaveReverse: true, form: this.props.form },
 	                    _react2.default.createElement(
 	                        'div',
 	                        { key: 'a' },
@@ -57170,7 +57341,7 @@ webpackJsonp([0],[
 	                                { span: '24' },
 	                                _react2.default.createElement(
 	                                    FormItem,
-	                                    _extends({}, formItemLayout, {
+	                                    _extends({}, formItemLayout, { help: isFieldValidating('email') ? '校验中...' : (getFieldError('email') || []).join(', '),
 	                                        hasFeedback: true }),
 	                                    _react2.default.createElement(_antd.Input, _extends({ type: 'email' }, emailProps, { ref: 'inputCus',
 	                                        autoComplete: 'off', placeholder: '请输入邮箱'
@@ -57190,7 +57361,7 @@ webpackJsonp([0],[
 	                                { span: '24' },
 	                                _react2.default.createElement(
 	                                    FormItem,
-	                                    _extends({}, formItemLayout, { hasFeedback: true }),
+	                                    _extends({}, formItemLayout, { hasFeedback: true, help: isFieldValidating('passwd') ? '校验中...' : (getFieldError('passwd') || []).join(', ') }),
 	                                    _react2.default.createElement(_antd.Input, _extends({ type: 'password', autoComplete: 'off', ref: 'inputCus' }, passwdProps, {
 	                                        onContextMenu: noop, onPaste: noop, onCopy: noop, onCut: noop,
 	                                        autoComplete: 'off', placeholder: '请输入密码'
@@ -57210,7 +57381,8 @@ webpackJsonp([0],[
 	                                { span: '24' },
 	                                _react2.default.createElement(
 	                                    FormItem,
-	                                    _extends({}, formItemLayout, { hasFeedback: true }),
+	                                    _extends({}, formItemLayout, { hasFeedback: true,
+	                                        help: isFieldValidating('rePasswd') ? '校验中...' : (getFieldError('rePasswd') || []).join(', ') }),
 	                                    _react2.default.createElement(_antd.Input, _extends({ type: 'password', autoComplete: 'off', ref: 'inputCus' }, rePasswdProps, {
 	                                        onContextMenu: noop, onPaste: noop, onCopy: noop, onCut: noop,
 	                                        autoComplete: 'off', placeholder: '两次输入的密码保持一致'
@@ -57230,19 +57402,35 @@ webpackJsonp([0],[
 	                                { span: '24' },
 	                                _react2.default.createElement(
 	                                    FormItem,
-	                                    formItemLayout,
+	                                    _extends({}, formItemLayout, { help: isFieldValidating('permission') ? '校验中...' : (getFieldError('permission') || []).join(', '),
+	                                        hasFeedback: true }),
 	                                    _react2.default.createElement(
 	                                        _antd.Select,
-	                                        { defaultValue: '普通管理员', className: 'cus-select' },
+	                                        _extends({}, permissionProps, { placeholder: '请选择国家', style: { width: '100%' } }),
 	                                        _react2.default.createElement(
 	                                            Option,
-	                                            { value: 'jack' },
-	                                            '超级管理员'
+	                                            { value: 'china' },
+	                                            '中国'
 	                                        ),
 	                                        _react2.default.createElement(
 	                                            Option,
-	                                            { value: 'lucy' },
-	                                            '普通管理员'
+	                                            { value: 'use' },
+	                                            '美国'
+	                                        ),
+	                                        _react2.default.createElement(
+	                                            Option,
+	                                            { value: 'japan' },
+	                                            '日本'
+	                                        ),
+	                                        _react2.default.createElement(
+	                                            Option,
+	                                            { value: 'korean' },
+	                                            '韩国'
+	                                        ),
+	                                        _react2.default.createElement(
+	                                            Option,
+	                                            { value: 'Thailand' },
+	                                            '泰国'
 	                                        )
 	                                    )
 	                                )
@@ -57283,7 +57471,7 @@ webpackJsonp([0],[
 	                                { span: '7' },
 	                                _react2.default.createElement(
 	                                    _antd.Button,
-	                                    { type: 'ghost', className: 'sub-cus-2', onClick: this.onHidden },
+	                                    { type: 'ghost', className: 'sub-cus-2', onClick: this.onHidden.bind(this) },
 	                                    '返回登陆'
 	                                )
 	                            ),
@@ -57314,7 +57502,29 @@ webpackJsonp([0],[
 	    onHidden: function onHidden() {
 	        this.props.actions.toForget();
 	    },
+	    handleSubmit: function handleSubmit(e) {
+	        e.preventDefault();
+	        this.props.form.validateFields(function (errors, values) {
+	            if (!!errors) {
+	                console.log('Errors in form!!!');
+	                return;
+	            }
+	            console.log('Submit!!!');
+	            console.log(values);
+	        });
+	    },
 	    render: function render() {
+	        var _props$form5 = this.props.form;
+	        var getFieldProps = _props$form5.getFieldProps;
+	        var getFieldError = _props$form5.getFieldError;
+	        var isFieldValidating = _props$form5.isFieldValidating;
+
+	        var emailProps = getFieldProps('email', {
+	            validate: [{
+	                rules: [{ required: true, type: 'email', message: '请输入正确的邮箱地址' }],
+	                trigger: ['onBlur', 'onChange']
+	            }]
+	        });
 	        var formItemLayout = {
 	            labelCol: { span: 0 },
 	            wrapperCol: { span: 24 }
@@ -57352,9 +57562,8 @@ webpackJsonp([0],[
 	                            _react2.default.createElement(
 	                                FormItem,
 	                                formItemLayout,
-	                                _react2.default.createElement(_antd.Input, { type: 'password', onContextMenu: noop, onPaste: noop, onCopy: noop, onCut: noop,
-	                                    className: 'input-cus', autoComplete: 'off', id: 'pass', placeholder: '请输入邮箱'
-	                                })
+	                                _react2.default.createElement(_antd.Input, _extends({ type: 'password', onContextMenu: noop, onPaste: noop, onCopy: noop, onCut: noop,
+	                                    className: 'input-cus', autoComplete: 'off', id: 'pass', placeholder: '请输入邮箱' }, emailProps))
 	                            )
 	                        )
 	                    )
@@ -57379,7 +57588,7 @@ webpackJsonp([0],[
 	                            { span: '7', offset: '10' },
 	                            _react2.default.createElement(
 	                                _antd.Button,
-	                                { type: 'primary', className: 'sub-cus' },
+	                                { type: 'primary', className: 'sub-cus', onClick: this.handleSubmit },
 	                                '发送'
 	                            )
 	                        )
@@ -57389,6 +57598,7 @@ webpackJsonp([0],[
 	        );
 	    }
 	});
+	ForgetPassword = createForm()(ForgetPassword);
 
 	var LoginAll = _react2.default.createClass({
 	    displayName: 'LoginAll',
@@ -57425,11 +57635,11 @@ webpackJsonp([0],[
 
 	var _reactRedux = __webpack_require__(171);
 
-	var _remoteReduxDevtools = __webpack_require__(620);
+	var _remoteReduxDevtools = __webpack_require__(619);
 
 	var _remoteReduxDevtools2 = _interopRequireDefault(_remoteReduxDevtools);
 
-	var _reducer = __webpack_require__(619);
+	var _reducer = __webpack_require__(714);
 
 	var _reducer2 = _interopRequireDefault(_reducer);
 
@@ -57457,47 +57667,9 @@ webpackJsonp([0],[
 /* 619 */
 /***/ function(module, exports, __webpack_require__) {
 
-	"use strict";
+	'use strict';
 
-	Object.defineProperty(exports, "__esModule", {
-	    value: true
-	});
-	exports.default = changeForm;
-
-	var _actions = __webpack_require__(1);
-
-	var _redux = __webpack_require__(160);
-
-	/**
-	 * Created by bll on 16/4/15.
-	 */
-
-	var initState = {
-	    register: false,
-	    forget: false
-	};
-	function changeForm() {
-	    var state = arguments.length <= 0 || arguments[0] === undefined ? initState : arguments[0];
-	    var action = arguments[1];
-
-	    switch (action.type) {
-	        case _actions.TO_REGISTER:
-	            return {
-	                register: !state.register,
-	                forget: state.forget
-	            };
-	        case _actions.TO_FORGET:
-	            return {
-	                forget: !state.forget,
-	                register: state.register
-	            };
-	        default:
-	            return {
-	                register: state.register,
-	                forget: state.forget
-	            };
-	    }
-	}
+	module.exports = __webpack_require__(620).default;
 
 /***/ },
 /* 620 */
@@ -57505,28 +57677,20 @@ webpackJsonp([0],[
 
 	'use strict';
 
-	module.exports = __webpack_require__(621).default;
-
-/***/ },
-/* 621 */
-/***/ function(module, exports, __webpack_require__) {
-
-	'use strict';
-
 	exports.__esModule = true;
 	exports.default = devTools;
 
-	var _jsan = __webpack_require__(622);
+	var _jsan = __webpack_require__(621);
 
-	var _socketclusterClient = __webpack_require__(626);
+	var _socketclusterClient = __webpack_require__(625);
 
 	var _socketclusterClient2 = _interopRequireDefault(_socketclusterClient);
 
-	var _configureStore = __webpack_require__(650);
+	var _configureStore = __webpack_require__(649);
 
 	var _configureStore2 = _interopRequireDefault(_configureStore);
 
-	var _constants = __webpack_require__(714);
+	var _constants = __webpack_require__(713);
 
 	function _interopRequireDefault(obj) {
 	  return obj && obj.__esModule ? obj : { default: obj };
@@ -57658,20 +57822,20 @@ webpackJsonp([0],[
 	}
 
 /***/ },
+/* 621 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	module.exports = __webpack_require__(622);
+
+/***/ },
 /* 622 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
-	module.exports = __webpack_require__(623);
-
-/***/ },
-/* 623 */
-/***/ function(module, exports, __webpack_require__) {
-
-	'use strict';
-
-	var cycle = __webpack_require__(624);
+	var cycle = __webpack_require__(623);
 
 	exports.stringify = function stringify(value, replacer, space, forceDecycle) {
 	  try {
@@ -57706,14 +57870,14 @@ webpackJsonp([0],[
 	};
 
 /***/ },
-/* 624 */
+/* 623 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
 	var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol ? "symbol" : typeof obj; };
 
-	var pathGetter = __webpack_require__(625);
+	var pathGetter = __webpack_require__(624);
 
 	// Based on https://github.com/douglascrockford/JSON-js/blob/master/cycle.js
 
@@ -57877,7 +58041,7 @@ webpackJsonp([0],[
 	};
 
 /***/ },
-/* 625 */
+/* 624 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -57906,18 +58070,18 @@ webpackJsonp([0],[
 	}
 
 /***/ },
-/* 626 */
+/* 625 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
-	var SCSocket = __webpack_require__(627);
-	var SCSocketCreator = __webpack_require__(649);
+	var SCSocket = __webpack_require__(626);
+	var SCSocketCreator = __webpack_require__(648);
 
 	module.exports.SCSocketCreator = SCSocketCreator;
 	module.exports.SCSocket = SCSocket;
 
-	module.exports.SCEmitter = __webpack_require__(632).SCEmitter;
+	module.exports.SCEmitter = __webpack_require__(631).SCEmitter;
 
 	module.exports.connect = function (options) {
 	  return SCSocketCreator.connect(options);
@@ -57930,21 +58094,21 @@ webpackJsonp([0],[
 	module.exports.version = '4.3.14';
 
 /***/ },
-/* 627 */
+/* 626 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/* WEBPACK VAR INJECTION */(function(global, Buffer) {'use strict';
 
-	var SCEmitter = __webpack_require__(632).SCEmitter;
-	var SCChannel = __webpack_require__(635).SCChannel;
-	var Response = __webpack_require__(636).Response;
-	var AuthEngine = __webpack_require__(639).AuthEngine;
-	var SCTransport = __webpack_require__(640).SCTransport;
-	var querystring = __webpack_require__(642);
-	var LinkedList = __webpack_require__(646);
-	var base64 = __webpack_require__(648);
+	var SCEmitter = __webpack_require__(631).SCEmitter;
+	var SCChannel = __webpack_require__(634).SCChannel;
+	var Response = __webpack_require__(635).Response;
+	var AuthEngine = __webpack_require__(638).AuthEngine;
+	var SCTransport = __webpack_require__(639).SCTransport;
+	var querystring = __webpack_require__(641);
+	var LinkedList = __webpack_require__(645);
+	var base64 = __webpack_require__(647);
 
-	var scErrors = __webpack_require__(637);
+	var scErrors = __webpack_require__(636);
 	var InvalidArgumentsError = scErrors.InvalidArgumentsError;
 	var InvalidMessageError = scErrors.InvalidMessageError;
 	var SocketProtocolError = scErrors.SocketProtocolError;
@@ -58845,10 +59009,10 @@ webpackJsonp([0],[
 	};
 
 	module.exports = SCSocket;
-	/* WEBPACK VAR INJECTION */}.call(exports, (function() { return this; }()), __webpack_require__(628).Buffer))
+	/* WEBPACK VAR INJECTION */}.call(exports, (function() { return this; }()), __webpack_require__(627).Buffer))
 
 /***/ },
-/* 628 */
+/* 627 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/* WEBPACK VAR INJECTION */(function(Buffer, global) {/*!
@@ -58861,9 +59025,9 @@ webpackJsonp([0],[
 
 	'use strict';
 
-	var base64 = __webpack_require__(629);
-	var ieee754 = __webpack_require__(630);
-	var isArray = __webpack_require__(631);
+	var base64 = __webpack_require__(628);
+	var ieee754 = __webpack_require__(629);
+	var isArray = __webpack_require__(630);
 
 	exports.Buffer = Buffer;
 	exports.SlowBuffer = SlowBuffer;
@@ -60364,10 +60528,10 @@ webpackJsonp([0],[
 	  }
 	  return i;
 	}
-	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(628).Buffer, (function() { return this; }())))
+	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(627).Buffer, (function() { return this; }())))
 
 /***/ },
-/* 629 */
+/* 628 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -60490,7 +60654,7 @@ webpackJsonp([0],[
 	})( false ? undefined.base64js = {} : exports);
 
 /***/ },
-/* 630 */
+/* 629 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -60581,7 +60745,7 @@ webpackJsonp([0],[
 	};
 
 /***/ },
-/* 631 */
+/* 630 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -60593,15 +60757,15 @@ webpackJsonp([0],[
 	};
 
 /***/ },
-/* 632 */
+/* 631 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
-	var Emitter = __webpack_require__(633);
+	var Emitter = __webpack_require__(632);
 
 	if (!Object.create) {
-	  Object.create = __webpack_require__(634);
+	  Object.create = __webpack_require__(633);
 	}
 
 	var SCEmitter = function SCEmitter() {
@@ -60631,7 +60795,7 @@ webpackJsonp([0],[
 	module.exports.SCEmitter = SCEmitter;
 
 /***/ },
-/* 633 */
+/* 632 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -60793,7 +60957,7 @@ webpackJsonp([0],[
 	};
 
 /***/ },
-/* 634 */
+/* 633 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -60811,12 +60975,12 @@ webpackJsonp([0],[
 	}();
 
 /***/ },
-/* 635 */
+/* 634 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
-	var SCEmitter = __webpack_require__(632).SCEmitter;
+	var SCEmitter = __webpack_require__(631).SCEmitter;
 
 	var SCChannel = function SCChannel(name, client, options) {
 	  var self = this;
@@ -60886,12 +61050,12 @@ webpackJsonp([0],[
 	module.exports.SCChannel = SCChannel;
 
 /***/ },
-/* 636 */
+/* 635 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
-	var scErrors = __webpack_require__(637);
+	var scErrors = __webpack_require__(636);
 	var InvalidActionError = scErrors.InvalidActionError;
 
 	var Response = function Response(socket, id) {
@@ -60948,12 +61112,12 @@ webpackJsonp([0],[
 	module.exports.Response = Response;
 
 /***/ },
-/* 637 */
+/* 636 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
-	var cycle = __webpack_require__(638);
+	var cycle = __webpack_require__(637);
 
 	var isStrict = function () {
 	  return !this;
@@ -61219,7 +61383,7 @@ webpackJsonp([0],[
 	};
 
 /***/ },
-/* 638 */
+/* 637 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -61391,7 +61555,7 @@ webpackJsonp([0],[
 	};
 
 /***/ },
-/* 639 */
+/* 638 */
 /***/ function(module, exports) {
 
 	/* WEBPACK VAR INJECTION */(function(global) {'use strict';
@@ -61455,18 +61619,18 @@ webpackJsonp([0],[
 	/* WEBPACK VAR INJECTION */}.call(exports, (function() { return this; }())))
 
 /***/ },
-/* 640 */
+/* 639 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
-	var SCEmitter = __webpack_require__(632).SCEmitter;
-	var formatter = __webpack_require__(641);
-	var Response = __webpack_require__(636).Response;
-	var querystring = __webpack_require__(642);
-	var WebSocket = __webpack_require__(645);
+	var SCEmitter = __webpack_require__(631).SCEmitter;
+	var formatter = __webpack_require__(640);
+	var Response = __webpack_require__(635).Response;
+	var querystring = __webpack_require__(641);
+	var WebSocket = __webpack_require__(644);
 
-	var scErrors = __webpack_require__(637);
+	var scErrors = __webpack_require__(636);
 	var TimeoutError = scErrors.TimeoutError;
 
 	var SCTransport = function SCTransport(authEngine, options) {
@@ -61794,7 +61958,7 @@ webpackJsonp([0],[
 	module.exports.SCTransport = SCTransport;
 
 /***/ },
-/* 641 */
+/* 640 */
 /***/ function(module, exports) {
 
 	/* WEBPACK VAR INJECTION */(function(global) {'use strict';
@@ -61887,16 +62051,16 @@ webpackJsonp([0],[
 	/* WEBPACK VAR INJECTION */}.call(exports, (function() { return this; }())))
 
 /***/ },
-/* 642 */
+/* 641 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
-	exports.decode = exports.parse = __webpack_require__(643);
-	exports.encode = exports.stringify = __webpack_require__(644);
+	exports.decode = exports.parse = __webpack_require__(642);
+	exports.encode = exports.stringify = __webpack_require__(643);
 
 /***/ },
-/* 643 */
+/* 642 */
 /***/ function(module, exports) {
 
 	// Copyright Joyent, Inc. and other Node contributors.
@@ -61985,7 +62149,7 @@ webpackJsonp([0],[
 	};
 
 /***/ },
-/* 644 */
+/* 643 */
 /***/ function(module, exports) {
 
 	// Copyright Joyent, Inc. and other Node contributors.
@@ -62054,7 +62218,7 @@ webpackJsonp([0],[
 	};
 
 /***/ },
-/* 645 */
+/* 644 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -62105,15 +62269,15 @@ webpackJsonp([0],[
 	if (WebSocket) ws.prototype = WebSocket.prototype;
 
 /***/ },
-/* 646 */
+/* 645 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
-	module.exports = __webpack_require__(647);
+	module.exports = __webpack_require__(646);
 
 /***/ },
-/* 647 */
+/* 646 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -62506,7 +62670,7 @@ webpackJsonp([0],[
 	module.exports = List;
 
 /***/ },
-/* 648 */
+/* 647 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var __WEBPACK_AMD_DEFINE_RESULT__;/* WEBPACK VAR INJECTION */(function(module, global) {'use strict';
@@ -62654,12 +62818,12 @@ webpackJsonp([0],[
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(422)(module), (function() { return this; }())))
 
 /***/ },
-/* 649 */
+/* 648 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/* WEBPACK VAR INJECTION */(function(global) {'use strict';
 
-	var SCSocket = __webpack_require__(627);
+	var SCSocket = __webpack_require__(626);
 
 	var _connections = {};
 
@@ -62761,7 +62925,7 @@ webpackJsonp([0],[
 	/* WEBPACK VAR INJECTION */}.call(exports, (function() { return this; }())))
 
 /***/ },
-/* 650 */
+/* 649 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -62769,7 +62933,7 @@ webpackJsonp([0],[
 	exports.__esModule = true;
 	exports.default = configureStore;
 
-	var _instrument = __webpack_require__(651);
+	var _instrument = __webpack_require__(650);
 
 	var _instrument2 = _interopRequireDefault(_instrument);
 
@@ -62786,7 +62950,7 @@ webpackJsonp([0],[
 	}
 
 /***/ },
-/* 651 */
+/* 650 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -62813,11 +62977,11 @@ webpackJsonp([0],[
 	exports.ActionCreators = exports.ActionTypes = undefined;
 	exports.default = instrument;
 
-	var _difference = __webpack_require__(652);
+	var _difference = __webpack_require__(651);
 
 	var _difference2 = _interopRequireDefault(_difference);
 
-	var _union = __webpack_require__(708);
+	var _union = __webpack_require__(707);
 
 	var _union2 = _interopRequireDefault(_union);
 
@@ -63250,15 +63414,15 @@ webpackJsonp([0],[
 	}
 
 /***/ },
-/* 652 */
+/* 651 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
-	var baseDifference = __webpack_require__(653),
-	    baseFlatten = __webpack_require__(695),
-	    isArrayLikeObject = __webpack_require__(698),
-	    rest = __webpack_require__(704);
+	var baseDifference = __webpack_require__(652),
+	    baseFlatten = __webpack_require__(694),
+	    isArrayLikeObject = __webpack_require__(697),
+	    rest = __webpack_require__(703);
 
 	/**
 	 * Creates an array of unique `array` values not included in the other given
@@ -63285,17 +63449,17 @@ webpackJsonp([0],[
 	module.exports = difference;
 
 /***/ },
-/* 653 */
+/* 652 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
-	var SetCache = __webpack_require__(654),
-	    arrayIncludes = __webpack_require__(688),
-	    arrayIncludesWith = __webpack_require__(691),
-	    arrayMap = __webpack_require__(692),
-	    baseUnary = __webpack_require__(693),
-	    cacheHas = __webpack_require__(694);
+	var SetCache = __webpack_require__(653),
+	    arrayIncludes = __webpack_require__(687),
+	    arrayIncludesWith = __webpack_require__(690),
+	    arrayMap = __webpack_require__(691),
+	    baseUnary = __webpack_require__(692),
+	    cacheHas = __webpack_require__(693);
 
 	/** Used as the size to enable large array optimizations. */
 	var LARGE_ARRAY_SIZE = 200;
@@ -63355,13 +63519,13 @@ webpackJsonp([0],[
 	module.exports = baseDifference;
 
 /***/ },
-/* 654 */
+/* 653 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
-	var MapCache = __webpack_require__(655),
-	    cachePush = __webpack_require__(687);
+	var MapCache = __webpack_require__(654),
+	    cachePush = __webpack_require__(686);
 
 	/**
 	 *
@@ -63387,16 +63551,16 @@ webpackJsonp([0],[
 	module.exports = SetCache;
 
 /***/ },
-/* 655 */
+/* 654 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
-	var mapClear = __webpack_require__(656),
-	    mapDelete = __webpack_require__(672),
-	    mapGet = __webpack_require__(679),
-	    mapHas = __webpack_require__(682),
-	    mapSet = __webpack_require__(684);
+	var mapClear = __webpack_require__(655),
+	    mapDelete = __webpack_require__(671),
+	    mapGet = __webpack_require__(678),
+	    mapHas = __webpack_require__(681),
+	    mapSet = __webpack_require__(683);
 
 	/**
 	 * Creates a map cache object to store key-value pairs.
@@ -63426,13 +63590,13 @@ webpackJsonp([0],[
 	module.exports = MapCache;
 
 /***/ },
-/* 656 */
+/* 655 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
-	var Hash = __webpack_require__(657),
-	    Map = __webpack_require__(671);
+	var Hash = __webpack_require__(656),
+	    Map = __webpack_require__(670);
 
 	/**
 	 * Removes all key-value entries from the map.
@@ -63452,12 +63616,12 @@ webpackJsonp([0],[
 	module.exports = mapClear;
 
 /***/ },
-/* 657 */
+/* 656 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
-	var nativeCreate = __webpack_require__(658);
+	var nativeCreate = __webpack_require__(657);
 
 	/** Used for built-in method references. */
 	var objectProto = Object.prototype;
@@ -63477,12 +63641,12 @@ webpackJsonp([0],[
 	module.exports = Hash;
 
 /***/ },
-/* 658 */
+/* 657 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
-	var getNative = __webpack_require__(659);
+	var getNative = __webpack_require__(658);
 
 	/* Built-in method references that are verified to be native. */
 	var nativeCreate = getNative(Object, 'create');
@@ -63490,12 +63654,12 @@ webpackJsonp([0],[
 	module.exports = nativeCreate;
 
 /***/ },
-/* 659 */
+/* 658 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
-	var isNative = __webpack_require__(660);
+	var isNative = __webpack_require__(659);
 
 	/**
 	 * Gets the native function at `key` of `object`.
@@ -63513,15 +63677,15 @@ webpackJsonp([0],[
 	module.exports = getNative;
 
 /***/ },
-/* 660 */
+/* 659 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
-	var isFunction = __webpack_require__(661),
-	    isHostObject = __webpack_require__(663),
-	    isObject = __webpack_require__(662),
-	    toSource = __webpack_require__(664);
+	var isFunction = __webpack_require__(660),
+	    isHostObject = __webpack_require__(662),
+	    isObject = __webpack_require__(661),
+	    toSource = __webpack_require__(663);
 
 	/**
 	 * Used to match `RegExp`
@@ -63573,12 +63737,12 @@ webpackJsonp([0],[
 	module.exports = isNative;
 
 /***/ },
-/* 661 */
+/* 660 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
-	var isObject = __webpack_require__(662);
+	var isObject = __webpack_require__(661);
 
 	/** `Object#toString` result references. */
 	var funcTag = '[object Function]',
@@ -63623,7 +63787,7 @@ webpackJsonp([0],[
 	module.exports = isFunction;
 
 /***/ },
-/* 662 */
+/* 661 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -63663,7 +63827,7 @@ webpackJsonp([0],[
 	module.exports = isObject;
 
 /***/ },
-/* 663 */
+/* 662 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -63690,13 +63854,13 @@ webpackJsonp([0],[
 	module.exports = isHostObject;
 
 /***/ },
-/* 664 */
+/* 663 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
-	var isFunction = __webpack_require__(661),
-	    toString = __webpack_require__(665);
+	var isFunction = __webpack_require__(660),
+	    toString = __webpack_require__(664);
 
 	/** Used to resolve the decompiled source of functions. */
 	var funcToString = Function.prototype.toString;
@@ -63720,13 +63884,13 @@ webpackJsonp([0],[
 	module.exports = toSource;
 
 /***/ },
-/* 665 */
+/* 664 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
-	var _Symbol = __webpack_require__(666),
-	    isSymbol = __webpack_require__(669);
+	var _Symbol = __webpack_require__(665),
+	    isSymbol = __webpack_require__(668);
 
 	/** Used as references for various `Number` constants. */
 	var INFINITY = 1 / 0;
@@ -63774,12 +63938,12 @@ webpackJsonp([0],[
 	module.exports = toString;
 
 /***/ },
-/* 666 */
+/* 665 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
-	var root = __webpack_require__(667);
+	var root = __webpack_require__(666);
 
 	/** Built-in value references. */
 	var _Symbol = root.Symbol;
@@ -63787,14 +63951,14 @@ webpackJsonp([0],[
 	module.exports = _Symbol;
 
 /***/ },
-/* 667 */
+/* 666 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/* WEBPACK VAR INJECTION */(function(module, global) {'use strict';
 
 	var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol ? "symbol" : typeof obj; };
 
-	var checkGlobal = __webpack_require__(668);
+	var checkGlobal = __webpack_require__(667);
 
 	/** Used to determine if values are of the language type `Object`. */
 	var objectTypes = {
@@ -63832,7 +63996,7 @@ webpackJsonp([0],[
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(422)(module), (function() { return this; }())))
 
 /***/ },
-/* 668 */
+/* 667 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -63851,14 +64015,14 @@ webpackJsonp([0],[
 	module.exports = checkGlobal;
 
 /***/ },
-/* 669 */
+/* 668 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
 	var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol ? "symbol" : typeof obj; };
 
-	var isObjectLike = __webpack_require__(670);
+	var isObjectLike = __webpack_require__(669);
 
 	/** `Object#toString` result references. */
 	var symbolTag = '[object Symbol]';
@@ -63898,7 +64062,7 @@ webpackJsonp([0],[
 	module.exports = isSymbol;
 
 /***/ },
-/* 670 */
+/* 669 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -63936,13 +64100,13 @@ webpackJsonp([0],[
 	module.exports = isObjectLike;
 
 /***/ },
-/* 671 */
+/* 670 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
-	var getNative = __webpack_require__(659),
-	    root = __webpack_require__(667);
+	var getNative = __webpack_require__(658),
+	    root = __webpack_require__(666);
 
 	/* Built-in method references that are verified to be native. */
 	var Map = getNative(root, 'Map');
@@ -63950,15 +64114,15 @@ webpackJsonp([0],[
 	module.exports = Map;
 
 /***/ },
-/* 672 */
+/* 671 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
-	var Map = __webpack_require__(671),
-	    assocDelete = __webpack_require__(673),
-	    hashDelete = __webpack_require__(676),
-	    isKeyable = __webpack_require__(678);
+	var Map = __webpack_require__(670),
+	    assocDelete = __webpack_require__(672),
+	    hashDelete = __webpack_require__(675),
+	    isKeyable = __webpack_require__(677);
 
 	/**
 	 * Removes `key` and its value from the map.
@@ -63980,12 +64144,12 @@ webpackJsonp([0],[
 	module.exports = mapDelete;
 
 /***/ },
-/* 673 */
+/* 672 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
-	var assocIndexOf = __webpack_require__(674);
+	var assocIndexOf = __webpack_require__(673);
 
 	/** Used for built-in method references. */
 	var arrayProto = Array.prototype;
@@ -64018,12 +64182,12 @@ webpackJsonp([0],[
 	module.exports = assocDelete;
 
 /***/ },
-/* 674 */
+/* 673 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
-	var eq = __webpack_require__(675);
+	var eq = __webpack_require__(674);
 
 	/**
 	 * Gets the index at which the `key` is found in `array` of key-value pairs.
@@ -64046,7 +64210,7 @@ webpackJsonp([0],[
 	module.exports = assocIndexOf;
 
 /***/ },
-/* 675 */
+/* 674 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -64090,12 +64254,12 @@ webpackJsonp([0],[
 	module.exports = eq;
 
 /***/ },
-/* 676 */
+/* 675 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
-	var hashHas = __webpack_require__(677);
+	var hashHas = __webpack_require__(676);
 
 	/**
 	 * Removes `key` and its value from the hash.
@@ -64112,12 +64276,12 @@ webpackJsonp([0],[
 	module.exports = hashDelete;
 
 /***/ },
-/* 677 */
+/* 676 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
-	var nativeCreate = __webpack_require__(658);
+	var nativeCreate = __webpack_require__(657);
 
 	/** Used for built-in method references. */
 	var objectProto = Object.prototype;
@@ -64140,7 +64304,7 @@ webpackJsonp([0],[
 	module.exports = hashHas;
 
 /***/ },
-/* 678 */
+/* 677 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -64162,15 +64326,15 @@ webpackJsonp([0],[
 	module.exports = isKeyable;
 
 /***/ },
-/* 679 */
+/* 678 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
-	var Map = __webpack_require__(671),
-	    assocGet = __webpack_require__(680),
-	    hashGet = __webpack_require__(681),
-	    isKeyable = __webpack_require__(678);
+	var Map = __webpack_require__(670),
+	    assocGet = __webpack_require__(679),
+	    hashGet = __webpack_require__(680),
+	    isKeyable = __webpack_require__(677);
 
 	/**
 	 * Gets the map value for `key`.
@@ -64192,12 +64356,12 @@ webpackJsonp([0],[
 	module.exports = mapGet;
 
 /***/ },
-/* 680 */
+/* 679 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
-	var assocIndexOf = __webpack_require__(674);
+	var assocIndexOf = __webpack_require__(673);
 
 	/**
 	 * Gets the associative array value for `key`.
@@ -64215,12 +64379,12 @@ webpackJsonp([0],[
 	module.exports = assocGet;
 
 /***/ },
-/* 681 */
+/* 680 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
-	var nativeCreate = __webpack_require__(658);
+	var nativeCreate = __webpack_require__(657);
 
 	/** Used to stand-in for `undefined` hash values. */
 	var HASH_UNDEFINED = '__lodash_hash_undefined__';
@@ -64250,15 +64414,15 @@ webpackJsonp([0],[
 	module.exports = hashGet;
 
 /***/ },
-/* 682 */
+/* 681 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
-	var Map = __webpack_require__(671),
-	    assocHas = __webpack_require__(683),
-	    hashHas = __webpack_require__(677),
-	    isKeyable = __webpack_require__(678);
+	var Map = __webpack_require__(670),
+	    assocHas = __webpack_require__(682),
+	    hashHas = __webpack_require__(676),
+	    isKeyable = __webpack_require__(677);
 
 	/**
 	 * Checks if a map value for `key` exists.
@@ -64280,12 +64444,12 @@ webpackJsonp([0],[
 	module.exports = mapHas;
 
 /***/ },
-/* 683 */
+/* 682 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
-	var assocIndexOf = __webpack_require__(674);
+	var assocIndexOf = __webpack_require__(673);
 
 	/**
 	 * Checks if an associative array value for `key` exists.
@@ -64302,15 +64466,15 @@ webpackJsonp([0],[
 	module.exports = assocHas;
 
 /***/ },
-/* 684 */
+/* 683 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
-	var Map = __webpack_require__(671),
-	    assocSet = __webpack_require__(685),
-	    hashSet = __webpack_require__(686),
-	    isKeyable = __webpack_require__(678);
+	var Map = __webpack_require__(670),
+	    assocSet = __webpack_require__(684),
+	    hashSet = __webpack_require__(685),
+	    isKeyable = __webpack_require__(677);
 
 	/**
 	 * Sets the map `key` to `value`.
@@ -64337,12 +64501,12 @@ webpackJsonp([0],[
 	module.exports = mapSet;
 
 /***/ },
-/* 685 */
+/* 684 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
-	var assocIndexOf = __webpack_require__(674);
+	var assocIndexOf = __webpack_require__(673);
 
 	/**
 	 * Sets the associative array `key` to `value`.
@@ -64364,12 +64528,12 @@ webpackJsonp([0],[
 	module.exports = assocSet;
 
 /***/ },
-/* 686 */
+/* 685 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
-	var nativeCreate = __webpack_require__(658);
+	var nativeCreate = __webpack_require__(657);
 
 	/** Used to stand-in for `undefined` hash values. */
 	var HASH_UNDEFINED = '__lodash_hash_undefined__';
@@ -64389,12 +64553,12 @@ webpackJsonp([0],[
 	module.exports = hashSet;
 
 /***/ },
-/* 687 */
+/* 686 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
-	var isKeyable = __webpack_require__(678);
+	var isKeyable = __webpack_require__(677);
 
 	/** Used to stand-in for `undefined` hash values. */
 	var HASH_UNDEFINED = '__lodash_hash_undefined__';
@@ -64422,12 +64586,12 @@ webpackJsonp([0],[
 	module.exports = cachePush;
 
 /***/ },
-/* 688 */
+/* 687 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
-	var baseIndexOf = __webpack_require__(689);
+	var baseIndexOf = __webpack_require__(688);
 
 	/**
 	 * A specialized version of `_.includes` for arrays without support for
@@ -64445,12 +64609,12 @@ webpackJsonp([0],[
 	module.exports = arrayIncludes;
 
 /***/ },
-/* 689 */
+/* 688 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
-	var indexOfNaN = __webpack_require__(690);
+	var indexOfNaN = __webpack_require__(689);
 
 	/**
 	 * The base implementation of `_.indexOf` without `fromIndex` bounds checks.
@@ -64479,7 +64643,7 @@ webpackJsonp([0],[
 	module.exports = baseIndexOf;
 
 /***/ },
-/* 690 */
+/* 689 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -64509,7 +64673,7 @@ webpackJsonp([0],[
 	module.exports = indexOfNaN;
 
 /***/ },
-/* 691 */
+/* 690 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -64538,7 +64702,7 @@ webpackJsonp([0],[
 	module.exports = arrayIncludesWith;
 
 /***/ },
-/* 692 */
+/* 691 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -64566,7 +64730,7 @@ webpackJsonp([0],[
 	module.exports = arrayMap;
 
 /***/ },
-/* 693 */
+/* 692 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -64587,12 +64751,12 @@ webpackJsonp([0],[
 	module.exports = baseUnary;
 
 /***/ },
-/* 694 */
+/* 693 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
-	var isKeyable = __webpack_require__(678);
+	var isKeyable = __webpack_require__(677);
 
 	/** Used to stand-in for `undefined` hash values. */
 	var HASH_UNDEFINED = '__lodash_hash_undefined__';
@@ -64619,15 +64783,15 @@ webpackJsonp([0],[
 	module.exports = cacheHas;
 
 /***/ },
-/* 695 */
+/* 694 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
-	var arrayPush = __webpack_require__(696),
-	    isArguments = __webpack_require__(697),
-	    isArray = __webpack_require__(703),
-	    isArrayLikeObject = __webpack_require__(698);
+	var arrayPush = __webpack_require__(695),
+	    isArguments = __webpack_require__(696),
+	    isArray = __webpack_require__(702),
+	    isArrayLikeObject = __webpack_require__(697);
 
 	/**
 	 * The base implementation of `_.flatten` with support for restricting flattening.
@@ -64664,7 +64828,7 @@ webpackJsonp([0],[
 	module.exports = baseFlatten;
 
 /***/ },
-/* 696 */
+/* 695 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -64691,12 +64855,12 @@ webpackJsonp([0],[
 	module.exports = arrayPush;
 
 /***/ },
-/* 697 */
+/* 696 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
-	var isArrayLikeObject = __webpack_require__(698);
+	var isArrayLikeObject = __webpack_require__(697);
 
 	/** `Object#toString` result references. */
 	var argsTag = '[object Arguments]';
@@ -64743,13 +64907,13 @@ webpackJsonp([0],[
 	module.exports = isArguments;
 
 /***/ },
-/* 698 */
+/* 697 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
-	var isArrayLike = __webpack_require__(699),
-	    isObjectLike = __webpack_require__(670);
+	var isArrayLike = __webpack_require__(698),
+	    isObjectLike = __webpack_require__(669);
 
 	/**
 	 * This method is like `_.isArrayLike` except that it also checks if `value`
@@ -64783,14 +64947,14 @@ webpackJsonp([0],[
 	module.exports = isArrayLikeObject;
 
 /***/ },
-/* 699 */
+/* 698 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
-	var getLength = __webpack_require__(700),
-	    isFunction = __webpack_require__(661),
-	    isLength = __webpack_require__(702);
+	var getLength = __webpack_require__(699),
+	    isFunction = __webpack_require__(660),
+	    isLength = __webpack_require__(701);
 
 	/**
 	 * Checks if `value` is array-like. A value is considered array-like if it's
@@ -64824,12 +64988,12 @@ webpackJsonp([0],[
 	module.exports = isArrayLike;
 
 /***/ },
-/* 700 */
+/* 699 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
-	var baseProperty = __webpack_require__(701);
+	var baseProperty = __webpack_require__(700);
 
 	/**
 	 * Gets the "length" property value of `object`.
@@ -64847,7 +65011,7 @@ webpackJsonp([0],[
 	module.exports = getLength;
 
 /***/ },
-/* 701 */
+/* 700 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -64868,7 +65032,7 @@ webpackJsonp([0],[
 	module.exports = baseProperty;
 
 /***/ },
-/* 702 */
+/* 701 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -64910,7 +65074,7 @@ webpackJsonp([0],[
 	module.exports = isLength;
 
 /***/ },
-/* 703 */
+/* 702 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -64945,13 +65109,13 @@ webpackJsonp([0],[
 	module.exports = isArray;
 
 /***/ },
-/* 704 */
+/* 703 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
-	var apply = __webpack_require__(705),
-	    toInteger = __webpack_require__(706);
+	var apply = __webpack_require__(704),
+	    toInteger = __webpack_require__(705);
 
 	/** Used as the `TypeError` message for "Functions" methods. */
 	var FUNC_ERROR_TEXT = 'Expected a function';
@@ -65019,7 +65183,7 @@ webpackJsonp([0],[
 	module.exports = rest;
 
 /***/ },
-/* 705 */
+/* 704 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -65052,12 +65216,12 @@ webpackJsonp([0],[
 	module.exports = apply;
 
 /***/ },
-/* 706 */
+/* 705 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
-	var toNumber = __webpack_require__(707);
+	var toNumber = __webpack_require__(706);
 
 	/** Used as references for various `Number` constants. */
 	var INFINITY = 1 / 0,
@@ -65105,14 +65269,14 @@ webpackJsonp([0],[
 	module.exports = toInteger;
 
 /***/ },
-/* 707 */
+/* 706 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
-	var isFunction = __webpack_require__(661),
-	    isObject = __webpack_require__(662),
-	    isSymbol = __webpack_require__(669);
+	var isFunction = __webpack_require__(660),
+	    isObject = __webpack_require__(661),
+	    isSymbol = __webpack_require__(668);
 
 	/** Used as references for various `Number` constants. */
 	var NAN = 0 / 0;
@@ -65177,14 +65341,14 @@ webpackJsonp([0],[
 	module.exports = toNumber;
 
 /***/ },
-/* 708 */
+/* 707 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
-	var baseFlatten = __webpack_require__(695),
-	    baseUniq = __webpack_require__(709),
-	    rest = __webpack_require__(704);
+	var baseFlatten = __webpack_require__(694),
+	    baseUniq = __webpack_require__(708),
+	    rest = __webpack_require__(703);
 
 	/**
 	 * Creates an array of unique values, in order, from all given arrays using
@@ -65209,17 +65373,17 @@ webpackJsonp([0],[
 	module.exports = union;
 
 /***/ },
-/* 709 */
+/* 708 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
-	var SetCache = __webpack_require__(654),
-	    arrayIncludes = __webpack_require__(688),
-	    arrayIncludesWith = __webpack_require__(691),
-	    cacheHas = __webpack_require__(694),
-	    createSet = __webpack_require__(710),
-	    setToArray = __webpack_require__(713);
+	var SetCache = __webpack_require__(653),
+	    arrayIncludes = __webpack_require__(687),
+	    arrayIncludesWith = __webpack_require__(690),
+	    cacheHas = __webpack_require__(693),
+	    createSet = __webpack_require__(709),
+	    setToArray = __webpack_require__(712);
 
 	/** Used as the size to enable large array optimizations. */
 	var LARGE_ARRAY_SIZE = 200;
@@ -65283,13 +65447,13 @@ webpackJsonp([0],[
 	module.exports = baseUniq;
 
 /***/ },
-/* 710 */
+/* 709 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
-	var Set = __webpack_require__(711),
-	    noop = __webpack_require__(712);
+	var Set = __webpack_require__(710),
+	    noop = __webpack_require__(711);
 
 	/**
 	 * Creates a set of `values`.
@@ -65305,13 +65469,13 @@ webpackJsonp([0],[
 	module.exports = createSet;
 
 /***/ },
-/* 711 */
+/* 710 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
-	var getNative = __webpack_require__(659),
-	    root = __webpack_require__(667);
+	var getNative = __webpack_require__(658),
+	    root = __webpack_require__(666);
 
 	/* Built-in method references that are verified to be native. */
 	var Set = getNative(root, 'Set');
@@ -65319,7 +65483,7 @@ webpackJsonp([0],[
 	module.exports = Set;
 
 /***/ },
-/* 712 */
+/* 711 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -65346,7 +65510,7 @@ webpackJsonp([0],[
 	module.exports = noop;
 
 /***/ },
-/* 713 */
+/* 712 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -65371,7 +65535,7 @@ webpackJsonp([0],[
 	module.exports = setToArray;
 
 /***/ },
-/* 714 */
+/* 713 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -65386,6 +65550,52 @@ webpackJsonp([0],[
 	    randomness: 60000
 	  }
 	};
+
+/***/ },
+/* 714 */
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+
+	Object.defineProperty(exports, "__esModule", {
+	    value: true
+	});
+	exports.default = changeForm;
+
+	var _actions = __webpack_require__(1);
+
+	var _redux = __webpack_require__(160);
+
+	/**
+	 * Created by bll on 16/4/15.
+	 */
+
+	var initState = {
+	    register: false,
+	    forget: false
+	};
+	function changeForm() {
+	    var state = arguments.length <= 0 || arguments[0] === undefined ? initState : arguments[0];
+	    var action = arguments[1];
+
+	    switch (action.type) {
+	        case _actions.TO_REGISTER:
+	            return {
+	                register: !state.register,
+	                forget: state.forget
+	            };
+	        case _actions.TO_FORGET:
+	            return {
+	                forget: !state.forget,
+	                register: state.register
+	            };
+	        default:
+	            return {
+	                register: state.register,
+	                forget: state.forget
+	            };
+	    }
+	}
 
 /***/ }
 ]);
