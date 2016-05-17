@@ -6,9 +6,13 @@ var logger = require('morgan');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 
+var mongoose=require("./config/mongoose.js");
+var db=mongoose();
+
 
 var admin = require('./routes/admin');
 var blog = require('./routes/blog');
+var test = require('./routes/test');
 //var uploads=require('./server_api/upload');
 
 var app = express();
@@ -31,7 +35,7 @@ app.use("/blog/build",express.static(path.join(__dirname, 'public/build')));
 
 app.use('/admin', admin);
 app.use('/blog', blog);
-//app.use("/blog",uploads);
+app.use("/",test);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
