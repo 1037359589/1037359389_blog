@@ -16,6 +16,12 @@ router.get("/header",function(req,res,next){
   res.render('Admin/index', { title: 'Express'});
 });
 
+router.get("/2016",function(req,res,next){
+  res.render('Admin/home', { title: '屌丝管你台',build:BUILD});
+});
+
+
+
 
 
 module.exports = router;

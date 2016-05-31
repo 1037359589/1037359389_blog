@@ -10,11 +10,13 @@ var ADMIN_PUBLIC = path.resolve(ROOT_PATH, 'public/Admin');
 var BLOG_PUBLIC = path.resolve(ROOT_PATH, 'public/Blog');
 module.exports = {
     entry: {
+        main: ['webpack/hot/dev-server'],
         //test: glob.sync(ADMIN_PUBLIC+"/js/test/*.js"),
         //inc: glob.sync(ADMIN_PUBLIC+"/js/style/*.js"),
-        //global: glob.sync(ADMIN_PUBLIC+"/js/global/*.js"),
+        global: glob.sync(ADMIN_PUBLIC+"/js/global/*.js"),
         login:glob.sync(ADMIN_PUBLIC+"/js/login/*.js"),
-        test2: BLOG_PUBLIC+"/js/test.js",
+        admin_home:glob.sync(ADMIN_PUBLIC+"/js/home/*.js"),
+        //test2: BLOG_PUBLIC+"/js/test.js",
         vendor: ['react','react-dom'] //第三方库
     },
     output: {

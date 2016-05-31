@@ -6,8 +6,8 @@
 
 //require("../../css/index.css");
 //require("../../css/login/login.css");
-const ReactRouter = require('react-router');
-let { Router, Route, Link, hashHistory } = ReactRouter;
+//const ReactRouter = require('react-router');
+//let { Router, Route, Link, hashHistory } = ReactRouter;
 import { Button, Form, Input, Row, Col,Checkbox,QueueAnim,Select,Menu,RadioGroup,Radio,Cascader } from 'antd';
 import React,{findDOMNode,Component,PropTypes} from "react";
 //import classNames from 'classnames';
