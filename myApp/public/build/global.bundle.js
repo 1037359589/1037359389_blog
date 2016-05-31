@@ -1,4 +1,4 @@
-webpackJsonp([1],[
+webpackJsonp([0],[
 /* 0 */
 /***/ function(module, exports, __webpack_require__) {
 
@@ -2088,7 +2088,7 @@ webpackJsonp([1],[
 	    _react2.default.createElement(
 	        'a',
 	        { className: 'ant-dropdown-link', href: '#' },
-	        _react2.default.createElement('img', { src: 'img/home/tx.jpeg', alt: '' })
+	        _react2.default.createElement('img', { src: 'img/global/tx.jpeg', alt: '' })
 	    )
 	), document.getElementById('person'));
 	var ToggleSlider = _react2.default.createClass({
@@ -51052,7 +51052,7 @@ webpackJsonp([1],[
 	    _react2.default.createElement(
 	        'a',
 	        { className: 'ant-dropdown-link', href: '#' },
-	        _react2.default.createElement('img', { src: 'img/home/tx.jpeg', alt: '' })
+	        _react2.default.createElement('img', { src: 'img/global/tx.jpeg', alt: '' })
 	    )
 	), document.getElementById('person'));
 	var ToggleSlider = _react2.default.createClass({

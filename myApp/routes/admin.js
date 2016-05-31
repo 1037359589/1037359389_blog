@@ -2,7 +2,7 @@ var express = require('express');
 var router = express.Router();
 var path=__dirname;
 console.log(path);
-const BUILD="http://localhost:3000/admin/build/";
+const BUILD="http://localhost:3000/admin2016pp/build/";
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
@@ -16,8 +16,8 @@ router.get("/header",function(req,res,next){
   res.render('Admin/index', { title: 'Express'});
 });
 
-router.get("/2016",function(req,res,next){
-  res.render('Admin/home', { title: '屌丝管你台',build:BUILD});
+router.get("/user_admin",function(req,res,next){
+  res.render('Admin/user_admin', { title: '屌丝管你台',build:BUILD});
 });
 
 

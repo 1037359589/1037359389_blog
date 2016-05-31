@@ -6,7 +6,7 @@ var path = require("path");
 var glob=require('glob');
 var uglifyJsPlugin = webpack.optimize.UglifyJsPlugin;
 var ROOT_PATH = path.resolve(__dirname);
-var ADMIN_PUBLIC = path.resolve(ROOT_PATH, 'public/Admin');
+var ADMIN_PUBLIC = path.resolve(ROOT_PATH, 'public/Admin2016pp');
 var BLOG_PUBLIC = path.resolve(ROOT_PATH, 'public/Blog');
 module.exports = {
     entry: {
@@ -15,7 +15,7 @@ module.exports = {
         //inc: glob.sync(ADMIN_PUBLIC+"/js/style/*.js"),
         global: glob.sync(ADMIN_PUBLIC+"/js/global/*.js"),
         login:glob.sync(ADMIN_PUBLIC+"/js/login/*.js"),
-        admin_home:glob.sync(ADMIN_PUBLIC+"/js/home/*.js"),
+        user_admin:glob.sync(ADMIN_PUBLIC+"/js/user_admin/*.js"),
         //test2: BLOG_PUBLIC+"/js/test.js",
         vendor: ['react','react-dom'] //第三方库
     },

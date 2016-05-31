@@ -28,12 +28,12 @@ app.use(logger('dev'));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cookieParser());
-app.use("/admin",express.static(path.join(__dirname, 'public/Admin')));
+app.use("/admin2016pp",express.static(path.join(__dirname, 'public/Admin2016pp')));
 app.use("/blog",express.static(path.join(__dirname, 'public/Blog')));
-app.use("/admin/build",express.static(path.join(__dirname, 'public/build')));
+app.use("/admin2016pp/build",express.static(path.join(__dirname, 'public/build')));
 app.use("/blog/build",express.static(path.join(__dirname, 'public/build')));
 
-app.use('/admin', admin);
+app.use('/admin2016pp', admin);
 app.use('/blog', blog);
 app.use("/",test);
 
