@@ -58744,7 +58744,10 @@ webpackJsonp([4],[
 	    }
 	}, {
 	    title: '登录次数',
-	    dataIndex: 'login_times'
+	    dataIndex: 'login_times',
+	    sorter: function sorter(a, b) {
+	        return a.login_times - b.login_times;
+	    }
 	}, {
 	    title: '注册时间',
 	    dataIndex: 'reg_time',
@@ -58774,7 +58777,7 @@ webpackJsonp([4],[
 	}];
 
 	var data1 = [];
-	for (var i = 0; i < 460; i++) {
+	for (var i = 1; i < 460; i++) {
 	    data1.push({
 	        key: i,
 	        id: i,
@@ -58783,7 +58786,7 @@ webpackJsonp([4],[
 	        sex: '男',
 	        email: '1037359589@qq.com',
 	        login_recent: '2016-6-1',
-	        login_times: '10',
+	        login_times: i,
 	        reg_time: '2016-5-1',
 	        count_text: '' + i,
 	        do: {
