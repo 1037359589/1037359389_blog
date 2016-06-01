@@ -20,7 +20,7 @@ const Sider = React.createClass({
         });
     },
     onToggle(info) {
-        console.log(info);
+        console.log(info.keyPath);
         this.setState({
             openKeys: info.open ? info.keyPath : info.keyPath.slice(1),
         });
@@ -28,23 +28,40 @@ const Sider = React.createClass({
     handleAlert(info){
         console.log(info);
     },
+    componentDidMount(){
+        var s=window.location.search.split("=");
+        var type=s.pop();
+        this.setState({
+            current: type
+        });
+        if(type=="1"||type=="2"){
+            this.setState({
+                openKeys: ['sub1']
+            });
+        }else if(type=="3"||type=="4"||type=="5"){
+            this.setState({
+                openKeys: ['sub2']
+            });
+        }
+    },
     render() {
         return (
             <Menu onClick={this.handleClick}
                   style={{width:203}}
                   openKeys={this.state.openKeys}
+                  defaultOpenKeys={this.setState.openKeys}
+                  selectedKeys={[this.state.current]}
                   onOpen={this.onToggle}
                   onClose={this.onToggle}
-                  selectedKeys={[this.state.current]}
                   mode="inline">
                 <SubMenu key="sub1" title={<span><Icon type="user" /><span>用户</span></span>}>
-                    <Menu.Item key="1">管理员</Menu.Item>
-                    <Menu.Item key="2">会员</Menu.Item>
+                    <Menu.Item key="1"><a href="user_admin?type=1">管理员</a></Menu.Item>
+                    <Menu.Item key="2"><a href="user_admin?type=2">会员</a></Menu.Item>
                 </SubMenu>
-                <SubMenu key="sub2" title={<span><Icon type="appstore" /><span>技术</span></span>}>
-                    <Menu.Item key="3">前端</Menu.Item>
-                    <Menu.Item key="4">后端</Menu.Item>
-                    <Menu.Item key="5">App</Menu.Item>
+                <SubMenu key="sub2" title={<span><Icon type="appstore" /><span>全栈</span></span>}>
+                    <Menu.Item key="3"><a href="tech?type=3">前端</a></Menu.Item>
+                    <Menu.Item key="4"><a href="tech?type=4">后端</a></Menu.Item>
+                    <Menu.Item key="5"><a href="tech?type=5">App</a></Menu.Item>
                 </SubMenu>
                 <SubMenu key="sub4" title={<span><Icon type="message" /><span>评论</span></span>}>
                     <Menu.Item key="6">前端</Menu.Item>
@@ -58,16 +75,15 @@ const Sider = React.createClass({
 
 
 const menu = (
-
     <Menu>
         <Menu.Item key="0">
-            <a target="_blank" href="http://www.alipay.com/">个人资料</a>
+            <a target="_blank" href="person_center">个人资料</a>
         </Menu.Item>
         <Menu.Item key="1">
-            <a target="_blank" href="http://www.taobao.com/">修改密码</a>
+            <a target="_blank" href="change_password">修改密码</a>
         </Menu.Item>
         <Menu.Item key="2">
-            <a target="_blank" href="http://www.taobao.com/">退出</a>
+            <a target="_blank" href="login_out">退出</a>
         </Menu.Item>
     </Menu>
 );

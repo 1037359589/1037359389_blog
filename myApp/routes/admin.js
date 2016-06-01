@@ -19,9 +19,9 @@ router.get("/header",function(req,res,next){
 router.get("/user_admin",function(req,res,next){
   res.render('Admin/user_admin', { title: '屌丝管你台',build:BUILD});
 });
-
-
-
+router.get("/tech",function(req,res,next){
+  res.render('Admin/tech', { title: '屌丝管你台',build:BUILD});
+});
 
 
 module.exports = router;
