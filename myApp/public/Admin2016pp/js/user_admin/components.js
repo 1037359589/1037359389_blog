@@ -1,4 +1,4 @@
-import { Table,Icon,Button} from 'antd';
+import { Table,Icon,Button,QueueAnim} from 'antd';
 import reqwest from 'reqwest';
 import React,{findDOMNode,Component,PropTypes} from "react";
 import {BtnRemove,BtnPass,BtnRecover} from "../global/cus_components";
@@ -155,7 +155,12 @@ var TableOne=React.createClass({
     render(){
         return(
             <div>
-            <Table columns={columns1} dataSource={data1} pagination={pagination} />
+                <QueueAnim className="demo-content"  type={['right', 'left']}
+                           ease={['easeOutQuart', 'easeInOutQuart']}>
+                    <div key="a">
+                      <Table columns={columns1} dataSource={data1} pagination={pagination} />
+                    </div>
+                </QueueAnim>
             </div>
         )
     }
@@ -227,7 +232,12 @@ var TableTwo=React.createClass({
     render(){
         return(
             <div>
-                <Table columns={columns2} dataSource={data2} pagination={pagination} />
+                <QueueAnim className="demo-content"  type={['right', 'left']}
+                           ease={['easeOutQuart', 'easeInOutQuart']}>
+                    <div key="a">
+                        <Table columns={columns2} dataSource={data2} pagination={pagination} />
+                    </div>
+                </QueueAnim>
             </div>
         )
     }
@@ -296,7 +306,12 @@ var TableThree=React.createClass({
     render(){
         return(
             <div>
-                <Table columns={columns3} dataSource={data3} pagination={pagination} />
+                <QueueAnim className="demo-content"  type={['right', 'left']}
+                           ease={['easeOutQuart', 'easeInOutQuart']}>
+                    <div key="a">
+                        <Table columns={columns3} dataSource={data3} pagination={pagination}/>
+                    </div>
+                </QueueAnim>
             </div>
         )
     }
@@ -350,7 +365,7 @@ var AllTable=React.createClass({
         return(
             <div>
                 <Tabs actions actions={actions} current_tab={current_tab}/>
-                {tab}
+                    {tab}
             </div>
         )
     }
@@ -359,6 +374,8 @@ export default AllTable;
 
 //ReactDOM.render(<AllTable/>
 //    , document.getElementById('table-data'));
+
+
 
 
 

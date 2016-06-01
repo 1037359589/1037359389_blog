@@ -58858,7 +58858,16 @@ webpackJsonp([4],[
 	        return _react2.default.createElement(
 	            'div',
 	            null,
-	            _react2.default.createElement(_antd.Table, { columns: columns1, dataSource: data1, pagination: pagination })
+	            _react2.default.createElement(
+	                _antd.QueueAnim,
+	                { className: 'demo-content', type: ['right', 'left'],
+	                    ease: ['easeOutQuart', 'easeInOutQuart'] },
+	                _react2.default.createElement(
+	                    'div',
+	                    { key: 'a' },
+	                    _react2.default.createElement(_antd.Table, { columns: columns1, dataSource: data1, pagination: pagination })
+	                )
+	            )
 	        );
 	    }
 	});
@@ -58938,7 +58947,16 @@ webpackJsonp([4],[
 	        return _react2.default.createElement(
 	            'div',
 	            null,
-	            _react2.default.createElement(_antd.Table, { columns: columns2, dataSource: data2, pagination: pagination })
+	            _react2.default.createElement(
+	                _antd.QueueAnim,
+	                { className: 'demo-content', type: ['right', 'left'],
+	                    ease: ['easeOutQuart', 'easeInOutQuart'] },
+	                _react2.default.createElement(
+	                    'div',
+	                    { key: 'a' },
+	                    _react2.default.createElement(_antd.Table, { columns: columns2, dataSource: data2, pagination: pagination })
+	                )
+	            )
 	        );
 	    }
 	});
@@ -59012,7 +59030,16 @@ webpackJsonp([4],[
 	        return _react2.default.createElement(
 	            'div',
 	            null,
-	            _react2.default.createElement(_antd.Table, { columns: columns3, dataSource: data3, pagination: pagination })
+	            _react2.default.createElement(
+	                _antd.QueueAnim,
+	                { className: 'demo-content', type: ['right', 'left'],
+	                    ease: ['easeOutQuart', 'easeInOutQuart'] },
+	                _react2.default.createElement(
+	                    'div',
+	                    { key: 'a' },
+	                    _react2.default.createElement(_antd.Table, { columns: columns3, dataSource: data3, pagination: pagination })
+	                )
+	            )
 	        );
 	    }
 	});
