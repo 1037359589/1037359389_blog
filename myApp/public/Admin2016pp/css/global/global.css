@@ -246,6 +246,11 @@ body:after{
     -o-animation: tab-active 1s cubic-bezier(0.23, 1, 0.32, 1);
     -moz-animation: tab-active 1s cubic-bezier(0.23, 1, 0.32, 1);
 }
+.ant-table-filter-dropdown{
+    border:0;
+    border-radius: 2px;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.2);
+}
 @keyframes tab-active {
     from{
         left:-100%
