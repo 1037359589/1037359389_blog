@@ -42,6 +42,10 @@ const Sider = React.createClass({
             this.setState({
                 openKeys: ['sub2']
             });
+        }else{
+            this.setState({
+                openKeys: []
+            });
         }
     },
     render() {
@@ -55,8 +59,8 @@ const Sider = React.createClass({
                   onClose={this.onToggle}
                   mode="inline">
                 <SubMenu key="sub1" title={<span><Icon type="user" /><span>用户</span></span>}>
-                    <Menu.Item key="1"><a href="user_admin?type=1">管理员</a></Menu.Item>
-                    <Menu.Item key="2"><a href="user_admin?type=2">会员</a></Menu.Item>
+                    <Menu.Item key="1"><a href="users?type=1">管理员</a></Menu.Item>
+                    <Menu.Item key="2"><a href="users?type=2">会员</a></Menu.Item>
                 </SubMenu>
                 <SubMenu key="sub2" title={<span><Icon type="appstore" /><span>全栈</span></span>}>
                     <Menu.Item key="3"><a href="tech?type=3">前端</a></Menu.Item>
@@ -77,13 +81,13 @@ const Sider = React.createClass({
 const menu = (
     <Menu>
         <Menu.Item key="0">
-            <a target="_blank" href="person_center">个人资料</a>
+            <a href="person_center">个人资料</a>
         </Menu.Item>
         <Menu.Item key="1">
-            <a target="_blank" href="change_password">修改密码</a>
+            <a href="change_pass">修改密码</a>
         </Menu.Item>
         <Menu.Item key="2">
-            <a target="_blank" href="login_out">退出</a>
+            <a href="login_out">退出</a>
         </Menu.Item>
     </Menu>
 );
@@ -116,9 +120,6 @@ var ToggleSlider=React.createClass({
         )
     }
 });
-//ReactDOM.render(
-//    ToggleSlider,document.getElementById('toggle-slider')
-//);
 var Slider=React.createClass({
     render(){
         var {actions,close}=this.props;

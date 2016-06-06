@@ -280,6 +280,16 @@ body:after{
     line-height:37px;
     font-size:20px;
 }
+.ant-btn{
+    border-radius: 2px;
+    border:0px;
+}
+.ant-btn:hover{
+    box-shadow: 0 1px 4px rgba(0,0,0,0.17);
+}
+.ant-input{
+    border-radius:3px;
+}
 @keyframes tab-active {
     from{
         left:-100%

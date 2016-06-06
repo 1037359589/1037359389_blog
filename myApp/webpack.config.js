@@ -17,6 +17,8 @@ module.exports = {
         login:glob.sync(ADMIN_PUBLIC+"/js/login/*.js"),
         user_admin:glob.sync(ADMIN_PUBLIC+"/js/user_admin/*.js"),
         tech:glob.sync(ADMIN_PUBLIC+"/js/tech/*.js"),
+        person_center:glob.sync(ADMIN_PUBLIC+"/js/person_center/*.js"),
+        change_pass:glob.sync(ADMIN_PUBLIC+"/js/change_pass/*.js"),
         //test2: BLOG_PUBLIC+"/js/test.js",
         vendor: ['react','react-dom'] //第三方库
     },
