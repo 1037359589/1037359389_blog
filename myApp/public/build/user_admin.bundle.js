@@ -59090,6 +59090,25 @@ webpackJsonp([4],[
 	        );
 	    }
 	});
+	var PortletTitle = _react2.default.createClass({
+	    displayName: 'PortletTitle',
+	    render: function render() {
+	        return _react2.default.createElement(
+	            'header',
+	            { className: 'portlet-title' },
+	            _react2.default.createElement(
+	                'div',
+	                { className: 'search-input' },
+	                _react2.default.createElement('input', { type: 'text' }),
+	                _react2.default.createElement(
+	                    'span',
+	                    { className: 'search-icon' },
+	                    _react2.default.createElement(_antd.Icon, { type: 'search' })
+	                )
+	            )
+	        );
+	    }
+	});
 	var AllTable = _react2.default.createClass({
 	    displayName: 'AllTable',
 	    render: function render() {
@@ -59112,8 +59131,13 @@ webpackJsonp([4],[
 	        return _react2.default.createElement(
 	            'div',
 	            null,
-	            _react2.default.createElement(Tabs, (_React$createElement = { actions: true }, _defineProperty(_React$createElement, 'actions', actions), _defineProperty(_React$createElement, 'current_tab', current_tab), _React$createElement)),
-	            tab
+	            _react2.default.createElement(PortletTitle, null),
+	            _react2.default.createElement(
+	                'div',
+	                { className: 'table-data' },
+	                _react2.default.createElement(Tabs, (_React$createElement = { actions: true }, _defineProperty(_React$createElement, 'actions', actions), _defineProperty(_React$createElement, 'current_tab', current_tab), _React$createElement)),
+	                tab
+	            )
 	        );
 	    }
 	});

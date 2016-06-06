@@ -58785,7 +58785,7 @@ webpackJsonp([3],[
 	        like_count: '' + i * 10,
 	        from: '来源于网络',
 	        do: {
-	            edit: '编辑',
+	            edit: '查看详情/编辑',
 	            remove: '删除',
 	            cid: i
 	        }
@@ -58853,7 +58853,16 @@ webpackJsonp([3],[
 	        return React.createElement(
 	            'div',
 	            null,
-	            React.createElement(_antd.Table, { columns: columns1, dataSource: data1, onChange: onChange, pagination: pagination })
+	            React.createElement(
+	                _antd.QueueAnim,
+	                { className: 'demo-content', type: ['right', 'left'],
+	                    ease: ['easeOutQuart', 'easeInOutQuart'] },
+	                React.createElement(
+	                    'div',
+	                    { key: 'a' },
+	                    React.createElement(_antd.Table, { columns: columns1, dataSource: data1, onChange: onChange, pagination: pagination })
+	                )
+	            )
 	        );
 	    }
 	});
@@ -58978,7 +58987,16 @@ webpackJsonp([3],[
 	        return React.createElement(
 	            'div',
 	            null,
-	            React.createElement(_antd.Table, { columns: columns2, dataSource: data2, onChange: onChange, pagination: pagination })
+	            React.createElement(
+	                _antd.QueueAnim,
+	                { className: 'demo-content', type: ['right', 'left'],
+	                    ease: ['easeOutQuart', 'easeInOutQuart'] },
+	                React.createElement(
+	                    'div',
+	                    { key: 'a' },
+	                    React.createElement(_antd.Table, { columns: columns2, dataSource: data2, onChange: onChange, pagination: pagination })
+	                )
+	            )
 	        );
 	    }
 	});
@@ -59109,7 +59127,16 @@ webpackJsonp([3],[
 	        return React.createElement(
 	            'div',
 	            null,
-	            React.createElement(_antd.Table, { columns: columns3, dataSource: data3, onChange: onChange, pagination: pagination })
+	            React.createElement(
+	                _antd.QueueAnim,
+	                { className: 'demo-content', type: ['right', 'left'],
+	                    ease: ['easeOutQuart', 'easeInOutQuart'] },
+	                React.createElement(
+	                    'div',
+	                    { key: 'a' },
+	                    React.createElement(_antd.Table, { columns: columns3, dataSource: data3, onChange: onChange, pagination: pagination })
+	                )
+	            )
 	        );
 	    }
 	});
@@ -59161,6 +59188,25 @@ webpackJsonp([3],[
 	        );
 	    }
 	});
+	var PortletTitle = React.createClass({
+	    displayName: 'PortletTitle',
+	    render: function render() {
+	        return React.createElement(
+	            'header',
+	            { className: 'portlet-title' },
+	            React.createElement(
+	                'div',
+	                { className: 'search-input' },
+	                React.createElement('input', { type: 'text' }),
+	                React.createElement(
+	                    'span',
+	                    { className: 'search-icon' },
+	                    React.createElement(_antd.Icon, { type: 'search' })
+	                )
+	            )
+	        );
+	    }
+	});
 	var AllTable = React.createClass({
 	    displayName: 'AllTable',
 	    render: function render() {
@@ -59184,8 +59230,13 @@ webpackJsonp([3],[
 	        return React.createElement(
 	            'div',
 	            null,
-	            React.createElement(Tabs, (_React$createElement = { actions: true }, _defineProperty(_React$createElement, 'actions', actions), _defineProperty(_React$createElement, 'current_tab', current_tab), _React$createElement)),
-	            tab
+	            React.createElement(PortletTitle, null),
+	            React.createElement(
+	                'div',
+	                { className: 'table-data' },
+	                React.createElement(Tabs, (_React$createElement = { actions: true }, _defineProperty(_React$createElement, 'actions', actions), _defineProperty(_React$createElement, 'current_tab', current_tab), _React$createElement)),
+	                tab
+	            )
 	        );
 	    }
 	});

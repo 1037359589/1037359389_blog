@@ -1,7 +1,7 @@
 /**
  * Created by bll on 16/6/1.
  */
-import { Table } from 'antd';
+import { Table ,QueueAnim,Icon} from 'antd';
 import {BtnPass,BtnRecover,BtnRemove,BtnEdit} from '../global/cus_components'
 function getDate(){
     var myDate = new Date();
@@ -92,7 +92,7 @@ for (let i = 1; i <= 12; i++) {
         like_count: `${i*10}`,
         from:'来源于网络',
         do:{
-            edit:'编辑',
+            edit:'查看详情/编辑',
             remove:'删除',
             cid:i
         }
@@ -157,7 +157,12 @@ var TableOne=React.createClass({
     render(){
         return(
             <div>
-                <Table columns={columns1} dataSource={data1} onChange={onChange} pagination={pagination}/>
+                <QueueAnim className="demo-content"  type={['right', 'left']}
+                           ease={['easeOutQuart', 'easeInOutQuart']}>
+                    <div key="a">
+                        <Table columns={columns1} dataSource={data1} onChange={onChange} pagination={pagination}/>
+                    </div>
+                </QueueAnim>
             </div>
         )
     }
@@ -272,7 +277,12 @@ var TableTwo=React.createClass({
     render(){
         return(
             <div>
-                <Table columns={columns2} dataSource={data2} onChange={onChange} pagination={pagination}/>
+                <QueueAnim className="demo-content"  type={['right', 'left']}
+                           ease={['easeOutQuart', 'easeInOutQuart']}>
+                    <div key="a">
+                        <Table columns={columns2} dataSource={data2} onChange={onChange} pagination={pagination}/>
+                    </div>
+                </QueueAnim>
             </div>
         )
     }
@@ -393,7 +403,12 @@ var TableThree=React.createClass({
     render(){
         return(
             <div>
-                <Table columns={columns3} dataSource={data3} onChange={onChange} pagination={pagination}/>
+                <QueueAnim className="demo-content"  type={['right', 'left']}
+                           ease={['easeOutQuart', 'easeInOutQuart']}>
+                    <div key="a">
+                        <Table columns={columns3} dataSource={data3} onChange={onChange} pagination={pagination}/>
+                    </div>
+                </QueueAnim>
             </div>
         )
     }
@@ -431,7 +446,21 @@ var Tabs=React.createClass({
             </ul>
         )
     }
-})
+});
+var PortletTitle=React.createClass({
+    render(){
+        return (
+            <header className="portlet-title">
+                <div className="search-input">
+                    <input type="text"/>
+                        <span className="search-icon">
+                            <Icon type="search" />
+                        </span>
+                </div>
+            </header>
+        )
+    }
+});
 var AllTable=React.createClass({
     render(){
         var {actions,current_tab}=this.props,tab;
@@ -449,8 +478,11 @@ var AllTable=React.createClass({
         }
         return(
             <div>
-                <Tabs actions actions={actions} current_tab={current_tab}/>
-                {tab}
+                <PortletTitle/>
+                <div className="table-data">
+                    <Tabs actions actions={actions} current_tab={current_tab}/>
+                    {tab}
+                </div>
             </div>
         )
     }

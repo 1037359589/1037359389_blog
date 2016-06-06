@@ -348,6 +348,20 @@ var Tabs=React.createClass({
         )
     }
 })
+var PortletTitle=React.createClass({
+    render(){
+        return (
+            <header className="portlet-title">
+                <div className="search-input">
+                    <input type="text"/>
+                        <span className="search-icon">
+                            <Icon type="search" />
+                        </span>
+                </div>
+            </header>
+        )
+    }
+});
 var AllTable=React.createClass({
     render(){
         var {actions,current_tab}=this.props,tab;
@@ -364,8 +378,11 @@ var AllTable=React.createClass({
         }
         return(
             <div>
-                <Tabs actions actions={actions} current_tab={current_tab}/>
+                <PortletTitle/>
+                <div className="table-data">
+                    <Tabs actions actions={actions} current_tab={current_tab}/>
                     {tab}
+                </div>
             </div>
         )
     }

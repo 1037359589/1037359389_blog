@@ -163,6 +163,7 @@ body:after{
     border-radius: 2px;
 }
 .search-input{
+    position:relative;
     width:300px;
     height:100%;
     background: #fff;
@@ -171,7 +172,7 @@ body:after{
     padding:5px 30px 5px 10px;
 }
 .search-input:hover{
-    box-shadow: 0 1px 4px rgba(0,0,0,0.7);
+    box-shadow: 0 0 4px rgba(255,255,255,1);
 }
 .search-input input{
     width:100%;
@@ -190,21 +191,37 @@ body:after{
     border:0px;
     display: inline-block;
     color:#fff;
-    box-shadow: 0 1px 4px rgba(0,0,0,0.5);
+    /*box-shadow: 0 1px 4px rgba(0,0,0,0.5);*/
     border-radius:2px;
     margin-right:10px;
+    outline: none;
+}
+.btn:hover{
+    box-shadow: 0 1px 4px rgba(0,0,0,0.5);
 }
 .btn-remove{
     background: #99948B;
 }
+.btn-remove:hover{
+    background: #767068;
+}
 .btn-pass{
     background: #EAB992;
+}
+.btn-pass:hover{
+    background: #D18A50;
 }
 .btn-recover{
     background: #7A9275;
 }
+.btn-recover:hover{
+    background: #4D5C4A;
+}
 .btn-edit{
     background: #00BCD4;
+}
+.btn-edit:hover{
+    background: #088797;
 }
 .tabs{
     width:100%;
@@ -250,6 +267,18 @@ body:after{
     border:0;
     border-radius: 2px;
     box-shadow: 0 1px 4px rgba(0,0,0,0.2);
+}
+.search-icon{
+    display: inline-block;
+    position: absolute;
+    right:0;
+    top:0;
+    width:30px;
+    height:100%;
+}
+.search-icon{
+    line-height:37px;
+    font-size:20px;
 }
 @keyframes tab-active {
     from{
