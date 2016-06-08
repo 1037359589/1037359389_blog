@@ -16,7 +16,6 @@ var accountSchema=new mongoose.Schema({
     sex:{
         type:String,
         enum:['男','女','人妖'],
-        required:true,
         index:true
     },
     phone:{

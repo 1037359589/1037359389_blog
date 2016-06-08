@@ -1,211 +1,37 @@
 0 info it worked if it ends with ok
-1 verbose cli [ '/usr/local/bin/node',
-1 verbose cli   '/usr/local/bin/npm',
-1 verbose cli   'install',
-1 verbose cli   'crypto',
-1 verbose cli   '--save' ]
+1 verbose cli [ '/usr/local/bin/node', '/usr/local/bin/npm', 'start' ]
 2 info using npm@2.14.7
 3 info using node@v4.2.2
-4 verbose install initial load of /Applications/MAMP/htdocs/blog_3/myApp/package.json
-5 verbose installManyTop reading scoped package data from /Applications/MAMP/htdocs/blog_3/myApp/node_modules/antd/package.json
-6 verbose installManyTop reading scoped package data from /Applications/MAMP/htdocs/blog_3/myApp/node_modules/babel/package.json
-7 verbose installManyTop reading scoped package data from /Applications/MAMP/htdocs/blog_3/myApp/node_modules/babel-core/package.json
-8 verbose installManyTop reading scoped package data from /Applications/MAMP/htdocs/blog_3/myApp/node_modules/babel-loader/package.json
-9 verbose installManyTop reading scoped package data from /Applications/MAMP/htdocs/blog_3/myApp/node_modules/babel-plugin-add-module-exports/package.json
-10 verbose installManyTop reading scoped package data from /Applications/MAMP/htdocs/blog_3/myApp/node_modules/babel-preset-es2015/package.json
-11 verbose installManyTop reading scoped package data from /Applications/MAMP/htdocs/blog_3/myApp/node_modules/babel-preset-react/package.json
-12 verbose installManyTop reading scoped package data from /Applications/MAMP/htdocs/blog_3/myApp/node_modules/babel-preset-stage-0/package.json
-13 verbose installManyTop reading scoped package data from /Applications/MAMP/htdocs/blog_3/myApp/node_modules/body-parser/package.json
-14 verbose installManyTop reading scoped package data from /Applications/MAMP/htdocs/blog_3/myApp/node_modules/cookie-parser/package.json
-15 verbose installManyTop reading scoped package data from /Applications/MAMP/htdocs/blog_3/myApp/node_modules/css-loader/package.json
-16 verbose installManyTop reading scoped package data from /Applications/MAMP/htdocs/blog_3/myApp/node_modules/debug/package.json
-17 verbose installManyTop reading scoped package data from /Applications/MAMP/htdocs/blog_3/myApp/node_modules/ejs/package.json
-18 verbose installManyTop reading scoped package data from /Applications/MAMP/htdocs/blog_3/myApp/node_modules/etag/package.json
-19 verbose installManyTop reading scoped package data from /Applications/MAMP/htdocs/blog_3/myApp/node_modules/express/package.json
-20 verbose installManyTop reading scoped package data from /Applications/MAMP/htdocs/blog_3/myApp/node_modules/formidable/package.json
-21 verbose installManyTop reading scoped package data from /Applications/MAMP/htdocs/blog_3/myApp/node_modules/fs/package.json
-22 verbose installManyTop reading scoped package data from /Applications/MAMP/htdocs/blog_3/myApp/node_modules/glob/package.json
-23 verbose installManyTop reading scoped package data from /Applications/MAMP/htdocs/blog_3/myApp/node_modules/html/package.json
-24 verbose installManyTop reading scoped package data from /Applications/MAMP/htdocs/blog_3/myApp/node_modules/jquery/package.json
-25 verbose installManyTop reading scoped package data from /Applications/MAMP/htdocs/blog_3/myApp/node_modules/less-loader/package.json
-26 verbose installManyTop reading scoped package data from /Applications/MAMP/htdocs/blog_3/myApp/node_modules/mongoose/package.json
-27 verbose installManyTop reading scoped package data from /Applications/MAMP/htdocs/blog_3/myApp/node_modules/mongoose-auto-increment/package.json
-28 verbose installManyTop reading scoped package data from /Applications/MAMP/htdocs/blog_3/myApp/node_modules/morgan/package.json
-29 verbose installManyTop reading scoped package data from /Applications/MAMP/htdocs/blog_3/myApp/node_modules/node-uuid/package.json
-30 verbose installManyTop reading scoped package data from /Applications/MAMP/htdocs/blog_3/myApp/node_modules/react/package.json
-31 verbose installManyTop reading scoped package data from /Applications/MAMP/htdocs/blog_3/myApp/node_modules/react-dom/package.json
-32 verbose installManyTop reading scoped package data from /Applications/MAMP/htdocs/blog_3/myApp/node_modules/react-hot-loader/package.json
-33 verbose installManyTop reading scoped package data from /Applications/MAMP/htdocs/blog_3/myApp/node_modules/react-redux/package.json
-34 verbose installManyTop reading scoped package data from /Applications/MAMP/htdocs/blog_3/myApp/node_modules/react-tap-event-plugin/package.json
-35 verbose installManyTop reading scoped package data from /Applications/MAMP/htdocs/blog_3/myApp/node_modules/redux/package.json
-36 verbose installManyTop reading scoped package data from /Applications/MAMP/htdocs/blog_3/myApp/node_modules/redux-devtools/package.json
-37 verbose installManyTop reading scoped package data from /Applications/MAMP/htdocs/blog_3/myApp/node_modules/remote-redux-devtools/package.json
-38 verbose installManyTop reading scoped package data from /Applications/MAMP/htdocs/blog_3/myApp/node_modules/reqwest/package.json
-39 verbose installManyTop reading scoped package data from /Applications/MAMP/htdocs/blog_3/myApp/node_modules/serve-favicon/package.json
-40 verbose installManyTop reading scoped package data from /Applications/MAMP/htdocs/blog_3/myApp/node_modules/style-loader/package.json
-41 verbose installManyTop reading scoped package data from /Applications/MAMP/htdocs/blog_3/myApp/node_modules/url-loader/package.json
-42 verbose installManyTop reading scoped package data from /Applications/MAMP/htdocs/blog_3/myApp/node_modules/webpack/package.json
-43 verbose installManyTop reading scoped package data from /Applications/MAMP/htdocs/blog_3/myApp/node_modules/webpack-dev-server/package.json
-44 info package.json formidable@1.0.17 No license field.
-45 info package.json fs@0.0.2 fs is also the name of a node core module.
-46 info package.json fs@0.0.2 No description
-47 info package.json fs@0.0.2 No repository field.
-48 info package.json html@0.0.10 license should be a valid SPDX license expression
-49 info package.json node-uuid@1.4.7 No license field.
-50 info package.json less-loader@2.2.3 No license field.
-51 info package.json mongoose-auto-increment@5.0.1 No license field.
-52 info package.json react-tap-event-plugin@1.0.0 No license field.
-53 verbose readDependencies loading dependencies from /Applications/MAMP/htdocs/blog_3/myApp/package.json
-54 silly cache add args [ 'crypto', null ]
-55 verbose cache add spec crypto
-56 silly cache add parsed spec Result {
-56 silly cache add   raw: 'crypto',
-56 silly cache add   scope: null,
-56 silly cache add   name: 'crypto',
-56 silly cache add   rawSpec: '',
-56 silly cache add   spec: '*',
-56 silly cache add   type: 'range' }
-57 silly addNamed crypto@*
-58 verbose addNamed "*" is a valid semver range for crypto
-59 silly addNameRange { name: 'crypto', range: '*', hasData: false }
-60 silly mapToRegistry name crypto
-61 silly mapToRegistry using default registry
-62 silly mapToRegistry registry https://registry.npm.taobao.org/
-63 silly mapToRegistry uri https://registry.npm.taobao.org/crypto
-64 verbose addNameRange registry:https://registry.npm.taobao.org/crypto not in flight; fetching
-65 verbose request uri https://registry.npm.taobao.org/crypto
-66 verbose request no auth needed
-67 info attempt registry request try #1 at 16:00:46
-68 verbose request id 8e40181f0bfbcf10
-69 http request GET https://registry.npm.taobao.org/crypto
-70 http 200 https://registry.npm.taobao.org/crypto
-71 verbose headers { date: 'Wed, 08 Jun 2016 08:00:47 GMT',
-71 verbose headers   'content-type': 'application/json; charset=utf-8',
-71 verbose headers   'content-length': '3483',
-71 verbose headers   connection: 'keep-alive',
-71 verbose headers   etag: '"d9b-YnESRMROOIOn3fBTD4SXlg"',
-71 verbose headers   'x-readtime': '23' }
-72 silly get cb [ 200,
-72 silly get   { date: 'Wed, 08 Jun 2016 08:00:47 GMT',
-72 silly get     'content-type': 'application/json; charset=utf-8',
-72 silly get     'content-length': '3483',
-72 silly get     connection: 'keep-alive',
-72 silly get     etag: '"d9b-YnESRMROOIOn3fBTD4SXlg"',
-72 silly get     'x-readtime': '23' } ]
-73 verbose get saving crypto to /Users/bll/Documents/nodejs/node_cache/registry.npm.taobao.org/crypto/.cache.json
-74 silly addNameRange number 2 { name: 'crypto', range: '*', hasData: true }
-75 silly addNameRange versions [ 'crypto', [ '0.0.3', '0.0.1' ] ]
-76 silly addNamed crypto@0.0.3
-77 verbose addNamed "0.0.3" is a plain semver version for crypto
-78 silly mapToRegistry name crypto
-79 silly mapToRegistry using default registry
-80 silly mapToRegistry registry https://registry.npm.taobao.org/
-81 silly mapToRegistry uri https://registry.npm.taobao.org/crypto
-82 verbose addRemoteTarball https://registry.npm.taobao.org/crypto/download/crypto-0.0.3.tgz not in flight; adding
-83 verbose addRemoteTarball [ 'https://registry.npm.taobao.org/crypto/download/crypto-0.0.3.tgz',
-83 verbose addRemoteTarball   '470a81b86be4c5ee17acc8207a1f5315ae20dbb0' ]
-84 info retry fetch attempt 1 at 16:00:46
-85 info attempt registry request try #1 at 16:00:46
-86 http fetch GET https://registry.npm.taobao.org/crypto/download/crypto-0.0.3.tgz
-87 http fetch 200 https://registry.npm.taobao.org/crypto/download/crypto-0.0.3.tgz
-88 silly fetchAndShaCheck shasum 470a81b86be4c5ee17acc8207a1f5315ae20dbb0
-89 verbose addTmpTarball /var/folders/x9/mmy_0vqd6yzd65htc27_cx9h0000gn/T/npm-34753-3ad135bc/registry.npm.taobao.org/crypto/download/crypto-0.0.3.tgz not in flight; adding
-90 verbose addTmpTarball already have metadata; skipping unpack for crypto@0.0.3
-91 silly cache afterAdd crypto@0.0.3
-92 verbose afterAdd /Users/bll/Documents/nodejs/node_cache/crypto/0.0.3/package/package.json not in flight; writing
-93 verbose afterAdd /Users/bll/Documents/nodejs/node_cache/crypto/0.0.3/package/package.json written
-94 silly install resolved [ { name: 'crypto',
-94 silly install resolved     id: 'crypto',
-94 silly install resolved     version: '0.0.3',
-94 silly install resolved     description: 'JavaScript implementations of standard and secure cryptographic algorithms.',
-94 silly install resolved     keywords: [ 'crypto', 'md5', 'sha1' ],
-94 silly install resolved     author: { name: 'Irakli Gozalishvili', email: 'rfobic@gmail.com' },
-94 silly install resolved     repository:
-94 silly install resolved      { type: 'git',
-94 silly install resolved        url: 'git://github.com/Gozala/crypto.git',
-94 silly install resolved        web: 'https://github.com/Gozala/crypto' },
-94 silly install resolved     bugs: { url: 'http://github.com/Gozala/crypto/issues/' },
-94 silly install resolved     devDependencies: { test: '>=0.0.10' },
-94 silly install resolved     directories: { lib: './' },
-94 silly install resolved     scripts: { test: 'node test/test-crypto.js' },
-94 silly install resolved     licenses: [ [Object] ],
-94 silly install resolved     _npmUser: { name: 'gozala', email: 'rfobic@gmail.com' },
-94 silly install resolved     _id: 'crypto@0.0.3',
-94 silly install resolved     dependencies: {},
-94 silly install resolved     engines: { node: '*' },
-94 silly install resolved     _engineSupported: true,
-94 silly install resolved     _npmVersion: '1.0.101',
-94 silly install resolved     _nodeVersion: 'v0.5.9',
-94 silly install resolved     _defaultsLoaded: true,
-94 silly install resolved     dist:
-94 silly install resolved      { shasum: '470a81b86be4c5ee17acc8207a1f5315ae20dbb0',
-94 silly install resolved        size: 10240,
-94 silly install resolved        noattachment: false,
-94 silly install resolved        tarball: 'http://registry.npm.taobao.org/crypto/download/crypto-0.0.3.tgz' },
-94 silly install resolved     maintainers: [ [Object] ],
-94 silly install resolved     publish_time: 1320774836084,
-94 silly install resolved     _cnpm_publish_time: 1320774836084,
-94 silly install resolved     _shasum: '470a81b86be4c5ee17acc8207a1f5315ae20dbb0',
-94 silly install resolved     _resolved: 'https://registry.npm.taobao.org/crypto/download/crypto-0.0.3.tgz',
-94 silly install resolved     _from: 'crypto@*' } ]
-95 info install crypto@0.0.3 into /Applications/MAMP/htdocs/blog_3/myApp
-96 info installOne crypto@0.0.3
-97 verbose installOne of crypto to /Applications/MAMP/htdocs/blog_3/myApp not in flight; installing
-98 verbose lock using /Users/bll/Documents/nodejs/node_cache/_locks/crypto-053d3be76299eb14.lock for /Applications/MAMP/htdocs/blog_3/myApp/node_modules/crypto
-99 silly install write writing crypto 0.0.3 to /Applications/MAMP/htdocs/blog_3/myApp/node_modules/crypto
-100 verbose unbuild node_modules/crypto
-101 silly gentlyRm /Applications/MAMP/htdocs/blog_3/myApp/node_modules/crypto is being purged from base /Applications/MAMP/htdocs/blog_3/myApp
-102 verbose gentlyRm don't care about contents; nuking /Applications/MAMP/htdocs/blog_3/myApp/node_modules/crypto
-103 verbose tar unpack /Users/bll/Documents/nodejs/node_cache/crypto/0.0.3/package.tgz
-104 verbose tar unpacking to /Applications/MAMP/htdocs/blog_3/myApp/node_modules/crypto
-105 silly gentlyRm /Applications/MAMP/htdocs/blog_3/myApp/node_modules/crypto is being purged
-106 verbose gentlyRm don't care about contents; nuking /Applications/MAMP/htdocs/blog_3/myApp/node_modules/crypto
-107 silly gunzTarPerm modes [ '755', '644' ]
-108 silly gunzTarPerm extractEntry .md5.js.un~
-109 silly gunzTarPerm extractEntry .package.json.un~
-110 silly gunzTarPerm extractEntry .sha1.js.un~
-111 silly gunzTarPerm extractEntry History.md
-112 silly gunzTarPerm extractEntry md5.js
-113 silly gunzTarPerm extractEntry package.json
-114 silly gunzTarPerm extractEntry Readme.md
-115 silly gunzTarPerm extractEntry sha1.js
-116 silly gunzTarPerm extractEntry test/test-crypto.js
-117 verbose write writing to /Applications/MAMP/htdocs/blog_3/myApp/node_modules/crypto/package.json
-118 info preinstall crypto@0.0.3
-119 verbose readDependencies loading dependencies from /Applications/MAMP/htdocs/blog_3/myApp/node_modules/crypto/package.json
-120 verbose readDependencies loading dependencies from /Applications/MAMP/htdocs/blog_3/myApp/node_modules/crypto/package.json
-121 silly install resolved []
-122 verbose about to build /Applications/MAMP/htdocs/blog_3/myApp/node_modules/crypto
-123 info build /Applications/MAMP/htdocs/blog_3/myApp/node_modules/crypto
-124 info linkStuff crypto@0.0.3
-125 silly linkStuff crypto@0.0.3 has /Applications/MAMP/htdocs/blog_3/myApp/node_modules as its parent node_modules
-126 verbose linkBins crypto@0.0.3
-127 verbose linkMans crypto@0.0.3
-128 verbose rebuildBundles crypto@0.0.3
-129 info install crypto@0.0.3
-130 info postinstall crypto@0.0.3
-131 verbose unlock done using /Users/bll/Documents/nodejs/node_cache/_locks/crypto-053d3be76299eb14.lock for /Applications/MAMP/htdocs/blog_3/myApp/node_modules/crypto
-132 verbose validateInstall loading /Applications/MAMP/htdocs/blog_3/myApp/package.json for validation
-133 verbose stack Error: The package react@0.14.8 does not satisfy its siblings' peerDependencies requirements!
-133 verbose stack     at /usr/local/lib/node_modules/npm/lib/install.js:125:32
-133 verbose stack     at /usr/local/lib/node_modules/npm/lib/install.js:268:7
-133 verbose stack     at /usr/local/lib/node_modules/npm/node_modules/read-installed/read-installed.js:142:5
-133 verbose stack     at /usr/local/lib/node_modules/npm/node_modules/read-installed/read-installed.js:263:14
-133 verbose stack     at cb (/usr/local/lib/node_modules/npm/node_modules/slide/lib/async-map.js:47:24)
-133 verbose stack     at /usr/local/lib/node_modules/npm/node_modules/read-installed/read-installed.js:263:14
-133 verbose stack     at cb (/usr/local/lib/node_modules/npm/node_modules/slide/lib/async-map.js:47:24)
-133 verbose stack     at /usr/local/lib/node_modules/npm/node_modules/read-installed/read-installed.js:263:14
-133 verbose stack     at cb (/usr/local/lib/node_modules/npm/node_modules/slide/lib/async-map.js:47:24)
-133 verbose stack     at /usr/local/lib/node_modules/npm/node_modules/read-installed/read-installed.js:263:14
-134 verbose cwd /Applications/MAMP/htdocs/blog_3/myApp
-135 error Darwin 15.4.0
-136 error argv "/usr/local/bin/node" "/usr/local/bin/npm" "install" "crypto" "--save"
-137 error node v4.2.2
-138 error npm  v2.14.7
-139 error code EPEERINVALID
-140 error peerinvalid The package react@0.14.8 does not satisfy its siblings' peerDependencies requirements!
-140 error peerinvalid Peer react-dom@0.14.8 wants react@^0.14.8
-140 error peerinvalid Peer redux-devtools@3.2.0 wants react@^0.14.0 || ^15.0.0-rc.1
-140 error peerinvalid Peer react-redux@4.4.5 wants react@^0.14.0 || ^15.0.0-0
-140 error peerinvalid Peer react-tap-event-plugin@1.0.0 wants react@^15.0.0-0
-141 verbose exit [ 1, true ]
+4 verbose run-script [ 'prestart', 'start', 'poststart' ]
+5 info prestart myApp@0.0.0
+6 info start myApp@0.0.0
+7 verbose unsafe-perm in lifecycle true
+8 info myApp@0.0.0 Failed to exec start script
+9 verbose stack Error: myApp@0.0.0 start: `node ./bin/www`
+9 verbose stack Exit status 1
+9 verbose stack     at EventEmitter.<anonymous> (/usr/local/lib/node_modules/npm/lib/utils/lifecycle.js:214:16)
+9 verbose stack     at emitTwo (events.js:87:13)
+9 verbose stack     at EventEmitter.emit (events.js:172:7)
+9 verbose stack     at ChildProcess.<anonymous> (/usr/local/lib/node_modules/npm/lib/utils/spawn.js:24:14)
+9 verbose stack     at emitTwo (events.js:87:13)
+9 verbose stack     at ChildProcess.emit (events.js:172:7)
+9 verbose stack     at maybeClose (internal/child_process.js:818:16)
+9 verbose stack     at Process.ChildProcess._handle.onexit (internal/child_process.js:211:5)
+10 verbose pkgid myApp@0.0.0
+11 verbose cwd /Applications/MAMP/htdocs/blog_3/myApp
+12 error Darwin 15.4.0
+13 error argv "/usr/local/bin/node" "/usr/local/bin/npm" "start"
+14 error node v4.2.2
+15 error npm  v2.14.7
+16 error code ELIFECYCLE
+17 error myApp@0.0.0 start: `node ./bin/www`
+17 error Exit status 1
+18 error Failed at the myApp@0.0.0 start script 'node ./bin/www'.
+18 error This is most likely a problem with the myApp package,
+18 error not with npm itself.
+18 error Tell the author that this fails on your system:
+18 error     node ./bin/www
+18 error You can get their info via:
+18 error     npm owner ls myApp
+18 error There is likely additional logging output above.
+19 verbose exit [ 1, true ]
