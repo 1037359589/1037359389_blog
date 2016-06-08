@@ -167,3 +167,17 @@ form .input-cus::-webkit-input-placeholder  {
     height:40px;
     line-height: 40px;
 }
+.btn-send-code{
+    border-radius: 2px;
+    border-top-left-radius:0!important ;
+    border-bottom-left-radius:0!important ;
+    font-size:13px!important;
+    line-height: 26px!important;
+    border:0!important;
+    background: #fff;
+    padding:7px 20px!important;
+}
+.input-code{
+    border-top-right-radius:0!important ;
+    border-bottom-right-radius:0!important ;
+}

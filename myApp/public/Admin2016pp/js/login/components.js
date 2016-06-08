@@ -13,7 +13,7 @@ import React,{findDOMNode,Component,PropTypes} from "react";
 //import classNames from 'classnames';
 const createForm = Form.create;
 const FormItem = Form.Item;
-
+const InputGroup = Input.Group;
 function noop() {
     return false;
 }
@@ -143,7 +143,6 @@ class LoginForm extends Component{
 LoginForm = createForm()(LoginForm);
 
 class RegisterFrom extends Component{
-
     constructor(props){
         super(props);
         this.onHidden=this.onHidden.bind(this);
@@ -172,6 +171,7 @@ class RegisterFrom extends Component{
     handleSubmit(e) {
         e.preventDefault();
         this.props.form.validateFields((errors, values) => {
+            console.log(2);
             if (!!errors) {
                 console.log('Errors in form!!!');
                 return;
@@ -181,6 +181,7 @@ class RegisterFrom extends Component{
         });
     }
     userExists(rule, value, callback) {
+        console.log(value);
         if (!value) {
             callback();
         } else {
@@ -205,11 +206,13 @@ class RegisterFrom extends Component{
     checkPass2(rule, value, callback) {
         const { getFieldValue } = this.props.form;
         if (value && value !== getFieldValue('passwd')) {
+            console.log(value,getFieldValue('passwd'));
             callback('两次输入密码不一致！');
         } else {
             callback();
         }
     }
+
     componentDidMount(){
         //var input=document.getElementsByTagName('input')[0];
         var input=ReactDOM.findDOMNode(this.refs.inputCus);
@@ -217,28 +220,27 @@ class RegisterFrom extends Component{
         console.log(input);
         //input.className='ant-input ant-input-lg input-cus';
     }
+
+    validateCode(rule,value,callback){
+        console.log(value);
+        callback();
+    }
+    sendCode(){
+        alert(1);
+    }
     render(){
         const { getFieldProps, getFieldError, isFieldValidating } = this.props.form;
-        const permissionProps = getFieldProps('permission', {
-            rules: [
-                { required: true, message: '请选择您的权限' }
-            ]
-        });
         const nameProps = getFieldProps('name', {
             rules: [
-                { required: true, min: 5, message: '请输入管理员用户名,长度不能小于5个字符!!' },
-                { validator: this.userExists },
-            ]
+                { required: true, min: 5, message: '用户名至少5个字符' },
+                { validator: this.userExists }
+            ],
+            trigger: ['onBlur', 'onChange'],
         });
-        const emailProps = getFieldProps('email', {
-            validate: [{
+        const phoneProps = getFieldProps('phone', {
+            validate: [ {
                 rules: [
-                    { required: true },
-                ],
-                trigger: 'onBlur',
-            }, {
-                rules: [
-                    {  required: true ,type: 'email', message: '请输入正确的邮箱地址' }
+                    { type: 'string',required: true,message: '请输入正确的手机号码' ,pattern: /^(0|86|17951)?(13[0-9]|15[012356789]|17[678]|18[0-9]|14[57])[0-9]{8}$/},
                 ],
                 trigger: ['onBlur', 'onChange'],
             }]
@@ -246,27 +248,34 @@ class RegisterFrom extends Component{
         const passwdProps = getFieldProps('passwd', {
             rules: [
                 { required: true,  min: 6,max:18,whitespace: true, message: '密码长度为6-18位'},
-                { validator: this.checkPass.bind(this) },
+                { validator: this.checkPass.bind(this)},
             ],
         });
         const rePasswdProps = getFieldProps('rePasswd', {
             rules: [{
                 required: true,
                 whitespace: true,
-                message: '请再次输入密码',
+                message: '两次密码不一致',
             }, {
-                validator: this.checkPass2.bind(this),
+                validator: this.checkPass2.bind(this)
             }],
         });
-        const textareaProps = getFieldProps('textarea', {
-            rules: [
-                { required: true, message: '真的不打算写点什么吗？' },
-            ],
+        const codeProps = getFieldProps('code', {
+            rules: [{
+                required: true,
+                message: '验证码不正确'
+            }, {
+                validator: this.validateCode.bind(this)
+            }],
+            trigger: ['onBlur', 'onChange'],
         });
         const formItemLayout = {
             labelCol: { span: 0 },
             wrapperCol: { span: 24 },
         };
+        console.log(isFieldValidating('name'));
+
+
      return (
          <div>
              <div className="logo-p">
@@ -275,11 +284,13 @@ class RegisterFrom extends Component{
              <p>如果,你是屌丝!!</p>
              <QueueAnim component={Form} horizontal  delay={300}
                         className="ant-form ant-form-horizontal" type="bottom" leaveReverse  form={this.props.form}>
+
                  <div key="a">
                      <Row>
                          <Col span="24">
-                             <FormItem {...formItemLayout} hasFeedback
-                              help={isFieldValidating('name') ? '校验中...' : (getFieldError('name') || []).join(', ')}>
+                             <FormItem  {...formItemLayout}
+                                 hasFeedback
+                                 help={isFieldValidating('name') ? '校验中...' : (getFieldError('name') || []).join(', ')}>
                                  <Input onContextMenu={noop} onPaste={noop} onCopy={noop} onCut={noop} ref="inputCuss"
                                          autoComplete="off" id="pass" placeholder="请输入管理员用户名"
                                      {...nameProps}
@@ -291,10 +302,10 @@ class RegisterFrom extends Component{
                  <div key="b">
                      <Row>
                          <Col span="24">
-                             <FormItem {...formItemLayout}  help={isFieldValidating('email') ? '校验中...' : (getFieldError('email') || []).join(', ')}
+                             <FormItem {...formItemLayout}
                                  hasFeedback>
-                                 <Input type="email" {...emailProps} ref="inputCus"
-                                        autoComplete="off"  placeholder="请输入邮箱"
+                                 <Input type="text" {...phoneProps} ref="inputCus"
+                                        autoComplete="off"  placeholder="请输入手机号码"
                                  />
                              </FormItem>
                          </Col>
@@ -302,17 +313,35 @@ class RegisterFrom extends Component{
                  </div>
                  <div key="c">
                      <Row>
-                         <Col span="24">
-                             <FormItem {...formItemLayout} hasFeedback help={isFieldValidating('passwd') ? '校验中...' : (getFieldError('passwd') || []).join(', ')}>
-                                 <Input  type="password"  autoComplete="off" ref="inputCus"  {...passwdProps}
-                                         onContextMenu={noop} onPaste={noop} onCopy={noop} onCut={noop}
-                                         autoComplete="off"  placeholder="请输入密码"
-                                 />
+                         <Col>
+                             <FormItem
+                                 {...formItemLayout}
+                                 hasFeedback>
+                                 <div className="ant-search-input-wrapper">
+                                     <InputGroup >
+                                         <Input type="text" placeholder="请填写正确的验证码" className="input-code" {...codeProps}/>
+                                         <div className="ant-input-group-wrap ">
+                                             <Button type="primary" className="btn-send-code">发送验证码</Button>
+                                         </div>
+                                     </InputGroup>
+                                 </div>
                              </FormItem>
                          </Col>
                      </Row>
                  </div>
                  <div key="d">
+                     <Row>
+                         <Col span="24">
+                             <FormItem {...formItemLayout} hasFeedback help={isFieldValidating('passwd') ? '校验中...' : (getFieldError('passwd') || []).join(', ')}>
+                                 <Input  type="password"  autoComplete="off" ref="inputCus"  {...passwdProps}
+                                         onContextMenu={noop} onPaste={noop} onCopy={noop} onCut={noop} autoComplete="off"
+                                         placeholder="请输入密码"
+                                 />
+                             </FormItem>
+                         </Col>
+                     </Row>
+                 </div>
+                 <div key="e">
                      <Row>
                          <Col span="24">
                              <FormItem {...formItemLayout} hasFeedback
@@ -327,22 +356,6 @@ class RegisterFrom extends Component{
                  </div>
                  <div key="f">
                      <Row>
-                         <Col span="24">
-                             <FormItem {...formItemLayout} help={isFieldValidating('permission') ? '校验中...' : (getFieldError('permission') || []).join(', ')}
-                                hasFeedback>
-                                 <Select {...permissionProps} placeholder="请选择国家" style={{ width: '100%' }}>
-                                     <Option value="china">中国</Option>
-                                     <Option value="use">美国</Option>
-                                     <Option value="japan">日本</Option>
-                                     <Option value="korean">韩国</Option>
-                                     <Option value="Thailand">泰国</Option>
-                                 </Select>
-                             </FormItem>
-                         </Col>
-                     </Row>
-                 </div>
-                 <div key="g">
-                     <Row>
                          <Col span="12">
                              <label>
                                  <Checkbox defaultChecked={false}  />
@@ -352,10 +365,10 @@ class RegisterFrom extends Component{
                          </Col>
                      </Row>
                  </div>
-                 <div key="h">
+                 <div key="g">
                      <Row>
                          <Col span="7">
-                             <Button type="ghost" className="sub-cus-2" onClick={this.onHidden.bind(this)}>返回登陆</Button>
+                             <Button type="ghost" className="sub-cus-2" onClick={this.onHidden}>返回登陆</Button>
                          </Col>
                          <Col span="7" offset="10">
                              <Button type="primary"  className="sub-cus" onClick={this.handleSubmit.bind(this)}>注册</Button>
@@ -366,7 +379,7 @@ class RegisterFrom extends Component{
          </div>
      )
     }
-};
+}
 RegisterFrom = createForm()(RegisterFrom);
 
 var ForgetPassword=React.createClass({
@@ -384,20 +397,34 @@ var ForgetPassword=React.createClass({
             console.log(values);
         });
     },
+    validateCode(rule,value,callback){
+        console.log(value);
+        callback();
+    },
     render(){
         const { getFieldProps, getFieldError, isFieldValidating } = this.props.form;
-        const emailProps = getFieldProps('email', {
-            validate: [ {
-                rules: [
-                    {  required: true ,type: 'email', message: '请输入正确的邮箱地址' }
-                ],
-                trigger: ['onBlur', 'onChange'],
-            }]
-        });
         const formItemLayout = {
             labelCol: { span: 0 },
             wrapperCol: { span: 24 },
         };
+        const phoneProps = getFieldProps('phone', {
+            validate: [ {
+                rules: [
+                    { type: 'string',required: true,message: '请输入正确的手机号码' ,pattern: /^(0|86|17951)?(13[0-9]|15[012356789]|17[678]|18[0-9]|14[57])[0-9]{8}$/},
+                ],
+                trigger: ['onBlur', 'onChange'],
+            }]
+        });
+        const codeProps = getFieldProps('code', {
+            rules: [{
+                required: true,
+                whitespace: true,
+                message: '验证码不正确',
+            }, {
+                validator: this.validateCode
+            }],
+            trigger: ['onBlur', 'onChange']
+        });
         return (
             <div>
                 <div className="logo-p">
@@ -406,24 +433,42 @@ var ForgetPassword=React.createClass({
                 <p>什么记性!!</p>
                 <QueueAnim component={Form} horizontal form={this.props.form}  delay={300}
                            className="ant-form ant-form-horizontal" type="bottom" leaveReverse>
-                    <div key="a">
+                    <div key="b">
                         <Row>
                             <Col span="24">
-                                <FormItem {...formItemLayout}>
-                                    <Input type="password" onContextMenu={noop} onPaste={noop} onCopy={noop} onCut={noop}
-                                           className="input-cus" autoComplete="off" id="pass" placeholder="请输入邮箱" {...emailProps}
+                                <FormItem {...formItemLayout} hasFeedback>
+                                    <Input type="text" {...phoneProps} ref="inputCus"
+                                           autoComplete="off"  placeholder="请输入手机号码"
                                     />
                                 </FormItem>
                             </Col>
                         </Row>
                     </div>
-                    <div key="b">
+                    <div key="c">
+                        <Row>
+                            <Col>
+                                <FormItem
+                                    {...formItemLayout}
+                                    hasFeedback>
+                                    <div className="ant-search-input-wrapper">
+                                        <InputGroup >
+                                            <Input type="text" placeholder="请填写正确的验证码" className="input-code" {...codeProps}/>
+                                            <div className="ant-input-group-wrap ">
+                                                <Button type="primary" className="btn-send-code">发送验证码</Button>
+                                            </div>
+                                        </InputGroup>
+                                    </div>
+                                </FormItem>
+                            </Col>
+                        </Row>
+                    </div>
+                    <div key="d">
                         <Row>
                             <Col span="7">
                                 <Button type="ghost" className="sub-cus-2" onClick={this.onHidden}>返回登陆</Button>
                             </Col>
                             <Col span="7" offset="10">
-                                <Button type="primary"  className="sub-cus" onClick={this.handleSubmit}>发送</Button>
+                                <Button type="primary"  className="sub-cus" onClick={this.handleSubmit}>手机登陆</Button>
                             </Col>
                         </Row>
                     </div>
