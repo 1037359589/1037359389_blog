@@ -90,7 +90,7 @@ user2Schema.pre('save',function(next){
 user2Schema.methods.print=function(){
     console.log('这是实例方法!!');
 };
-var UserTwo=mongoose.model('Account',user2Schema);
+var UserTwo=mongoose.model('Account_test',user2Schema);
 var News=mongoose.model('News',news);
 
 

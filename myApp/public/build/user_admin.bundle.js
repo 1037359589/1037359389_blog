@@ -2,9 +2,9 @@ webpackJsonp([6],[
 /* 0 */
 /***/ function(module, exports, __webpack_require__) {
 
-	__webpack_require__(673);
-	__webpack_require__(674);
 	__webpack_require__(675);
+	__webpack_require__(676);
+	__webpack_require__(677);
 	__webpack_require__(678);
 	module.exports = __webpack_require__(679);
 
@@ -58569,587 +58569,7 @@ webpackJsonp([6],[
 /* 660 */,
 /* 661 */,
 /* 662 */,
-/* 663 */,
-/* 664 */,
-/* 665 */,
-/* 666 */,
-/* 667 */,
-/* 668 */,
-/* 669 */,
-/* 670 */,
-/* 671 */,
-/* 672 */,
-/* 673 */
-/***/ function(module, exports) {
-
-	"use strict";
-
-	Object.defineProperty(exports, "__esModule", {
-	    value: true
-	});
-	exports.toTabOne = toTabOne;
-	exports.toTabTwo = toTabTwo;
-	exports.toTabThree = toTabThree;
-	/**
-	 * Created by bll on 16/6/1.
-	 */
-	var TAB_ONE = exports.TAB_ONE = "tabOne";
-	var TAB_TWO = exports.TAB_TWO = "tabTwo";
-	var TAB_THREE = exports.TAB_THREE = "tabThree";
-	function toTabOne() {
-	    return {
-	        type: TAB_ONE
-	    };
-	}
-	function toTabTwo() {
-	    return {
-	        type: TAB_TWO
-	    };
-	}
-	function toTabThree() {
-	    return {
-	        type: TAB_THREE
-	    };
-	}
-
-/***/ },
-/* 674 */
-/***/ function(module, exports, __webpack_require__) {
-
-	/* WEBPACK VAR INJECTION */(function(React) {'use strict';
-
-	Object.defineProperty(exports, "__esModule", {
-	    value: true
-	});
-
-	var _redux = __webpack_require__(537);
-
-	var _reactRedux = __webpack_require__(548);
-
-	var _reactDom = __webpack_require__(159);
-
-	var _components = __webpack_require__(675);
-
-	var _components2 = _interopRequireDefault(_components);
-
-	var _actions = __webpack_require__(673);
-
-	var action = _interopRequireWildcard(_actions);
-
-	function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } else { var newObj = {}; if (obj != null) { for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) newObj[key] = obj[key]; } } newObj.default = obj; return newObj; } }
-
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-	var App = React.createClass({
-	    displayName: 'App',
-	    render: function render() {
-	        var _props = this.props;
-	        var current_tab = _props.current_tab;
-	        var actions = _props.actions;
-
-	        return React.createElement(
-	            'div',
-	            null,
-	            React.createElement(_components2.default, { actions: actions, current_tab: current_tab })
-	        );
-	    }
-	}); /**
-	     * Created by bll on 16/6/1.
-	     */
-
-	function handleCurrentTab(state) {
-	    return {
-	        current_tab: state.current_tab
-	    };
-	}
-	function mapActions(dispatch) {
-	    return {
-	        actions: (0, _redux.bindActionCreators)(action, dispatch)
-	    };
-	}
-	exports.default = (0, _reactRedux.connect)(handleCurrentTab, mapActions)(App);
-	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(2)))
-
-/***/ },
-/* 675 */
-/***/ function(module, exports, __webpack_require__) {
-
-	'use strict';
-
-	Object.defineProperty(exports, "__esModule", {
-	    value: true
-	});
-
-	var _antd = __webpack_require__(160);
-
-	var _reqwest = __webpack_require__(676);
-
-	var _reqwest2 = _interopRequireDefault(_reqwest);
-
-	var _react = __webpack_require__(2);
-
-	var _react2 = _interopRequireDefault(_react);
-
-	var _cus_components = __webpack_require__(534);
-
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-	function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
-
-	function getDate() {
-	    var myDate = new Date();
-	    return {
-	        y: myDate.getFullYear() };
-	}
-	//获取完整的年份(4位,1970-????)
-	function currentCreateTimeObj() {
-	    for (var i = 1; i <= 12; i++) {
-	        var t = { text: y + '-' + i, value: y + '-' + i };
-	        currentCreateTime.push(t);
-	    }
-	}
-	function getUnixTime(dateStr) {
-	    var newstr = dateStr.replace(/-/g, '/');
-	    var date = new Date(newstr);
-	    var time_str = date.getTime().toString();
-	    return time_str.substr(0, 10);
-	}
-	var y = getDate().y,
-	    m = getDate().m,
-	    currentCreateTime = [];
-	currentCreateTimeObj();
-	var type = parseInt(window.location.search.split("=").pop());
-	var columns1 = [{
-	    title: '编号',
-	    dataIndex: 'id'
-	}, {
-	    title: '用户名',
-	    dataIndex: 'username'
-	}, {
-	    title: '联系方式',
-	    dataIndex: 'phone'
-	}, {
-	    title: '性别',
-	    dataIndex: 'sex'
-	}, {
-	    title: '邮箱',
-	    dataIndex: 'email'
-	}, {
-	    title: '最近登录时间',
-	    dataIndex: "login_recent",
-	    filters: currentCreateTime,
-	    onFilter: function onFilter(value, record) {
-	        return record.login_recent.indexOf(value) === 0;
-	    },
-	    sorter: function sorter(a, b) {
-	        return getUnixTime(a.login_recent) - getUnixTime(b.login_recent);
-	    }
-	}, {
-	    title: '登录次数',
-	    dataIndex: 'login_times',
-	    sorter: function sorter(a, b) {
-	        return a.login_times - b.login_times;
-	    }
-	}, {
-	    title: '注册时间',
-	    dataIndex: 'reg_time',
-	    filters: currentCreateTime,
-	    onFilter: function onFilter(value, record) {
-	        return record.reg_time.indexOf(value) === 0;
-	    },
-	    sorter: function sorter(a, b) {
-	        return getUnixTime(a.reg_time) - getUnixTime(b.reg_time);
-	    }
-	}, {
-	    title: '文章数',
-	    dataIndex: 'count_text',
-	    sorter: function sorter(a, b) {
-	        return a.count_text - b.count_text;
-	    }
-	}, {
-	    title: '操作',
-	    dataIndex: 'do',
-	    render: function render(text) {
-	        return _react2.default.createElement(
-	            _cus_components.BtnRemove,
-	            { cid: text.cid, ctype: type },
-	            text.remove
-	        );
-	    }
-	}];
-
-	var data1 = [];
-	for (var i = 1; i < 460; i++) {
-	    data1.push({
-	        key: i,
-	        id: i,
-	        username: '李大嘴' + i,
-	        phone: '15002114175',
-	        sex: '男',
-	        email: '1037359589@qq.com',
-	        login_recent: '2016-6-1',
-	        login_times: i,
-	        reg_time: '2016-5-1',
-	        count_text: '' + i,
-	        do: {
-	            remove: '删除',
-	            cid: i
-	        }
-	    });
-	}
-
-	var pagination = {
-	    total: data1.length,
-	    showSizeChanger: true,
-	    onShowSizeChange: function onShowSizeChange(current, pageSize) {
-	        console.log('Current: ', current, '; PageSize: ', pageSize);
-	    },
-	    onChange: function onChange(current) {
-	        console.log('Current: ', current);
-	    }
-	};
-	var TableOne = _react2.default.createClass({
-	    displayName: 'TableOne',
-	    getInitialState: function getInitialState() {
-	        return {
-	            data: [],
-	            pagination: {},
-	            loading: false
-	        };
-	    },
-
-	    //handleTableChange(pagination, filters, sorter) {
-	    //    const pager = this.state.pagination;
-	    //    pager.current = pagination.current;
-	    //    this.setState({
-	    //        pagination: pager,
-	    //    });
-	    //    this.fetch({
-	    //        pageSize: pagination.pageSize,
-	    //        currentPage: pagination.current,
-	    //        sortField: sorter.field,
-	    //        sortOrder: sorter.order,
-	    //        //...filters,
-	    //    });
-	    //},
-	    //fetch(params = {}) {
-	    //    console.log('请求参数：', params);
-	    //    this.setState({ loading: true });
-	    //    reqwest({
-	    //        url: '/components/table/demo/data.json',
-	    //        method: 'get',
-	    //        data: params,
-	    //        type: 'json',
-	    //        success: (result) => {
-	    //            const pagination = this.state.pagination;
-	    //            pagination.total = result.totalCount;
-	    //            this.setState({
-	    //                loading: false,
-	    //                data: result.data,
-	    //                pagination,
-	    //            });
-	    //        },
-	    //    });
-	    //},
-	    //componentDidMount() {
-	    //    this.fetch();
-	    //},
-	    //<Table columns={columns} dataSource={data} pagination={pagination} loading={this.state.loading}
-	    //       onChange={this.handleTableChange}/>
-	    render: function render() {
-	        return _react2.default.createElement(
-	            'div',
-	            null,
-	            _react2.default.createElement(
-	                _antd.QueueAnim,
-	                { className: 'demo-content', type: ['right', 'left'],
-	                    ease: ['easeOutQuart', 'easeInOutQuart'] },
-	                _react2.default.createElement(
-	                    'div',
-	                    { key: 'a' },
-	                    _react2.default.createElement(_antd.Table, { columns: columns1, dataSource: data1, pagination: pagination })
-	                )
-	            )
-	        );
-	    }
-	});
-	var columns2 = [{
-	    title: '编号',
-	    dataIndex: 'id'
-	}, {
-	    title: '用户名',
-	    dataIndex: 'username'
-	}, {
-	    title: '联系方式',
-	    dataIndex: 'phone'
-	}, {
-	    title: '性别',
-	    dataIndex: 'sex'
-	}, {
-	    title: '邮箱',
-	    dataIndex: 'email'
-	}, {
-	    title: '注册时间',
-	    dataIndex: 'reg_time',
-	    filters: currentCreateTime,
-	    onFilter: function onFilter(value, record) {
-	        return record.reg_time.indexOf(value) === 0;
-	    },
-	    sorter: function sorter(a, b) {
-	        return getUnixTime(a.reg_time) - getUnixTime(b.reg_time);
-	    }
-	}, {
-	    title: '操作',
-	    dataIndex: 'do',
-	    render: function render(text) {
-	        return _react2.default.createElement(
-	            'div',
-	            null,
-	            _react2.default.createElement(
-	                _cus_components.BtnPass,
-	                { cid: text.cid, ctype: type },
-	                text.pass
-	            ),
-	            _react2.default.createElement(
-	                _cus_components.BtnRemove,
-	                { cid: text.cid, ctype: type },
-	                text.remove
-	            )
-	        );
-	    }
-	}];
-
-	var data2 = [];
-	for (var _i = 0; _i < 460; _i++) {
-	    data2.push({
-	        key: _i,
-	        id: _i,
-	        username: '李大嘴' + _i,
-	        phone: '15002114175',
-	        sex: '男',
-	        email: '1037359589@qq.com',
-	        reg_time: '2016-5-1',
-	        do: {
-	            remove: '删除',
-	            pass: "通过",
-	            cid: _i
-	        }
-	    });
-	}
-	var TableTwo = _react2.default.createClass({
-	    displayName: 'TableTwo',
-	    getInitialState: function getInitialState() {
-	        return {
-	            data: [],
-	            pagination: {},
-	            loading: false
-	        };
-	    },
-	    render: function render() {
-	        return _react2.default.createElement(
-	            'div',
-	            null,
-	            _react2.default.createElement(
-	                _antd.QueueAnim,
-	                { className: 'demo-content', type: ['right', 'left'],
-	                    ease: ['easeOutQuart', 'easeInOutQuart'] },
-	                _react2.default.createElement(
-	                    'div',
-	                    { key: 'a' },
-	                    _react2.default.createElement(_antd.Table, { columns: columns2, dataSource: data2, pagination: pagination })
-	                )
-	            )
-	        );
-	    }
-	});
-	var columns3 = [{
-	    title: '编号',
-	    dataIndex: 'id'
-	}, {
-	    title: '用户名',
-	    dataIndex: 'username'
-	}, {
-	    title: '联系方式',
-	    dataIndex: 'phone'
-	}, {
-	    title: '性别',
-	    dataIndex: 'sex'
-	}, {
-	    title: '邮箱',
-	    dataIndex: 'email'
-	}, {
-	    title: '注册时间',
-	    dataIndex: 'reg_time',
-	    filters: currentCreateTime,
-	    onFilter: function onFilter(value, record) {
-	        return record.reg_time.indexOf(value) === 0;
-	    },
-	    sorter: function sorter(a, b) {
-	        return getUnixTime(a.reg_time) - getUnixTime(b.reg_time);
-	    }
-	}, {
-	    title: '操作',
-	    dataIndex: 'do',
-	    render: function render(text) {
-	        return _react2.default.createElement(
-	            'div',
-	            null,
-	            _react2.default.createElement(
-	                _cus_components.BtnRecover,
-	                { cid: text.cid, ctype: type },
-	                text.recover
-	            )
-	        );
-	    }
-	}];
-
-	var data3 = [];
-	for (var _i2 = 0; _i2 < 460; _i2++) {
-	    data3.push({
-	        key: _i2,
-	        id: _i2,
-	        username: '李大嘴' + _i2,
-	        phone: '15002114175',
-	        sex: '男',
-	        email: '1037359589@qq.com',
-	        reg_time: '2016-5-1',
-	        do: {
-	            recover: '恢复',
-	            cid: _i2
-	        }
-	    });
-	}
-	var TableThree = _react2.default.createClass({
-	    displayName: 'TableThree',
-	    getInitialState: function getInitialState() {
-	        return {
-	            data: [],
-	            pagination: {},
-	            loading: false
-	        };
-	    },
-	    render: function render() {
-	        return _react2.default.createElement(
-	            'div',
-	            null,
-	            _react2.default.createElement(
-	                _antd.QueueAnim,
-	                { className: 'demo-content', type: ['right', 'left'],
-	                    ease: ['easeOutQuart', 'easeInOutQuart'] },
-	                _react2.default.createElement(
-	                    'div',
-	                    { key: 'a' },
-	                    _react2.default.createElement(_antd.Table, { columns: columns3, dataSource: data3, pagination: pagination })
-	                )
-	            )
-	        );
-	    }
-	});
-	var Tabs = _react2.default.createClass({
-	    displayName: 'Tabs',
-	    showTabOne: function showTabOne() {
-	        this.props.actions.toTabOne();
-	    },
-	    showTabTwo: function showTabTwo() {
-	        this.props.actions.toTabTwo();
-	    },
-	    showTabThree: function showTabThree() {
-	        this.props.actions.toTabThree();
-	    },
-	    render: function render() {
-	        var _props = this.props;
-	        var actions = _props.actions;
-	        var current_tab = _props.current_tab;var c1;var c2;var c3;
-	        switch (current_tab) {
-	            case 1:
-	                c1 = 'active';
-	                break;
-	            case 2:
-	                c2 = 'active';
-	                break;
-	            case 3:
-	                c3 = 'active';
-	                break;
-	        }
-	        return _react2.default.createElement(
-	            'ul',
-	            { className: 'tabs clearfix' },
-	            _react2.default.createElement(
-	                'li',
-	                { className: c1, onClick: this.showTabOne },
-	                '正常'
-	            ),
-	            _react2.default.createElement(
-	                'li',
-	                { className: c2, onClick: this.showTabTwo },
-	                '未审核'
-	            ),
-	            _react2.default.createElement(
-	                'li',
-	                { className: c3, onClick: this.showTabThree },
-	                '删除'
-	            )
-	        );
-	    }
-	});
-	var PortletTitle = _react2.default.createClass({
-	    displayName: 'PortletTitle',
-	    render: function render() {
-	        return _react2.default.createElement(
-	            'header',
-	            { className: 'portlet-title' },
-	            _react2.default.createElement(
-	                'div',
-	                { className: 'search-input' },
-	                _react2.default.createElement('input', { type: 'text' }),
-	                _react2.default.createElement(
-	                    'span',
-	                    { className: 'search-icon' },
-	                    _react2.default.createElement(_antd.Icon, { type: 'search' })
-	                )
-	            )
-	        );
-	    }
-	});
-	var AllTable = _react2.default.createClass({
-	    displayName: 'AllTable',
-	    render: function render() {
-	        var _React$createElement;
-
-	        var _props2 = this.props;
-	        var actions = _props2.actions;
-	        var current_tab = _props2.current_tab;var tab;
-	        switch (current_tab) {
-	            case 1:
-	                tab = _react2.default.createElement(TableOne, null);
-	                break;
-	            case 2:
-	                tab = _react2.default.createElement(TableTwo, null);
-	                break;
-	            case 3:
-	                tab = _react2.default.createElement(TableThree, null);
-	                break;
-	        }
-	        return _react2.default.createElement(
-	            'div',
-	            null,
-	            _react2.default.createElement(PortletTitle, null),
-	            _react2.default.createElement(
-	                'div',
-	                { className: 'table-data' },
-	                _react2.default.createElement(Tabs, (_React$createElement = { actions: true }, _defineProperty(_React$createElement, 'actions', actions), _defineProperty(_React$createElement, 'current_tab', current_tab), _React$createElement)),
-	                tab
-	            )
-	        );
-	    }
-	});
-	exports.default = AllTable;
-
-	//ReactDOM.render(<AllTable/>
-	//    , document.getElementById('table-data'));
-
-/***/ },
-/* 676 */
+/* 663 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_RESULT__;'use strict';
@@ -59175,7 +58595,7 @@ webpackJsonp([6],[
 	  } else {
 	    var XHR2;
 	    try {
-	      XHR2 = __webpack_require__(677);
+	      XHR2 = __webpack_require__(664);
 	    } catch (ex) {
 	      throw new Error('Peer dependency `xhr2` required! Please npm install xhr2');
 	    }
@@ -59783,10 +59203,590 @@ webpackJsonp([6],[
 	});
 
 /***/ },
-/* 677 */
+/* 664 */
 /***/ function(module, exports) {
 
 	/* (ignored) */
+
+/***/ },
+/* 665 */,
+/* 666 */,
+/* 667 */,
+/* 668 */,
+/* 669 */,
+/* 670 */,
+/* 671 */,
+/* 672 */,
+/* 673 */,
+/* 674 */,
+/* 675 */
+/***/ function(module, exports) {
+
+	"use strict";
+
+	Object.defineProperty(exports, "__esModule", {
+	    value: true
+	});
+	exports.toTabOne = toTabOne;
+	exports.toTabTwo = toTabTwo;
+	exports.toTabThree = toTabThree;
+	/**
+	 * Created by bll on 16/6/1.
+	 */
+	var TAB_ONE = exports.TAB_ONE = "tabOne";
+	var TAB_TWO = exports.TAB_TWO = "tabTwo";
+	var TAB_THREE = exports.TAB_THREE = "tabThree";
+	function toTabOne() {
+	    return {
+	        type: TAB_ONE
+	    };
+	}
+	function toTabTwo() {
+	    return {
+	        type: TAB_TWO
+	    };
+	}
+	function toTabThree() {
+	    return {
+	        type: TAB_THREE
+	    };
+	}
+
+/***/ },
+/* 676 */
+/***/ function(module, exports, __webpack_require__) {
+
+	/* WEBPACK VAR INJECTION */(function(React) {'use strict';
+
+	Object.defineProperty(exports, "__esModule", {
+	    value: true
+	});
+
+	var _redux = __webpack_require__(537);
+
+	var _reactRedux = __webpack_require__(548);
+
+	var _reactDom = __webpack_require__(159);
+
+	var _components = __webpack_require__(677);
+
+	var _components2 = _interopRequireDefault(_components);
+
+	var _actions = __webpack_require__(675);
+
+	var action = _interopRequireWildcard(_actions);
+
+	function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } else { var newObj = {}; if (obj != null) { for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) newObj[key] = obj[key]; } } newObj.default = obj; return newObj; } }
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	var App = React.createClass({
+	    displayName: 'App',
+	    render: function render() {
+	        var _props = this.props;
+	        var current_tab = _props.current_tab;
+	        var actions = _props.actions;
+
+	        return React.createElement(
+	            'div',
+	            null,
+	            React.createElement(_components2.default, { actions: actions, current_tab: current_tab })
+	        );
+	    }
+	}); /**
+	     * Created by bll on 16/6/1.
+	     */
+
+	function handleCurrentTab(state) {
+	    return {
+	        current_tab: state.current_tab
+	    };
+	}
+	function mapActions(dispatch) {
+	    return {
+	        actions: (0, _redux.bindActionCreators)(action, dispatch)
+	    };
+	}
+	exports.default = (0, _reactRedux.connect)(handleCurrentTab, mapActions)(App);
+	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(2)))
+
+/***/ },
+/* 677 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	Object.defineProperty(exports, "__esModule", {
+	    value: true
+	});
+
+	var _antd = __webpack_require__(160);
+
+	var _reqwest = __webpack_require__(663);
+
+	var _reqwest2 = _interopRequireDefault(_reqwest);
+
+	var _react = __webpack_require__(2);
+
+	var _react2 = _interopRequireDefault(_react);
+
+	var _cus_components = __webpack_require__(534);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+
+	function getDate() {
+	    var myDate = new Date();
+	    return {
+	        y: myDate.getFullYear() };
+	}
+	//获取完整的年份(4位,1970-????)
+	function currentCreateTimeObj() {
+	    for (var i = 1; i <= 12; i++) {
+	        var t = { text: y + '-' + i, value: y + '-' + i };
+	        currentCreateTime.push(t);
+	    }
+	}
+	function getUnixTime(dateStr) {
+	    var newstr = dateStr.replace(/-/g, '/');
+	    var date = new Date(newstr);
+	    var time_str = date.getTime().toString();
+	    return time_str.substr(0, 10);
+	}
+	var y = getDate().y,
+	    m = getDate().m,
+	    currentCreateTime = [];
+	currentCreateTimeObj();
+	var type = parseInt(window.location.search.split("=").pop());
+	var columns1 = [{
+	    title: '编号',
+	    dataIndex: 'id'
+	}, {
+	    title: '用户名',
+	    dataIndex: 'username'
+	}, {
+	    title: '联系方式',
+	    dataIndex: 'phone'
+	}, {
+	    title: '性别',
+	    dataIndex: 'sex'
+	}, {
+	    title: '邮箱',
+	    dataIndex: 'email'
+	}, {
+	    title: '最近登录时间',
+	    dataIndex: "login_recent",
+	    filters: currentCreateTime,
+	    onFilter: function onFilter(value, record) {
+	        return record.login_recent.indexOf(value) === 0;
+	    },
+	    sorter: function sorter(a, b) {
+	        return getUnixTime(a.login_recent) - getUnixTime(b.login_recent);
+	    }
+	}, {
+	    title: '登录次数',
+	    dataIndex: 'login_times',
+	    sorter: function sorter(a, b) {
+	        return a.login_times - b.login_times;
+	    }
+	}, {
+	    title: '注册时间',
+	    dataIndex: 'reg_time',
+	    filters: currentCreateTime,
+	    onFilter: function onFilter(value, record) {
+	        return record.reg_time.indexOf(value) === 0;
+	    },
+	    sorter: function sorter(a, b) {
+	        return getUnixTime(a.reg_time) - getUnixTime(b.reg_time);
+	    }
+	}, {
+	    title: '文章数',
+	    dataIndex: 'count_text',
+	    sorter: function sorter(a, b) {
+	        return a.count_text - b.count_text;
+	    }
+	}, {
+	    title: '操作',
+	    dataIndex: 'do',
+	    render: function render(text) {
+	        return _react2.default.createElement(
+	            _cus_components.BtnRemove,
+	            { cid: text.cid, ctype: type },
+	            text.remove
+	        );
+	    }
+	}];
+
+	var data1 = [];
+	for (var i = 1; i < 460; i++) {
+	    data1.push({
+	        key: i,
+	        id: i,
+	        username: '李大嘴' + i,
+	        phone: '15002114175',
+	        sex: '男',
+	        email: '1037359589@qq.com',
+	        login_recent: '2016-6-1',
+	        login_times: i,
+	        reg_time: '2016-5-1',
+	        count_text: '' + i,
+	        do: {
+	            remove: '删除',
+	            cid: i
+	        }
+	    });
+	}
+
+	var pagination = {
+	    total: data1.length,
+	    showSizeChanger: true,
+	    onShowSizeChange: function onShowSizeChange(current, pageSize) {
+	        console.log('Current: ', current, '; PageSize: ', pageSize);
+	    },
+	    onChange: function onChange(current) {
+	        console.log('Current: ', current);
+	    }
+	};
+	var TableOne = _react2.default.createClass({
+	    displayName: 'TableOne',
+	    getInitialState: function getInitialState() {
+	        return {
+	            data: [],
+	            pagination: {},
+	            loading: false
+	        };
+	    },
+
+	    //handleTableChange(pagination, filters, sorter) {
+	    //    const pager = this.state.pagination;
+	    //    pager.current = pagination.current;
+	    //    this.setState({
+	    //        pagination: pager,
+	    //    });
+	    //    this.fetch({
+	    //        pageSize: pagination.pageSize,
+	    //        currentPage: pagination.current,
+	    //        sortField: sorter.field,
+	    //        sortOrder: sorter.order,
+	    //        //...filters,
+	    //    });
+	    //},
+	    //fetch(params = {}) {
+	    //    console.log('请求参数：', params);
+	    //    this.setState({ loading: true });
+	    //    reqwest({
+	    //        url: '/components/table/demo/data.json',
+	    //        method: 'get',
+	    //        data: params,
+	    //        type: 'json',
+	    //        success: (result) => {
+	    //            const pagination = this.state.pagination;
+	    //            pagination.total = result.totalCount;
+	    //            this.setState({
+	    //                loading: false,
+	    //                data: result.data,
+	    //                pagination,
+	    //            });
+	    //        },
+	    //    });
+	    //},
+	    //componentDidMount() {
+	    //    this.fetch();
+	    //},
+	    //<Table columns={columns} dataSource={data} pagination={pagination} loading={this.state.loading}
+	    //       onChange={this.handleTableChange}/>
+	    render: function render() {
+	        return _react2.default.createElement(
+	            'div',
+	            null,
+	            _react2.default.createElement(
+	                _antd.QueueAnim,
+	                { className: 'demo-content', type: ['right', 'left'],
+	                    ease: ['easeOutQuart', 'easeInOutQuart'] },
+	                _react2.default.createElement(
+	                    'div',
+	                    { key: 'a' },
+	                    _react2.default.createElement(_antd.Table, { columns: columns1, dataSource: data1, pagination: pagination })
+	                )
+	            )
+	        );
+	    }
+	});
+	var columns2 = [{
+	    title: '编号',
+	    dataIndex: 'id'
+	}, {
+	    title: '用户名',
+	    dataIndex: 'username'
+	}, {
+	    title: '联系方式',
+	    dataIndex: 'phone'
+	}, {
+	    title: '性别',
+	    dataIndex: 'sex'
+	}, {
+	    title: '邮箱',
+	    dataIndex: 'email'
+	}, {
+	    title: '注册时间',
+	    dataIndex: 'reg_time',
+	    filters: currentCreateTime,
+	    onFilter: function onFilter(value, record) {
+	        return record.reg_time.indexOf(value) === 0;
+	    },
+	    sorter: function sorter(a, b) {
+	        return getUnixTime(a.reg_time) - getUnixTime(b.reg_time);
+	    }
+	}, {
+	    title: '操作',
+	    dataIndex: 'do',
+	    render: function render(text) {
+	        return _react2.default.createElement(
+	            'div',
+	            null,
+	            _react2.default.createElement(
+	                _cus_components.BtnPass,
+	                { cid: text.cid, ctype: type },
+	                text.pass
+	            ),
+	            _react2.default.createElement(
+	                _cus_components.BtnRemove,
+	                { cid: text.cid, ctype: type },
+	                text.remove
+	            )
+	        );
+	    }
+	}];
+
+	var data2 = [];
+	for (var _i = 0; _i < 460; _i++) {
+	    data2.push({
+	        key: _i,
+	        id: _i,
+	        username: '李大嘴' + _i,
+	        phone: '15002114175',
+	        sex: '男',
+	        email: '1037359589@qq.com',
+	        reg_time: '2016-5-1',
+	        do: {
+	            remove: '删除',
+	            pass: "通过",
+	            cid: _i
+	        }
+	    });
+	}
+	var TableTwo = _react2.default.createClass({
+	    displayName: 'TableTwo',
+	    getInitialState: function getInitialState() {
+	        return {
+	            data: [],
+	            pagination: {},
+	            loading: false
+	        };
+	    },
+	    render: function render() {
+	        return _react2.default.createElement(
+	            'div',
+	            null,
+	            _react2.default.createElement(
+	                _antd.QueueAnim,
+	                { className: 'demo-content', type: ['right', 'left'],
+	                    ease: ['easeOutQuart', 'easeInOutQuart'] },
+	                _react2.default.createElement(
+	                    'div',
+	                    { key: 'a' },
+	                    _react2.default.createElement(_antd.Table, { columns: columns2, dataSource: data2, pagination: pagination })
+	                )
+	            )
+	        );
+	    }
+	});
+	var columns3 = [{
+	    title: '编号',
+	    dataIndex: 'id'
+	}, {
+	    title: '用户名',
+	    dataIndex: 'username'
+	}, {
+	    title: '联系方式',
+	    dataIndex: 'phone'
+	}, {
+	    title: '性别',
+	    dataIndex: 'sex'
+	}, {
+	    title: '邮箱',
+	    dataIndex: 'email'
+	}, {
+	    title: '注册时间',
+	    dataIndex: 'reg_time',
+	    filters: currentCreateTime,
+	    onFilter: function onFilter(value, record) {
+	        return record.reg_time.indexOf(value) === 0;
+	    },
+	    sorter: function sorter(a, b) {
+	        return getUnixTime(a.reg_time) - getUnixTime(b.reg_time);
+	    }
+	}, {
+	    title: '操作',
+	    dataIndex: 'do',
+	    render: function render(text) {
+	        return _react2.default.createElement(
+	            'div',
+	            null,
+	            _react2.default.createElement(
+	                _cus_components.BtnRecover,
+	                { cid: text.cid, ctype: type },
+	                text.recover
+	            )
+	        );
+	    }
+	}];
+
+	var data3 = [];
+	for (var _i2 = 0; _i2 < 460; _i2++) {
+	    data3.push({
+	        key: _i2,
+	        id: _i2,
+	        username: '李大嘴' + _i2,
+	        phone: '15002114175',
+	        sex: '男',
+	        email: '1037359589@qq.com',
+	        reg_time: '2016-5-1',
+	        do: {
+	            recover: '恢复',
+	            cid: _i2
+	        }
+	    });
+	}
+	var TableThree = _react2.default.createClass({
+	    displayName: 'TableThree',
+	    getInitialState: function getInitialState() {
+	        return {
+	            data: [],
+	            pagination: {},
+	            loading: false
+	        };
+	    },
+	    render: function render() {
+	        return _react2.default.createElement(
+	            'div',
+	            null,
+	            _react2.default.createElement(
+	                _antd.QueueAnim,
+	                { className: 'demo-content', type: ['right', 'left'],
+	                    ease: ['easeOutQuart', 'easeInOutQuart'] },
+	                _react2.default.createElement(
+	                    'div',
+	                    { key: 'a' },
+	                    _react2.default.createElement(_antd.Table, { columns: columns3, dataSource: data3, pagination: pagination })
+	                )
+	            )
+	        );
+	    }
+	});
+	var Tabs = _react2.default.createClass({
+	    displayName: 'Tabs',
+	    showTabOne: function showTabOne() {
+	        this.props.actions.toTabOne();
+	    },
+	    showTabTwo: function showTabTwo() {
+	        this.props.actions.toTabTwo();
+	    },
+	    showTabThree: function showTabThree() {
+	        this.props.actions.toTabThree();
+	    },
+	    render: function render() {
+	        var _props = this.props;
+	        var actions = _props.actions;
+	        var current_tab = _props.current_tab;var c1;var c2;var c3;
+	        switch (current_tab) {
+	            case 1:
+	                c1 = 'active';
+	                break;
+	            case 2:
+	                c2 = 'active';
+	                break;
+	            case 3:
+	                c3 = 'active';
+	                break;
+	        }
+	        return _react2.default.createElement(
+	            'ul',
+	            { className: 'tabs clearfix' },
+	            _react2.default.createElement(
+	                'li',
+	                { className: c1, onClick: this.showTabOne },
+	                '正常'
+	            ),
+	            _react2.default.createElement(
+	                'li',
+	                { className: c2, onClick: this.showTabTwo },
+	                '未审核'
+	            ),
+	            _react2.default.createElement(
+	                'li',
+	                { className: c3, onClick: this.showTabThree },
+	                '删除'
+	            )
+	        );
+	    }
+	});
+	var PortletTitle = _react2.default.createClass({
+	    displayName: 'PortletTitle',
+	    render: function render() {
+	        return _react2.default.createElement(
+	            'header',
+	            { className: 'portlet-title' },
+	            _react2.default.createElement(
+	                'div',
+	                { className: 'search-input' },
+	                _react2.default.createElement('input', { type: 'text' }),
+	                _react2.default.createElement(
+	                    'span',
+	                    { className: 'search-icon' },
+	                    _react2.default.createElement(_antd.Icon, { type: 'search' })
+	                )
+	            )
+	        );
+	    }
+	});
+	var AllTable = _react2.default.createClass({
+	    displayName: 'AllTable',
+	    render: function render() {
+	        var _React$createElement;
+
+	        var _props2 = this.props;
+	        var actions = _props2.actions;
+	        var current_tab = _props2.current_tab;var tab;
+	        switch (current_tab) {
+	            case 1:
+	                tab = _react2.default.createElement(TableOne, null);
+	                break;
+	            case 2:
+	                tab = _react2.default.createElement(TableTwo, null);
+	                break;
+	            case 3:
+	                tab = _react2.default.createElement(TableThree, null);
+	                break;
+	        }
+	        return _react2.default.createElement(
+	            'div',
+	            null,
+	            _react2.default.createElement(PortletTitle, null),
+	            _react2.default.createElement(
+	                'div',
+	                { className: 'table-data' },
+	                _react2.default.createElement(Tabs, (_React$createElement = { actions: true }, _defineProperty(_React$createElement, 'actions', actions), _defineProperty(_React$createElement, 'current_tab', current_tab), _React$createElement)),
+	                tab
+	            )
+	        );
+	    }
+	});
+	exports.default = AllTable;
+
+	//ReactDOM.render(<AllTable/>
+	//    , document.getElementById('table-data'));
 
 /***/ },
 /* 678 */
@@ -59799,7 +59799,7 @@ webpackJsonp([6],[
 	});
 	exports.default = changeTab;
 
-	var _actions = __webpack_require__(673);
+	var _actions = __webpack_require__(675);
 
 	//import {combineReducers} from 'redux';
 	var initState = {
@@ -59850,7 +59850,7 @@ webpackJsonp([6],[
 
 	var _reducer2 = _interopRequireDefault(_reducer);
 
-	var _app = __webpack_require__(674);
+	var _app = __webpack_require__(676);
 
 	var _app2 = _interopRequireDefault(_app);
 

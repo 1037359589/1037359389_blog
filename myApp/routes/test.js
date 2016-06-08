@@ -29,7 +29,7 @@ router.get("/data",function(req,res,err){
     })
 });
 
-var Account=mongoose.model('Account');
+var Account=mongoose.model('Account_test');
 var News=mongoose.model('News');
 
 router.get("/default",function(req,res,err){
@@ -52,7 +52,7 @@ router.get("/default",function(req,res,err){
     console.log("JSON:"+JSON.stringify(acc));
     acc.save(function(err){
         if(err){
-            console.log('save failed:'+err);
+            console.log(err);
             return;
         }
         console.log(acc.blog);
@@ -65,7 +65,7 @@ router.get("/default",function(req,res,err){
             });
         });
         Account.findByISBN(12138,function(err,doc){
-            console.log(err,doc);
+            console.log(err,doc,12138);
         });
         acc.print();
         Account.find({},function(err,doc){

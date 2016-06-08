@@ -1,16 +1,9 @@
 /**
  * Created by bll on 16/4/13.
  */
-
-
-
-//require("../../css/index.css");
-//require("../../css/login/login.css");
-//const ReactRouter = require('react-router');
-//let { Router, Route, Link, hashHistory } = ReactRouter;
 import { Button, Form, Input, Row, Col,Checkbox,QueueAnim,Select,Menu,RadioGroup,Radio,Cascader } from 'antd';
 import React,{findDOMNode,Component,PropTypes} from "react";
-//import classNames from 'classnames';
+import reqwest from 'reqwest';
 const createForm = Form.create;
 const FormItem = Form.Item;
 const InputGroup = Input.Group;
@@ -171,13 +164,23 @@ class RegisterFrom extends Component{
     handleSubmit(e) {
         e.preventDefault();
         this.props.form.validateFields((errors, values) => {
-            console.log(2);
             if (!!errors) {
                 console.log('Errors in form!!!');
                 return;
             }
+            this.fetch(values);
             console.log('Submit!!!');
-            console.log(values);
+        });
+    }
+    fetch(params){
+        console.log(111);
+        reqwest({
+            url: 'http://localhost:3000/api/account_add_api',
+            method: 'post',
+            data:params,
+            type: 'json'
+        }).then(data => {
+            console.log(data,12138);
         });
     }
     userExists(rule, value, callback) {
@@ -250,6 +253,7 @@ class RegisterFrom extends Component{
                 { required: true,  min: 6,max:18,whitespace: true, message: '密码长度为6-18位'},
                 { validator: this.checkPass.bind(this)},
             ],
+            trigger: ['onBlur', 'onChange']
         });
         const rePasswdProps = getFieldProps('rePasswd', {
             rules: [{
@@ -259,6 +263,7 @@ class RegisterFrom extends Component{
             }, {
                 validator: this.checkPass2.bind(this)
             }],
+            trigger: ['onBlur', 'onChange']
         });
         const codeProps = getFieldProps('code', {
             rules: [{
@@ -303,6 +308,7 @@ class RegisterFrom extends Component{
                      <Row>
                          <Col span="24">
                              <FormItem {...formItemLayout}
+                                 help={isFieldValidating('phone') ? '校验中...' : (getFieldError('phone') || []).join(', ')}
                                  hasFeedback>
                                  <Input type="text" {...phoneProps} ref="inputCus"
                                         autoComplete="off"  placeholder="请输入手机号码"
@@ -332,7 +338,8 @@ class RegisterFrom extends Component{
                  <div key="d">
                      <Row>
                          <Col span="24">
-                             <FormItem {...formItemLayout} hasFeedback help={isFieldValidating('passwd') ? '校验中...' : (getFieldError('passwd') || []).join(', ')}>
+                             <FormItem {...formItemLayout} hasFeedback
+                                 help={isFieldValidating('passwd') ? '校验中...' : (getFieldError('passwd') || []).join(', ')}>
                                  <Input  type="password"  autoComplete="off" ref="inputCus"  {...passwdProps}
                                          onContextMenu={noop} onPaste={noop} onCopy={noop} onCut={noop} autoComplete="off"
                                          placeholder="请输入密码"

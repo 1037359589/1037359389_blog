@@ -7,5 +7,6 @@ module.exports=function(){
     var db=mongoose.connect(config.mongodb);
     require("../model/user.server.model.js");
     require("../model/user_test2.server.model.js");
+    require("../model/account.server.model.js");
     return db;
 };

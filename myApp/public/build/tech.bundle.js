@@ -2,11 +2,11 @@ webpackJsonp([5],[
 /* 0 */
 /***/ function(module, exports, __webpack_require__) {
 
-	__webpack_require__(668);
-	__webpack_require__(669);
 	__webpack_require__(670);
 	__webpack_require__(671);
-	module.exports = __webpack_require__(672);
+	__webpack_require__(672);
+	__webpack_require__(673);
+	module.exports = __webpack_require__(674);
 
 
 /***/ },
@@ -58574,7 +58574,9 @@ webpackJsonp([5],[
 /* 665 */,
 /* 666 */,
 /* 667 */,
-/* 668 */
+/* 668 */,
+/* 669 */,
+/* 670 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -58608,7 +58610,7 @@ webpackJsonp([5],[
 	}
 
 /***/ },
-/* 669 */
+/* 671 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/* WEBPACK VAR INJECTION */(function(React) {'use strict';
@@ -58623,11 +58625,11 @@ webpackJsonp([5],[
 
 	var _reactDom = __webpack_require__(159);
 
-	var _components = __webpack_require__(670);
+	var _components = __webpack_require__(672);
 
 	var _components2 = _interopRequireDefault(_components);
 
-	var _actions = __webpack_require__(668);
+	var _actions = __webpack_require__(670);
 
 	var action = _interopRequireWildcard(_actions);
 
@@ -58666,7 +58668,7 @@ webpackJsonp([5],[
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(2)))
 
 /***/ },
-/* 670 */
+/* 672 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/* WEBPACK VAR INJECTION */(function(React) {'use strict';
@@ -59250,7 +59252,7 @@ webpackJsonp([5],[
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(2)))
 
 /***/ },
-/* 671 */
+/* 673 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -59260,7 +59262,7 @@ webpackJsonp([5],[
 	});
 	exports.default = changeTab;
 
-	var _actions = __webpack_require__(668);
+	var _actions = __webpack_require__(670);
 
 	//import {combineReducers} from 'redux';
 	var initState = {
@@ -59294,7 +59296,7 @@ webpackJsonp([5],[
 	}
 
 /***/ },
-/* 672 */
+/* 674 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/* WEBPACK VAR INJECTION */(function(React) {'use strict';
@@ -59307,11 +59309,11 @@ webpackJsonp([5],[
 
 	var _remoteReduxDevtools = __webpack_require__(565);
 
-	var _reducer = __webpack_require__(671);
+	var _reducer = __webpack_require__(673);
 
 	var _reducer2 = _interopRequireDefault(_reducer);
 
-	var _app = __webpack_require__(669);
+	var _app = __webpack_require__(671);
 
 	var _app2 = _interopRequireDefault(_app);
 
