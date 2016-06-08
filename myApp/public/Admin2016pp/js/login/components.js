@@ -146,7 +146,6 @@ class RegisterFrom extends Component{
     }
     getValidateStatus(field) {
         const { isFieldValidating, getFieldError, getFieldValue } = this.props.form;
-
         if (isFieldValidating(field)) {
             return 'validating';
         } else if (!!getFieldError(field)) {
@@ -173,14 +172,19 @@ class RegisterFrom extends Component{
         });
     }
     fetch(params){
-        console.log(111);
         reqwest({
             url: 'http://localhost:3000/api/account_add_api',
             method: 'post',
             data:params,
             type: 'json'
         }).then(data => {
-            console.log(data,12138);
+            //console.log(data,12138);
+            if(data.status=="1"){
+                window.location.href="http://localhost:3000/admin2016pp/users";
+            }else{
+                alert('注册失败,请重新注册!!')
+            }
+
         });
     }
     userExists(rule, value, callback) {

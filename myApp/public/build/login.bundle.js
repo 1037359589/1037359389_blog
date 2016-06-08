@@ -58841,7 +58841,6 @@ webpackJsonp([2],[
 	            var getFieldError = _props$form3.getFieldError;
 	            var getFieldValue = _props$form3.getFieldValue;
 
-
 	            if (isFieldValidating(field)) {
 	                return 'validating';
 	            } else if (!!getFieldError(field)) {
@@ -58874,14 +58873,18 @@ webpackJsonp([2],[
 	    }, {
 	        key: 'fetch',
 	        value: function fetch(params) {
-	            console.log(111);
 	            (0, _reqwest2.default)({
 	                url: 'http://localhost:3000/api/account_add_api',
 	                method: 'post',
 	                data: params,
 	                type: 'json'
 	            }).then(function (data) {
-	                console.log(data, 12138);
+	                //console.log(data,12138);
+	                if (data.status == "1") {
+	                    window.location.href = "http://localhost:3000/admin2016pp/users";
+	                } else {
+	                    alert('注册失败,请重新注册');
+	                }
 	            });
 	        }
 	    }, {
@@ -60283,7 +60286,6 @@ webpackJsonp([2],[
 	            var getFieldError = _props$form3.getFieldError;
 	            var getFieldValue = _props$form3.getFieldValue;
 
-
 	            if (isFieldValidating(field)) {
 	                return 'validating';
 	            } else if (!!getFieldError(field)) {
@@ -60316,14 +60318,18 @@ webpackJsonp([2],[
 	    }, {
 	        key: 'fetch',
 	        value: function fetch(params) {
-	            console.log(111);
 	            (0, _reqwest2.default)({
 	                url: 'http://localhost:3000/api/account_add_api',
 	                method: 'post',
 	                data: params,
 	                type: 'json'
 	            }).then(function (data) {
-	                console.log(data, 12138);
+	                //console.log(data,12138);
+	                if (data.status == "1") {
+	                    window.location.href = "http://localhost:3000/admin2016pp/users";
+	                } else {
+	                    alert('注册失败,请重新注册!!');
+	                }
 	            });
 	        }
 	    }, {
