@@ -1,11 +1,12 @@
 var express = require('express');
 var ejs = require('ejs');
 var path = require('path');
+var parseurl = require('parseurl')
 var favicon = require('serve-favicon');
 var logger = require('morgan');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
-
+var session=require("express-session");
 var mongoose=require("./config/mongoose.js");
 var db=mongoose();
 
@@ -14,7 +15,8 @@ var admin = require('./routes/admin');
 var blog = require('./routes/blog');
 var test = require('./routes/test');
 var test2 = require('./routes/test2');
-var account_add_api = require('./server.api/account_add_api');
+//var account_add_api = require('./server.api/account_add_api');
+//var send_code_api = require('./server.api/send_code_api');
 //var uploads=require('./server_api/upload');
 
 var app = express();
@@ -34,12 +36,28 @@ app.use("/admin2016pp",express.static(path.join(__dirname, 'public/Admin2016pp')
 app.use("/blog",express.static(path.join(__dirname, 'public/Blog')));
 app.use("/admin2016pp/build",express.static(path.join(__dirname, 'public/build')));
 app.use("/blog/build",express.static(path.join(__dirname, 'public/build')));
+app.use(session({
+  secret:"keyboard cat",
+  saveUninitialized:true,
+  resave: false,
+}));
+app.use(function (req, res, next) {
+  var views = req.session.views
 
+  if (!views) {
+    views = req.session.views = {}
+  }
+  // get the url pathname
+  var pathname = parseurl(req).pathname
+  // count the views
+  views[pathname] = (views[pathname] || 0) + 1
+  next()
+})
 app.use('/admin2016pp', admin);
 app.use('/blog', blog);
 app.use("/test",test);
 app.use("/test2",test2);
-app.use("/api",account_add_api);
+//app.use("/",account_add_api);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

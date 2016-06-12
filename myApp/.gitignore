@@ -16,3 +16,4 @@ feature_mobile/*
 robots.txt
 index.php
 node_modules/*
+../node_modules/*

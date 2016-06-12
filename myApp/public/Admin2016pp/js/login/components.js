@@ -37,8 +37,26 @@ class LoginForm extends Component{
                 console.log('Errors in form!!!');
                 return;
             }
-            console.log('Submit!!!');
-            console.log(values);
+            setTimeout(()=>{
+                console.log(values);
+                this.fetch(values);
+            },500);
+
+        });
+    }
+    fetch(params){
+        reqwest({
+            url: 'http://localhost:3000/admin2016pp/admin_login',
+            method: 'post',
+            data:params,
+            type: 'json'
+        }).then(data => {
+            //console.log(data,12138);
+            if(data.status=="1"&&data.data.length>0){
+                window.location.href="http://localhost:3000/admin2016pp/users";
+            }else{
+                alert('账户名不存在或者密码错误!!');
+            }
         });
     }
     onHidden(){
@@ -173,7 +191,7 @@ class RegisterFrom extends Component{
     }
     fetch(params){
         reqwest({
-            url: 'http://localhost:3000/api/account_add_api',
+            url: 'http://localhost:3000/admin2016pp/account_add_api',
             method: 'post',
             data:params,
             type: 'json'
@@ -182,9 +200,8 @@ class RegisterFrom extends Component{
             if(data.status=="1"){
                 window.location.href="http://localhost:3000/admin2016pp/users";
             }else{
-                alert('注册失败,请重新注册!!')
+                alert('账户名已存在或者网络请求失败!!');
             }
-
         });
     }
     userExists(rule, value, callback) {
@@ -192,13 +209,51 @@ class RegisterFrom extends Component{
         if (!value) {
             callback();
         } else {
-            setTimeout(() => {
-                if (value === 'JasonWood') {
-                    callback([new Error('抱歉，该用户名已被占用。')]);
-                } else {
-                    callback();
-                }
-            }, 800);
+            if(value.length>=5) {
+                setTimeout(() => {
+                    reqwest({
+                        url: 'http://localhost:3000/admin2016pp/isset_admin',
+                        method: 'post',
+                        data: {username:value},
+                        type: 'json'
+                    }).then(data => {
+                        if(data.status=="1"){
+                             if(data.data.length>0){
+                                 callback([new Error('抱歉，该用户名已被占用。')]);
+                             }else{
+                                 callback();
+                             }
+                        }
+                    });
+                },300);
+            }
+        }
+    }
+    phoneExists(rule, value, callback){
+        if (!value) {
+            callback();
+        } else {
+            if(value.length==11){
+                setTimeout(() => {
+                    reqwest({
+                        url: 'http://localhost:3000/admin2016pp/isset_phone',
+                        method: 'post',
+                        data:{
+                            phone:value
+                        },
+                        type: 'json'
+                    }).then(data => {
+                        if(data.status=="1"){
+                            if(data.data.length>0){
+                                callback([new Error('抱歉，该手机号码已存在。')]);
+                            }else{
+                                callback();
+                            }
+                        }
+                    });
+
+                }, 100);
+            }
         }
     }
 
@@ -233,7 +288,22 @@ class RegisterFrom extends Component{
         callback();
     }
     sendCode(){
-        alert(1);
+        var params={
+            phone:"15002114175"
+        };
+        reqwest({
+            url: 'http://localhost:3000/admin2016pp/send_code_api',
+            method: 'post',
+            data:params,
+            type: 'json'
+        }).then(data => {
+            console.log(data,'phone');
+            //if(data.status=="1"){
+            //    window.location.href="http://localhost:3000/admin2016pp/users";
+            //}else{
+            //    alert('注册失败,请重新注册!!')
+            //}
+        });
     }
     render(){
         const { getFieldProps, getFieldError, isFieldValidating } = this.props.form;
@@ -248,6 +318,7 @@ class RegisterFrom extends Component{
             validate: [ {
                 rules: [
                     { type: 'string',required: true,message: '请输入正确的手机号码' ,pattern: /^(0|86|17951)?(13[0-9]|15[012356789]|17[678]|18[0-9]|14[57])[0-9]{8}$/},
+                    { validator: this.phoneExists }
                 ],
                 trigger: ['onBlur', 'onChange'],
             }]
@@ -293,7 +364,6 @@ class RegisterFrom extends Component{
              <p>如果,你是屌丝!!</p>
              <QueueAnim component={Form} horizontal  delay={300}
                         className="ant-form ant-form-horizontal" type="bottom" leaveReverse  form={this.props.form}>
-
                  <div key="a">
                      <Row>
                          <Col span="24">
@@ -331,7 +401,7 @@ class RegisterFrom extends Component{
                                      <InputGroup >
                                          <Input type="text" placeholder="请填写正确的验证码" className="input-code" {...codeProps}/>
                                          <div className="ant-input-group-wrap ">
-                                             <Button type="primary" className="btn-send-code">发送验证码</Button>
+                                             <Button type="primary" className="btn-send-code" onClick={this.sendCode}>发送验证码</Button>
                                          </div>
                                      </InputGroup>
                                  </div>

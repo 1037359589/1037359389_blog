@@ -58638,14 +58638,35 @@ webpackJsonp([2],[
 	    }, {
 	        key: 'handleSubmit',
 	        value: function handleSubmit(e) {
+	            var _this2 = this;
+
 	            e.preventDefault();
 	            this.props.form.validateFields(function (errors, values) {
 	                if (!!errors) {
 	                    console.log('Errors in form!!!');
 	                    return;
 	                }
-	                console.log('Submit!!!');
-	                console.log(values);
+	                setTimeout(function () {
+	                    console.log(values);
+	                    _this2.fetch(values);
+	                }, 500);
+	            });
+	        }
+	    }, {
+	        key: 'fetch',
+	        value: function fetch(params) {
+	            (0, _reqwest2.default)({
+	                url: 'http://localhost:3000/admin2016pp/admin_login',
+	                method: 'post',
+	                data: params,
+	                type: 'json'
+	            }).then(function (data) {
+	                //console.log(data,12138);
+	                if (data.status == "1" && data.data.length > 0) {
+	                    window.location.href = "http://localhost:3000/admin2016pp/users";
+	                } else {
+	                    alert('账户名不存在或者密码错误!!');
+	                }
 	            });
 	        }
 	    }, {
@@ -58822,10 +58843,10 @@ webpackJsonp([2],[
 	    function RegisterFrom(props) {
 	        _classCallCheck(this, RegisterFrom);
 
-	        var _this2 = _possibleConstructorReturn(this, Object.getPrototypeOf(RegisterFrom).call(this, props));
+	        var _this3 = _possibleConstructorReturn(this, Object.getPrototypeOf(RegisterFrom).call(this, props));
 
-	        _this2.onHidden = _this2.onHidden.bind(_this2);
-	        return _this2;
+	        _this3.onHidden = _this3.onHidden.bind(_this3);
+	        return _this3;
 	    }
 
 	    _createClass(RegisterFrom, [{
@@ -58858,7 +58879,7 @@ webpackJsonp([2],[
 	    }, {
 	        key: 'handleSubmit',
 	        value: function handleSubmit(e) {
-	            var _this3 = this;
+	            var _this4 = this;
 
 	            e.preventDefault();
 	            this.props.form.validateFields(function (errors, values) {
@@ -58866,7 +58887,7 @@ webpackJsonp([2],[
 	                    console.log('Errors in form!!!');
 	                    return;
 	                }
-	                _this3.fetch(values);
+	                _this4.fetch(values);
 	                console.log('Submit!!!');
 	            });
 	        }
@@ -58874,7 +58895,7 @@ webpackJsonp([2],[
 	        key: 'fetch',
 	        value: function fetch(params) {
 	            (0, _reqwest2.default)({
-	                url: 'http://localhost:3000/api/account_add_api',
+	                url: 'http://localhost:3000/admin2016pp/account_add_api',
 	                method: 'post',
 	                data: params,
 	                type: 'json'
@@ -58883,7 +58904,7 @@ webpackJsonp([2],[
 	                if (data.status == "1") {
 	                    window.location.href = "http://localhost:3000/admin2016pp/users";
 	                } else {
-	                    alert('注册失败,请重新注册');
+	                    alert('账户名已存在或者网络请求失败!!');
 	                }
 	            });
 	        }
@@ -58894,13 +58915,52 @@ webpackJsonp([2],[
 	            if (!value) {
 	                callback();
 	            } else {
-	                setTimeout(function () {
-	                    if (value === 'JasonWood') {
-	                        callback([new Error('抱歉，该用户名已被占用。')]);
-	                    } else {
-	                        callback();
-	                    }
-	                }, 800);
+	                if (value.length >= 5) {
+	                    setTimeout(function () {
+	                        (0, _reqwest2.default)({
+	                            url: 'http://localhost:3000/admin2016pp/isset_admin',
+	                            method: 'post',
+	                            data: { username: value },
+	                            type: 'json'
+	                        }).then(function (data) {
+	                            if (data.status == "1") {
+	                                if (data.data.length > 0) {
+	                                    callback([new Error('抱歉，该用户名已被占用。')]);
+	                                } else {
+	                                    callback();
+	                                }
+	                            }
+	                        });
+	                    }, 300);
+	                }
+	            }
+	        }
+	    }, {
+	        key: 'phoneExists',
+	        value: function phoneExists(rule, value, callback) {
+	            if (!value) {
+	                callback();
+	            } else {
+	                if (value.length == 11) {
+	                    setTimeout(function () {
+	                        (0, _reqwest2.default)({
+	                            url: 'http://localhost:3000/admin2016pp/isset_phone',
+	                            method: 'post',
+	                            data: {
+	                                phone: value
+	                            },
+	                            type: 'json'
+	                        }).then(function (data) {
+	                            if (data.status == "1") {
+	                                if (data.data.length > 0) {
+	                                    callback([new Error('抱歉，该手机号码已存在。')]);
+	                                } else {
+	                                    callback();
+	                                }
+	                            }
+	                        });
+	                    }, 100);
+	                }
 	            }
 	        }
 	    }, {
@@ -58943,7 +59003,22 @@ webpackJsonp([2],[
 	    }, {
 	        key: 'sendCode',
 	        value: function sendCode() {
-	            alert(1);
+	            var params = {
+	                phone: "15002114175"
+	            };
+	            (0, _reqwest2.default)({
+	                url: 'http://localhost:3000/admin2016pp/send_code_api',
+	                method: 'post',
+	                data: params,
+	                type: 'json'
+	            }).then(function (data) {
+	                console.log(data, 'phone');
+	                //if(data.status=="1"){
+	                //    window.location.href="http://localhost:3000/admin2016pp/users";
+	                //}else{
+	                //    alert('注册失败,请重新注册!!')
+	                //}
+	            });
 	        }
 	    }, {
 	        key: 'render',
@@ -58959,7 +59034,7 @@ webpackJsonp([2],[
 	            });
 	            var phoneProps = getFieldProps('phone', {
 	                validate: [{
-	                    rules: [{ type: 'string', required: true, message: '请输入正确的手机号码', pattern: /^(0|86|17951)?(13[0-9]|15[012356789]|17[678]|18[0-9]|14[57])[0-9]{8}$/ }],
+	                    rules: [{ type: 'string', required: true, message: '请输入正确的手机号码', pattern: /^(0|86|17951)?(13[0-9]|15[012356789]|17[678]|18[0-9]|14[57])[0-9]{8}$/ }, { validator: this.phoneExists }],
 	                    trigger: ['onBlur', 'onChange']
 	                }]
 	            });
@@ -59080,7 +59155,7 @@ webpackJsonp([2],[
 	                                                { className: 'ant-input-group-wrap ' },
 	                                                _react2.default.createElement(
 	                                                    _antd.Button,
-	                                                    { type: 'primary', className: 'btn-send-code' },
+	                                                    { type: 'primary', className: 'btn-send-code', onClick: this.sendCode },
 	                                                    '发送验证码'
 	                                                )
 	                                            )
@@ -60083,14 +60158,35 @@ webpackJsonp([2],[
 	    }, {
 	        key: 'handleSubmit',
 	        value: function handleSubmit(e) {
+	            var _this2 = this;
+
 	            e.preventDefault();
 	            this.props.form.validateFields(function (errors, values) {
 	                if (!!errors) {
 	                    console.log('Errors in form!!!');
 	                    return;
 	                }
-	                console.log('Submit!!!');
-	                console.log(values);
+	                setTimeout(function () {
+	                    console.log(values);
+	                    _this2.fetch(values);
+	                }, 500);
+	            });
+	        }
+	    }, {
+	        key: 'fetch',
+	        value: function fetch(params) {
+	            (0, _reqwest2.default)({
+	                url: 'http://localhost:3000/admin2016pp/admin_login',
+	                method: 'post',
+	                data: params,
+	                type: 'json'
+	            }).then(function (data) {
+	                //console.log(data,12138);
+	                if (data.status == "1" && data.data.length > 0) {
+	                    window.location.href = "http://localhost:3000/admin2016pp/users";
+	                } else {
+	                    alert('账户名不存在或者密码错误!!');
+	                }
 	            });
 	        }
 	    }, {
@@ -60267,10 +60363,10 @@ webpackJsonp([2],[
 	    function RegisterFrom(props) {
 	        _classCallCheck(this, RegisterFrom);
 
-	        var _this2 = _possibleConstructorReturn(this, Object.getPrototypeOf(RegisterFrom).call(this, props));
+	        var _this3 = _possibleConstructorReturn(this, Object.getPrototypeOf(RegisterFrom).call(this, props));
 
-	        _this2.onHidden = _this2.onHidden.bind(_this2);
-	        return _this2;
+	        _this3.onHidden = _this3.onHidden.bind(_this3);
+	        return _this3;
 	    }
 
 	    _createClass(RegisterFrom, [{
@@ -60303,7 +60399,7 @@ webpackJsonp([2],[
 	    }, {
 	        key: 'handleSubmit',
 	        value: function handleSubmit(e) {
-	            var _this3 = this;
+	            var _this4 = this;
 
 	            e.preventDefault();
 	            this.props.form.validateFields(function (errors, values) {
@@ -60311,7 +60407,7 @@ webpackJsonp([2],[
 	                    console.log('Errors in form!!!');
 	                    return;
 	                }
-	                _this3.fetch(values);
+	                _this4.fetch(values);
 	                console.log('Submit!!!');
 	            });
 	        }
@@ -60319,7 +60415,7 @@ webpackJsonp([2],[
 	        key: 'fetch',
 	        value: function fetch(params) {
 	            (0, _reqwest2.default)({
-	                url: 'http://localhost:3000/api/account_add_api',
+	                url: 'http://localhost:3000/admin2016pp/account_add_api',
 	                method: 'post',
 	                data: params,
 	                type: 'json'
@@ -60328,7 +60424,7 @@ webpackJsonp([2],[
 	                if (data.status == "1") {
 	                    window.location.href = "http://localhost:3000/admin2016pp/users";
 	                } else {
-	                    alert('注册失败,请重新注册!!');
+	                    alert('账户名已存在或者网络请求失败!!');
 	                }
 	            });
 	        }
@@ -60339,13 +60435,52 @@ webpackJsonp([2],[
 	            if (!value) {
 	                callback();
 	            } else {
-	                setTimeout(function () {
-	                    if (value === 'JasonWood') {
-	                        callback([new Error('抱歉，该用户名已被占用。')]);
-	                    } else {
-	                        callback();
-	                    }
-	                }, 800);
+	                if (value.length >= 5) {
+	                    setTimeout(function () {
+	                        (0, _reqwest2.default)({
+	                            url: 'http://localhost:3000/admin2016pp/isset_admin',
+	                            method: 'post',
+	                            data: { username: value },
+	                            type: 'json'
+	                        }).then(function (data) {
+	                            if (data.status == "1") {
+	                                if (data.data.length > 0) {
+	                                    callback([new Error('抱歉，该用户名已被占用。')]);
+	                                } else {
+	                                    callback();
+	                                }
+	                            }
+	                        });
+	                    }, 300);
+	                }
+	            }
+	        }
+	    }, {
+	        key: 'phoneExists',
+	        value: function phoneExists(rule, value, callback) {
+	            if (!value) {
+	                callback();
+	            } else {
+	                if (value.length == 11) {
+	                    setTimeout(function () {
+	                        (0, _reqwest2.default)({
+	                            url: 'http://localhost:3000/admin2016pp/isset_phone',
+	                            method: 'post',
+	                            data: {
+	                                phone: value
+	                            },
+	                            type: 'json'
+	                        }).then(function (data) {
+	                            if (data.status == "1") {
+	                                if (data.data.length > 0) {
+	                                    callback([new Error('抱歉，该手机号码已存在。')]);
+	                                } else {
+	                                    callback();
+	                                }
+	                            }
+	                        });
+	                    }, 100);
+	                }
 	            }
 	        }
 	    }, {
@@ -60388,7 +60523,22 @@ webpackJsonp([2],[
 	    }, {
 	        key: 'sendCode',
 	        value: function sendCode() {
-	            alert(1);
+	            var params = {
+	                phone: "15002114175"
+	            };
+	            (0, _reqwest2.default)({
+	                url: 'http://localhost:3000/admin2016pp/send_code_api',
+	                method: 'post',
+	                data: params,
+	                type: 'json'
+	            }).then(function (data) {
+	                console.log(data, 'phone');
+	                //if(data.status=="1"){
+	                //    window.location.href="http://localhost:3000/admin2016pp/users";
+	                //}else{
+	                //    alert('注册失败,请重新注册!!')
+	                //}
+	            });
 	        }
 	    }, {
 	        key: 'render',
@@ -60404,7 +60554,7 @@ webpackJsonp([2],[
 	            });
 	            var phoneProps = getFieldProps('phone', {
 	                validate: [{
-	                    rules: [{ type: 'string', required: true, message: '请输入正确的手机号码', pattern: /^(0|86|17951)?(13[0-9]|15[012356789]|17[678]|18[0-9]|14[57])[0-9]{8}$/ }],
+	                    rules: [{ type: 'string', required: true, message: '请输入正确的手机号码', pattern: /^(0|86|17951)?(13[0-9]|15[012356789]|17[678]|18[0-9]|14[57])[0-9]{8}$/ }, { validator: this.phoneExists }],
 	                    trigger: ['onBlur', 'onChange']
 	                }]
 	            });
@@ -60525,7 +60675,7 @@ webpackJsonp([2],[
 	                                                { className: 'ant-input-group-wrap ' },
 	                                                _react2.default.createElement(
 	                                                    _antd.Button,
-	                                                    { type: 'primary', className: 'btn-send-code' },
+	                                                    { type: 'primary', className: 'btn-send-code', onClick: this.sendCode },
 	                                                    '发送验证码'
 	                                                )
 	                                            )
