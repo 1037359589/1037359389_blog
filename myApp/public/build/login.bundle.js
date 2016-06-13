@@ -58663,7 +58663,9 @@ webpackJsonp([2],[
 	            }).then(function (data) {
 	                //console.log(data,12138);
 	                if (data.status == "1" && data.data.length > 0) {
-	                    window.location.href = "http://localhost:3000/admin2016pp/users";
+	                    setTimeout(function () {
+	                        window.location.href = "http://localhost:3000/admin2016pp/users";
+	                    }, 1000);
 	                } else {
 	                    alert('账户名不存在或者密码错误!!');
 	                }
@@ -60183,7 +60185,9 @@ webpackJsonp([2],[
 	            }).then(function (data) {
 	                //console.log(data,12138);
 	                if (data.status == "1" && data.data.length > 0) {
-	                    window.location.href = "http://localhost:3000/admin2016pp/users";
+	                    setTimeout(function () {
+	                        window.location.href = "http://localhost:3000/admin2016pp/users";
+	                    }, 1000);
 	                } else {
 	                    alert('账户名不存在或者密码错误!!');
 	                }

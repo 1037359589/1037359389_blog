@@ -6,6 +6,7 @@ var mongoose=require('mongoose');
 var crypto=require('crypto');
 var Account=mongoose.model('Account');
 var gf=require("../global_function");
+var global_session=require("../config/global_session");
 function Account_Center(){
     this.sqlObj="";
     /*
@@ -98,20 +99,20 @@ function Account_Center(){
                 }
                 __self.handleSessionStore(req,doc);
                 //console.log(doc[0].uid);
-                console.log(req.session);
+                console.log(req.session,2);
                 res.json({status: "1", data: doc, msg: '查询成功'});
             });
         });
     };
     this.handleSessionStore=function(req,doc){
-        req.session.cookie.uid = doc[0].uid;
-        req.session.cookie.username = doc[0].username;
-        req.session.cookie.phone = doc[0].phone;
-        req.session.cookie.status = doc[0].status;
-        req.session.cookie.email = doc[0].email;
-        var hour = 3600000;
+        req.session.uid = doc[0].uid;
+        req.session.username = doc[0].username;
+        req.session.phone = doc[0].phone;
+        req.session.status = doc[0].status;
+        req.session.email = doc[0].email;
+        var hour = 360000;
         req.session.cookie.expires = new Date(Date.now() + hour);
-        req.session.cookie.maxAge = hour
-    }
+        req.session.cookie.maxAge = hour;
+    };
 }
 module.exports=Account_Center;

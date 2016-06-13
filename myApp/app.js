@@ -2,14 +2,15 @@ var express = require('express');
 var ejs = require('ejs');
 var path = require('path');
 var parseurl = require('parseurl')
-var favicon = require('serve-favicon');
+var favicon = require('static-favicon');
 var logger = require('morgan');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 var session=require("express-session");
 var mongoose=require("./config/mongoose.js");
-var db=mongoose();
+var RedisStore = require('connect-redis')(session);
 
+var db=mongoose();
 
 var admin = require('./routes/admin');
 var blog = require('./routes/blog');
@@ -36,29 +37,33 @@ app.use("/admin2016pp",express.static(path.join(__dirname, 'public/Admin2016pp')
 app.use("/blog",express.static(path.join(__dirname, 'public/Blog')));
 app.use("/admin2016pp/build",express.static(path.join(__dirname, 'public/build')));
 app.use("/blog/build",express.static(path.join(__dirname, 'public/build')));
+app.use(cookieParser('user'));
+app.use(favicon());
 app.use(session({
-  secret:"keyboard cat",
-  saveUninitialized:true,
+  secret: 'keyboard cat',
+  key: 'sid',
+  cookie: { secure: false },
+  saveUninitialized: true,
   resave: false,
 }));
-app.use(function (req, res, next) {
-  var views = req.session.views
 
-  if (!views) {
-    views = req.session.views = {}
-  }
-  // get the url pathname
-  var pathname = parseurl(req).pathname
-  // count the views
-  views[pathname] = (views[pathname] || 0) + 1
-  next()
-})
+
+app.use(cookieParser());
+app.use(session({
+  secret: '12345',
+  name: 'testapp',   //这里的name值得是cookie的name，默认cookie的name是：connect.sid
+  cookie: {maxAge: 80000 },  //设置maxAge是80000ms，即80s后session和相应的cookie失效过期
+  resave: false,
+  saveUninitialized: true,
+}));
+
+
+
+
 app.use('/admin2016pp', admin);
 app.use('/blog', blog);
 app.use("/test",test);
 app.use("/test2",test2);
-//app.use("/",account_add_api);
-
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
   var err = new Error('Not Found');
