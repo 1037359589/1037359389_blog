@@ -5,8 +5,8 @@ var Router=require('express').Router();
 var mongoose=require('mongoose');
 var crypto=require('crypto');
 var Account=mongoose.model('Account');
-var gf=require("../global_function");
-var global_session=require("../config/global_session");
+var gf=require("../global_obj");
+//var global_session=require("../config/global_session");
 function Account_Center(){
     this.sqlObj="";
     /*
@@ -40,12 +40,6 @@ function Account_Center(){
             }
             res.json({status:"1",data:data,msg:'成功'});
         });
-    };
-    /*
-    * 管理员登陆
-    * */
-    this.adminLogin=function(req,res,next){
-
     };
     /*
      * 检测用户名是否存在
@@ -85,7 +79,6 @@ function Account_Center(){
             username:req.body.username,
             password:password
         };
-        var __self=this;
         Account.find(request,function(err,doc){
             if(err){
                 response.writeHead(200, { 'Content-Type': 'text/html;charset=utf-8' });
@@ -97,22 +90,12 @@ function Account_Center(){
                     res.json({status:"0",data:{},msg:err});
                     return next();
                 }
-                __self.handleSessionStore(req,doc);
+                gf.setSession(req,res,doc);
                 //console.log(doc[0].uid);
                 console.log(req.session,2);
-                res.json({status: "1", data: doc, msg: '查询成功'});
+                res.json({status: "1", data: req.session, msg: '查询成功'});
             });
         });
-    };
-    this.handleSessionStore=function(req,doc){
-        req.session.uid = doc[0].uid;
-        req.session.username = doc[0].username;
-        req.session.phone = doc[0].phone;
-        req.session.status = doc[0].status;
-        req.session.email = doc[0].email;
-        var hour = 360000;
-        req.session.cookie.expires = new Date(Date.now() + hour);
-        req.session.cookie.maxAge = hour;
     };
 }
 module.exports=Account_Center;

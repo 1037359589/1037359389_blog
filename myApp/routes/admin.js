@@ -3,7 +3,8 @@ var Account_Center=require("../server.api/account_api");
 var send_code_api=require("../server.api/send_code_api");
 var router = express.Router();
 var session=require("express-session");
-var global_session=require("../config/global_session");
+var gf=require("../global_obj");
+//var global_session=require("../config/global_session");
 
 //var mongoose=require('mongoose');
 //var crypto=require('crypto');
@@ -27,6 +28,7 @@ router.get("/header",function(req,res,next){
 router.get("/users",function(req,res,next){
   req.session.cookie.path="/users";
   console.log(req.session,200);
+  gf.setSession(req,res);
   res.render('Admin/users', { title: '屌丝管你台',build:BUILD});
 });
 router.get("/tech",function(req,res,next){

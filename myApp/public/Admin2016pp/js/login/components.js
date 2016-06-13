@@ -51,8 +51,8 @@ class LoginForm extends Component{
             data:params,
             type: 'json'
         }).then(data => {
-            //console.log(data,12138);
-            if(data.status=="1"&&data.data.length>0){
+            console.log(data.data,12138);
+            if(data.status=="1"){
                 setTimeout(()=>{
                     window.location.href="http://localhost:3000/admin2016pp/users";
                 },1000);

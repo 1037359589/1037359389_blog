@@ -48,7 +48,7 @@ app.use(session({
 }));
 
 
-app.use(cookieParser());
+//app.use(cookieParser());
 app.use(session({
   secret: '12345',
   name: 'testapp',   //这里的name值得是cookie的name，默认cookie的name是：connect.sid

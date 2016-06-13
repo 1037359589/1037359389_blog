@@ -58661,8 +58661,8 @@ webpackJsonp([2],[
 	                data: params,
 	                type: 'json'
 	            }).then(function (data) {
-	                //console.log(data,12138);
-	                if (data.status == "1" && data.data.length > 0) {
+	                console.log(data.data, 12138);
+	                if (data.status == "1") {
 	                    setTimeout(function () {
 	                        window.location.href = "http://localhost:3000/admin2016pp/users";
 	                    }, 1000);
@@ -60183,8 +60183,8 @@ webpackJsonp([2],[
 	                data: params,
 	                type: 'json'
 	            }).then(function (data) {
-	                //console.log(data,12138);
-	                if (data.status == "1" && data.data.length > 0) {
+	                console.log(data.data, 12138);
+	                if (data.status == "1") {
 	                    setTimeout(function () {
 	                        window.location.href = "http://localhost:3000/admin2016pp/users";
 	                    }, 1000);
