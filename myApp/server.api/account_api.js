@@ -6,6 +6,7 @@ var mongoose=require('mongoose');
 var crypto=require('crypto');
 var Account=mongoose.model('Account');
 var gf=require("../global_obj");
+var url = require('url');
 //var global_session=require("../config/global_session");
 function Account_Center(){
     this.sqlObj="";
@@ -20,6 +21,10 @@ function Account_Center(){
     * 管理员注册
     * */
     this.adminRegister=function(req,res,next){
+        var type="2";
+        if(req.originalUrl.indexOf("admin2016pp")>-1){
+            type=1;
+        }
         var hasher=crypto.createHash("md5");
         hasher.update(req.body.passwd);
         var password=hasher.digest('hex');
@@ -27,9 +32,9 @@ function Account_Center(){
             username:req.body.name,
             password:password,
             phone:"15002114175",
-            type:0,
+            type:type,
             status:"in_review",
-            register_time:gf.getNowTime()
+            register_time:gf.getNowTime(),
         };
         console.log(data);
         this.getInstance(data);
@@ -77,24 +82,86 @@ function Account_Center(){
         var password=hasher.digest('hex');
         var request={
             username:req.body.username,
-            password:password
+            password:password,
+            status:'pass'
         };
-        Account.find(request,function(err,doc){
-            if(err){
-                response.writeHead(200, { 'Content-Type': 'text/html;charset=utf-8' });
-                res.write("ERROR:"+err);
-                return;
-            }
+        //Account.find(request,function(err,doc){
+        //    if(err){
+        //        response.writeHead(200, { 'Content-Type': 'text/html;charset=utf-8' });
+        //        res.write("ERROR:"+err);
+        //        return;
+        //    }
             Account.find(request,function(err,doc){
                 if(err){
                     res.json({status:"0",data:{},msg:err});
                     return next();
                 }
-                gf.setSession(req,res,doc);
-                //console.log(doc[0].uid);
-                console.log(req.session,2);
-                res.json({status: "1", data: req.session, msg: '查询成功'});
+                var currentTime=Date.parse(new Date());
+                Account.update({username:req.body.username}, {
+                    $set: {recent_login_time:currentTime}
+                }, function(err) {
+                    if(err){
+                        console.log(err);
+                        return
+                    }
+                    gf.setSession(req,res,doc);
+                    console.log(req.session,2);
+                    res.json({status: "1", session: req.session,data:doc, msg: '查询成功'});
+                });
             });
+        //});
+    };
+    /*
+    * 显示正常用户数据
+    * */
+    this.handleUserPassList=function(req,res,next){
+        this.handleFindList('pass',req,res,next);
+    };
+    /*
+     * 显示审核中用户数据
+     * */
+    this.handleUserInReViewList=function(req,res,next) {
+        this.handleFindList('in_review',req,res,next);
+    };
+    /*
+     * 显示已删除的用户数据
+     * */
+    this.handleUserRemovedList=function(req,res,next){
+        this.handleFindList('removed',req,res,next);
+    };
+    this.handleFindList=function(status,req,res,next){
+        var type;
+        if(req.body.type=="1"){
+            type=[ '0', ''+req.body.type ]
+        }else{
+            type=[''+req.body.type ]
+        }
+        var request={
+            type:{$in: type},
+            status:status
+        };
+        Account.find(request,function(err,doc){
+            if(err){
+                res.json({status: "0", data:{},session:req.session ,msg: err});
+                return;
+            }
+            console.log(req.session,2);
+            res.json({status: "1", data:doc,session:req.session ,msg: '查询成功'});
+        });
+    };
+    /*
+    * 审核通过
+    * */
+    this.handlePass=function(req,res,next){
+        Account.update({uid:req.body.uid}, {
+            $set: {status:"pass"}
+        }, function(err,doc) {
+            if(err){
+                console.log(err);
+                return
+            }
+            console.log(req.session,2);
+            res.json({status: "1", session: req.session,data:doc, msg: '查询成功'});
         });
     };
 }

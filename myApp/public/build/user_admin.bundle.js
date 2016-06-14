@@ -5,8 +5,8 @@ webpackJsonp([6],[
 	__webpack_require__(675);
 	__webpack_require__(676);
 	__webpack_require__(677);
-	__webpack_require__(678);
-	module.exports = __webpack_require__(679);
+	__webpack_require__(679);
+	module.exports = __webpack_require__(680);
 
 
 /***/ },
@@ -48923,18 +48923,69 @@ webpackJsonp([6],[
 
 	var _react2 = _interopRequireDefault(_react);
 
+	var _reqwest = __webpack_require__(663);
+
+	var _reqwest2 = _interopRequireDefault(_reqwest);
+
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
+	/**
+	 * Created by bll on 16/6/1.
+	 */
+
+	var adminUrl = "/admin2016pp/";
 	var BtnPass = exports.BtnPass = _react2.default.createClass({
 	    displayName: "BtnPass",
 	    getInitialState: function getInitialState() {
 	        return {
-	            cid: this.props.cid,
-	            type: this.props.ctype
+	            user: {
+	                uid: this.props.cid,
+	                type: this.props.ctype,
+	                dataHandle: this.props.handleInreview,
+	                data: this.props.data
+	            }
 	        };
 	    },
 	    handleClick: function handleClick() {
-	        console.log(this.state.cid, this.state.type);
+	        var type = window.location.search,
+	            pathname = window.location.pathname;
+	        pathname = pathname.split("/").pop();
+	        switch (pathname) {
+	            case 'users':
+	                this.handlePassUsers();
+	                break;
+	        }
+	    },
+
+	    //处理通过数据
+	    handlePassUsers: function handlePassUsers() {
+	        var _this = this;
+
+	        setTimeout(function () {
+	            (0, _reqwest2.default)({
+	                url: 'user_pass',
+	                method: 'post',
+	                data: {
+	                    uid: _this.state.user.uid
+	                },
+	                type: 'json'
+	            }).then(function (data) {
+	                if (data.data.n > 0) {
+	                    _this.removeTr();
+	                }
+	            });
+	        }, 1000);
+	    },
+
+	    //删除当前行
+	    removeTr: function removeTr() {
+	        var _self = this;
+	        this.state.user.data.forEach(function (v, k) {
+	            if (v.uid == _self.state.user.uid) {
+	                _self.state.user.data.splice(k, 1);
+	            }
+	        });
+	        this.state.user.dataHandle(this.state.user.data);
 	    },
 	    render: function render() {
 	        return _react2.default.createElement(
@@ -48943,20 +48994,49 @@ webpackJsonp([6],[
 	            this.props.children
 	        );
 	    }
-	}); /**
-	     * Created by bll on 16/6/1.
-	     */
-
+	});
 	var BtnRemove = exports.BtnRemove = _react2.default.createClass({
 	    displayName: "BtnRemove",
 	    getInitialState: function getInitialState() {
 	        return {
-	            cid: this.props.cid,
-	            type: this.props.ctype
+	            user: {
+	                uid: this.props.cid,
+	                type: this.props.ctype,
+	                dataHandle: this.props.handleInreview,
+	                data: this.props.data
+	            }
 	        };
 	    },
 	    handleClick: function handleClick() {
 	        console.log(this.state.cid, this.state.type);
+	        var type = window.location.search,
+	            pathname = window.location.pathname;
+	        pathname = pathname.split("/").pop();
+	        switch (pathname) {
+	            case 'users':
+	                this.handlePassUsers();
+	                break;
+	        }
+	    },
+
+	    //处理通过数据
+	    handleRemoveUsers: function handleRemoveUsers() {
+	        var _this2 = this;
+
+	        setTimeout(function () {
+	            (0, _reqwest2.default)({
+	                url: 'user_remove',
+	                method: 'post',
+	                data: {
+	                    uid: _this2.state.user.uid
+	                },
+	                type: 'json'
+	            }).then(function (data) {
+	                if (data.data.n > 0) {
+	                    _this2.removeTr();
+	                }
+	            });
+	        }, 1000);
 	    },
 	    render: function render() {
 	        return _react2.default.createElement(
@@ -59336,32 +59416,68 @@ webpackJsonp([6],[
 
 	function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
 
-	function getDate() {
-	    var myDate = new Date();
-	    return {
-	        y: myDate.getFullYear() };
-	}
-	//获取完整的年份(4位,1970-????)
+	var global_obj = __webpack_require__(678);
 	function currentCreateTimeObj() {
 	    for (var i = 1; i <= 12; i++) {
 	        var t = { text: y + '-' + i, value: y + '-' + i };
 	        currentCreateTime.push(t);
 	    }
 	}
-	function getUnixTime(dateStr) {
-	    var newstr = dateStr.replace(/-/g, '/');
-	    var date = new Date(newstr);
-	    var time_str = date.getTime().toString();
-	    return time_str.substr(0, 10);
+	function currentStr() {
+	    var myDate = new Date();
+	    return {
+	        Y: myDate.getFullYear(), //获取完整的年份(4位,1970-????)
+	        M: myDate.getMonth() + 1,
+	        Date: myDate.getDate(),
+	        W: myDate.getDate(),
+	        h: myDate.getHours(), //获取当前小时数(0-23)
+	        m: myDate.getMinutes(), //获取当前分钟数(0-59)
+	        s: myDate.getSeconds()
+	    };
 	}
-	var y = getDate().y,
-	    m = getDate().m,
+	function getDate(time) {
+	    var date = global_obj.timeIntToTimeString(time);
+	    return date.Y + "-" + date.M + "-" + date.D + " " + date.h + ":" + date.m + ":" + date.s;
+	}
+	var y = currentStr().Y,
+	    m = currentStr().M,
 	    currentCreateTime = [];
 	currentCreateTimeObj();
-	var type = parseInt(window.location.search.split("=").pop());
+	//var type=parseInt(window.location.search.split("=").pop());
+
+	var SetIntervalMixin = {
+	    setLoading: function setLoading(status) {
+	        this.setState({
+	            loading: status
+	        });
+	    },
+	    componentDidMount: function componentDidMount() {
+	        this.fetch();
+	    },
+	    setData: function setData(data) {
+	        this.setState({
+	            data: data
+	        });
+	        console.log(this.state.data);
+	    }
+	};
+	/*
+	*
+	* 正常
+	* */
+	var data1 = [];
 	var columns1 = [{
 	    title: '编号',
-	    dataIndex: 'id'
+	    dataIndex: 'key',
+	    sorter: function sorter(a, b) {
+	        return a.key - b.key;
+	    }
+	}, {
+	    title: 'ID',
+	    dataIndex: 'uid',
+	    sorter: function sorter(a, b) {
+	        return a.uid - b.uid;
+	    }
 	}, {
 	    title: '用户名',
 	    dataIndex: 'username'
@@ -59369,20 +59485,32 @@ webpackJsonp([6],[
 	    title: '联系方式',
 	    dataIndex: 'phone'
 	}, {
-	    title: '性别',
-	    dataIndex: 'sex'
-	}, {
 	    title: '邮箱',
 	    dataIndex: 'email'
 	}, {
+	    title: "类型",
+	    dataIndex: "type",
+	    filters: [{
+	        text: '超级',
+	        value: '超级管理员'
+	    }, {
+	        text: '普通',
+	        value: '普通管理员'
+	    }],
+	    onFilter: function onFilter(value, record) {
+	        console.log(value, record);
+	        return record.type.indexOf(value) === 0;
+	    }
+	}, {
 	    title: '最近登录时间',
-	    dataIndex: "login_recent",
+	    dataIndex: "recent_login_time",
 	    filters: currentCreateTime,
 	    onFilter: function onFilter(value, record) {
-	        return record.login_recent.indexOf(value) === 0;
+	        console.log(value, record);
+	        return record.recent_login_time.indexOf(value) === 0;
 	    },
 	    sorter: function sorter(a, b) {
-	        return getUnixTime(a.login_recent) - getUnixTime(b.login_recent);
+	        return global_obj.getUnixTime(a.recent_login_time) - global_obj.getUnixTime(b.recent_login_time);
 	    }
 	}, {
 	    title: '登录次数',
@@ -59392,19 +59520,13 @@ webpackJsonp([6],[
 	    }
 	}, {
 	    title: '注册时间',
-	    dataIndex: 'reg_time',
+	    dataIndex: 'register_time',
 	    filters: currentCreateTime,
 	    onFilter: function onFilter(value, record) {
-	        return record.reg_time.indexOf(value) === 0;
+	        return record.register_time.indexOf(value) === 0;
 	    },
 	    sorter: function sorter(a, b) {
-	        return getUnixTime(a.reg_time) - getUnixTime(b.reg_time);
-	    }
-	}, {
-	    title: '文章数',
-	    dataIndex: 'count_text',
-	    sorter: function sorter(a, b) {
-	        return a.count_text - b.count_text;
+	        return global_obj.getUnixTime(a.register_time) - global_obj.getUnixTime(b.register_time);
 	    }
 	}, {
 	    title: '操作',
@@ -59412,91 +59534,72 @@ webpackJsonp([6],[
 	    render: function render(text) {
 	        return _react2.default.createElement(
 	            _cus_components.BtnRemove,
-	            { cid: text.cid, ctype: type },
+	            { cid: text.uid, ctype: text.type, data: data1 },
 	            text.remove
 	        );
 	    }
 	}];
-
-	var data1 = [];
-	for (var i = 1; i < 460; i++) {
-	    data1.push({
-	        key: i,
-	        id: i,
-	        username: '李大嘴' + i,
-	        phone: '15002114175',
-	        sex: '男',
-	        email: '1037359589@qq.com',
-	        login_recent: '2016-6-1',
-	        login_times: i,
-	        reg_time: '2016-5-1',
-	        count_text: '' + i,
-	        do: {
-	            remove: '删除',
-	            cid: i
-	        }
-	    });
-	}
-
-	var pagination = {
-	    total: data1.length,
-	    showSizeChanger: true,
-	    onShowSizeChange: function onShowSizeChange(current, pageSize) {
-	        console.log('Current: ', current, '; PageSize: ', pageSize);
-	    },
-	    onChange: function onChange(current) {
-	        console.log('Current: ', current);
-	    }
-	};
 	var TableOne = _react2.default.createClass({
 	    displayName: 'TableOne',
+
+	    mixins: [SetIntervalMixin],
 	    getInitialState: function getInitialState() {
 	        return {
 	            data: [],
-	            pagination: {},
-	            loading: false
+	            loading: true
 	        };
 	    },
+	    fetch: function fetch() {
+	        var _this = this;
 
-	    //handleTableChange(pagination, filters, sorter) {
-	    //    const pager = this.state.pagination;
-	    //    pager.current = pagination.current;
-	    //    this.setState({
-	    //        pagination: pager,
-	    //    });
-	    //    this.fetch({
-	    //        pageSize: pagination.pageSize,
-	    //        currentPage: pagination.current,
-	    //        sortField: sorter.field,
-	    //        sortOrder: sorter.order,
-	    //        //...filters,
-	    //    });
-	    //},
-	    //fetch(params = {}) {
-	    //    console.log('请求参数：', params);
-	    //    this.setState({ loading: true });
-	    //    reqwest({
-	    //        url: '/components/table/demo/data.json',
-	    //        method: 'get',
-	    //        data: params,
-	    //        type: 'json',
-	    //        success: (result) => {
-	    //            const pagination = this.state.pagination;
-	    //            pagination.total = result.totalCount;
-	    //            this.setState({
-	    //                loading: false,
-	    //                data: result.data,
-	    //                pagination,
-	    //            });
-	    //        },
-	    //    });
-	    //},
-	    //componentDidMount() {
-	    //    this.fetch();
-	    //},
-	    //<Table columns={columns} dataSource={data} pagination={pagination} loading={this.state.loading}
-	    //       onChange={this.handleTableChange}/>
+	        var type = window.location.search;
+	        var ty = type === "" ? "1" : type.split("=")[1];
+	        setTimeout(function () {
+	            (0, _reqwest2.default)({
+	                url: 'user_normal_list',
+	                method: 'post',
+	                data: {
+	                    type: ty
+	                },
+	                type: 'json'
+	            }).then(function (data) {
+	                data1 = [];
+	                data.data.forEach(function (v, k) {
+	                    data1.push({
+	                        key: k + 1,
+	                        uid: v.uid,
+	                        username: v.username,
+	                        phone: v.phone,
+	                        email: v.email,
+	                        recent_login_time: v.recent_login_time == 0 ? "-" : getDate(v.recent_login_time),
+	                        login_times: v.login_times,
+	                        register_time: getDate(v.register_time),
+	                        type: v.type == 0 ? '超级管理员' : '普通管理员',
+	                        do: {
+	                            remove: '删除',
+	                            uid: v.uid,
+	                            type: v.type
+	                        }
+	                    });
+	                });
+	                _this.setState({
+	                    data: data1,
+	                    loading: false
+	                });
+	            });
+	        }, 1000);
+	    },
 	    render: function render() {
+	        var pagination = {
+	            total: this.state.data.length,
+	            showSizeChanger: true,
+	            onShowSizeChange: function onShowSizeChange(current, pageSize) {
+	                console.log('Current: ', current, '; PageSize: ', pageSize);
+	            },
+	            onChange: function onChange(current) {
+	                console.log('Current: ', current);
+	            }
+	        };
 	        return _react2.default.createElement(
 	            'div',
 	            null,
@@ -59507,15 +59610,35 @@ webpackJsonp([6],[
 	                _react2.default.createElement(
 	                    'div',
 	                    { key: 'a' },
-	                    _react2.default.createElement(_antd.Table, { columns: columns1, dataSource: data1, pagination: pagination })
+	                    _react2.default.createElement(_antd.Table, { columns: columns1, dataSource: data1, pagination: pagination,
+	                        loading: this.state.loading })
 	                )
 	            )
 	        );
 	    }
 	});
+	/*
+	*
+	*
+	* 审核中
+	* */
+
+	var data2 = [];
+	function handleStatue(data) {
+	    data2 = data;
+	}
 	var columns2 = [{
 	    title: '编号',
-	    dataIndex: 'id'
+	    dataIndex: 'key',
+	    sorter: function sorter(a, b) {
+	        return a.key - b.key;
+	    }
+	}, {
+	    title: 'ID',
+	    dataIndex: 'uid',
+	    sorter: function sorter(a, b) {
+	        return a.uid - b.uid;
+	    }
 	}, {
 	    title: '用户名',
 	    dataIndex: 'username'
@@ -59523,69 +59646,116 @@ webpackJsonp([6],[
 	    title: '联系方式',
 	    dataIndex: 'phone'
 	}, {
-	    title: '性别',
-	    dataIndex: 'sex'
-	}, {
 	    title: '邮箱',
 	    dataIndex: 'email'
 	}, {
+	    title: "类型",
+	    dataIndex: "type",
+	    filters: [{
+	        text: '超级',
+	        value: '超级管理员'
+	    }, {
+	        text: '普通',
+	        value: '普通管理员'
+	    }],
+	    onFilter: function onFilter(value, record) {
+	        console.log(value, record);
+	        return record.type.indexOf(value) === 0;
+	    }
+	}, {
 	    title: '注册时间',
-	    dataIndex: 'reg_time',
+	    dataIndex: 'register_time',
 	    filters: currentCreateTime,
 	    onFilter: function onFilter(value, record) {
-	        return record.reg_time.indexOf(value) === 0;
+	        return record.register_time.indexOf(value) === 0;
 	    },
 	    sorter: function sorter(a, b) {
-	        return getUnixTime(a.reg_time) - getUnixTime(b.reg_time);
+	        return global_obj.getUnixTime(a.register_time) - global_obj.getUnixTime(b.register_time);
 	    }
 	}, {
 	    title: '操作',
 	    dataIndex: 'do',
 	    render: function render(text) {
+	        console.log(text);
 	        return _react2.default.createElement(
 	            'div',
 	            null,
 	            _react2.default.createElement(
 	                _cus_components.BtnPass,
-	                { cid: text.cid, ctype: type },
+	                { cid: text.uid, ctype: text.type, data: data2, handleInreview: text.handleLi },
 	                text.pass
 	            ),
 	            _react2.default.createElement(
 	                _cus_components.BtnRemove,
-	                { cid: text.cid, ctype: type },
+	                { cid: text.uid, ctype: text.type, data: data2, handleInreview: text.handleLi },
 	                text.remove
 	            )
 	        );
 	    }
 	}];
-
-	var data2 = [];
-	for (var _i = 0; _i < 460; _i++) {
-	    data2.push({
-	        key: _i,
-	        id: _i,
-	        username: '李大嘴' + _i,
-	        phone: '15002114175',
-	        sex: '男',
-	        email: '1037359589@qq.com',
-	        reg_time: '2016-5-1',
-	        do: {
-	            remove: '删除',
-	            pass: "通过",
-	            cid: _i
-	        }
-	    });
-	}
 	var TableTwo = _react2.default.createClass({
 	    displayName: 'TableTwo',
+
+	    mixins: [SetIntervalMixin],
 	    getInitialState: function getInitialState() {
 	        return {
 	            data: [],
-	            pagination: {},
-	            loading: false
+	            loading: true
 	        };
 	    },
+	    fetch: function fetch() {
+	        var _this2 = this;
+
+	        var type = window.location.search;
+	        var ty = type === "" ? "1" : type.split("=")[1];
+	        var setData = this.setData;
+	        setTimeout(function () {
+	            (0, _reqwest2.default)({
+	                url: 'user_in_review_list',
+	                method: 'post',
+	                data: {
+	                    type: ty
+	                },
+	                type: 'json'
+	            }).then(function (data) {
+	                console.log(data.data, 12138);
+	                data2 = [];
+	                data.data.forEach(function (v, k) {
+	                    data2.push({
+	                        key: k + 1,
+	                        uid: v.uid,
+	                        username: v.username,
+	                        phone: v.phone,
+	                        email: v.email,
+	                        register_time: getDate(v.register_time),
+	                        type: v.type == 0 ? '超级管理员' : '普通管理员',
+	                        do: {
+	                            pass: '通过',
+	                            remove: '删除',
+	                            uid: v.uid,
+	                            type: v.type,
+	                            handleLi: setData
+	                        }
+	                    });
+	                });
+	                _this2.setState({
+	                    data: data2,
+	                    loading: false
+	                });
+	            });
+	        }, 1000);
+	    },
 	    render: function render() {
+	        var pagination = {
+	            total: this.state.data.length,
+	            showSizeChanger: true,
+	            onShowSizeChange: function onShowSizeChange(current, pageSize) {
+	                console.log('Current: ', current, '; PageSize: ', pageSize);
+	            },
+	            onChange: function onChange(current) {
+	                console.log('Current: ', current);
+	            }
+	        };
 	        return _react2.default.createElement(
 	            'div',
 	            null,
@@ -59596,15 +59766,25 @@ webpackJsonp([6],[
 	                _react2.default.createElement(
 	                    'div',
 	                    { key: 'a' },
-	                    _react2.default.createElement(_antd.Table, { columns: columns2, dataSource: data2, pagination: pagination })
+	                    _react2.default.createElement(_antd.Table, { columns: columns2, dataSource: this.state.data, pagination: pagination, loading: this.state.loading })
 	                )
 	            )
 	        );
 	    }
 	});
+	var data3 = [];
 	var columns3 = [{
 	    title: '编号',
-	    dataIndex: 'id'
+	    dataIndex: 'key',
+	    sorter: function sorter(a, b) {
+	        return a.key - b.key;
+	    }
+	}, {
+	    title: 'ID',
+	    dataIndex: 'uid',
+	    sorter: function sorter(a, b) {
+	        return a.uid - b.uid;
+	    }
 	}, {
 	    title: '用户名',
 	    dataIndex: 'username'
@@ -59612,63 +59792,88 @@ webpackJsonp([6],[
 	    title: '联系方式',
 	    dataIndex: 'phone'
 	}, {
-	    title: '性别',
-	    dataIndex: 'sex'
-	}, {
-	    title: '邮箱',
-	    dataIndex: 'email'
-	}, {
-	    title: '注册时间',
-	    dataIndex: 'reg_time',
-	    filters: currentCreateTime,
+	    title: "类型",
+	    dataIndex: "type",
+	    filters: [{
+	        text: '超级',
+	        value: '超级管理员'
+	    }, {
+	        text: '普通',
+	        value: '普通管理员'
+	    }],
 	    onFilter: function onFilter(value, record) {
-	        return record.reg_time.indexOf(value) === 0;
-	    },
-	    sorter: function sorter(a, b) {
-	        return getUnixTime(a.reg_time) - getUnixTime(b.reg_time);
+	        console.log(value, record);
+	        return record.type.indexOf(value) === 0;
 	    }
 	}, {
 	    title: '操作',
 	    dataIndex: 'do',
 	    render: function render(text) {
 	        return _react2.default.createElement(
-	            'div',
-	            null,
-	            _react2.default.createElement(
-	                _cus_components.BtnRecover,
-	                { cid: text.cid, ctype: type },
-	                text.recover
-	            )
+	            _cus_components.BtnRecover,
+	            { cid: text.uid, ctype: text.type, data: data3 },
+	            text.recover
 	        );
 	    }
 	}];
-
-	var data3 = [];
-	for (var _i2 = 0; _i2 < 460; _i2++) {
-	    data3.push({
-	        key: _i2,
-	        id: _i2,
-	        username: '李大嘴' + _i2,
-	        phone: '15002114175',
-	        sex: '男',
-	        email: '1037359589@qq.com',
-	        reg_time: '2016-5-1',
-	        do: {
-	            recover: '恢复',
-	            cid: _i2
-	        }
-	    });
-	}
 	var TableThree = _react2.default.createClass({
 	    displayName: 'TableThree',
+
+	    mixins: [SetIntervalMixin],
 	    getInitialState: function getInitialState() {
 	        return {
 	            data: [],
-	            pagination: {},
-	            loading: false
+	            loading: true
 	        };
 	    },
+	    fetch: function fetch() {
+	        var _this3 = this;
+
+	        var type = window.location.search;
+	        var ty = type === "" ? "1" : type.split("=")[1];
+	        setTimeout(function () {
+	            (0, _reqwest2.default)({
+	                url: 'user_removed_list',
+	                method: 'post',
+	                data: {
+	                    type: ty
+	                },
+	                type: 'json'
+	            }).then(function (data) {
+	                console.log(data.data, 12138);
+	                data3 = [];
+	                data.data.forEach(function (v, k) {
+	                    data3.push({
+	                        key: k + 1,
+	                        uid: v.uid,
+	                        username: v.username,
+	                        phone: v.phone,
+	                        type: v.type == 0 ? '超级管理员' : '普通管理员',
+	                        do: {
+	                            recover: '恢复',
+	                            uid: v.uid,
+	                            type: v.type
+	                        }
+	                    });
+	                });
+	                _this3.setState({
+	                    data: data3,
+	                    loading: false
+	                });
+	            });
+	        }, 1000);
+	    },
 	    render: function render() {
+	        var pagination = {
+	            total: this.state.data.length,
+	            showSizeChanger: true,
+	            onShowSizeChange: function onShowSizeChange(current, pageSize) {
+	                console.log('Current: ', current, '; PageSize: ', pageSize);
+	            },
+	            onChange: function onChange(current) {
+	                console.log('Current: ', current);
+	            }
+	        };
 	        return _react2.default.createElement(
 	            'div',
 	            null,
@@ -59679,7 +59884,7 @@ webpackJsonp([6],[
 	                _react2.default.createElement(
 	                    'div',
 	                    { key: 'a' },
-	                    _react2.default.createElement(_antd.Table, { columns: columns3, dataSource: data3, pagination: pagination })
+	                    _react2.default.createElement(_antd.Table, { columns: columns3, dataSource: data3, pagination: pagination, loading: this.state.loading })
 	                )
 	            )
 	        );
@@ -59790,6 +59995,53 @@ webpackJsonp([6],[
 
 /***/ },
 /* 678 */
+/***/ function(module, exports) {
+
+	"use strict";
+
+	/**
+	 * Created by bll on 16/6/14.
+	 */
+	//export var firstName = 'Michael';
+	var globalObj = {
+	    user: "",
+	    getNowTime: function getNowTime() {
+	        return Date.parse(new Date());
+	    },
+	    setSession: function setSession(req, res, doc) {
+	        this.user = doc == undefined || "" ? this.user : doc;
+	        if ((req.session.user == "" || req.session.user == undefined) && req.path != "/admin_login" && req.path != "/login") {
+	            res.redirect("/admin2016pp/login");
+	            return;
+	        }
+	        req.session.user = doc || this.user;
+	        var hour = 360000;
+	        req.session.cookie.expires = new Date(Date.now() + hour);
+	        req.session.cookie.maxAge = hour;
+	    },
+	    timeIntToTimeString: function timeIntToTimeString(time) {
+	        var myDate = new Date(parseInt(time));
+	        return {
+	            Y: myDate.getFullYear(), //获取完整的年份(4位,1970-????)
+	            M: myDate.getMonth() + 1,
+	            D: myDate.getDate(),
+	            W: myDate.getDate(),
+	            h: myDate.getHours(), //获取当前小时数(0-23)
+	            m: myDate.getMinutes(), //获取当前分钟数(0-59)
+	            s: myDate.getSeconds()
+	        };
+	    },
+	    getUnixTime: function getUnixTime(dateStr) {
+	        var newstr = dateStr.replace(/-/g, '/');
+	        var date = new Date(newstr);
+	        var time_str = date.getTime().toString();
+	        return time_str.substr(0, 10);
+	    }
+	};
+	module.exports = globalObj;
+
+/***/ },
+/* 679 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -59833,7 +60085,7 @@ webpackJsonp([6],[
 	}
 
 /***/ },
-/* 679 */
+/* 680 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/* WEBPACK VAR INJECTION */(function(React) {'use strict';
@@ -59846,7 +60098,7 @@ webpackJsonp([6],[
 
 	var _remoteReduxDevtools = __webpack_require__(565);
 
-	var _reducer = __webpack_require__(678);
+	var _reducer = __webpack_require__(679);
 
 	var _reducer2 = _interopRequireDefault(_reducer);
 

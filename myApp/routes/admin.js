@@ -4,12 +4,8 @@ var Send_Code_Api=require("../server.api/send_code_api");
 var router = express.Router();
 var session=require("express-session");
 var gf=require("../global_obj");
-//var global_session=require("../config/global_session");
-
-//var mongoose=require('mongoose');
-//var crypto=require('crypto');
-//var Account=mongoose.model('Account');
-//var gf=require("../global_function");
+var url=require("url");
+var baseURL;
 var path=__dirname;
 console.log(path);
 const BUILD="http://localhost:3000/admin2016pp/build/";
@@ -26,6 +22,9 @@ router.get("/header",function(req,res,next){
 });
 
 router.get("/users",function(req,res,next){
+  //console.log(req.params.type);
+  //var query=url.parse(url.parse(req.url,true).query);
+  //console.log(query);
   req.session.cookie.path="/users";
   console.log(req.session,200);
   gf.setSession(req,res);
@@ -42,8 +41,8 @@ router.get("/change_pass",function(req,res,next){
 });
 router.post('/account_add_api',function(req,res,next){
   console.log(req.session);
-  //var account_api=new Account_Center();
-  //account_api.adminRegister(req, res,next);
+  var account_api=new Account_Center();
+  account_api.adminRegister(req, res,next);
 });
 router.post('/send_code_api',function(req,res,next){
   console.log(req.body);
@@ -64,12 +63,22 @@ router.post('/admin_login', function(req, res,next){
   account_api.handleLogin(req, res,next);
 });
 
-router.get('/radical', function(req, res){
-  if (req.session.lastPage) {
-    console.log('Last page was: ' + req.session.lastPage + ".");
-  }
-  req.session.lastPage = '/radical';
-  res.send('What a radical visit! And the session expired time is: ' + req.session.cookie.maxAge);
+router.post('/user_normal_list', function(req, res,next){
+  var account_api=new Account_Center();
+  account_api.handleUserPassList(req, res,next);
 });
+router.post('/user_in_review_list', function(req, res,next){
+  var account_api=new Account_Center();
+  account_api.handleUserInReViewList(req, res,next);
+});
+router.post('/user_removed_list', function(req, res,next){
+  var account_api=new Account_Center();
+  account_api.handleUserRemovedList(req, res,next);
+});
+router.post('/user_pass', function(req, res,next){
+  var account_api=new Account_Center();
+  account_api.handlePass(req, res,next);
+});
+
 
 module.exports = router;

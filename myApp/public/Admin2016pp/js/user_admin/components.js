@@ -2,51 +2,99 @@ import { Table,Icon,Button,QueueAnim} from 'antd';
 import reqwest from 'reqwest';
 import React,{findDOMNode,Component,PropTypes} from "react";
 import {BtnRemove,BtnPass,BtnRecover} from "../global/cus_components";
-function getDate(){
-    var myDate = new Date();
-    return {
-        y:myDate.getFullYear(), //获取完整的年份(4位,1970-????)
-    }
-}
+var global_obj=require("../common");
 function currentCreateTimeObj(){
     for(var i=1;i<=12;i++){
         var t={text: `${y}-${i}`, value: `${y}-${i}`};
         currentCreateTime.push(t)
     }
 }
-function getUnixTime(dateStr) {
-    var newstr = dateStr.replace(/-/g,'/');
-    var date =  new Date(newstr);
-    var time_str = date.getTime().toString();
-    return time_str.substr(0, 10);
+function currentStr(){
+    var myDate = new Date();
+    return {
+        Y:myDate.getFullYear(), //获取完整的年份(4位,1970-????)
+        M:myDate.getMonth()+1,
+        Date:myDate.getDate(),
+        W:myDate.getDate(),
+        h:myDate.getHours(),       //获取当前小时数(0-23)
+        m:myDate.getMinutes(),   //获取当前分钟数(0-59)
+        s:myDate.getSeconds()
+    }
 }
-var y=getDate().y,m=getDate().m,currentCreateTime=[];
+function getDate(time){
+    var date=global_obj.timeIntToTimeString(time);
+    return date.Y+"-"+date.M+"-"+date.D+" "+date.h+":"+date.m+":"+date.s;
+}
+var y=currentStr().Y,m=currentStr().M,currentCreateTime=[];
 currentCreateTimeObj();
-var type=parseInt(window.location.search.split("=").pop());
+//var type=parseInt(window.location.search.split("=").pop());
+
+var SetIntervalMixin = {
+    setLoading(status){
+        this.setState({
+            loading:status
+        });
+    },
+    componentDidMount() {
+        this.fetch();
+    },
+    setData(data){
+        this.setState({
+            data:data
+        });
+        console.log(this.state.data);
+    }
+};
+/*
+*
+* 正常
+* */
+var data1 = [];
 const columns1 = [{
     title: '编号',
-    dataIndex: 'id'
-}, {
+    dataIndex: 'key',
+    sorter: (a, b) =>{
+        return a.key-b.key
+    }
+},{
+    title: 'ID',
+    dataIndex: 'uid',
+    sorter: (a, b) =>{
+        return a.uid-b.uid
+    }
+},{
     title: '用户名',
     dataIndex: 'username',
 }, {
     title: '联系方式',
     dataIndex: 'phone',
 },{
-    title:'性别',
-    dataIndex:'sex',
-},{
     title:'邮箱',
     dataIndex:'email'
 },{
+    title:"类型",
+    dataIndex:"type",
+    filters: [{
+        text: '超级',
+        value: '超级管理员'
+    }, {
+        text: '普通',
+        value: '普通管理员'
+    }],
+    onFilter: (value, record) => {
+        console.log(value,record);
+        return record.type.indexOf(value) === 0
+    }
+},{
     title:'最近登录时间',
-    dataIndex:"login_recent",
+    dataIndex:"recent_login_time",
     filters: currentCreateTime,
     onFilter: (value, record) => {
-        return record.login_recent.indexOf(value) === 0
+        console.log(value,record);
+        return record.recent_login_time.indexOf(value) === 0
     },
     sorter: (a, b) =>{
-        return getUnixTime(a.login_recent)-getUnixTime(b.login_recent)
+        return global_obj.getUnixTime(a.recent_login_time)-global_obj.getUnixTime(b.recent_login_time)
     }
 },{
     title:'登录次数',
@@ -56,260 +104,332 @@ const columns1 = [{
     }
 },{
     title:'注册时间',
-    dataIndex:'reg_time',
+    dataIndex:'register_time',
     filters: currentCreateTime,
     onFilter: (value, record) => {
-        return record.reg_time.indexOf(value) === 0
+        return record.register_time.indexOf(value) === 0
     },
     sorter: (a, b) =>{
-        return getUnixTime(a.reg_time)-getUnixTime(b.reg_time)
+        return global_obj.getUnixTime(a.register_time)-global_obj.getUnixTime(b.register_time)
     }
-},{
-    title:'文章数',
-    dataIndex:'count_text',
-    sorter: (a, b) => a.count_text - b.count_text,
 },{
     title:'操作',
     dataIndex:'do',
     render(text) {
-        return <BtnRemove cid={text.cid} ctype={type}>{text.remove}</BtnRemove>
+        return <BtnRemove cid={text.uid} ctype={text.type} data={data1}>{text.remove}</BtnRemove>
     },
 }];
-
-const data1 = [];
-for (let i = 1; i < 460; i++) {
-    data1.push({
-        key: i,
-        id:i,
-        username: `李大嘴${i}`,
-        phone:'15002114175',
-        sex:'男',
-        email:'1037359589@qq.com',
-        login_recent: '2016-6-1',
-        login_times:i,
-        reg_time:'2016-5-1',
-        count_text:`${i}`,
-        do:{
-            remove:'删除',
-            cid:i
-        }
-    });
-}
-
-const pagination = {
-    total: data1.length,
-    showSizeChanger: true,
-    onShowSizeChange(current, pageSize) {
-        console.log('Current: ', current, '; PageSize: ', pageSize);
-    },
-    onChange(current) {
-        console.log('Current: ', current);
-    }
-};
 var TableOne=React.createClass({
+    mixins: [SetIntervalMixin],
     getInitialState() {
         return {
             data: [],
-            pagination: {},
-            loading: false,
+            loading: true
         };
     },
-    //handleTableChange(pagination, filters, sorter) {
-    //    const pager = this.state.pagination;
-    //    pager.current = pagination.current;
-    //    this.setState({
-    //        pagination: pager,
-    //    });
-    //    this.fetch({
-    //        pageSize: pagination.pageSize,
-    //        currentPage: pagination.current,
-    //        sortField: sorter.field,
-    //        sortOrder: sorter.order,
-    //        //...filters,
-    //    });
-    //},
-    //fetch(params = {}) {
-    //    console.log('请求参数：', params);
-    //    this.setState({ loading: true });
-    //    reqwest({
-    //        url: '/components/table/demo/data.json',
-    //        method: 'get',
-    //        data: params,
-    //        type: 'json',
-    //        success: (result) => {
-    //            const pagination = this.state.pagination;
-    //            pagination.total = result.totalCount;
-    //            this.setState({
-    //                loading: false,
-    //                data: result.data,
-    //                pagination,
-    //            });
-    //        },
-    //    });
-    //},
-    //componentDidMount() {
-    //    this.fetch();
-    //},
-//<Table columns={columns} dataSource={data} pagination={pagination} loading={this.state.loading}
-//       onChange={this.handleTableChange}/>
+    fetch() {
+        var type=window.location.search;
+        var ty=type===""?"1":type.split("=")[1];
+        setTimeout(()=> {
+            reqwest({
+                url: 'user_normal_list',
+                method: 'post',
+                data: {
+                    type: ty
+                },
+                type: 'json'
+            }).then(data => {
+                data1 = [];
+                data.data.forEach(function (v, k) {
+                    data1.push({
+                        key: k + 1,
+                        uid: v.uid,
+                        username: v.username,
+                        phone: v.phone,
+                        email: v.email,
+                        recent_login_time: v.recent_login_time == 0 ? "-" : getDate(v.recent_login_time),
+                        login_times: v.login_times,
+                        register_time: getDate(v.register_time),
+                        type: v.type == 0 ? '超级管理员' : '普通管理员',
+                        do: {
+                            remove: '删除',
+                            uid: v.uid,
+                            type: v.type
+                        }
+                    });
+                });
+                this.setState({
+                    data: data1,
+                    loading: false
+                });
+            });
+        },1000);
+    },
+
     render(){
+        const pagination = {
+            total: this.state.data.length,
+            showSizeChanger: true,
+            onShowSizeChange(current, pageSize) {
+                console.log('Current: ', current, '; PageSize: ', pageSize);
+            },
+            onChange(current) {
+                console.log('Current: ', current);
+            }
+        };
         return(
             <div>
                 <QueueAnim className="demo-content"  type={['right', 'left']}
                            ease={['easeOutQuart', 'easeInOutQuart']}>
                     <div key="a">
-                      <Table columns={columns1} dataSource={data1} pagination={pagination} />
+                      <Table columns={columns1} dataSource={data1} pagination={pagination}
+                             loading={this.state.loading} />
                     </div>
                 </QueueAnim>
             </div>
         )
     }
 });
+/*
+*
+*
+* 审核中
+* */
+
+var data2 = [];
+function handleStatue(data){
+    data2=data;
+}
 const columns2 = [{
     title: '编号',
-    dataIndex: 'id'
-}, {
+    dataIndex: 'key',
+    sorter: (a, b) =>{
+        return a.key-b.key
+    }
+},{
+    title: 'ID',
+    dataIndex: 'uid',
+    sorter: (a, b) =>{
+        return a.uid-b.uid
+    }
+},{
     title: '用户名',
     dataIndex: 'username',
 }, {
     title: '联系方式',
     dataIndex: 'phone',
 },{
-    title:'性别',
-    dataIndex:'sex',
-},{
     title:'邮箱',
     dataIndex:'email'
 },{
+    title:"类型",
+    dataIndex:"type",
+    filters: [{
+        text: '超级',
+        value: '超级管理员'
+    }, {
+        text: '普通',
+        value: '普通管理员'
+    }],
+    onFilter: (value, record) => {
+        console.log(value,record);
+        return record.type.indexOf(value) === 0
+    }
+},{
     title:'注册时间',
-    dataIndex:'reg_time',
+    dataIndex:'register_time',
     filters: currentCreateTime,
     onFilter: (value, record) => {
-        return record.reg_time.indexOf(value) === 0
+        return record.register_time.indexOf(value) === 0
     },
     sorter: (a, b) =>{
-        return getUnixTime(a.reg_time)-getUnixTime(b.reg_time)
+        return global_obj.getUnixTime(a.register_time)-global_obj.getUnixTime(b.register_time)
     }
 },{
     title:'操作',
     dataIndex:'do',
     render(text) {
+        console.log(text);
         return (
-                <div>
-                    <BtnPass cid={text.cid} ctype={type}>{text.pass}</BtnPass>
-                    <BtnRemove cid={text.cid} ctype={type}>{text.remove}</BtnRemove>
-                </div>
-            )
+            <div>
+                <BtnPass cid={text.uid} ctype={text.type} data={data2} handleInreview={text.handleLi}>{text.pass}</BtnPass>
+                <BtnRemove cid={text.uid} ctype={text.type} data={data2} handleInreview={text.handleLi}>{text.remove}</BtnRemove>
+            </div>
+        )
 
     },
 }];
-
-const data2 = [];
-for (let i = 0; i < 460; i++) {
-    data2.push({
-        key: i,
-        id:i,
-        username: `李大嘴${i}`,
-        phone:'15002114175',
-        sex:'男',
-        email:'1037359589@qq.com',
-        reg_time:'2016-5-1',
-        do:{
-            remove:'删除',
-            pass:"通过",
-            cid:i
-        }
-    });
-}
 var TableTwo=React.createClass({
+    mixins: [SetIntervalMixin],
     getInitialState() {
         return {
             data: [],
-            pagination: {},
-            loading: false,
+            loading: true
         };
     },
+    fetch() {
+        var type=window.location.search;
+        var ty=type===""?"1":type.split("=")[1];
+        var setData=this.setData;
+        setTimeout(()=>{
+            reqwest({
+                url: 'user_in_review_list',
+                method: 'post',
+                data:{
+                    type:ty
+                },
+                type: 'json'
+            }).then(data => {
+                console.log(data.data,12138);
+                data2 = [];
+                data.data.forEach(function(v,k){
+                    data2.push({
+                        key: k+1,
+                        uid: v.uid,
+                        username: v.username,
+                        phone:v.phone,
+                        email: v.email,
+                        register_time: getDate(v.register_time),
+                        type:v.type==0?'超级管理员':'普通管理员',
+                        do: {
+                            pass:'通过',
+                            remove: '删除',
+                            uid: v.uid,
+                            type:v.type,
+                            handleLi:setData
+                        }
+                    });
+                });
+                this.setState({
+                    data:data2,
+                    loading: false
+                })
+            });
+        },1000);
+    },
     render(){
+        const pagination = {
+            total: this.state.data.length,
+            showSizeChanger: true,
+            onShowSizeChange(current, pageSize) {
+                console.log('Current: ', current, '; PageSize: ', pageSize);
+            },
+            onChange(current) {
+                console.log('Current: ', current);
+            }
+        };
         return(
             <div>
                 <QueueAnim className="demo-content"  type={['right', 'left']}
                            ease={['easeOutQuart', 'easeInOutQuart']}>
                     <div key="a">
-                        <Table columns={columns2} dataSource={data2} pagination={pagination} />
+                        <Table columns={columns2} dataSource={this.state.data} pagination={pagination} loading={this.state.loading}/>
                     </div>
                 </QueueAnim>
             </div>
         )
     }
 });
+var data3=[];
 const columns3 = [{
     title: '编号',
-    dataIndex: 'id'
-}, {
+    dataIndex: 'key',
+    sorter: (a, b) =>{
+        return a.key-b.key
+    }
+},{
+    title: 'ID',
+    dataIndex: 'uid',
+    sorter: (a, b) =>{
+        return a.uid-b.uid
+    }
+},{
     title: '用户名',
     dataIndex: 'username',
 }, {
     title: '联系方式',
     dataIndex: 'phone',
 },{
-    title:'性别',
-    dataIndex:'sex',
-},{
-    title:'邮箱',
-    dataIndex:'email'
-},{
-    title:'注册时间',
-    dataIndex:'reg_time',
-    filters: currentCreateTime,
+    title:"类型",
+    dataIndex:"type",
+    filters: [{
+        text: '超级',
+        value: '超级管理员'
+    }, {
+        text: '普通',
+        value: '普通管理员'
+    }],
     onFilter: (value, record) => {
-        return record.reg_time.indexOf(value) === 0
-    },
-    sorter: (a, b) =>{
-        return getUnixTime(a.reg_time)-getUnixTime(b.reg_time)
+        console.log(value,record);
+        return record.type.indexOf(value) === 0
     }
 },{
     title:'操作',
     dataIndex:'do',
     render(text) {
-        return (
-            <div>
-              <BtnRecover cid={text.cid} ctype={type}>{text.recover}</BtnRecover>
-            </div>
-        );
-    },
+        return <BtnRecover cid={text.uid} ctype={text.type} data={data3}>{text.recover}</BtnRecover>
+    }
 }];
-
-const data3 = [];
-for (let i = 0; i < 460; i++) {
-    data3.push({
-        key: i,
-        id:i,
-        username: `李大嘴${i}`,
-        phone:'15002114175',
-        sex:'男',
-        email:'1037359589@qq.com',
-        reg_time:'2016-5-1',
-        do:{
-            recover:'恢复',
-            cid:i
-        }
-    });
-}
 var TableThree=React.createClass({
+    mixins: [SetIntervalMixin],
     getInitialState() {
         return {
             data: [],
-            pagination: {},
-            loading: false,
+            loading: true
         };
     },
+    fetch() {
+        var type=window.location.search;
+        var ty=type===""?"1":type.split("=")[1];
+        setTimeout(()=>{
+            reqwest({
+                url: 'user_removed_list',
+                method: 'post',
+                data:{
+                    type:ty
+                },
+                type: 'json'
+            }).then(data => {
+                console.log(data.data,12138);
+                data3 = [];
+                data.data.forEach(function(v,k){
+                    data3.push({
+                        key: k+1,
+                        uid: v.uid,
+                        username: v.username,
+                        phone:v.phone,
+                        type:v.type==0?'超级管理员':'普通管理员',
+                        do: {
+                            recover: '恢复',
+                            uid: v.uid,
+                            type:v.type
+                        }
+                    });
+                });
+                this.setState({
+                    data:data3,
+                    loading: false
+                })
+            });
+        },1000);
+    },
     render(){
+        const pagination = {
+            total: this.state.data.length,
+            showSizeChanger: true,
+            onShowSizeChange(current, pageSize) {
+                console.log('Current: ', current, '; PageSize: ', pageSize);
+            },
+            onChange(current) {
+                console.log('Current: ', current);
+            }
+        };
         return(
             <div>
                 <QueueAnim className="demo-content"  type={['right', 'left']}
                            ease={['easeOutQuart', 'easeInOutQuart']}>
                     <div key="a">
-                        <Table columns={columns3} dataSource={data3} pagination={pagination}/>
+                        <Table columns={columns3} dataSource={data3} pagination={pagination} loading={this.state.loading}/>
                     </div>
                 </QueueAnim>
             </div>

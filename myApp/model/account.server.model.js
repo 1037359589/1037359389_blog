@@ -27,12 +27,12 @@ var accountSchema=new mongoose.Schema({
     type:{
         type:Number,
         required:true,
-        enum:[0,1]
+        enum:[0,1,2] //0为超级管理员,1为普通管理员,2为前台用户
     },
     status:{
         type:String,
         default:'in_review',
-        enum:['in_review','pass','removed'],
+        enum:['in_review','pass','removed'], //in_review审核中;pass正常;removed已删除
         index:true
     },
     password:{
@@ -40,7 +40,7 @@ var accountSchema=new mongoose.Schema({
     },
     email:{
         type:String,
-        default:"",
+        default:"-",
         match:/^([a-zA-Z0-9_-])+@([a-zA-Z0-9_-])+(.[a-zA-Z0-9_-])+/
     },
     login_times:{

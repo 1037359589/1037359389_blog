@@ -40,24 +40,24 @@ class LoginForm extends Component{
             setTimeout(()=>{
                 console.log(values);
                 this.fetch(values);
-            },500);
+            },300);
 
         });
     }
     fetch(params){
         reqwest({
-            url: 'http://localhost:3000/admin2016pp/admin_login',
+            url: 'admin_login',
             method: 'post',
             data:params,
             type: 'json'
         }).then(data => {
             console.log(data.data,12138);
-            if(data.status=="1"){
+            if(data.status=="1"&&data.data.length>0){
                 setTimeout(()=>{
                     window.location.href="http://localhost:3000/admin2016pp/users";
                 },1000);
             }else{
-                alert('账户名不存在或者密码错误!!');
+                alert('账户名不存在/密码错误,或者账户正在审核中!!');
             }
         });
     }
