@@ -1,6 +1,6 @@
 var express = require('express');
 var Account_Center=require("../server.api/account_api");
-var send_code_api=require("../server.api/send_code_api");
+var Send_Code_Api=require("../server.api/send_code_api");
 var router = express.Router();
 var session=require("express-session");
 var gf=require("../global_obj");
@@ -42,11 +42,13 @@ router.get("/change_pass",function(req,res,next){
 });
 router.post('/account_add_api',function(req,res,next){
   console.log(req.session);
-  var account_api=new Account_Center();
-  account_api.adminRegister(req, res,next);
+  //var account_api=new Account_Center();
+  //account_api.adminRegister(req, res,next);
 });
 router.post('/send_code_api',function(req,res,next){
   console.log(req.body);
+  var sendCodeApi=new Send_Code_Api();
+  sendCodeApi.sendCode(req,res,next);
 });
 router.post('/isset_phone',function(req,res,next){
   var account_api=new Account_Center();

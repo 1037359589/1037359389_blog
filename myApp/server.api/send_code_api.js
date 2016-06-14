@@ -1,36 +1,27 @@
-var http = require('http');
-var querystring = require('querystring');
-function send_code_api(){
-    var postData = {
-        uid:'pzl',
-        pas:'919927',
-        mob:'1502114175',
-        con:'【微米】您的验证码是：610912，3分钟内有效。如非您本人操作，可忽略本消息。',
-        type:'json'
-    };
-    var content = querystring.stringify(postData);
-    var options = {
-        host:'api.weimi.cc',
-        path:'/2/sms/send.html',
-        method:'POST',
-        agent:false,
-        rejectUnauthorized : false,
-        headers:{
-            'Content-Type' : 'application/x-www-form-urlencoded',
-            'Content-Length' :content.length
-        }
-    };
-    var req = http.request(options,function(res){
-        res.setEncoding('utf8');
-        res.on('data', function (chunk) {
-            console.log(JSON.parse(chunk));
-        });
-        res.on('end',function(){
-            console.log('over');
-        });
-    });
-    req.write(content);
-    req.end();
-}
+var TopClient = require( '../config/topClient' ).TopClient;
+var client = new TopClient({
+    'appkey' : '23386800' ,
+    'appsecret' : '81987f27d28bcd93bbddbad5274fec48' ,
+    'REST_URL' : ' http://gw.api.taobao.com/router/rest '
+});
 
+function  send_code_api(){
+    this.sendCode=function(req,res,next){
+        client.execute( 'alibaba.aliqin.fc.sms.num.send' , {
+            'extend' : '123456' ,
+            'sms_type' : 'normal' ,
+            'sms_free_sign_name' : '屌丝管你台' ,
+            'sms_param' :'{\"name\":\"1234\"}',
+            'rec_num' : '15002114175' ,
+            'sms_template_code' : "SMS_10690348"
+        }, function(error, response) {
+            if (!error) console.log(response);
+            else{
+                console.log(response,828282);
+                res.json({status: "1", data: response, msg: '查询成功'});
+            }
+
+        });
+    };
+}
 module.exports=send_code_api;
