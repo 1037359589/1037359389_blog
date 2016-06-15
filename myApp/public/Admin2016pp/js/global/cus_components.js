@@ -4,7 +4,20 @@
 import React,{findDOMNode,Component,PropTypes} from "react";
 import reqwest from 'reqwest';
 var adminUrl="/admin2016pp/";
+var commonMixin = {
+    //删除当前行
+    removeTr(){
+        var _self=this;
+        this.state.user.data.forEach(function(v,k){
+            if(v.uid==_self.state.user.uid){
+                _self.state.user.data.splice(k,1);
+            }
+        });
+        this.state.user.dataHandle(this.state.user.data);
+    },
+};
 export var BtnPass=React.createClass({
+    mixins:[commonMixin],
     getInitialState(){
         return {
             user:{
@@ -24,7 +37,7 @@ export var BtnPass=React.createClass({
                 break;
         }
     },
-    //处理通过数据
+    //处理通过用户数据
     handlePassUsers(){
         setTimeout(()=> {
             reqwest({
@@ -39,17 +52,7 @@ export var BtnPass=React.createClass({
                     this.removeTr();
                 }
             });
-        },1000);
-    },
-    //删除当前行
-    removeTr(){
-        var _self=this;
-        this.state.user.data.forEach(function(v,k){
-            if(v.uid==_self.state.user.uid){
-                _self.state.user.data.splice(k,1);
-            }
-        });
-        this.state.user.dataHandle(this.state.user.data);
+        },200);
     },
     render(){
         return (
@@ -60,12 +63,13 @@ export var BtnPass=React.createClass({
     }
 });
 export var BtnRemove=React.createClass({
+    mixins:[commonMixin],
     getInitialState(){
         return {
             user:{
                 uid:this.props.cid,
                 type:this.props.ctype,
-                dataHandle:this.props.handleInreview,
+                dataHandle:this.props.handleRemove,
                 data:this.props.data
             }
         }
@@ -76,11 +80,11 @@ export var BtnRemove=React.createClass({
         pathname=pathname.split("/").pop();
         switch(pathname){
             case 'users':
-                this.handlePassUsers();
+                this.handleRemoveUsers();
                 break;
         }
     },
-    //处理通过数据
+    //处理删除用户数据
     handleRemoveUsers(){
         setTimeout(()=> {
             reqwest({
@@ -91,11 +95,12 @@ export var BtnRemove=React.createClass({
                 },
                 type: 'json'
             }).then(data => {
+                console.log(data);
                 if(data.data.n >0){
                     this.removeTr();
                 }
             });
-        },1000);
+        },200);
     },
     render(){
         return (
@@ -106,14 +111,44 @@ export var BtnRemove=React.createClass({
     }
 });
 export var BtnRecover=React.createClass({
+    mixins:[commonMixin],
     getInitialState(){
         return {
-            cid:this.props.cid,
-            type:this.props.ctype
+            user:{
+                uid:this.props.cid,
+                type:this.props.ctype,
+                dataHandle:this.props.handleRecover,
+                data:this.props.data
+            }
         }
     },
+    //处理回复用户数据
+    handleRecoverUsers(){
+        setTimeout(()=> {
+            reqwest({
+                url: 'user_pass',
+                method: 'post',
+                data: {
+                    uid: this.state.user.uid
+                },
+                type: 'json'
+            }).then(data => {
+                console.log(data);
+                if(data.data.n >0){
+                    this.removeTr();
+                }
+            });
+        },200);
+    },
     handleClick(){
-        console.log(this.state.cid,this.state.type)
+        console.log(this.state.cid,this.state.type);
+        var type=window.location.search,pathname=window.location.pathname;
+        pathname=pathname.split("/").pop();
+        switch(pathname){
+            case 'users':
+                this.handleRecoverUsers();
+                break;
+        }
     },
     render(){
         return (

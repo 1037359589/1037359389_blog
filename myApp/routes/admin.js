@@ -79,6 +79,10 @@ router.post('/user_pass', function(req, res,next){
   var account_api=new Account_Center();
   account_api.handlePass(req, res,next);
 });
+router.post('/user_remove', function(req, res,next){
+  var account_api=new Account_Center();
+  account_api.handleRemove(req, res,next);
+});
 
 
 module.exports = router;

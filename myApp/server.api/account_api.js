@@ -153,8 +153,20 @@ function Account_Center(){
     * 审核通过
     * */
     this.handlePass=function(req,res,next){
+        this.handleDo('pass',req,res,next);
+    };
+    /*
+     * 删除用户
+     * */
+    this.handleRemove=function(req,res,next){
+        this.handleDo('removed',req,res,next);
+    };
+    /*
+    * 处理用户操作
+    * */
+    this.handleDo=function(handleType,req,res,next){
         Account.update({uid:req.body.uid}, {
-            $set: {status:"pass"}
+            $set: {status:handleType}
         }, function(err,doc) {
             if(err){
                 console.log(err);
@@ -163,6 +175,6 @@ function Account_Center(){
             console.log(req.session,2);
             res.json({status: "1", session: req.session,data:doc, msg: '查询成功'});
         });
-    };
+    }
 }
 module.exports=Account_Center;

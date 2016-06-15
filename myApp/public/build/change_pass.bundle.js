@@ -49188,8 +49188,23 @@ webpackJsonp([0],[
 	 */
 
 	var adminUrl = "/admin2016pp/";
+	var commonMixin = {
+	    //删除当前行
+
+	    removeTr: function removeTr() {
+	        var _self = this;
+	        this.state.user.data.forEach(function (v, k) {
+	            if (v.uid == _self.state.user.uid) {
+	                _self.state.user.data.splice(k, 1);
+	            }
+	        });
+	        this.state.user.dataHandle(this.state.user.data);
+	    }
+	};
 	var BtnPass = exports.BtnPass = _react2.default.createClass({
 	    displayName: "BtnPass",
+
+	    mixins: [commonMixin],
 	    getInitialState: function getInitialState() {
 	        return {
 	            user: {
@@ -49211,7 +49226,7 @@ webpackJsonp([0],[
 	        }
 	    },
 
-	    //处理通过数据
+	    //处理通过用户数据
 	    handlePassUsers: function handlePassUsers() {
 	        var _this = this;
 
@@ -49228,18 +49243,7 @@ webpackJsonp([0],[
 	                    _this.removeTr();
 	                }
 	            });
-	        }, 1000);
-	    },
-
-	    //删除当前行
-	    removeTr: function removeTr() {
-	        var _self = this;
-	        this.state.user.data.forEach(function (v, k) {
-	            if (v.uid == _self.state.user.uid) {
-	                _self.state.user.data.splice(k, 1);
-	            }
-	        });
-	        this.state.user.dataHandle(this.state.user.data);
+	        }, 200);
 	    },
 	    render: function render() {
 	        return _react2.default.createElement(
@@ -49251,12 +49255,14 @@ webpackJsonp([0],[
 	});
 	var BtnRemove = exports.BtnRemove = _react2.default.createClass({
 	    displayName: "BtnRemove",
+
+	    mixins: [commonMixin],
 	    getInitialState: function getInitialState() {
 	        return {
 	            user: {
 	                uid: this.props.cid,
 	                type: this.props.ctype,
-	                dataHandle: this.props.handleInreview,
+	                dataHandle: this.props.handleRemove,
 	                data: this.props.data
 	            }
 	        };
@@ -49268,12 +49274,12 @@ webpackJsonp([0],[
 	        pathname = pathname.split("/").pop();
 	        switch (pathname) {
 	            case 'users':
-	                this.handlePassUsers();
+	                this.handleRemoveUsers();
 	                break;
 	        }
 	    },
 
-	    //处理通过数据
+	    //处理删除用户数据
 	    handleRemoveUsers: function handleRemoveUsers() {
 	        var _this2 = this;
 
@@ -49286,11 +49292,12 @@ webpackJsonp([0],[
 	                },
 	                type: 'json'
 	            }).then(function (data) {
+	                console.log(data);
 	                if (data.data.n > 0) {
 	                    _this2.removeTr();
 	                }
 	            });
-	        }, 1000);
+	        }, 200);
 	    },
 	    render: function render() {
 	        return _react2.default.createElement(
@@ -49302,14 +49309,49 @@ webpackJsonp([0],[
 	});
 	var BtnRecover = exports.BtnRecover = _react2.default.createClass({
 	    displayName: "BtnRecover",
+
+	    mixins: [commonMixin],
 	    getInitialState: function getInitialState() {
 	        return {
-	            cid: this.props.cid,
-	            type: this.props.ctype
+	            user: {
+	                uid: this.props.cid,
+	                type: this.props.ctype,
+	                dataHandle: this.props.handleRecover,
+	                data: this.props.data
+	            }
 	        };
+	    },
+
+	    //处理回复用户数据
+	    handleRecoverUsers: function handleRecoverUsers() {
+	        var _this3 = this;
+
+	        setTimeout(function () {
+	            (0, _reqwest2.default)({
+	                url: 'user_pass',
+	                method: 'post',
+	                data: {
+	                    uid: _this3.state.user.uid
+	                },
+	                type: 'json'
+	            }).then(function (data) {
+	                console.log(data);
+	                if (data.data.n > 0) {
+	                    _this3.removeTr();
+	                }
+	            });
+	        }, 200);
 	    },
 	    handleClick: function handleClick() {
 	        console.log(this.state.cid, this.state.type);
+	        var type = window.location.search,
+	            pathname = window.location.pathname;
+	        pathname = pathname.split("/").pop();
+	        switch (pathname) {
+	            case 'users':
+	                this.handleRecoverUsers();
+	                break;
+	        }
 	    },
 	    render: function render() {
 	        return _react2.default.createElement(

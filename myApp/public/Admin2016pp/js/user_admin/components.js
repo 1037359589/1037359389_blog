@@ -116,7 +116,7 @@ const columns1 = [{
     title:'操作',
     dataIndex:'do',
     render(text) {
-        return <BtnRemove cid={text.uid} ctype={text.type} data={data1}>{text.remove}</BtnRemove>
+        return <BtnRemove cid={text.uid} ctype={text.type} data={data1}  handleRemove={text.handleLi}>{text.remove}</BtnRemove>
     },
 }];
 var TableOne=React.createClass({
@@ -140,6 +140,7 @@ var TableOne=React.createClass({
                 type: 'json'
             }).then(data => {
                 data1 = [];
+                var setData=this.setData;
                 data.data.forEach(function (v, k) {
                     data1.push({
                         key: k + 1,
@@ -154,7 +155,8 @@ var TableOne=React.createClass({
                         do: {
                             remove: '删除',
                             uid: v.uid,
-                            type: v.type
+                            type: v.type,
+                            handleLi:setData
                         }
                     });
                 });
@@ -253,7 +255,7 @@ const columns2 = [{
         return (
             <div>
                 <BtnPass cid={text.uid} ctype={text.type} data={data2} handleInreview={text.handleLi}>{text.pass}</BtnPass>
-                <BtnRemove cid={text.uid} ctype={text.type} data={data2} handleInreview={text.handleLi}>{text.remove}</BtnRemove>
+                <BtnRemove cid={text.uid} ctype={text.type} data={data2} handleRemove={text.handleLi}>{text.remove}</BtnRemove>
             </div>
         )
 
@@ -367,7 +369,7 @@ const columns3 = [{
     title:'操作',
     dataIndex:'do',
     render(text) {
-        return <BtnRecover cid={text.uid} ctype={text.type} data={data3}>{text.recover}</BtnRecover>
+        return <BtnRecover cid={text.uid} ctype={text.type} data={data3} handleRecover={text.handleLi}>{text.recover}</BtnRecover>
     }
 }];
 var TableThree=React.createClass({
@@ -381,6 +383,7 @@ var TableThree=React.createClass({
     fetch() {
         var type=window.location.search;
         var ty=type===""?"1":type.split("=")[1];
+        var setData=this.setData;
         setTimeout(()=>{
             reqwest({
                 url: 'user_removed_list',
@@ -402,7 +405,8 @@ var TableThree=React.createClass({
                         do: {
                             recover: '恢复',
                             uid: v.uid,
-                            type:v.type
+                            type:v.type,
+                            handleLi:setData
                         }
                     });
                 });
