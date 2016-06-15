@@ -4,7 +4,8 @@
 import {TAB_ONE,TAB_THREE,TAB_TWO} from "./actions";
 //import {combineReducers} from 'redux';
 const initState={
-    current_tab:1
+    current_tab:1,
+    phone:"",
 };
 export default function changeTab(state=initState,action){
     switch(action.type){
@@ -19,7 +20,7 @@ export default function changeTab(state=initState,action){
         case TAB_THREE:
             return {
                 current_tab:3
-            }
+            };
         default:
             return {
                 current_tab:1

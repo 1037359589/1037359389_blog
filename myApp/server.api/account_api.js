@@ -131,6 +131,9 @@ function Account_Center(){
     };
     this.handleFindList=function(status,req,res,next){
         var type;
+        if(parseInt(req.body.type)>2){
+                return ;
+        }
         if(req.body.type=="1"){
             type=[ '0', ''+req.body.type ]
         }else{

@@ -10,7 +10,7 @@ const InputGroup = Input.Group;
 function noop() {
     return false;
 }
-
+var t;
 //var LoginForm = React.createClass({
 class LoginForm extends Component{
     constructor(props){
@@ -67,6 +67,7 @@ class LoginForm extends Component{
 
     isShowForget(){
         this.props.actions.toForget();
+        console.log(this.props,9191);
     }
     render() {
         const { getFieldProps, getFieldError, isFieldValidating } = this.props.form;
@@ -158,11 +159,14 @@ LoginForm = createForm()(LoginForm);
 class RegisterFrom extends Component{
     constructor(props){
         super(props);
+        console.log(this.props,777);
         this.onHidden=this.onHidden.bind(this);
+        this.sendCode=this.sendCode.bind(this);
+        this.getPhone=this.getPhone.bind(this);
     }
-
     onHidden(){
         this.props.actions.toRegister();
+        clearInterval(t);
     }
     getValidateStatus(field) {
         const { isFieldValidating, getFieldError, getFieldValue } = this.props.form;
@@ -253,7 +257,6 @@ class RegisterFrom extends Component{
                             }
                         }
                     });
-
                 }, 100);
             }
         }
@@ -290,24 +293,44 @@ class RegisterFrom extends Component{
         callback();
     }
     sendCode(){
+        //this.refs.send_code.props.disabled="true";
+        if(this.props.phone==undefined||this.props.phone.length!=11)return;
+        console.log(this.props);
+        var time=60;
+        var sp=this.props;
+        t=setInterval(function(){
+            time--;
+            var text='重新发送('+time+'s)';
+            if(time<=0){
+                sp.actions.setSendBtn('','发送验证码');
+                clearInterval(t);
+                return;
+            }
+            sp.actions.setSendBtn('true',text);
+        },1000);
         var params={
-            phone:"15002114175"
+            phone:this.props.phone
         };
-        reqwest({
-            url: 'http://localhost:3000/admin2016pp/send_code_api',
-            method: 'post',
-            data:params,
-            type: 'json'
-        }).then(data => {
-            console.log(data,'phone');
-            //if(data.status=="1"){
-            //    window.location.href="http://localhost:3000/admin2016pp/users";
-            //}else{
-            //    alert('注册失败,请重新注册!!')
-            //}
-        });
+        console.log(params);
+        //reqwest({
+        //    url: 'send_code_api',
+        //    method: 'post',
+        //    data:params,
+        //    type: 'json'
+        //}).then(data => {
+        //    console.log(data,'phone');
+        //    //if(data.status=="1"){
+        //    //    window.location.href="http://localhost:3000/admin2016pp/users";
+        //    //}else{
+        //    //    alert('注册失败,请重新注册!!')
+        //    //}
+        //});
+    }
+    getPhone(e){
+        this.props.actions.getPhone(e.target.value);
     }
     render(){
+        console.log(this.props);
         const { getFieldProps, getFieldError, isFieldValidating } = this.props.form;
         const nameProps = getFieldProps('name', {
             rules: [
@@ -356,8 +379,7 @@ class RegisterFrom extends Component{
             wrapperCol: { span: 24 },
         };
         console.log(isFieldValidating('name'));
-
-
+        var cn=this.props.sendBtn.disabled=="true"?"btn-send-code disabled":"btn-send-code";
      return (
          <div>
              <div className="logo-p">
@@ -387,7 +409,8 @@ class RegisterFrom extends Component{
                                  help={isFieldValidating('phone') ? '校验中...' : (getFieldError('phone') || []).join(', ')}
                                  hasFeedback>
                                  <Input type="text" {...phoneProps} ref="inputCus"
-                                        autoComplete="off"  placeholder="请输入手机号码"
+                                        autoComplete="off"  placeholder="请输入手机号码"  value={this.props.phone}
+                                        onChange={this.getPhone}
                                  />
                              </FormItem>
                          </Col>
@@ -403,7 +426,9 @@ class RegisterFrom extends Component{
                                      <InputGroup >
                                          <Input type="text" placeholder="请填写正确的验证码" className="input-code" {...codeProps}/>
                                          <div className="ant-input-group-wrap ">
-                                             <Button type="primary" className="btn-send-code" onClick={this.sendCode}>发送验证码</Button>
+                                             <Button type="primary" className={cn} onClick={this.sendCode} ref="send_code"
+                                                     disabled={this.props.sendBtn.disabled}
+                                             >{this.props.sendBtn.text}</Button>
                                          </div>
                                      </InputGroup>
                                  </div>
@@ -465,10 +490,17 @@ class RegisterFrom extends Component{
 }
 RegisterFrom = createForm()(RegisterFrom);
 
-var ForgetPassword=React.createClass({
+class ForgetPassword extends Component{
+    constructor(props){
+        super(props);
+        this.onHidden=this.onHidden.bind(this);
+        this.sendCode=this.sendCode.bind(this);
+        this.getPhone=this.getPhone.bind(this);
+    }
     onHidden(){
         this.props.actions.toForget();
-    },
+        clearInterval(t);
+    }
     handleSubmit(e) {
         e.preventDefault();
         this.props.form.validateFields((errors, values) => {
@@ -479,11 +511,48 @@ var ForgetPassword=React.createClass({
             console.log('Submit!!!');
             console.log(values);
         });
-    },
+    }
     validateCode(rule,value,callback){
         console.log(value);
         callback();
-    },
+    }
+    getPhone(e){
+        this.props.actions.getPhone(e.target.value);
+    }
+    sendCode(){
+        //this.refs.send_code.props.disabled="true";
+        if(this.props.phone==undefined||this.props.phone.length!=11)return;
+        console.log(this.props);
+        var time=60;
+        var sp=this.props;
+        t=setInterval(function(){
+            time--;
+            var text='重新发送('+time+'s)';
+            if(time<=0){
+                sp.actions.setSendBtn('','发送验证码');
+                clearInterval(t);
+                return;
+            }
+            sp.actions.setSendBtn('true',text);
+        },1000);
+        var params={
+            phone:this.props.phone
+        };
+        console.log(params);
+        //reqwest({
+        //    url: 'send_code_api',
+        //    method: 'post',
+        //    data:params,
+        //    type: 'json'
+        //}).then(data => {
+        //    console.log(data,'phone');
+        //    //if(data.status=="1"){
+        //    //    window.location.href="http://localhost:3000/admin2016pp/users";
+        //    //}else{
+        //    //    alert('注册失败,请重新注册!!')
+        //    //}
+        //});
+    }
     render(){
         const { getFieldProps, getFieldError, isFieldValidating } = this.props.form;
         const formItemLayout = {
@@ -508,6 +577,7 @@ var ForgetPassword=React.createClass({
             }],
             trigger: ['onBlur', 'onChange']
         });
+        var cn=this.props.sendBtn.disabled=="true"?"btn-send-code disabled":"btn-send-code";
         return (
             <div>
                 <div className="logo-p">
@@ -521,7 +591,8 @@ var ForgetPassword=React.createClass({
                             <Col span="24">
                                 <FormItem {...formItemLayout} hasFeedback>
                                     <Input type="text" {...phoneProps} ref="inputCus"
-                                           autoComplete="off"  placeholder="请输入手机号码"
+                                           autoComplete="off"  placeholder="请输入手机号码" value={this.props.phone}
+                                           onChange={this.getPhone}
                                     />
                                 </FormItem>
                             </Col>
@@ -537,7 +608,9 @@ var ForgetPassword=React.createClass({
                                         <InputGroup >
                                             <Input type="text" placeholder="请填写正确的验证码" className="input-code" {...codeProps}/>
                                             <div className="ant-input-group-wrap ">
-                                                <Button type="primary" className="btn-send-code">发送验证码</Button>
+                                                <Button type="primary" className={cn} onClick={this.sendCode} ref="send_code"
+                                                        disabled={this.props.sendBtn.disabled}
+                                                >{this.props.sendBtn.text}</Button>
                                             </div>
                                         </InputGroup>
                                     </div>
@@ -559,15 +632,16 @@ var ForgetPassword=React.createClass({
             </div>
         )
     }
-});
+};
 ForgetPassword = createForm()(ForgetPassword);
 
 var LoginAll=React.createClass({
     render(){
-        var {actions,register,forget}=this.props;
-        var formOne=register?<RegisterFrom actions={actions} />
+        console.log(this.props,444);
+        var {actions,register,forget,phone,sendBtn}=this.props;
+        var formOne=register?<RegisterFrom actions={actions} phone={phone} sendBtn={sendBtn}/>
             :<LoginForm actions={actions} />;
-        var form=forget?<ForgetPassword actions={actions} />:formOne;
+        var form=forget?<ForgetPassword actions={actions}  phone={phone} sendBtn={sendBtn}/>:formOne;
        return(
            <div>
                {form}

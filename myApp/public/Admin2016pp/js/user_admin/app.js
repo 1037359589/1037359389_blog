@@ -11,7 +11,7 @@ var App=React.createClass({
         const {current_tab,actions}=this.props;
         return (
             <div>
-                <AllTable actions={actions} current_tab={current_tab}/>
+                <AllTable actions={actions} current_tab={current_tab} />
             </div>
         )
     }

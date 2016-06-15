@@ -181,3 +181,9 @@ form .input-cus::-webkit-input-placeholder  {
     border-top-right-radius:0!important ;
     border-bottom-right-radius:0!important ;
 }
+#app button.disabled{
+    background: #ddd;
+}
+#app button.disabled:hover{
+    background: #ddd;
+}

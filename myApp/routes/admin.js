@@ -47,6 +47,7 @@ router.post('/account_add_api',function(req,res,next){
 router.post('/send_code_api',function(req,res,next){
   console.log(req.body);
   var sendCodeApi=new Send_Code_Api();
+  //sendCodeApi.setCode(req,res,next);
   sendCodeApi.sendCode(req,res,next);
 });
 router.post('/isset_phone',function(req,res,next){
