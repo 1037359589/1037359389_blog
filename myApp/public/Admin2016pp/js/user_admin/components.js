@@ -42,7 +42,6 @@ var SetIntervalMixin = {
         this.setState({
             data:data
         });
-        console.log(this.state.data);
     }
 };
 /*
@@ -82,7 +81,6 @@ const columns1 = [{
         value: '普通管理员'
     }],
     onFilter: (value, record) => {
-        console.log(value,record);
         return record.type.indexOf(value) === 0
     }
 },{
@@ -90,7 +88,6 @@ const columns1 = [{
     dataIndex:"recent_login_time",
     filters: currentCreateTime,
     onFilter: (value, record) => {
-        console.log(value,record);
         return record.recent_login_time.indexOf(value) === 0
     },
     sorter: (a, b) =>{
@@ -173,10 +170,10 @@ var TableOne=React.createClass({
             total: this.state.data.length,
             showSizeChanger: true,
             onShowSizeChange(current, pageSize) {
-                console.log('Current: ', current, '; PageSize: ', pageSize);
+                //console.log('Current: ', current, '; PageSize: ', pageSize);
             },
             onChange(current) {
-                console.log('Current: ', current);
+                //console.log('Current: ', current);
             }
         };
         return(
@@ -251,7 +248,6 @@ const columns2 = [{
     title:'操作',
     dataIndex:'do',
     render(text) {
-        console.log(text);
         return (
             <div>
                 <BtnPass cid={text.uid} ctype={text.type} data={data2} handleInreview={text.handleLi}>{text.pass}</BtnPass>
@@ -282,7 +278,6 @@ var TableTwo=React.createClass({
                 },
                 type: 'json'
             }).then(data => {
-                console.log(data.data,12138);
                 data2 = [];
                 data.data.forEach(function(v,k){
                     data2.push({
@@ -314,10 +309,10 @@ var TableTwo=React.createClass({
             total: this.state.data.length,
             showSizeChanger: true,
             onShowSizeChange(current, pageSize) {
-                console.log('Current: ', current, '; PageSize: ', pageSize);
+                //console.log('Current: ', current, '; PageSize: ', pageSize);
             },
             onChange(current) {
-                console.log('Current: ', current);
+                //console.log('Current: ', current);
             }
         };
         return(
@@ -362,7 +357,6 @@ const columns3 = [{
         value: '普通管理员'
     }],
     onFilter: (value, record) => {
-        console.log(value,record);
         return record.type.indexOf(value) === 0
     }
 },{
@@ -393,7 +387,6 @@ var TableThree=React.createClass({
                 },
                 type: 'json'
             }).then(data => {
-                console.log(data.data,12138);
                 data3 = [];
                 data.data.forEach(function(v,k){
                     data3.push({
@@ -422,10 +415,10 @@ var TableThree=React.createClass({
             total: this.state.data.length,
             showSizeChanger: true,
             onShowSizeChange(current, pageSize) {
-                console.log('Current: ', current, '; PageSize: ', pageSize);
+                //console.log('Current: ', current, '; PageSize: ', pageSize);
             },
             onChange(current) {
-                console.log('Current: ', current);
+                //console.log('Current: ', current);
             }
         };
         return(

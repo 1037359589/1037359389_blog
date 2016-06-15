@@ -59500,7 +59500,6 @@ webpackJsonp([6],[
 	        this.setState({
 	            data: data
 	        });
-	        console.log(this.state.data);
 	    }
 	};
 	/*
@@ -59540,7 +59539,6 @@ webpackJsonp([6],[
 	        value: '普通管理员'
 	    }],
 	    onFilter: function onFilter(value, record) {
-	        console.log(value, record);
 	        return record.type.indexOf(value) === 0;
 	    }
 	}, {
@@ -59548,7 +59546,6 @@ webpackJsonp([6],[
 	    dataIndex: "recent_login_time",
 	    filters: currentCreateTime,
 	    onFilter: function onFilter(value, record) {
-	        console.log(value, record);
 	        return record.recent_login_time.indexOf(value) === 0;
 	    },
 	    sorter: function sorter(a, b) {
@@ -59638,10 +59635,10 @@ webpackJsonp([6],[
 	            total: this.state.data.length,
 	            showSizeChanger: true,
 	            onShowSizeChange: function onShowSizeChange(current, pageSize) {
-	                console.log('Current: ', current, '; PageSize: ', pageSize);
+	                //console.log('Current: ', current, '; PageSize: ', pageSize);
 	            },
 	            onChange: function onChange(current) {
-	                console.log('Current: ', current);
+	                //console.log('Current: ', current);
 	            }
 	        };
 	        return _react2.default.createElement(
@@ -59720,7 +59717,6 @@ webpackJsonp([6],[
 	    title: '操作',
 	    dataIndex: 'do',
 	    render: function render(text) {
-	        console.log(text);
 	        return _react2.default.createElement(
 	            'div',
 	            null,
@@ -59762,7 +59758,6 @@ webpackJsonp([6],[
 	                },
 	                type: 'json'
 	            }).then(function (data) {
-	                console.log(data.data, 12138);
 	                data2 = [];
 	                data.data.forEach(function (v, k) {
 	                    data2.push({
@@ -59794,10 +59789,10 @@ webpackJsonp([6],[
 	            total: this.state.data.length,
 	            showSizeChanger: true,
 	            onShowSizeChange: function onShowSizeChange(current, pageSize) {
-	                console.log('Current: ', current, '; PageSize: ', pageSize);
+	                //console.log('Current: ', current, '; PageSize: ', pageSize);
 	            },
 	            onChange: function onChange(current) {
-	                console.log('Current: ', current);
+	                //console.log('Current: ', current);
 	            }
 	        };
 	        return _react2.default.createElement(
@@ -59846,7 +59841,6 @@ webpackJsonp([6],[
 	        value: '普通管理员'
 	    }],
 	    onFilter: function onFilter(value, record) {
-	        console.log(value, record);
 	        return record.type.indexOf(value) === 0;
 	    }
 	}, {
@@ -59885,7 +59879,6 @@ webpackJsonp([6],[
 	                },
 	                type: 'json'
 	            }).then(function (data) {
-	                console.log(data.data, 12138);
 	                data3 = [];
 	                data.data.forEach(function (v, k) {
 	                    data3.push({
@@ -59914,10 +59907,10 @@ webpackJsonp([6],[
 	            total: this.state.data.length,
 	            showSizeChanger: true,
 	            onShowSizeChange: function onShowSizeChange(current, pageSize) {
-	                console.log('Current: ', current, '; PageSize: ', pageSize);
+	                //console.log('Current: ', current, '; PageSize: ', pageSize);
 	            },
 	            onChange: function onChange(current) {
-	                console.log('Current: ', current);
+	                //console.log('Current: ', current);
 	            }
 	        };
 	        return _react2.default.createElement(

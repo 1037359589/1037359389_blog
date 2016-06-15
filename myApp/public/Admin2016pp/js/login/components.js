@@ -21,7 +21,6 @@ class LoginForm extends Component{
 
     getValidateStatus(field) {
         const { isFieldValidating, getFieldError, getFieldValue } = this.props.form;
-        console.log(this.props.form);
         if (isFieldValidating(field)) {
             return 'validating';
         } else if (!!getFieldError(field)) {
@@ -34,11 +33,10 @@ class LoginForm extends Component{
         e.preventDefault();
         this.props.form.validateFields((errors, values) => {
             if (!!errors) {
-                console.log('Errors in form!!!');
+                //console.log('Errors in form!!!');
                 return;
             }
             setTimeout(()=>{
-                console.log(values);
                 this.fetch(values);
             },300);
 
@@ -51,7 +49,6 @@ class LoginForm extends Component{
             data:params,
             type: 'json'
         }).then(data => {
-            console.log(data.data,12138);
             if(data.status=="1"&&data.data.length>0){
                 setTimeout(()=>{
                     window.location.href="http://localhost:3000/admin2016pp/users";
@@ -67,7 +64,6 @@ class LoginForm extends Component{
 
     isShowForget(){
         this.props.actions.toForget();
-        console.log(this.props,9191);
     }
     render() {
         const { getFieldProps, getFieldError, isFieldValidating } = this.props.form;
@@ -159,7 +155,6 @@ LoginForm = createForm()(LoginForm);
 class RegisterFrom extends Component{
     constructor(props){
         super(props);
-        console.log(this.props,777);
         this.onHidden=this.onHidden.bind(this);
         this.sendCode=this.sendCode.bind(this);
         this.getPhone=this.getPhone.bind(this);
@@ -188,11 +183,10 @@ class RegisterFrom extends Component{
         e.preventDefault();
         this.props.form.validateFields((errors, values) => {
             if (!!errors) {
-                console.log('Errors in form!!!');
+                //console.log('Errors in form!!!');
                 return;
             }
             this.fetch(values);
-            console.log('Submit!!!');
         });
     }
     fetch(params){
@@ -202,7 +196,6 @@ class RegisterFrom extends Component{
             data:params,
             type: 'json'
         }).then(data => {
-            //console.log(data,12138);
             if(data.status=="1"){
                 window.location.href="http://localhost:3000/admin2016pp/users";
             }else{
@@ -211,7 +204,6 @@ class RegisterFrom extends Component{
         });
     }
     userExists(rule, value, callback) {
-        console.log(value);
         if (!value) {
             callback();
         } else {
@@ -273,7 +265,6 @@ class RegisterFrom extends Component{
     checkPass2(rule, value, callback) {
         const { getFieldValue } = this.props.form;
         if (value && value !== getFieldValue('passwd')) {
-            console.log(value,getFieldValue('passwd'));
             callback('两次输入密码不一致！');
         } else {
             callback();
@@ -281,21 +272,15 @@ class RegisterFrom extends Component{
     }
 
     componentDidMount(){
-        //var input=document.getElementsByTagName('input')[0];
         var input=ReactDOM.findDOMNode(this.refs.inputCus);
-        //var className=input.className;
-        console.log(input);
-        //input.className='ant-input ant-input-lg input-cus';
+        //console.log(input);
     }
 
     validateCode(rule,value,callback){
-        console.log(value);
         callback();
     }
     sendCode(){
-        //this.refs.send_code.props.disabled="true";
         if(this.props.phone==undefined||this.props.phone.length!=11)return;
-        console.log(this.props);
         var time=60;
         var sp=this.props;
         t=setInterval(function(){
@@ -311,7 +296,6 @@ class RegisterFrom extends Component{
         var params={
             phone:this.props.phone
         };
-        console.log(params);
         //reqwest({
         //    url: 'send_code_api',
         //    method: 'post',
@@ -330,7 +314,6 @@ class RegisterFrom extends Component{
         this.props.actions.getPhone(e.target.value);
     }
     render(){
-        console.log(this.props);
         const { getFieldProps, getFieldError, isFieldValidating } = this.props.form;
         const nameProps = getFieldProps('name', {
             rules: [
@@ -378,7 +361,7 @@ class RegisterFrom extends Component{
             labelCol: { span: 0 },
             wrapperCol: { span: 24 },
         };
-        console.log(isFieldValidating('name'));
+        //console.log(isFieldValidating('name'));
         var cn=this.props.sendBtn.disabled=="true"?"btn-send-code disabled":"btn-send-code";
      return (
          <div>
@@ -505,24 +488,19 @@ class ForgetPassword extends Component{
         e.preventDefault();
         this.props.form.validateFields((errors, values) => {
             if (!!errors) {
-                console.log('Errors in form!!!');
+                //console.log('Errors in form!!!');
                 return;
             }
-            console.log('Submit!!!');
-            console.log(values);
         });
     }
     validateCode(rule,value,callback){
-        console.log(value);
         callback();
     }
     getPhone(e){
         this.props.actions.getPhone(e.target.value);
     }
     sendCode(){
-        //this.refs.send_code.props.disabled="true";
         if(this.props.phone==undefined||this.props.phone.length!=11)return;
-        console.log(this.props);
         var time=60;
         var sp=this.props;
         t=setInterval(function(){
@@ -538,7 +516,6 @@ class ForgetPassword extends Component{
         var params={
             phone:this.props.phone
         };
-        console.log(params);
         //reqwest({
         //    url: 'send_code_api',
         //    method: 'post',
@@ -637,7 +614,6 @@ ForgetPassword = createForm()(ForgetPassword);
 
 var LoginAll=React.createClass({
     render(){
-        console.log(this.props,444);
         var {actions,register,forget,phone,sendBtn}=this.props;
         var formOne=register?<RegisterFrom actions={actions} phone={phone} sendBtn={sendBtn}/>
             :<LoginForm actions={actions} />;

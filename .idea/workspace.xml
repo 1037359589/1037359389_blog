@@ -2,25 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="709d0a99-2ac1-4caf-91e3-05cba85d869c" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/myApp/public/Admin2016pp/css/global/global.css" afterPath="$PROJECT_DIR$/myApp/public/Admin2016pp/css/global/global.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/myApp/public/Admin2016pp/css/login/login.css" afterPath="$PROJECT_DIR$/myApp/public/Admin2016pp/css/login/login.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/myApp/public/Admin2016pp/js/login/actions.js" afterPath="$PROJECT_DIR$/myApp/public/Admin2016pp/js/login/actions.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/myApp/public/Admin2016pp/js/login/app.js" afterPath="$PROJECT_DIR$/myApp/public/Admin2016pp/js/login/app.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/myApp/public/Admin2016pp/js/login/components.js" afterPath="$PROJECT_DIR$/myApp/public/Admin2016pp/js/login/components.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/myApp/public/Admin2016pp/js/login/reducer.js" afterPath="$PROJECT_DIR$/myApp/public/Admin2016pp/js/login/reducer.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/myApp/public/Admin2016pp/js/user_admin/actions.js" afterPath="$PROJECT_DIR$/myApp/public/Admin2016pp/js/user_admin/actions.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/myApp/public/Admin2016pp/js/user_admin/app.js" afterPath="$PROJECT_DIR$/myApp/public/Admin2016pp/js/user_admin/app.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/myApp/public/Admin2016pp/js/user_admin/reducer.js" afterPath="$PROJECT_DIR$/myApp/public/Admin2016pp/js/user_admin/reducer.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/myApp/public/build/change_pass.bundle.js" afterPath="$PROJECT_DIR$/myApp/public/build/change_pass.bundle.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/myApp/public/build/global.bundle.js" afterPath="$PROJECT_DIR$/myApp/public/build/global.bundle.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/myApp/public/Admin2016pp/js/user_admin/components.js" afterPath="$PROJECT_DIR$/myApp/public/Admin2016pp/js/user_admin/components.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/myApp/public/build/login.bundle.js" afterPath="$PROJECT_DIR$/myApp/public/build/login.bundle.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/myApp/public/build/person_center.bundle.js" afterPath="$PROJECT_DIR$/myApp/public/build/person_center.bundle.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/myApp/public/build/tech.bundle.js" afterPath="$PROJECT_DIR$/myApp/public/build/tech.bundle.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/myApp/public/build/user_admin.bundle.js" afterPath="$PROJECT_DIR$/myApp/public/build/user_admin.bundle.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/myApp/routes/admin.js" afterPath="$PROJECT_DIR$/myApp/routes/admin.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/myApp/server.api/account_api.js" afterPath="$PROJECT_DIR$/myApp/server.api/account_api.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/myApp/server.api/send_code_api.js" afterPath="$PROJECT_DIR$/myApp/server.api/send_code_api.js" />
     </list>
     <ignored path="blog_3.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -41,11 +25,21 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="components.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="components.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/myApp/public/Admin2016pp/js/login/components.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.74435025">
-              <caret line="176" column="42" selection-start-line="176" selection-start-column="42" selection-end-line="176" selection-end-column="42" />
+            <state vertical-scroll-proportion="-6.5185184">
+              <caret line="301" column="26" selection-start-line="301" selection-start-column="26" selection-end-line="301" selection-end-column="26" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="send_code_api.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/myApp/server.api/send_code_api.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="18" column="19" selection-start-line="18" selection-start-column="19" selection-end-line="18" selection-end-column="19" />
               <folding />
             </state>
           </provider>
@@ -71,11 +65,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="login.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/myApp/views/Admin/login.html">
+      <file leaf-file-name="components.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/myApp/public/Admin2016pp/js/user_admin/components.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-3.9230769">
-              <caret line="6" column="50" selection-start-line="6" selection-start-column="50" selection-end-line="6" selection-end-column="50" />
+            <state vertical-scroll-proportion="0.43079096">
+              <caret line="175" column="52" selection-start-line="175" selection-start-column="52" selection-end-line="175" selection-end-column="52" />
               <folding />
             </state>
           </provider>
@@ -184,7 +178,6 @@
         <option value="$PROJECT_DIR$/myApp/model/account.server.model.js" />
         <option value="$PROJECT_DIR$/myApp/public/Admin2016pp/js/common.js" />
         <option value="$PROJECT_DIR$/myApp/global_obj.js" />
-        <option value="$PROJECT_DIR$/myApp/public/Admin2016pp/js/user_admin/components.js" />
         <option value="$PROJECT_DIR$/myApp/public/Admin2016pp/js/global/cus_components.js" />
         <option value="$PROJECT_DIR$/myApp/server.api/account_api.js" />
         <option value="$PROJECT_DIR$/myApp/routes/admin.js" />
@@ -199,6 +192,7 @@
         <option value="$PROJECT_DIR$/myApp/public/Admin2016pp/js/login/actions.js" />
         <option value="$PROJECT_DIR$/myApp/public/Admin2016pp/js/login/reducer.js" />
         <option value="$PROJECT_DIR$/myApp/public/Admin2016pp/js/login/components.js" />
+        <option value="$PROJECT_DIR$/myApp/public/Admin2016pp/js/user_admin/components.js" />
       </list>
     </option>
   </component>
@@ -728,7 +722,7 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/myApp/public/Admin2016pp/js/login/components.js</url>
-          <line>637</line>
+          <line>614</line>
           <option name="timeStamp" value="2" />
         </line-breakpoint>
       </breakpoints>
@@ -1025,14 +1019,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/myApp/server.api/send_code_api.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="28" column="35" selection-start-line="28" selection-start-column="35" selection-end-line="28" selection-end-column="35" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/myApp/public/Admin2016pp/js/user_admin/app.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1050,14 +1036,6 @@
           <folding>
             <element signature="n#!!doc" expanded="false" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/myApp/public/Admin2016pp/js/user_admin/components.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="122" column="0" selection-start-line="122" selection-start-column="0" selection-end-line="122" selection-end-column="31" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1125,10 +1103,26 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/myApp/server.api/send_code_api.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="18" column="19" selection-start-line="18" selection-start-column="19" selection-end-line="18" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/myApp/public/Admin2016pp/js/login/components.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.74435025">
-          <caret line="176" column="42" selection-start-line="176" selection-start-column="42" selection-end-line="176" selection-end-column="42" />
+        <state vertical-scroll-proportion="-6.5185184">
+          <caret line="301" column="26" selection-start-line="301" selection-start-column="26" selection-end-line="301" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/myApp/public/Admin2016pp/js/user_admin/components.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.43079096">
+          <caret line="175" column="52" selection-start-line="175" selection-start-column="52" selection-end-line="175" selection-end-column="52" />
           <folding />
         </state>
       </provider>

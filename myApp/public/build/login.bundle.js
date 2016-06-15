@@ -59291,7 +59291,6 @@ webpackJsonp([2],[
 	            var getFieldError = _props$form.getFieldError;
 	            var getFieldValue = _props$form.getFieldValue;
 
-	            console.log(this.props.form);
 	            if (isFieldValidating(field)) {
 	                return 'validating';
 	            } else if (!!getFieldError(field)) {
@@ -59308,11 +59307,10 @@ webpackJsonp([2],[
 	            e.preventDefault();
 	            this.props.form.validateFields(function (errors, values) {
 	                if (!!errors) {
-	                    console.log('Errors in form!!!');
+	                    //console.log('Errors in form!!!');
 	                    return;
 	                }
 	                setTimeout(function () {
-	                    console.log(values);
 	                    _this2.fetch(values);
 	                }, 300);
 	            });
@@ -59326,7 +59324,6 @@ webpackJsonp([2],[
 	                data: params,
 	                type: 'json'
 	            }).then(function (data) {
-	                console.log(data.data, 12138);
 	                if (data.status == "1" && data.data.length > 0) {
 	                    setTimeout(function () {
 	                        window.location.href = "http://localhost:3000/admin2016pp/users";
@@ -59345,7 +59342,6 @@ webpackJsonp([2],[
 	        key: 'isShowForget',
 	        value: function isShowForget() {
 	            this.props.actions.toForget();
-	            console.log(this.props, 9191);
 	        }
 	    }, {
 	        key: 'render',
@@ -59513,7 +59509,6 @@ webpackJsonp([2],[
 
 	        var _this3 = _possibleConstructorReturn(this, Object.getPrototypeOf(RegisterFrom).call(this, props));
 
-	        console.log(_this3.props, 777);
 	        _this3.onHidden = _this3.onHidden.bind(_this3);
 	        _this3.sendCode = _this3.sendCode.bind(_this3);
 	        _this3.getPhone = _this3.getPhone.bind(_this3);
@@ -59556,11 +59551,10 @@ webpackJsonp([2],[
 	            e.preventDefault();
 	            this.props.form.validateFields(function (errors, values) {
 	                if (!!errors) {
-	                    console.log('Errors in form!!!');
+	                    //console.log('Errors in form!!!');
 	                    return;
 	                }
 	                _this4.fetch(values);
-	                console.log('Submit!!!');
 	            });
 	        }
 	    }, {
@@ -59572,7 +59566,6 @@ webpackJsonp([2],[
 	                data: params,
 	                type: 'json'
 	            }).then(function (data) {
-	                //console.log(data,12138);
 	                if (data.status == "1") {
 	                    window.location.href = "http://localhost:3000/admin2016pp/users";
 	                } else {
@@ -59583,7 +59576,6 @@ webpackJsonp([2],[
 	    }, {
 	        key: 'userExists',
 	        value: function userExists(rule, value, callback) {
-	            console.log(value);
 	            if (!value) {
 	                callback();
 	            } else {
@@ -59651,7 +59643,6 @@ webpackJsonp([2],[
 	            var getFieldValue = this.props.form.getFieldValue;
 
 	            if (value && value !== getFieldValue('passwd')) {
-	                console.log(value, getFieldValue('passwd'));
 	                callback('两次输入密码不一致！');
 	            } else {
 	                callback();
@@ -59660,24 +59651,18 @@ webpackJsonp([2],[
 	    }, {
 	        key: 'componentDidMount',
 	        value: function componentDidMount() {
-	            //var input=document.getElementsByTagName('input')[0];
 	            var input = ReactDOM.findDOMNode(this.refs.inputCus);
-	            //var className=input.className;
-	            console.log(input);
-	            //input.className='ant-input ant-input-lg input-cus';
+	            //console.log(input);
 	        }
 	    }, {
 	        key: 'validateCode',
 	        value: function validateCode(rule, value, callback) {
-	            console.log(value);
 	            callback();
 	        }
 	    }, {
 	        key: 'sendCode',
 	        value: function sendCode() {
-	            //this.refs.send_code.props.disabled="true";
 	            if (this.props.phone == undefined || this.props.phone.length != 11) return;
-	            console.log(this.props);
 	            var time = 60;
 	            var sp = this.props;
 	            t = setInterval(function () {
@@ -59693,7 +59678,6 @@ webpackJsonp([2],[
 	            var params = {
 	                phone: this.props.phone
 	            };
-	            console.log(params);
 	            //reqwest({
 	            //    url: 'send_code_api',
 	            //    method: 'post',
@@ -59716,7 +59700,6 @@ webpackJsonp([2],[
 	    }, {
 	        key: 'render',
 	        value: function render() {
-	            console.log(this.props);
 	            var _props$form4 = this.props.form;
 	            var getFieldProps = _props$form4.getFieldProps;
 	            var getFieldError = _props$form4.getFieldError;
@@ -59759,7 +59742,7 @@ webpackJsonp([2],[
 	                labelCol: { span: 0 },
 	                wrapperCol: { span: 24 }
 	            };
-	            console.log(isFieldValidating('name'));
+	            //console.log(isFieldValidating('name'));
 	            var cn = this.props.sendBtn.disabled == "true" ? "btn-send-code disabled" : "btn-send-code";
 	            return _react2.default.createElement(
 	                'div',
@@ -59989,17 +59972,14 @@ webpackJsonp([2],[
 	            e.preventDefault();
 	            this.props.form.validateFields(function (errors, values) {
 	                if (!!errors) {
-	                    console.log('Errors in form!!!');
+	                    //console.log('Errors in form!!!');
 	                    return;
 	                }
-	                console.log('Submit!!!');
-	                console.log(values);
 	            });
 	        }
 	    }, {
 	        key: 'validateCode',
 	        value: function validateCode(rule, value, callback) {
-	            console.log(value);
 	            callback();
 	        }
 	    }, {
@@ -60010,9 +59990,7 @@ webpackJsonp([2],[
 	    }, {
 	        key: 'sendCode',
 	        value: function sendCode() {
-	            //this.refs.send_code.props.disabled="true";
 	            if (this.props.phone == undefined || this.props.phone.length != 11) return;
-	            console.log(this.props);
 	            var time = 60;
 	            var sp = this.props;
 	            t = setInterval(function () {
@@ -60028,7 +60006,6 @@ webpackJsonp([2],[
 	            var params = {
 	                phone: this.props.phone
 	            };
-	            console.log(params);
 	            //reqwest({
 	            //    url: 'send_code_api',
 	            //    method: 'post',
@@ -60190,7 +60167,6 @@ webpackJsonp([2],[
 	var LoginAll = _react2.default.createClass({
 	    displayName: 'LoginAll',
 	    render: function render() {
-	        console.log(this.props, 444);
 	        var _props = this.props;
 	        var actions = _props.actions;
 	        var register = _props.register;
@@ -60277,7 +60253,6 @@ webpackJsonp([2],[
 	            var getFieldError = _props$form.getFieldError;
 	            var getFieldValue = _props$form.getFieldValue;
 
-	            console.log(this.props.form);
 	            if (isFieldValidating(field)) {
 	                return 'validating';
 	            } else if (!!getFieldError(field)) {
@@ -60294,11 +60269,10 @@ webpackJsonp([2],[
 	            e.preventDefault();
 	            this.props.form.validateFields(function (errors, values) {
 	                if (!!errors) {
-	                    console.log('Errors in form!!!');
+	                    //console.log('Errors in form!!!');
 	                    return;
 	                }
 	                setTimeout(function () {
-	                    console.log(values);
 	                    _this2.fetch(values);
 	                }, 300);
 	            });
@@ -60312,7 +60286,6 @@ webpackJsonp([2],[
 	                data: params,
 	                type: 'json'
 	            }).then(function (data) {
-	                console.log(data.data, 12138);
 	                if (data.status == "1" && data.data.length > 0) {
 	                    setTimeout(function () {
 	                        window.location.href = "http://localhost:3000/admin2016pp/users";
@@ -60331,7 +60304,6 @@ webpackJsonp([2],[
 	        key: 'isShowForget',
 	        value: function isShowForget() {
 	            this.props.actions.toForget();
-	            console.log(this.props, 9191);
 	        }
 	    }, {
 	        key: 'render',
@@ -60499,7 +60471,6 @@ webpackJsonp([2],[
 
 	        var _this3 = _possibleConstructorReturn(this, Object.getPrototypeOf(RegisterFrom).call(this, props));
 
-	        console.log(_this3.props, 777);
 	        _this3.onHidden = _this3.onHidden.bind(_this3);
 	        _this3.sendCode = _this3.sendCode.bind(_this3);
 	        _this3.getPhone = _this3.getPhone.bind(_this3);
@@ -60542,11 +60513,10 @@ webpackJsonp([2],[
 	            e.preventDefault();
 	            this.props.form.validateFields(function (errors, values) {
 	                if (!!errors) {
-	                    console.log('Errors in form!!!');
+	                    //console.log('Errors in form!!!');
 	                    return;
 	                }
 	                _this4.fetch(values);
-	                console.log('Submit!!!');
 	            });
 	        }
 	    }, {
@@ -60558,7 +60528,6 @@ webpackJsonp([2],[
 	                data: params,
 	                type: 'json'
 	            }).then(function (data) {
-	                //console.log(data,12138);
 	                if (data.status == "1") {
 	                    window.location.href = "http://localhost:3000/admin2016pp/users";
 	                } else {
@@ -60569,7 +60538,6 @@ webpackJsonp([2],[
 	    }, {
 	        key: 'userExists',
 	        value: function userExists(rule, value, callback) {
-	            console.log(value);
 	            if (!value) {
 	                callback();
 	            } else {
@@ -60637,7 +60605,6 @@ webpackJsonp([2],[
 	            var getFieldValue = this.props.form.getFieldValue;
 
 	            if (value && value !== getFieldValue('passwd')) {
-	                console.log(value, getFieldValue('passwd'));
 	                callback('两次输入密码不一致！');
 	            } else {
 	                callback();
@@ -60646,24 +60613,18 @@ webpackJsonp([2],[
 	    }, {
 	        key: 'componentDidMount',
 	        value: function componentDidMount() {
-	            //var input=document.getElementsByTagName('input')[0];
 	            var input = ReactDOM.findDOMNode(this.refs.inputCus);
-	            //var className=input.className;
-	            console.log(input);
-	            //input.className='ant-input ant-input-lg input-cus';
+	            //console.log(input);
 	        }
 	    }, {
 	        key: 'validateCode',
 	        value: function validateCode(rule, value, callback) {
-	            console.log(value);
 	            callback();
 	        }
 	    }, {
 	        key: 'sendCode',
 	        value: function sendCode() {
-	            //this.refs.send_code.props.disabled="true";
 	            if (this.props.phone == undefined || this.props.phone.length != 11) return;
-	            console.log(this.props);
 	            var time = 60;
 	            var sp = this.props;
 	            t = setInterval(function () {
@@ -60679,7 +60640,6 @@ webpackJsonp([2],[
 	            var params = {
 	                phone: this.props.phone
 	            };
-	            console.log(params);
 	            //reqwest({
 	            //    url: 'send_code_api',
 	            //    method: 'post',
@@ -60702,7 +60662,6 @@ webpackJsonp([2],[
 	    }, {
 	        key: 'render',
 	        value: function render() {
-	            console.log(this.props);
 	            var _props$form4 = this.props.form;
 	            var getFieldProps = _props$form4.getFieldProps;
 	            var getFieldError = _props$form4.getFieldError;
@@ -60745,7 +60704,7 @@ webpackJsonp([2],[
 	                labelCol: { span: 0 },
 	                wrapperCol: { span: 24 }
 	            };
-	            console.log(isFieldValidating('name'));
+	            //console.log(isFieldValidating('name'));
 	            var cn = this.props.sendBtn.disabled == "true" ? "btn-send-code disabled" : "btn-send-code";
 	            return _react2.default.createElement(
 	                'div',
@@ -60975,17 +60934,14 @@ webpackJsonp([2],[
 	            e.preventDefault();
 	            this.props.form.validateFields(function (errors, values) {
 	                if (!!errors) {
-	                    console.log('Errors in form!!!');
+	                    //console.log('Errors in form!!!');
 	                    return;
 	                }
-	                console.log('Submit!!!');
-	                console.log(values);
 	            });
 	        }
 	    }, {
 	        key: 'validateCode',
 	        value: function validateCode(rule, value, callback) {
-	            console.log(value);
 	            callback();
 	        }
 	    }, {
@@ -60996,9 +60952,7 @@ webpackJsonp([2],[
 	    }, {
 	        key: 'sendCode',
 	        value: function sendCode() {
-	            //this.refs.send_code.props.disabled="true";
 	            if (this.props.phone == undefined || this.props.phone.length != 11) return;
-	            console.log(this.props);
 	            var time = 60;
 	            var sp = this.props;
 	            t = setInterval(function () {
@@ -61014,7 +60968,6 @@ webpackJsonp([2],[
 	            var params = {
 	                phone: this.props.phone
 	            };
-	            console.log(params);
 	            //reqwest({
 	            //    url: 'send_code_api',
 	            //    method: 'post',
@@ -61176,7 +61129,6 @@ webpackJsonp([2],[
 	var LoginAll = _react2.default.createClass({
 	    displayName: 'LoginAll',
 	    render: function render() {
-	        console.log(this.props, 444);
 	        var _props = this.props;
 	        var actions = _props.actions;
 	        var register = _props.register;
